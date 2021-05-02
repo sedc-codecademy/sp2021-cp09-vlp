@@ -59,7 +59,7 @@ body {
   background-color: #002c5f;
   grid-column: 1/3;
   grid-row: 3/4;
-  height: 170%;
+  height: 200%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
