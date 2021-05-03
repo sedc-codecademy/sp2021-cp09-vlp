@@ -114,6 +114,7 @@ body {
 .copyright{
   font-family: var(--Comfortaa);
   color: #ffffff;
+  text-align: center;
 }
 
 @media screen and (max-width: 1300px) {
@@ -156,11 +157,16 @@ body {
   background-color: #002c5f;
   grid-column: 1/3;
   grid-row: 3/4;
-  height: 221%;
+  height: 484%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+}
+.footer .footer__logo img{
+  width: 90%;
+  height: 144px;
+  margin: 20px 0;
 }
 }
