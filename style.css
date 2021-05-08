@@ -13,8 +13,9 @@ body {
   height: 1200px;
   display: grid;
   grid-template-columns: 2fr 8fr;
-  grid-template-rows: 100px 1fr 150px;
+  grid-template-rows: 100px 1fr 300px;
   font-family: var(--Open-serif);
+  
 }
 
 .header {
@@ -286,21 +287,29 @@ body {
 }
 
 .footer {
+  position: relative;
   background-color: #002c5f;
   grid-column: 1/3;
-  grid-row: 3/4;
-  height: 336%;
+  grid-row: 3/5;
+  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
 }
+.footer .footer__block{
+  width: 25%;
+}
 
 .footer .footer__block ul {
   list-style-type: none;
 }
-
+.footer .footer__icon{
+  position: absolute; 
+  right:10px;
+  top: 10px;
+}
 
 .footer .footer__block ul li  {
   text-align: center;
@@ -308,44 +317,44 @@ body {
 }
 .footer .footer__block ul li a:hover{
   color: rgb(104, 95, 230);
-  text-decoration-line: underline;
+  text-decoration-line: none;
+  font-size: 18px;
 }
 .footer .footer__block ul li a {
   color: white;
   text-decoration: none;
   align-items: center;
-  font: 18px;
   font-family: var(--Comfortaa);
 }
 .footer .footer__block ul li h2 {
   color: white;
   text-decoration: none;
   align-items: center;
-  font: 18px;
   font-family: var(--Comfortaa);
 }
-
 
 .fa-arrow-circle-up{
   color: white
 }
 
-.footer__logo {
+ .footer__logo {
   text-align: center;
   border-top: 1px solid rgb(120, 111, 98);
   border-bottom: 1px solid rgb(120, 111, 98);
-  
+  width: 80%;
+  height: 50%;
+
 }
 .footer__logo img{
-    width: 90%;
-    height: 200px;
-    margin: 20px 0;
+   
+    height: 100%;
 }
-.copyright{
+.footer__copyright{
   font-family: var(--Comfortaa);
   color: #ffffff;
   text-align: center;
 }
+
 
 @media screen and (max-width: 1300px) {
   .cards-container {
@@ -357,6 +366,8 @@ body {
     grid-row: 1/2;
     height: 100%;
   }
+ 
+
 }
 
 
@@ -384,19 +395,26 @@ body {
     grid-auto-rows: 250px;
   }
   .footer {
-  background-color: #002c5f;
-  grid-column: 1/3;
-  grid-row: 3/4;
-  height: 484%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
+    background-color: #002c5f;
+    grid-column: 1/3;
+    grid-row: 3/5;
+    height: 1040px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
 .footer .footer__logo img{
   width: 90%;
   height: 144px;
   margin: 20px 0;
+}
+.footer .footer__logo{
+  height: 0;
+}
+.footer .footer__block{
+  width: 56%;
+  height: 20px;
 }
 }
