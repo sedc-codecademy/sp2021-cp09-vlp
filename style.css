@@ -63,8 +63,6 @@ body {
   flex-direction: space-between;
   top: 168px;
   left: 0px;
-  background: url(/img/header-navbar-background.png);
-  background-size: cover;
 }
 
 .header-nav__ul {
