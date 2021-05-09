@@ -25,7 +25,7 @@ body {
   position: relative;
 }
 
-.banner-main {
+.header-banner {
   background-image: url(/img/header-background.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,33 +37,37 @@ body {
   position: relative;
 }
 
-.main-nav__item {
+.header-nav__li {
   display: inline-block;
   padding: 8px;
   margin: 8px;
   position: relative;
 }
 
-.main-nav__text {
+.header-nav__liText {
   text-decoration: none;
   color: white;
   font-size: 1.08em;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  position: relative;
+  left: 50%;
 }
 
-.main-nav {
+.header-nav__block {
   display: flex;
   text-align: center;
   position: absolute;
   overflow: hidden;
-  width: 80%;
+  width: 90%;
   flex-direction: space-between;
-  top: 170px;
-  left: 35px;
+  top: 168px;
+  left: 0px;
+  background: url(/img/header-navbar-background.png);
+  background-size: cover;
 }
 
-.main-nav__items {
+.header-nav__ul {
   margin: 0;
   padding: 0;
 }
@@ -72,21 +76,21 @@ body {
   display: inline-block;
 }
 
-.main-nav__text:hover {
+.header-nav__liText:hover {
   color: #9fcfeb;
 }
 
-.main-nav__text:active {
+.header-nav__liText:active {
   color: #9fcfeb;
 }
 
-.main-logo__image {
+.header-logo__imageWithText {
   height: 100px;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 
-.main-logo__small {
+.header-logo_imageWithoutText {
   position: absolute;
   height: 100px;
   left: 0%;
@@ -94,14 +98,14 @@ body {
   opacity: 1;
 }
 
-.main-logo {
+.header-logo {
   width: 100%;
   position: absolute;
   left: 1%;
   top: 6%;
 }
 
-.logo {
+.header-logos {
   position: absolute;
   height: 100px;
   left: 1%;
@@ -209,7 +213,7 @@ body {
     grid-row: 1/2;
     height: 100%;
   }
-  .main-nav {
+  .header-nav__block {
     width: 100%;
     top: 250px;
   }
@@ -230,16 +234,16 @@ body {
     grid-row: 1/2;
     height: 100%;
   }
-  .main-logo__small {
+  .header-logo__imageWithoutText {
     opacity: 1;
   }
-  .main-logo__image {
+  .header-logo__imageWithText {
     opacity: 0;
   }
-  .main-nav__text {
+  .header-nav__liText {
     font-size: 0.9em;
   }
-  .main-nav {
+  .header-nav__block {
     width: 100%;
     top: 250px;
   }
@@ -266,11 +270,11 @@ body {
     height: 144px;
     margin: 20px 0;
   }
-  .main-nav {
+  .header-nav__block {
     width: 100%;
     top: 200px;
   }
-  .logo {
+  .header-logos {
     left: 35%;
   }
 }
