@@ -353,9 +353,10 @@ body {
   height: 80%;
 }
 .footer__copyright {
+  margin-left: 150px;
+  margin-right: 150px;
   font-family: var(--Comfortaa);
   color: #ffffff;
-  /* text-align: center; */
 }
 
 @media screen and (max-width: 1300px) {
@@ -393,6 +394,10 @@ body {
   .footer {
     font-size: 0.9rem;
   }
+
+  .footer__copyright {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -423,10 +428,10 @@ body {
   .footer .footer__block {
     width: 56%;
     align-self: end;
-    /* height: 20px; */
   }
 
   .footer__copyright {
+    margin: 0;
     font-family: var(--Comfortaa);
     color: #ffffff;
     text-align: center;
