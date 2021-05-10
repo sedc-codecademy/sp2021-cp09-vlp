@@ -26,60 +26,64 @@ body {
 }
 
 .header-banner {
-  background-image: url(/img/header-background.svg);
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  background: radial-gradient(
+    circle at 220%,
+    #002c5f,
+    #002c5f 50%,
+    #ffffff 50%,
+    #002c5f 80%
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
   height: 100%;
-  z-index: -5;
-  box-sizing: border-box;
-  position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .header-nav__li {
-  display: inline-block;
-  padding: 8px;
-  margin: 8px;
-  position: relative;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  padding-right: 16px;
 }
 
 .header-nav__liText {
   text-decoration: none;
   color: white;
-  font-size: 1.08em;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   position: relative;
-  left: 50%;
 }
 
 .header-nav__block {
-  display: flex;
-  text-align: center;
-  position: absolute;
-  overflow: hidden;
-  width: 90%;
-  flex-direction: space-between;
-  top: 168px;
-  left: 0px;
-}
-
-.header-nav__ul {
+  display: grid;
+  grid-row: 2/3;
   margin: 0;
   padding: 0;
 }
 
-.header > span {
+.header-nav__ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5fr;
+  padding: 0;
+  padding-left: 25px;
+}
+
+.header span {
   display: inline-block;
 }
 
 .header-nav__liText:hover {
-  color: #9fcfeb;
+  color: #0079c8;
+  transition: ease-in 100ms;
 }
 
 .header-nav__liText:active {
-  color: #9fcfeb;
+  color: #ffffff;
 }
 
 .header-logo__imageWithText {
@@ -91,8 +95,6 @@ body {
 .header-logo_imageWithoutText {
   position: absolute;
   height: 100px;
-  left: 0%;
-  top: 0%;
   opacity: 1;
 }
 
@@ -213,7 +215,6 @@ body {
   }
   .header-nav__block {
     width: 100%;
-    top: 250px;
   }
 }
 
@@ -243,7 +244,6 @@ body {
   }
   .header-nav__block {
     width: 100%;
-    top: 250px;
   }
 }
 
@@ -270,7 +270,6 @@ body {
   }
   .header-nav__block {
     width: 100%;
-    top: 200px;
   }
   .header-logos {
     left: 35%;
