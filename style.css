@@ -115,6 +115,7 @@ body {
 
 /* header design ends here */
 
+/* Card Design Starts Here */
 .main {
   background-color: #f2f2f2;
   font-size: 20px;
@@ -124,9 +125,9 @@ body {
   display: grid;
 }
 
-.cards-container {
+.cards__container {
   width: 100%;
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 240px;
   row-gap: 2rem;
@@ -139,6 +140,121 @@ body {
 .cards-container__card {
   background-color: #0079c8;
 }
+/* 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background: #fefefe;
+  font-family: sans-serif;
+}
+
+/* .card__container {
+  width: 100%;
+  margin: 50px auto;
+
+} */
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  width: 30%;
+  background: #9fcfeb;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+  max-width: 400px;
+}
+
+.card__hover--active:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.card__background {
+    padding: 8% 50%;
+    background-color: #002c5f;
+}
+
+.language__description {
+  padding-left: 5%;
+  margin-bottom: 10px;
+}
+
+.language__info{
+  padding-left: 5%;
+  margin-bottom: 10%;
+}  
+
+.card__body {
+  padding: 30px 20px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: #9fcfeb;
+}
+
+.card__button {
+  display: block;
+  color: #002c5f;
+  text-align: center;
+  background: #0079c8;
+  text-decoration: none;
+  padding: 10px 5px;
+  max-width: 100px;
+  position: relative;
+  left: 71%;
+  top: 20px;
+}
+
+.card__image {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  bottom: 55px;
+  left: 20px;
+  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1;
+}
+
+.card__image1 img {
+  width: 110px;
+  position: relative;
+  left: 15px;
+  top: 5px;
+}
+.card__image2 img {
+  width: 110px;
+  position: relative;
+  right: 25px;
+  top: 5px
+}
+
+.card__image3 img {
+  width: 110px;
+  position: relative;
+  right: 4px;
+  bottom: 33px;
+}
+
+/* Card Design Ends Here*/
+
 
 /* .aside {
   background-color: #9fcfeb;
