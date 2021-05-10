@@ -23,6 +23,7 @@ body {
 .header {
   grid-column: 1/3;
   grid-row: 1/2;
+  width: 99%;
   position: relative;
 }
 
@@ -40,28 +41,27 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
-  padding: 0;
-  margin: 0;
+  width: 99.1vw;
+  height: 100%;
 }
 
 .header-nav__li {
   text-decoration: none;
   list-style: none;
   text-align: center;
-  padding-right: 16px;
+  padding-right: 10px;
 }
 
 .header-nav__liText {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   position: relative;
 }
 
 .header-nav__block {
-  display: grid;
   grid-row: 2/3;
   margin: 0;
   padding: 0;
@@ -80,11 +80,11 @@ body {
 
 .header-nav__liText:hover {
   color: #0079c8;
-  transition: ease-in 100ms;
+  transition: ease-in 0.2s;
 }
 
 .header-nav__liText:active {
-  color: #ffffff;
+  color: #0079c8;
 }
 
 .header-logo__imageWithText {
