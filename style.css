@@ -12,10 +12,11 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 body {
-  margin: 0;
   height: 1200px;
   display: grid;
   grid-template-columns: 2fr 8fr;
@@ -237,43 +238,29 @@ body {
 
 /* Card Design Ends Here*/
 
-/* .aside {
-  background-color: #9fcfeb;
+.aside {
   grid-column: 1/2;
   grid-row: 2/3;
-} */
-
-.aside {
   display: flex;
   flex-direction: column;
-  margin: 20px 60px;
+  margin: 20px 60px 40px 60px;
 }
-.aside__payment,
-.aside__programming,
-.aside__computerNetworks,
-.aside__design,
-.aside__softwareTesting,
-.aside__dataScience,
-.aside__digitalMarketing,
-.aside__studentPortfolio,
-.aside__iThinkAcademy,
-.aside__faq{
-  display: flex;
+.aside__item {
+  width: 100%;
   margin-top: 20px;
-}
-.aside a{
-  font-family: var(--Open-serif);
+  border-bottom: 1px solid var(--primaryColor);
+  font-family: var(--Open-Sans);
   font-size: 18px;
+  width: 200px;
+  padding-bottom: 5px;
+}
+.aside__item-link {
   text-decoration: none;
   color: #000;
-  border-bottom: 1px solid #002c5f;
-  width: 190px;
 }
-.aside a:hover {
-  color: #0079c8;
+.aside__item-link:hover {
+  color: var(--secondaryColor);
 }
-
-
 
 .footer {
   position: relative;
