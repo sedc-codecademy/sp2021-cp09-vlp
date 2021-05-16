@@ -242,236 +242,38 @@ body {
   grid-column: 1/2;
   grid-row: 2/3;
 } */
+
 .aside {
-  position: relative;
   display: flex;
   flex-direction: column;
-  margin: 30px 60px;
+  margin: 20px 60px;
 }
-
+.aside__payment,
+.aside__programming,
+.aside__computerNetworks,
+.aside__design,
+.aside__softwareTesting,
+.aside__dataScience,
+.aside__digitalMarketing,
+.aside__studentPortfolio,
+.aside__iThinkAcademy,
+.aside__faq{
+  display: flex;
+  margin-top: 20px;
+}
+.aside a{
+  font-family: var(--Open-serif);
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #002c5f;
+  width: 190px;
+}
 .aside a:hover {
   color: #0079c8;
 }
 
-/* TUITION FESS & PAYMENT part*/
-.aside__payment {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.aside__payment-link {
-  font-family: var(--Open-Sans);
-  font-size: 18px;
-  text-decoration: none;
-  color: #000;
-}
-.aside__payment::after {
-  content: "";
-  position: absolute;
-  width: 190px;
-  height: 1px;
-  top: 50px;
-  background-color: #002c5f;
-}
 
-/* ACADEMY FOR PROGRAMMING part */
-.aside__programming {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-}
-.aside__programming-link {
-  font-family: var(--Open-Sans);
-  font-size: 18px;
-  text-decoration: none;
-  color: #000;
-}
-.aside__programming::after {
-  content: "";
-  position: absolute;
-  width: 190px;
-  height: 1px;
-  top: 50px;
-  background-color: #002c5f;
-}
-
-/* ACADEMY FOR COMPUTER NETWORKS part */
-.aside__computerNetworks {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-}
-.aside__computerNetworks-link {
-  font-family: var(--Open-Sans);
-  font-size: 18px;
-  text-decoration: none;
-  color: #000;
-}
-.aside__computerNetworks::after {
-  content: "";
-  position: absolute;
-  width: 190px;
-  height: 1px;
-  top: 70px;
-  background-color: #002c5f;
-}
-
-/* ACADEMY FOR DESIGN part */
-.aside__design {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-}
-.aside__design-link {
-  font-family: var(--Open-Sans);
-  font-size: 18px;
-  text-decoration: none;
-  color: #000;
-}
-.aside__design::after {
-  content: "";
-  position: absolute;
-  top: 50px;
-  width: 190px;
-  height: 1px;
-  background-color: #002c5f;
-}
-
-/* ACADEMY FOR SOFTWARE TESTING part */
-.aside__softwareTesting {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-}
-.aside__softwareTesting-link {
-  font-family: var(--Open-Sans);
-  font-size: 18px;
-  text-decoration: none;
-  color: #000;
-}
-.aside__softwareTesting::after {
-  content: "";
-  position: absolute;
-  top: 50px;
-  width: 190px;
-  height: 1px;
-  background-color: #002c5f;
-}
-
-/* ACADEMY FOR DATA SCIENCE part */
-.aside__dataScience {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-}
-.aside__dataScience-link {
-  font-family: var(--Open-Sans);
-  font-size: 18px;
-  text-decoration: none;
-  color: #000;
-}
-.aside__dataScience::after {
-  content: "";
-  position: absolute;
-  top: 50px;
-  width: 190px;
-  height: 1px;
-  background-color: #002c5f;
-}
-
-/* ACADEMY FOR DIGITAL MARKETING part */
-.aside__digitalMarketing {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-}
-.aside__digitalMarketing-link {
-  font-family: var(--Open-Sans);
-  font-size: 18px;
-  text-decoration: none;
-  color: #000;
-}
-.aside__digitalMarketing::after {
-  content: "";
-  position: absolute;
-  top: 50px;
-  width: 190px;
-  height: 1px;
-  background-color: #002c5f;
-}
-
-/* STUDENT PORTFOLIOS part */
-.aside__studentPortfolio {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-}
-.aside__studentPortfolio-link {
-  font-family: var(--Open-Sans);
-  font-size: 18px;
-  text-decoration: none;
-  color: #000;
-}
-.aside__studentPortfolio::after {
-  content: "";
-  position: absolute;
-  top: 50px;
-  width: 190px;
-  height: 1px;
-  background-color: #002c5f;
-}
-
-/* ITHINK ACADEMY part */
-.aside__iThinkAcademy {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-}
-.aside__iThinkAcademy-link {
-  font-family: var(--Open-Sans);
-  font-size: 18px;
-  text-decoration: none;
-  color: #000;
-}
-.aside__iThinkAcademy::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  width: 190px;
-  height: 1px;
-  background-color: #002c5f;
-}
-
-/* FAQ part */
-.aside__faq {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-}
-.aside__faq-link {
-  font-family: var(--Open-Sans);
-  font-size: 18px;
-  text-decoration: none;
-  color: #000;
-}
 
 .footer {
   position: relative;
