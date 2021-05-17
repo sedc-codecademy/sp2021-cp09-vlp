@@ -6,7 +6,7 @@
   --primaryColor: #002c5f;
   --secondaryColor: #0079c8;
   --tertiaryColor: #9fcfeb;
-  --backgroundGray: #f2f2f2;
+  --backgroundGray: #ececec;
 }
 *,
 *::before,
@@ -22,9 +22,10 @@ body {
   grid-template-columns: 2fr 8fr;
   grid-template-rows: 200px 1fr 300px;
   font-family: var(--Open-Sans);
+  background-color: var(--backgroundGray);
 }
 
-/* header design */
+/* Header design */
 .header {
   grid-column: 1/3;
   grid-row: 1/2;
@@ -116,12 +117,11 @@ body {
   left: 1%;
   top: 3%;
 }
-
-/* header design ends here */
+/* Header design ends here */
 
 /* Card Design Starts Here */
 .main {
-  background-color: #f2f2f2;
+  background-color: var(--backgroundGray);
   font-size: 20px;
   color: #ffffff;
   grid-column: 2/3;
@@ -234,32 +234,44 @@ body {
   right: 4px;
   bottom: 33px;
 }
-
 /* Card Design Ends Here*/
 
+/* Aside Design Begins Here */
 .aside {
-  grid-column: 1/2;
-  grid-row: 2/3;
+  margin: 50px 0 50px 15px;
   display: flex;
   flex-direction: column;
-  margin: 20px 60px 40px 60px;
+  background-color: #ececec;
 }
 .aside__item {
   width: 100%;
-  margin-top: 20px;
-  border-bottom: 1px solid var(--primaryColor);
+  color: #fff;
   font-family: var(--Open-Sans);
   font-size: 18px;
-  width: 200px;
-  padding-bottom: 5px;
+  font-weight: 600;
 }
+
 .aside__item-link {
+  width: 100%;
+  display: block;
+  padding: 16px 10px 16px 0;
   text-decoration: none;
-  color: #000;
+  text-align: right;
+  color: var(--primaryColor);
+  width: 100%;
+  line-height: 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #002d6133;
+  border-radius: 4px;
+  box-shadow: -6px 6px 12px #002d6133;
+  transition: 0.5s;
+  transition-property: background;
 }
+
 .aside__item-link:hover {
-  color: var(--secondaryColor);
+  background: var(--secondaryColor);
 }
+/* Aside Design Ends Here */
 
 .footer {
   position: relative;
@@ -287,14 +299,12 @@ body {
 }
 
 .footer .footer__block ul li {
-  /* text-align: center; */
   padding-bottom: 10px;
 }
 .footer .footer__block ul li a:hover {
   color: #0079c8;
   text-decoration-line: none;
   transition: 0.2s;
-  /* font-size: 18px; */
 }
 .footer .footer__block ul li a {
   color: white;
