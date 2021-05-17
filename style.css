@@ -17,11 +17,13 @@
   scroll-behavior: smooth;
 }
 body {
-  height: 1200px;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 2fr 8fr;
   grid-template-rows: 200px 1fr 300px;
   font-family: var(--Open-Sans);
+  /* overflow: hidden; */
 }
 
 /* header design */
@@ -127,6 +129,7 @@ body {
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
+  min-height: 800px;
 }
 
 .cards__container {
@@ -237,6 +240,86 @@ body {
 
 /* Card Design Ends Here*/
 
+/* Modal styles */
+
+.modal__outer {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.918);
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+
+.modal__inner {
+  position: relative;
+  width: 70%;
+  background-color: white;
+  border-radius: 6px;
+  min-height: 60vh;
+  color: black;
+  padding: 45px 40px;
+  transition: 0.4 ease-in-out;
+  overflow: auto;
+  /* overflow: hidden; */
+
+  /* transform: translateY(-100%); */
+}
+
+.modal__images {
+  /* background-color: pink; */
+  height: 150px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.modal__images div {
+  background-color: var(--secondaryColor);
+  height: 150px;
+  width: 300px;
+}
+
+.modal__icon {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.534);
+  font-size: 1.8rem;
+  top: 20px;
+  right: 20px;
+}
+
+.modal__inner h1 {
+  margin: 0px 0px 50px 20px;
+  font-size: 3.1rem;
+}
+
+.modal__inner h3 {
+  margin: 15px 10px;
+}
+
+.modal__inner ul {
+  list-style: square;
+  padding-left: 40px;
+}
+.modal__inner ul a {
+  text-decoration: none;
+  color: var(--primaryColor);
+  font-weight: 600;
+  transition: 0.2s;
+}
+.modal__inner ul a:hover {
+  color: var(--secondaryColor);
+}
+
+.details__modal-inner p {
+  margin: 10px 30px;
+}
+
 .aside {
   grid-column: 1/2;
   grid-row: 2/3;
@@ -338,6 +421,11 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
   }
+
+  .modal__inner {
+    width: 80%;
+    min-height: 80vh;
+  }
   .header {
     background-color: #002c5f;
     grid-column: 1/3;
@@ -358,6 +446,12 @@ body {
   .cards__container {
     padding-left: 3rem;
   }
+
+  .modal__inner {
+    width: 90%;
+    height: 90vh;
+  }
+
   .main {
     grid-column: 1/3;
   }
@@ -404,6 +498,11 @@ body {
   .cards__container {
     grid-template-columns: 1fr;
   }
+  .modal__inner {
+    height: 90vh;
+    width: 90%;
+  }
+
   .footer {
     background-color: #002c5f;
     grid-column: 1/3;
