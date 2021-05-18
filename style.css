@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 :root {
   --Open-Sans: "Open Sans", sans-serif;
@@ -6,7 +6,7 @@
   --primaryColor: #002c5f;
   --secondaryColor: #0079c8;
   --tertiaryColor: #9fcfeb;
-  --backgroundGray: #f2f2f2;
+  --backgroundGray: #ececec;
 }
 *,
 *::before,
@@ -24,9 +24,10 @@ body {
   grid-template-rows: 200px 1fr 300px;
   font-family: var(--Open-Sans);
   /* overflow: hidden; */
+  background-color: var(--backgroundGray);
 }
 
-/* header design */
+/* Header design */
 .header {
   grid-column: 1/3;
   grid-row: 1/2;
@@ -118,18 +119,63 @@ body {
   left: 1%;
   top: 3%;
 }
-
-/* header design ends here */
+/* Header design ends here */
 
 /* Card Design Starts Here */
+
 .main {
-  background-color: #f2f2f2;
+  background-color: var(--backgroundGray);
   font-size: 20px;
-  color: #ffffff;
   grid-column: 2/3;
   grid-row: 2/3;
-  display: grid;
-  min-height: 800px;
+}
+
+.academy__container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  min-height: 900px;
+}
+
+.academy__heading {
+  color: var(--secondaryColor);
+  padding-left: 4rem;
+  font-size: 4.5rem;
+  margin: 3rem 0;
+  font-weight: 300;
+  align-self: flex-start;
+}
+
+.academy__sub-heading {
+  color: var(--primaryColor);
+  background-color: white;
+  margin: 2rem 4rem;
+  font-weight: 600;
+  margin-top: 0;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+.academy__paragraph {
+  color: var(--primaryColor);
+  margin: 0 6rem 2rem 6rem;
+}
+
+.academy__paragraph ul {
+  list-style-type: square;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.academy__paragraph ul a {
+  text-decoration: none;
+  color: var(--primaryColor);
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+
+.academy__paragraph ul a:hover {
+  color: var(--secondaryColor);
 }
 
 .cards__container {
@@ -139,8 +185,7 @@ body {
   grid-auto-rows: min-content;
   row-gap: 2rem;
   column-gap: 2rem;
-  padding: 2rem 4rem;
-  padding-bottom: 5rem;
+  padding: 0 4rem 3rem 4rem;
   box-sizing: border-box;
 }
 
@@ -237,7 +282,6 @@ body {
   right: 4px;
   bottom: 33px;
 }
-
 /* Card Design Ends Here*/
 
 /* Modal styles */
@@ -321,28 +365,43 @@ body {
 }
 
 .aside {
-  grid-column: 1/2;
-  grid-row: 2/3;
+  margin: 50px 0 50px 15px;
   display: flex;
   flex-direction: column;
-  margin: 20px 60px 40px 60px;
+  background-color: #ececec;
 }
 .aside__item {
   width: 100%;
-  margin-top: 20px;
-  border-bottom: 1px solid var(--primaryColor);
+  color: #fff;
   font-family: var(--Open-Sans);
   font-size: 18px;
-  width: 200px;
-  padding-bottom: 5px;
+  font-weight: 600;
 }
+
 .aside__item-link {
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+  background-color: #fff;
+  padding: 16px 10px 16px 0;
   text-decoration: none;
-  color: #000;
+  text-align: right;
+  color: var(--primaryColor);
+  width: 100%;
+  line-height: 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #002d6199;
+  border-left: 2px solid #002d6166;
+  border-radius: 6px;
+  box-shadow: -8px 8px 10px #002d6133;
+  transition: 0.5s;
+  transition-property: background;
 }
+
 .aside__item-link:hover {
-  color: var(--secondaryColor);
+  background: var(--secondaryColor);
 }
+/* Aside Design Ends Here */
 
 .footer {
   position: relative;
@@ -370,14 +429,12 @@ body {
 }
 
 .footer .footer__block ul li {
-  /* text-align: center; */
   padding-bottom: 10px;
 }
 .footer .footer__block ul li a:hover {
   color: #0079c8;
   text-decoration-line: none;
   transition: 0.2s;
-  /* font-size: 18px; */
 }
 .footer .footer__block ul li a {
   color: white;
@@ -443,15 +500,6 @@ body {
 }
 
 @media screen and (max-width: 990px) {
-  .cards__container {
-    padding-left: 3rem;
-  }
-
-  .modal__inner {
-    width: 90%;
-    height: 90vh;
-  }
-
   .main {
     grid-column: 1/3;
   }
@@ -501,6 +549,13 @@ body {
   .modal__inner {
     height: 90vh;
     width: 90%;
+  }
+  .academy__heading {
+    font-size: 3.5rem;
+  }
+
+  .academy__sub-heading {
+    margin: 0 2.5rem 2rem 2.5rem;
   }
 
   .footer {
