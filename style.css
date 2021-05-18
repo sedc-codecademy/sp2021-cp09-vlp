@@ -300,6 +300,8 @@ body {
 .aside__item-link {
   width: 100%;
   display: block;
+  margin-bottom: 8px;
+  background-color: #fff;
   padding: 16px 10px 16px 0;
   text-decoration: none;
   text-align: right;
@@ -307,9 +309,10 @@ body {
   width: 100%;
   line-height: 20px;
   box-sizing: border-box;
-  border-bottom: 2px solid #002d6133;
-  border-radius: 4px;
-  box-shadow: -6px 6px 12px #002d6133;
+  border-bottom: 2px solid #002d6199;
+  border-left: 2px solid #002d6166;
+  border-radius: 6px;
+  box-shadow: -8px 8px 10px #002d6133;
   transition: 0.5s;
   transition-property: background;
 }
