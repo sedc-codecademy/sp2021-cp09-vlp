@@ -14,9 +14,9 @@
     <title>Academies</title>
   </head>
   <body>
-    <div class="modal__outer">
+    <div class="modal__outer element-hide">
       <div class="modal__inner">
-        <i class="fas fa-times modal__icon"></i>
+        <i class="fas fa-times modal__close-btn"></i>
         <h1 class="modal__heading">Introduction to HTML & CSS</h1>
         <h3 class="modal__sub-heading">Course summary</h3>
         <div class="modal__paragraph">
@@ -53,7 +53,8 @@
         </div>
         <small
           >This course is part of the
-          <a href="#">Web Developer</a> Academy</small
+          <a href="#" class="modal__bottom-link">Web Developer</a>
+          Academy</small
         >
       </div>
     </div>
@@ -217,9 +218,7 @@
               <h3 class="language__description">
                 Language Description goes here
               </h3>
-              <a href="#" class="card card__button" id="html-card-btn"
-                >Read more</a
-              >
+              <a class="card card__button" id="html-card-btn">Read more</a>
             </div>
           </div>
 

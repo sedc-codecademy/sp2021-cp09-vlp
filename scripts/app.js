@@ -37,6 +37,30 @@ webDevBtn.addEventListener("click", () => {
   showElementsByClass(["academy__container", "aside"]);
 });
 
+//Modal window logic
+
+const modalCloseBtn = document.querySelector(".modal__close-btn");
+const modalOuter = document.querySelector(".modal__outer");
+
+htmlCardBtn.addEventListener("click", e => {
+  e.preventDefault();
+  showElementsByClass(["modal__outer"]);
+  document.querySelector(".modal__inner").classList.add("modal__inner--show");
+  document.body.style.overflow = "hidden";
+  document.querySelector(".modal__outer").classList.add("modal__animation");
+});
+
+modalOuter.addEventListener("click", e => {
+  if (
+    e.target.classList.contains("modal__outer") ||
+    e.target.classList.contains("modal__close-btn") ||
+    e.target.classList.contains("modal__bottom-link")
+  ) {
+    document.body.style.overflow = "auto";
+    hideElementsByClass(["modal__outer"]);
+  }
+});
+
 jsCardBtn.addEventListener("click", () => {});
 
 cssCardBtn.addEventListener("click", () => {});
