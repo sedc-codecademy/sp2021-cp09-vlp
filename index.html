@@ -13,51 +13,186 @@
     <title>Academies</title>
   </head>
   <body>
-    <header class="header" id="header">
-      <div class="header-banner">
-        <nav class="header-nav__block">
-          <ul class="header-nav__ul">
-            <li class="header-nav__li">
-              <a href="#" class="header-nav__liText">ABOUT US</a>
-            </li>
-            <li class="header-nav__li">
-              <a href="#" class="header-nav__liText">ACADEMIES</a>
-            </li>
-            <li class="header-nav__li">
-              <a href="#" class="header-nav__liText">COURSES</a>
-            </li>
-            <li class="header-nav__li">
-              <a href="#" class="header-nav__liText">ACCELERATOR</a>
-            </li>
-            <li class="header-nav__li">
-              <a href="#" class="header-nav__liText">TESTING</a>
-            </li>
-            <li class="header-nav__li">
-              <a href="#" class="header-nav__liText">FACILITY USE</a>
-            </li>
-            <li class="header-nav__li">
-              <a href="#" class="header-nav__liText">CONTACT</a>
-            </li>
+    <div class="modal__outer">
+      <div class="modal__inner">
+        <i class="fas fa-times modal__icon"></i>
+        <h1 class="modal__heading">Introduction to HTML & CSS</h1>
+        <h3 class="modal__sub-heading">Course summary</h3>
+        <div class="modal__paragraph">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+          eligendi repudiandae rerum quia saepe a corporis quam, pariatur quo
+          nisi aut. Soluta eos deserunt non quod rerum quam est minus. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Tempora blanditiis
+          nisi fugit vero laudantium architecto ad minima placeat minus corrupti
+          dolore quidem iure assumenda, sed magnam tenetur eos deleniti nemo.
+          Voluptatum autem culpa totam nisi aliquid officiis voluptatibus
+          consequatur, minus officia omnis provident, impedit reprehenderit
+          necessitatibus? Neque, expedita eaque modi eveniet debitis nulla
+          ratione ex dolorum eius reprehenderit! Ipsa,
+        </div>
+        <h3 class="modal__sub-heading">Course Progression</h3>
+        <div class="modal__vlp-container">
+          <div class="modal__vlp-box">What is HTML and its history</div>
+          <div class="modal__vlp-box">Learning basic HTML tags</div>
+          <div class="modal__vlp-box">Building a website using only HTML</div>
+          <div class="modal__vlp-box">What is CSS and its history</div>
+          <div class="modal__vlp-box">Basic CSS styles</div>
+          <div class="modal__vlp-box">Advanced CSS styles</div>
+          <div class="modal__vlp-box">
+            Building a full website using both HTML & CSS
+          </div>
+        </div>
+        <h3 class="modal__sub-heading">Further Reading</h3>
+        <div class="modal__paragraph">
+          <ul>
+            <li><a href="">HTML Wiki article</a></li>
+            <li><a href="">Examples of HTML code</a></li>
+            <li><a href="">Interactive HTML examples</a></li>
           </ul>
-        </nav>
+        </div>
+        <small
+          >This course is part of the
+          <a href="#">Web Developer</a> Academy</small
+        >
       </div>
-      <div class="header-logo">
-        <a href="#home" class="header-logo__link">
-          <img
-            src="./img/header-logo.png"
-            alt="logo"
-            class="header-logo__imageWithText header-logos"
-          />
-          <img
-            src="./img/header-logo-without-text.png"
-            alt="logo"
-            class="header-logo__imageWithoutText header-logos"
-          />
-        </a>
+    </div>
+    <header class="header" id="header">
+      <div class="header__logo">
+        <img src="./img/header-logo-without-text.png" alt="logo" />
+        <h1 class="header__logo-title">
+          SEAVUS EDUCATION <span>and</span> DEVELOPMENT CENTER
+        </h1>
       </div>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="">About us</a></li>
+          <li class="nav__list-item"><a href="">Academies</a></li>
+          <li class="nav__list-item"><a href="">Contact</a></li>
+          <li class="nav__list-item"><a href="">Tuition & Fees</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <!-- Landing page and category cards  -->
+
     <!--Card Design Starts Here-->
+
     <main class="main">
+      <section class="landing__page">
+        <h1 class="landing__page-heading">SEDC Available Academies</h1>
+        <section class="landing-cards__container">
+          <div class="category-card__container">
+            <div class="category-card">
+              <figure class="category-card__front">
+                <h1>Web Developer</h1>
+              </figure>
+              <figure class="category-card__back">
+                <ul>
+                  <li>Basic and Advanced HTML & CSS</li>
+                  <li>JavaScript in depth</li>
+                  <li>.Net Core Backend</li>
+                  <li>SQL/No-SQL Databases</li>
+                  <li>ALM Training</li>
+                  <li>MERN/MEAN Expertise</li>
+                </ul>
+
+                <button type="button">GO TO ACADEMY</button>
+              </figure>
+            </div>
+          </div>
+          <div class="category-card__container">
+            <div class="category-card">
+              <figure class="category-card__front">
+                <h1>Software Tester</h1>
+              </figure>
+              <figure class="category-card__back">
+                <ul>
+                  <li>Example One</li>
+                  <li>Another Example</li>
+                  <li>Example Three</li>
+                  <li>Placeholder Item</li>
+                  <li>Example Four</li>
+                  <li>Another Example</li>
+                </ul>
+                <button type="button">GO TO ACADEMY</button>
+              </figure>
+            </div>
+          </div>
+          <div class="category-card__container">
+            <div class="category-card">
+              <figure class="category-card__front">
+                <h1>Graphic Designer</h1>
+              </figure>
+              <figure class="category-card__back">
+                <ul>
+                  <li>Example One</li>
+                  <li>Another Example</li>
+                  <li>Example Three</li>
+                  <li>Placeholder Item</li>
+                  <li>Example Four</li>
+                  <li>Another Example</li>
+                </ul>
+                <button type="button">GO TO ACADEMY</button>
+              </figure>
+            </div>
+          </div>
+          <div class="category-card__container">
+            <div class="category-card">
+              <figure class="category-card__front">
+                <h1>Game Designer</h1>
+              </figure>
+              <figure class="category-card__back">
+                <ul>
+                  <li>Example One</li>
+                  <li>Another Example</li>
+                  <li>Example Three</li>
+                  <li>Placeholder Item</li>
+                  <li>Example Four</li>
+                  <li>Another Example</li>
+                </ul>
+                <button type="button">GO TO ACADEMY</button>
+              </figure>
+            </div>
+          </div>
+          <div class="category-card__container">
+            <div class="category-card">
+              <figure class="category-card__front">
+                <h1>Data Scientist</h1>
+              </figure>
+              <figure class="category-card__back">
+                <ul>
+                  <li>Example One</li>
+                  <li>Another Example</li>
+                  <li>Example Three</li>
+                  <li>Placeholder Item</li>
+                  <li>Example Four</li>
+                  <li>Another Example</li>
+                </ul>
+                <button type="button">GO TO ACADEMY</button>
+              </figure>
+            </div>
+          </div>
+          <div class="category-card__container">
+            <div class="category-card">
+              <figure class="category-card__front">
+                <h1>Digital Marketer</h1>
+              </figure>
+              <figure class="category-card__back">
+                <ul>
+                  <li>Example One</li>
+                  <li>Another Example</li>
+                  <li>Example Three</li>
+                  <li>Placeholder Item</li>
+                  <li>Example Four</li>
+                  <li>Another Example</li>
+                </ul>
+                <button type="button">GO TO ACADEMY</button>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </section>
+
       <section class="academy__container">
         <h1 class="academy__heading">&lt;/&gt; Academy for Programming</h1>
         <h3 class="academy__sub-heading">OVERVIEW</h3>
@@ -240,41 +375,40 @@
           </ul>
         </div>
       </section>
+      <aside class="aside">
+        <div class="aside__item">
+          <a class="aside__item-link" href="#">Tuition Fees & Payment</a>
+        </div>
+        <div class="aside__item">
+          <a class="aside__item-link" href="#">Academy For Programming</a>
+        </div>
+        <div class="aside__item">
+          <a class="aside__item-link" href="#">Academy For Computer Networks</a>
+        </div>
+        <div class="aside__item">
+          <a class="aside__item-link" href="#">Academy For Design</a>
+        </div>
+        <div class="aside__item">
+          <a class="aside__item-link" href="#">Academy For Software Testing</a>
+        </div>
+        <div class="aside__item">
+          <a class="aside__item-link" href="#">Academy For Data Science</a>
+        </div>
+        <div class="aside__item">
+          <a class="aside__item-link" href="#">Academy For Digital Marketing</a>
+        </div>
+        <div class="aside__item">
+          <a class="aside__item-link" href="#">Student Portfolios</a>
+        </div>
+        <div class="aside__item">
+          <a class="aside__item-link" href="#">IThink Aacademy</a>
+        </div>
+        <div class="aside__item">
+          <a class="aside__item-link" href="#">FAQ</a>
+        </div>
+      </aside>
     </main>
     <!--Card Design Ends Here-->
-
-    <aside class="aside">
-      <div class="aside__item">
-        <a class="aside__item-link" href="#">Tuition Fees & Payment</a>
-      </div>
-      <div class="aside__item">
-        <a class="aside__item-link" href="#">Academy For Programming</a>
-      </div>
-      <div class="aside__item">
-        <a class="aside__item-link" href="#">Academy For Computer Networks</a>
-      </div>
-      <div class="aside__item">
-        <a class="aside__item-link" href="#">Academy For Design</a>
-      </div>
-      <div class="aside__item">
-        <a class="aside__item-link" href="#">Academy For Software Testing</a>
-      </div>
-      <div class="aside__item">
-        <a class="aside__item-link" href="#">Academy For Data Science</a>
-      </div>
-      <div class="aside__item">
-        <a class="aside__item-link" href="#">Academy For Digital Marketing</a>
-      </div>
-      <div class="aside__item">
-        <a class="aside__item-link" href="#">Student Portfolios</a>
-      </div>
-      <div class="aside__item">
-        <a class="aside__item-link" href="#">IThink Aacademy</a>
-      </div>
-      <div class="aside__item">
-        <a class="aside__item-link" href="#">FAQ</a>
-      </div>
-    </aside>
 
     <footer class="footer">
       <div class="footer__block">
