@@ -34,9 +34,12 @@ body {
   display: none;
 }
 
-.landing__container {
+.landing__page {
   grid-row: 2/3;
   grid-column: 1/3;
+}
+
+.landing-cards__container {
   width: 100%;
   min-height: 1000px;
   background-color: var(--backgroundGray);
@@ -47,6 +50,16 @@ body {
   row-gap: 2em;
   column-gap: 3rem;
   /* display: none; */
+}
+
+.landing__page-heading {
+  font-size: 5rem;
+  font-weight: 300;
+  color: var(--secondaryColor);
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin: 2rem;
 }
 
 .category-card__container {
@@ -625,7 +638,7 @@ body {
     max-height: 90vh;
   }
 
-  .landing__container {
+  .landing-cards__container {
     padding: 2rem 10rem;
   }
 }
@@ -635,7 +648,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
   }
-  .landing__container {
+  .landing-cards__container {
     padding: 2rem 10rem;
     grid-template-columns: 1fr 1fr;
   }
@@ -659,7 +672,11 @@ body {
   .main {
     grid-column: 1/3;
   }
-  .landing__container {
+  .landing__page-heading {
+    font-size: 4rem;
+  }
+
+  .landing-cards__container {
     grid-template-columns: 1fr;
     padding: 2rem 11rem;
     row-gap: 3rem;
@@ -698,7 +715,11 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .landing__container {
+  .landing__page-heading {
+    font-size: 3rem;
+  }
+
+  .landing-cards__container {
     padding: 2rem 5rem;
   }
 
@@ -777,7 +798,7 @@ body {
 
 /* IPhone 5/6 breakpoint */
 @media screen and (min-width: 300px) and (max-width: 480px) {
-  .landing__container {
+  .landing-cards__container {
     padding: 1.5rem 1.5rem;
   }
 
