@@ -48,10 +48,11 @@ htmlCardBtn.addEventListener("click", e => {
   e.preventDefault();
   showElementsByClass(["modal__outer"]);
   document.querySelector(".modal__inner").classList.add("modal__inner--show");
+  document.querySelector(".modal__outer").classList.add("modal__outer--open");
   document.body.style.overflow = "hidden";
-  document.querySelector(".modal__outer").classList.add("modal__animation");
 });
 
+showElementsByClass(["modal__outer"]);
 modalOuter.addEventListener("click", e => {
   if (
     e.target.classList.contains("modal__outer") ||
@@ -59,7 +60,12 @@ modalOuter.addEventListener("click", e => {
     e.target.classList.contains("modal__bottom-link")
   ) {
     document.body.style.overflow = "auto";
-    hideElementsByClass(["modal__outer"]);
+    document
+      .querySelector(".modal__inner")
+      .classList.remove("modal__inner--show");
+    document
+      .querySelector(".modal__outer")
+      .classList.remove("modal__outer--open");
   }
 });
 
