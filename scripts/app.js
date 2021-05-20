@@ -21,6 +21,8 @@ const advancedOopCardBtn = document.querySelector("#aoop-card-btn");
 
 const appCardBtn = document.querySelector("#app-card-btn");
 
+const headerBurgerBtn = document.querySelector(".header__btn");
+
 //Category cards logic
 const webDevBtn = document.querySelector("#ccard-webdev-btn");
 const headerLogo = document.querySelector(".header__logo");
@@ -80,3 +82,17 @@ oopCardBtn.addEventListener("click", () => {});
 advancedOopCardBtn.addEventListener("click", () => {});
 
 appCardBtn.addEventListener("click", () => {});
+
+//Hamburger Menu Logic
+
+let menuOpen = false;
+
+headerBurgerBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    headerBurgerBtn.classList.add("open");
+    menuOpen = true;
+  } else {
+    headerBurgerBtn.classList.remove("open");
+    menuOpen = false;
+  }
+});
