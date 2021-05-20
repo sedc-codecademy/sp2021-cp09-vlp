@@ -170,6 +170,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .header__logo img {
@@ -231,7 +232,6 @@ body {
   flex-direction: column;
   grid-column: 2/3;
   min-height: 900px;
-  display: none;
 }
 
 .academy__heading {
@@ -528,7 +528,6 @@ body {
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: #ececec;
-  display: none;
 }
 .aside__item {
   width: 100%;
@@ -636,6 +635,11 @@ body {
 }
 
 /* FOoter Styles End Here */
+
+/* Utility classes for displaying different content */
+.element-hide {
+  display: none;
+}
 
 @media screen and (max-width: 1600px) {
   .modal__inner {

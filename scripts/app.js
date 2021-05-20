@@ -1,45 +1,58 @@
-
 // RM - Read more
-// 
+//
 
-const htmlCardBtn = document.querySelector('#html-card-btn');
+const htmlCardBtn = document.querySelector("#html-card-btn");
 
-const cssCardBtn = document.querySelector('#css-card-btn');
+const cssCardBtn = document.querySelector("#css-card-btn");
 
-const jsCardBtn = document.querySelector('#js-card-btn');
+const jsCardBtn = document.querySelector("#js-card-btn");
 
-const advancedJsCardBtn = document.querySelector('#ajs-card-btn');
+const advancedJsCardBtn = document.querySelector("#ajs-card-btn");
 
-const nodeJSCardBtn = document.querySelector('#nodejs-card-btn');
+const nodeJSCardBtn = document.querySelector("#nodejs-card-btn");
 
-const advancedNodeJSCardBtn = document.querySelector('#a-node-js-card-btn');
+const advancedNodeJSCardBtn = document.querySelector("#anodejs-card-btn");
 
-const finalNodeJSCardBtn = document.querySelector('#f-node-js-card-btn');
+const finalNodeJSCardBtn = document.querySelector("#fnodejs-card-btn");
 
-const oopCardBtn = document.querySelector('#oop-card-btn');
+const oopCardBtn = document.querySelector("#oop-card-btn");
 
-const advancedOopCardBtn = document.querySelector('#a-oop-card-btn');
+const advancedOopCardBtn = document.querySelector("#aoop-card-btn");
 
-const appCardBtn = document.querySelector('#app-card-btn');
+const appCardBtn = document.querySelector("#app-card-btn");
 
+//Category cards logic
+const webDevBtn = document.querySelector("#ccard-webdev-btn");
+const headerLogo = document.querySelector(".header__logo");
 
+hideElementsByClass(["academy__container", "aside"]);
 
-jsCardBtn.addEventListener('click', () => {});
+headerLogo.addEventListener("click", () => {
+  hideElementsByClass(["academy__container", "aside"]);
+  showElementsByClass(["landing__page"]);
+});
 
-cssCardBtn.addEventListener('click', () => {});
+webDevBtn.addEventListener("click", () => {
+  hideElementsByClass(["landing__page"]);
+  showElementsByClass(["academy__container", "aside"]);
+});
 
-jsCardBtn.addEventListener('click', () => {});
+jsCardBtn.addEventListener("click", () => {});
 
-advancedJsCardBtn.addEventListener('click', () => {});
+cssCardBtn.addEventListener("click", () => {});
 
-nodeJSCardBtn.addEventListener('click', () => {});
+jsCardBtn.addEventListener("click", () => {});
 
-advancedNodeJSCardBtn.addEventListener('click', () => {});
+advancedJsCardBtn.addEventListener("click", () => {});
 
-finalNodeJSCardBtn.addEventListener('click', () => {});
+nodeJSCardBtn.addEventListener("click", () => {});
 
-oopCardBtn.addEventListener('click', () => {});
+advancedNodeJSCardBtn.addEventListener("click", () => {});
 
-advancedOopCardBtn.addEventListener('click', () => {});
+finalNodeJSCardBtn.addEventListener("click", () => {});
 
-appCardBtn.addEventListener('click', () => {});
+oopCardBtn.addEventListener("click", () => {});
+
+advancedOopCardBtn.addEventListener("click", () => {});
+
+appCardBtn.addEventListener("click", () => {});
