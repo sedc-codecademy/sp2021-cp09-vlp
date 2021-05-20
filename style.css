@@ -554,7 +554,8 @@ body {
 }
 
 .aside__item-link:hover {
-  background: var(--secondaryColor);
+  background: var(--primaryColor);
+  color: #fff;
 }
 /* Aside Styles End Here */
 
