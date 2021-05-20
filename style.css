@@ -56,7 +56,7 @@ body {
 
 .landing__page-heading {
   font-size: 5rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--secondaryColor);
   align-self: center;
   justify-self: center;
@@ -392,20 +392,20 @@ body {
 /* Modal Styles Begin Here */
 
 .modal__outer {
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
   height: 100vh;
   width: 100%;
   position: fixed;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(143, 143, 143, 0.4);
   top: 0;
   left: 0;
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.4s ease-in-out;
+  transform: scale(0);
   color: var(--primaryColor);
-  transition: 1s ease-in-out;
+  transition: 0.01s ease-in-out;
 }
 
 .modal__inner {
@@ -420,9 +420,12 @@ body {
   overflow: auto;
   z-index: 10;
   transform: translateY(100%);
-  transition: 1s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
+.modal__outer--open {
+  transform: scale(1);
+}
 .modal__inner--show {
   transform: translateY(0%);
 }
@@ -503,7 +506,6 @@ body {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  text-align: right;
 }
 
 .modal__inner small a {
@@ -702,6 +704,15 @@ body {
     min-height: 100vh;
     border-radius: 0;
     overflow: auto;
+    padding-bottom: 2rem;
+  }
+
+  .modal__inner small {
+    position: static;
+    display: block;
+    text-align: right;
+
+    margin-top: 4rem;
   }
 
   .aside {
@@ -789,12 +800,6 @@ body {
 
   .landing-cards__container {
     padding: 2rem 5rem;
-  }
-
-  .modal__inner small {
-    position: relative;
-    bottom: 50%;
-    left: 50%;
   }
 
   .academy__heading {
