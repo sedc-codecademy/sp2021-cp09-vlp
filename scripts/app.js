@@ -23,6 +23,8 @@ const appCardBtn = document.querySelector("#app-card-btn");
 
 const headerBurgerBtn = document.querySelector(".header__btn");
 
+const navListBurger = document.querySelector(".nav__list-burger");
+
 //Category cards logic
 const webDevBtn = document.querySelector("#ccard-webdev-btn");
 const headerLogo = document.querySelector(".header__logo");
@@ -96,9 +98,13 @@ let menuOpen = false;
 headerBurgerBtn.addEventListener("click", () => {
   if (!menuOpen) {
     headerBurgerBtn.classList.add("open");
+    navListBurger.style.opacity = "1";
+    navListBurger.style.transform = "scaleX(1) scaleY(1)";
     menuOpen = true;
   } else {
     headerBurgerBtn.classList.remove("open");
+    navListBurger.style.opacity = "0";
+    navListBurger.style.transform = "scaleX(0) scaleY(0)";
     menuOpen = false;
   }
 });
