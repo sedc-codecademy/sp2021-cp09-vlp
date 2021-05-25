@@ -231,8 +231,31 @@ body {
 .header__btn {
   display: none;
 }
+/* DropDown item */
 
+.header__list-dropDown{
+  display: none;
+}
 
+.nav__list-item:hover .header__list-dropDown{
+  display: block;
+  position: absolute;
+  background-color: var(--primaryColor);
+  z-index: 100;
+  list-style-type: none;
+  width: 225px;
+  text-align: center;
+  margin: 0px 0px 0px -24px;
+  padding: 20px 0;
+  line-height: 36px;
+  
+ 
+}
+
+.nav__list-item.header__list-dropDown ul{
+  position: absolute;
+  left: 0;
+}
 /* Header design ends here */
 
 /* Headings Styles Begin Here */

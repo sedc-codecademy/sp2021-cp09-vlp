@@ -97,7 +97,7 @@ advancedOopCardBtn.addEventListener("click", () => {});
 
 appCardBtn.addEventListener("click", () => {});
 
-academyBtn.addEventListener('click',()=>{dropDownAcademy()})
+// academyBtn.addEventListener('click',()=>{dropDownAcademy()})
 
 //Hamburger Menu Logic
 
@@ -118,17 +118,17 @@ headerBurgerBtn.addEventListener("click", () => {
   }
 });
 
-/* Drop-Down */
-let academyOpen = false
-const dropDownAcademy = ()=>{
+// /* Drop-Down */
+// let academyOpen = false
+// const dropDownAcademy = ()=>{
 
-  if(academyOpen){
-    navItemSubmenu.style.display = "flex"
-    academyOpen = false;
-  }else{
-    navItemSubmenu.style.display = "none"
-    academyOpen = true;
-  }
+//   if(academyOpen){
+//     navItemSubmenu.style.display = "flex"
+//     academyOpen = false;
+//   }else{
+//     navItemSubmenu.style.display = "none"
+//     academyOpen = true;
+//   }
  
-}
+// }
 
