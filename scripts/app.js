@@ -25,6 +25,12 @@ const headerBurgerBtn = document.querySelector(".header__btn");
 
 const navListBurger = document.querySelector(".nav__list-burger");
 
+const navItemSubmenu = document.querySelector('.nav__item-submenu')
+
+const academyBtn = document.querySelector('#AcademyBtn')
+
+
+
 //Category cards logic
 const webDevBtn = document.querySelector("#ccard-webdev-btn");
 const headerLogo = document.querySelector(".header__logo");
@@ -91,6 +97,8 @@ advancedOopCardBtn.addEventListener("click", () => {});
 
 appCardBtn.addEventListener("click", () => {});
 
+academyBtn.addEventListener('click',()=>{dropDownAcademy()})
+
 //Hamburger Menu Logic
 
 let menuOpen = false;
@@ -105,6 +113,22 @@ headerBurgerBtn.addEventListener("click", () => {
     headerBurgerBtn.classList.remove("open");
     navListBurger.style.opacity = "0";
     navListBurger.style.transform = "scaleX(0) scaleY(0)";
+   
     menuOpen = false;
   }
 });
+
+/* Drop-Down */
+let academyOpen = false
+const dropDownAcademy = ()=>{
+
+  if(academyOpen){
+    navItemSubmenu.style.display = "flex"
+    academyOpen = false;
+  }else{
+    navItemSubmenu.style.display = "none"
+    academyOpen = true;
+  }
+ 
+}
+

@@ -232,6 +232,7 @@ body {
   display: none;
 }
 
+
 /* Header design ends here */
 
 /* Headings Styles Begin Here */
@@ -760,7 +761,7 @@ body {
   }
 
   .nav__item-submenu {
-    display: flex;
+    display: none;
     flex-flow: column;
     list-style: none;
     color: #fff;
@@ -770,8 +771,10 @@ body {
     text-transform: uppercase;
     border-left: 3px solid #ffffff99;
     cursor: pointer;
+  
   }
 
+  
   .nav__item-submenu li {
     padding-top: 10px;
     transition: 0.2s ease-in-out;
