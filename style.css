@@ -154,6 +154,7 @@ body {
 
 /* .card__container {
   width: 100%;
+<<<<<<< Updated upstream
   margin: 50px auto;
 
 } */
@@ -175,36 +176,80 @@ body {
   background: #9fcfeb;
   border-radius: 10px;
   margin-bottom: 30px;
+=======
+  max-height: 500px;
+  background: #ffffff;
+  border-radius: 7px;
+>>>>>>> Stashed changes
   transition: 0.3s;
   max-width: 400px;
 }
 
+<<<<<<< Updated upstream
 .card__hover--active:hover{
   transform: scale(1.05);
+=======
+.card__button--active:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.25);
+  background-color: #002c5f;
+  transition: 0.3s;
+}
+
+.card__hover--active:hover {
+  transform: scale(1.03);
+>>>>>>> Stashed changes
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
   transition: 0.3s;
 }
 
 .card__background {
+<<<<<<< Updated upstream
     padding: 8% 50%;
     background-color: #002c5f;
+=======
+  height: 70px;
+  background-color: #002c5f;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 30px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+>>>>>>> Stashed changes
 }
 
 .language__description {
   padding-left: 5%;
+<<<<<<< Updated upstream
   margin-bottom: 10px;
+=======
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--primaryColor);
+  font-family: Open sans;
+>>>>>>> Stashed changes
 }
 
 .language__info{
   padding-left: 5%;
   margin-bottom: 10%;
+<<<<<<< Updated upstream
 }  
+=======
+  font-family: Open sans;
+}
+>>>>>>> Stashed changes
 
 .card__body {
   padding: 30px 20px;
   border-radius: 10px;
   font-size: 17px;
+<<<<<<< Updated upstream
   background-color: #9fcfeb;
+=======
+  color: var(--primaryColor);
+  background-color: #ffffff;
+  padding-bottom: 70px;
+  border-radius: 0 0 10px 10px;
+>>>>>>> Stashed changes
 }
 
 .card__button {
@@ -220,7 +265,12 @@ body {
   top: 20px;
 }
 
+<<<<<<< Updated upstream
 .card__image {
+=======
+.card__logo__placeholder {
+  background: #ffffff;
+>>>>>>> Stashed changes
   width: 50px;
   height: 50px;
   position: relative;
@@ -230,6 +280,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< Updated upstream
   margin: 1;
 }
 
@@ -251,6 +302,8 @@ body {
   position: relative;
   right: 4px;
   bottom: 33px;
+=======
+>>>>>>> Stashed changes
 }
 
 /* Card Design Ends Here*/
