@@ -678,7 +678,7 @@ body {
 .about_us-team h1 {
   font-family: var(--Open-Sans);
   font-size: 52px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   text-align: center;
   color: var(--secondaryColor);
 }
@@ -735,6 +735,7 @@ body {
   color: var(--secondaryColor);
   font-size: 26px;
   margin-top: 50px;
+  font-family: var(--Open-Sans);
 }
 
 .team .team_member p.role {
@@ -744,6 +745,7 @@ body {
   margin-bottom: 10px;
   font-size: 14px;
   text-transform: uppercase;
+  font-family: var(--Open-Sans);
 }
 
 .team .team_member .team_img {
