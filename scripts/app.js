@@ -25,15 +25,19 @@ const headerBurgerBtn = document.querySelector(".header__btn");
 
 const navListBurger = document.querySelector(".nav__list-burger");
 
+const aboutBtn = document.querySelector(".aboutBtn");
+
 //Category cards logic
 const webDevBtn = document.querySelector("#ccard-webdev-btn");
 const headerLogo = document.querySelector(".header__logo");
 
 hideElementsByClass(["academy__container", "aside"]);
+hideElementsByClass(["about__us-page"]);
 
 headerLogo.addEventListener("click", () => {
   hideElementsByClass(["academy__container", "aside"]);
   showElementsByClass(["landing__page"]);
+  hideElementsByClass(["about__us-page"]);
 });
 
 webDevBtn.addEventListener("click", () => {
@@ -41,12 +45,18 @@ webDevBtn.addEventListener("click", () => {
   showElementsByClass(["academy__container", "aside"]);
 });
 
+aboutBtn.addEventListener(`click`, (e) => {
+  e.preventDefault();
+  hideElementsByClass(["landing__page"]);
+  showElementsByClass(["about__us-page"]);
+});
+
 //Modal window logic
 
 const modalCloseBtn = document.querySelector(".modal__close-btn");
 const modalOuter = document.querySelector(".modal__outer");
 
-htmlCardBtn.addEventListener("click", e => {
+htmlCardBtn.addEventListener("click", (e) => {
   e.preventDefault();
   showElementsByClass(["modal__outer"]);
   document.querySelector(".modal__inner").classList.add("modal__inner--show");
@@ -55,7 +65,7 @@ htmlCardBtn.addEventListener("click", e => {
 });
 
 showElementsByClass(["modal__outer"]);
-modalOuter.addEventListener("click", e => {
+modalOuter.addEventListener("click", (e) => {
   if (
     e.target.classList.contains("modal__outer") ||
     e.target.classList.contains("modal__close-btn") ||

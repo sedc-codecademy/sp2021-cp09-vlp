@@ -1,510 +1,670 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://kit.fontawesome.com/0f255abeae.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/0f255abeae.js" crossorigin="anonymous"></script>
     <script src="./scripts/util.js"></script>
     <script defer src="./scripts/app.js"></script>
     <title>Academies</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="modal__outer">
-      <div class="modal__inner">
-        <i class="fas fa-times modal__close-btn"></i>
-        <h1 class="modal__heading">Introduction to HTML & CSS</h1>
-        <h3 class="modal__sub-heading">Course summary</h3>
-        <div class="modal__paragraph">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
-          eligendi repudiandae rerum quia saepe a corporis quam, pariatur quo
-          nisi aut. Soluta eos deserunt non quod rerum quam est minus. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Tempora blanditiis
-          nisi fugit vero laudantium architecto ad minima placeat minus corrupti
-          dolore quidem iure assumenda, sed magnam tenetur eos deleniti nemo.
-          Voluptatum autem culpa totam nisi aliquid officiis voluptatibus
-          consequatur, minus officia omnis provident, impedit reprehenderit
-          necessitatibus? Neque, expedita eaque modi eveniet debitis nulla
-          ratione ex dolorum eius reprehenderit! Ipsa,
+        <div class="modal__inner">
+            <i class="fas fa-times modal__close-btn"></i>
+            <h1 class="modal__heading">Introduction to HTML & CSS</h1>
+            <h3 class="modal__sub-heading">Course summary</h3>
+            <div class="modal__paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                eligendi repudiandae rerum quia saepe a corporis quam, pariatur quo
+                nisi aut. Soluta eos deserunt non quod rerum quam est minus. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Tempora blanditiis
+                nisi fugit vero laudantium architecto ad minima placeat minus corrupti
+                dolore quidem iure assumenda, sed magnam tenetur eos deleniti nemo.
+                Voluptatum autem culpa totam nisi aliquid officiis voluptatibus
+                consequatur, minus officia omnis provident, impedit reprehenderit
+                necessitatibus? Neque, expedita eaque modi eveniet debitis nulla
+                ratione ex dolorum eius reprehenderit! Ipsa,
+            </div>
+            <h3 class="modal__sub-heading">Course Progression</h3>
+            <div class="modal__vlp-container">
+                <div class="modal__vlp-box">What is HTML and its history</div>
+                <div class="modal__vlp-box">Learning basic HTML tags</div>
+                <div class="modal__vlp-box">Building a website using only HTML</div>
+                <div class="modal__vlp-box">What is CSS and its history</div>
+                <div class="modal__vlp-box">Basic CSS styles</div>
+                <div class="modal__vlp-box">Advanced CSS styles</div>
+                <div class="modal__vlp-box">
+                    Building a full website using both HTML & CSS
+                </div>
+            </div>
+            <h3 class="modal__sub-heading">Further Reading</h3>
+            <div class="modal__paragraph">
+                <ul>
+                    <li><a href="">HTML Wiki article</a></li>
+                    <li><a href="">Examples of HTML code</a></li>
+                    <li><a href="">Interactive HTML examples</a></li>
+                </ul>
+            </div>
+            <small>This course is part of the
+                <a href="#" class="modal__bottom-link">Web Developer</a>
+                Academy</small>
         </div>
-        <h3 class="modal__sub-heading">Course Progression</h3>
-        <div class="modal__vlp-container">
-          <div class="modal__vlp-box">What is HTML and its history</div>
-          <div class="modal__vlp-box">Learning basic HTML tags</div>
-          <div class="modal__vlp-box">Building a website using only HTML</div>
-          <div class="modal__vlp-box">What is CSS and its history</div>
-          <div class="modal__vlp-box">Basic CSS styles</div>
-          <div class="modal__vlp-box">Advanced CSS styles</div>
-          <div class="modal__vlp-box">
-            Building a full website using both HTML & CSS
-          </div>
-        </div>
-        <h3 class="modal__sub-heading">Further Reading</h3>
-        <div class="modal__paragraph">
-          <ul>
-            <li><a href="">HTML Wiki article</a></li>
-            <li><a href="">Examples of HTML code</a></li>
-            <li><a href="">Interactive HTML examples</a></li>
-          </ul>
-        </div>
-        <small
-          >This course is part of the
-          <a href="#" class="modal__bottom-link">Web Developer</a>
-          Academy</small
-        >
-      </div>
     </div>
     <header class="header" id="header">
-      <div class="header__logo">
-        <img src="./img/header-logo-without-text.png" alt="logo" />
-        <h1 class="header__logo-title">
-          SEAVUS EDUCATION <span>and</span> DEVELOPMENT CENTER
-        </h1>
-      </div>
-      <nav class="header__nav">
-        <ul class="nav__list">
-          <li class="nav__list-item"><a href="">About us</a></li>
-          <li class="nav__list-item"><a href="">Academies</a></li>
-          <li class="nav__list-item"><a href="">Contact</a></li>
-          <li class="nav__list-item"><a href="">Tuition & Fees</a></li>
+        <div class="header__logo">
+            <img src="./img/header-logo-without-text.png" alt="logo" />
+            <h1 class="header__logo-title">
+                SEAVUS EDUCATION <span>and</span> DEVELOPMENT CENTER
+            </h1>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="" class="aboutBtn">About us</a></li>
+                <li class="nav__list-item"><a href="">Academies</a></li>
+                <li class="nav__list-item"><a href="">Contact</a></li>
+                <li class="nav__list-item"><a href="">Tuition & Fees</a></li>
+            </ul>
+        </nav>
+        <div class="header__btn">
+            <div class="header__btn-burger"></div>
+        </div>
+        <ul class="nav__list-burger">
+            <li class="nav__list-item"><a href="">About us</a></li>
+            <li class="nav__list-item">
+                <a href="">Academies <i class="fas fa-caret-down"></i></a>
+                <ul class="nav__item-submenu">
+                    <li class="nav__submenu-item">Web Developer</li>
+                    <li class="nav__submenu-item">Software Tester</li>
+                    <li class="nav__submenu-item">Graphic Designer</li>
+                    <li class="nav__submenu-item">Game Designer</li>
+                    <li class="nav__submenu-item">Data Scientist</li>
+                    <li class="nav__submenu-item">Digital Marketer</li>
+                </ul>
+            </li>
+            <li class="nav__list-item"><a href="">Contact</a></li>
+            <li class="nav__list-item"><a href="">Tuition & Fees</a></li>
         </ul>
-      </nav>
-      <div class="header__btn">
-        <div class="header__btn-burger"></div>
-      </div>
-      <ul class="nav__list-burger">
-        <li class="nav__list-item"><a href="">About us</a></li>
-        <li class="nav__list-item">
-          <a href="">Academies <i class="fas fa-caret-down"></i></a>
-          <ul class="nav__item-submenu">
-            <li class="nav__submenu-item">Web Developer</li>
-            <li class="nav__submenu-item">Software Tester</li>
-            <li class="nav__submenu-item">Graphic Designer</li>
-            <li class="nav__submenu-item">Game Designer</li>
-            <li class="nav__submenu-item">Data Scientist</li>
-            <li class="nav__submenu-item">Digital Marketer</li>
-          </ul>
-        </li>
-        <li class="nav__list-item"><a href="">Contact</a></li>
-        <li class="nav__list-item"><a href="">Tuition & Fees</a></li>
-      </ul>
     </header>
 
     <!-- Landing page and category cards  -->
 
+
+
     <!--Card Design Starts Here-->
 
     <main class="main">
-      <section class="landing__page">
-        <h1 class="landing__page-heading">SEDC Available Academies</h1>
-        <section class="landing-cards__container">
-          <div class="category-card__container">
-            <div class="category-card">
-              <figure class="category-card__front">
-                <h1>Web Developer</h1>
-              </figure>
-              <figure class="category-card__back">
-                <ul>
-                  <li>Basic and Advanced HTML & CSS</li>
-                  <li>JavaScript in depth</li>
-                  <li>.Net Core Backend</li>
-                  <li>SQL/No-SQL Databases</li>
-                  <li>ALM Training</li>
-                  <li>MERN/MEAN Expertise</li>
-                </ul>
+        <section class="landing__page">
+            <h1 class="landing__page-heading">SEDC Available Academies</h1>
+            <section class="landing-cards__container">
+                <div class="category-card__container">
+                    <div class="category-card">
+                        <figure class="category-card__front">
+                            <h1>Web Developer</h1>
+                        </figure>
+                        <figure class="category-card__back">
+                            <ul>
+                                <li>Basic and Advanced HTML & CSS</li>
+                                <li>JavaScript in depth</li>
+                                <li>.Net Core Backend</li>
+                                <li>SQL/No-SQL Databases</li>
+                                <li>ALM Training</li>
+                                <li>MERN/MEAN Expertise</li>
+                            </ul>
 
-                <button type="button" id="ccard-webdev-btn">
-                  GO TO ACADEMY
-                </button>
-              </figure>
-            </div>
-          </div>
-          <div class="category-card__container">
-            <div class="category-card">
-              <figure class="category-card__front">
-                <h1>Software Tester</h1>
-              </figure>
-              <figure class="category-card__back">
-                <ul>
-                  <li>Example One</li>
-                  <li>Another Example</li>
-                  <li>Example Three</li>
-                  <li>Placeholder Item</li>
-                  <li>Example Four</li>
-                  <li>Another Example</li>
-                </ul>
-                <button type="button">GO TO ACADEMY</button>
-              </figure>
-            </div>
-          </div>
-          <div class="category-card__container">
-            <div class="category-card">
-              <figure class="category-card__front">
-                <h1>Graphic Designer</h1>
-              </figure>
-              <figure class="category-card__back">
-                <ul>
-                  <li>Example One</li>
-                  <li>Another Example</li>
-                  <li>Example Three</li>
-                  <li>Placeholder Item</li>
-                  <li>Example Four</li>
-                  <li>Another Example</li>
-                </ul>
-                <button type="button">GO TO ACADEMY</button>
-              </figure>
-            </div>
-          </div>
-          <div class="category-card__container">
-            <div class="category-card">
-              <figure class="category-card__front">
-                <h1>Game Designer</h1>
-              </figure>
-              <figure class="category-card__back">
-                <ul>
-                  <li>Example One</li>
-                  <li>Another Example</li>
-                  <li>Example Three</li>
-                  <li>Placeholder Item</li>
-                  <li>Example Four</li>
-                  <li>Another Example</li>
-                </ul>
-                <button type="button">GO TO ACADEMY</button>
-              </figure>
-            </div>
-          </div>
-          <div class="category-card__container">
-            <div class="category-card">
-              <figure class="category-card__front">
-                <h1>Data Scientist</h1>
-              </figure>
-              <figure class="category-card__back">
-                <ul>
-                  <li>Example One</li>
-                  <li>Another Example</li>
-                  <li>Example Three</li>
-                  <li>Placeholder Item</li>
-                  <li>Example Four</li>
-                  <li>Another Example</li>
-                </ul>
-                <button type="button">GO TO ACADEMY</button>
-              </figure>
-            </div>
-          </div>
-          <div class="category-card__container">
-            <div class="category-card">
-              <figure class="category-card__front">
-                <h1>Digital Marketer</h1>
-              </figure>
-              <figure class="category-card__back">
-                <ul>
-                  <li>Example One</li>
-                  <li>Another Example</li>
-                  <li>Example Three</li>
-                  <li>Placeholder Item</li>
-                  <li>Example Four</li>
-                  <li>Another Example</li>
-                </ul>
-                <button type="button">GO TO ACADEMY</button>
-              </figure>
-            </div>
-          </div>
+                            <button type="button" id="ccard-webdev-btn">
+                                GO TO ACADEMY
+                            </button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="category-card__container">
+                    <div class="category-card">
+                        <figure class="category-card__front">
+                            <h1>Software Tester</h1>
+                        </figure>
+                        <figure class="category-card__back">
+                            <ul>
+                                <li>Example One</li>
+                                <li>Another Example</li>
+                                <li>Example Three</li>
+                                <li>Placeholder Item</li>
+                                <li>Example Four</li>
+                                <li>Another Example</li>
+                            </ul>
+                            <button type="button">GO TO ACADEMY</button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="category-card__container">
+                    <div class="category-card">
+                        <figure class="category-card__front">
+                            <h1>Graphic Designer</h1>
+                        </figure>
+                        <figure class="category-card__back">
+                            <ul>
+                                <li>Example One</li>
+                                <li>Another Example</li>
+                                <li>Example Three</li>
+                                <li>Placeholder Item</li>
+                                <li>Example Four</li>
+                                <li>Another Example</li>
+                            </ul>
+                            <button type="button">GO TO ACADEMY</button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="category-card__container">
+                    <div class="category-card">
+                        <figure class="category-card__front">
+                            <h1>Game Designer</h1>
+                        </figure>
+                        <figure class="category-card__back">
+                            <ul>
+                                <li>Example One</li>
+                                <li>Another Example</li>
+                                <li>Example Three</li>
+                                <li>Placeholder Item</li>
+                                <li>Example Four</li>
+                                <li>Another Example</li>
+                            </ul>
+                            <button type="button">GO TO ACADEMY</button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="category-card__container">
+                    <div class="category-card">
+                        <figure class="category-card__front">
+                            <h1>Data Scientist</h1>
+                        </figure>
+                        <figure class="category-card__back">
+                            <ul>
+                                <li>Example One</li>
+                                <li>Another Example</li>
+                                <li>Example Three</li>
+                                <li>Placeholder Item</li>
+                                <li>Example Four</li>
+                                <li>Another Example</li>
+                            </ul>
+                            <button type="button">GO TO ACADEMY</button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="category-card__container">
+                    <div class="category-card">
+                        <figure class="category-card__front">
+                            <h1>Digital Marketer</h1>
+                        </figure>
+                        <figure class="category-card__back">
+                            <ul>
+                                <li>Example One</li>
+                                <li>Another Example</li>
+                                <li>Example Three</li>
+                                <li>Placeholder Item</li>
+                                <li>Example Four</li>
+                                <li>Another Example</li>
+                            </ul>
+                            <button type="button">GO TO ACADEMY</button>
+                        </figure>
+                    </div>
+                </div>
+            </section>
         </section>
-      </section>
 
-      <section class="academy__container">
-        <h1 class="academy__heading">&lt;/&gt; Academy for Programming</h1>
-        <h3 class="academy__sub-heading">OVERVIEW</h3>
-        <div class="academy__paragraph">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          necessitatibus ea iusto voluptatibus beatae possimus et blanditiis
-          magni molestiae quia saepe, aperiam sit ducimus officia dolorem. Culpa
-          laudantium perspiciatis dolorum?
-        </div>
-        <h3 class="academy__sub-heading">FIRST SEMESTER</h3>
-        <section class="cards__container">
-          <div class="card card__hover--active">
-            <div class="card__background"></div>
-            <div class="card card__image card__image1">
-              <img src="./img/html-img.png" alt="" />
+        <section class="academy__container">
+            <h1 class="academy__heading">&lt;/&gt; Academy for Programming</h1>
+            <h3 class="academy__sub-heading">OVERVIEW</h3>
+            <div class="academy__paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                necessitatibus ea iusto voluptatibus beatae possimus et blanditiis
+                magni molestiae quia saepe, aperiam sit ducimus officia dolorem. Culpa
+                laudantium perspiciatis dolorum?
             </div>
-            <div class="card__body">
-              <p class="language__info">HTML5</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a class="card card__button" id="html-card-btn">Read more</a>
-            </div>
-          </div>
+            <h3 class="academy__sub-heading">FIRST SEMESTER</h3>
+            <section class="cards__container">
+                <div class="card card__hover--active">
+                    <div class="card__background"></div>
+                    <div class="card card__image card__image1">
+                        <img src="./img/html-img.png" alt="" />
+                    </div>
+                    <div class="card__body">
+                        <p class="language__info">HTML5</p>
+                        <h3 class="language__description">
+                            Language Description goes here
+                        </h3>
+                        <a class="card card__button" id="html-card-btn">Read more</a>
+                    </div>
+                </div>
 
-          <div class="card card__hover--active">
-            <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
-            </div>
-            <div class="card__body">
-              <p class="language__info">CSS3</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="css-card-btn"
-                >Read more</a
-              >
-            </div>
-          </div>
+                <div class="card card__hover--active">
+                    <div class="card__background"></div>
+                    <div class="card card__image card__image2">
+                        <img src="./img/css-img.png" alt="" />
+                    </div>
+                    <div class="card__body">
+                        <p class="language__info">CSS3</p>
+                        <h3 class="language__description">
+                            Language Description goes here
+                        </h3>
+                        <a href="#" class="card card__button" id="css-card-btn">Read more</a>
+                    </div>
+                </div>
 
-          <div class="card card__hover--active">
-            <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
-            </div>
-            <div class="card__body">
-              <p class="language__info">Basic JavaScript Development</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="js-card-btn"
-                >Read more</a
-              >
-            </div>
-          </div>
+                <div class="card card__hover--active">
+                    <div class="card__background"></div>
+                    <div class="card card__image card__image2">
+                        <img src="./img/css-img.png" alt="" />
+                    </div>
+                    <div class="card__body">
+                        <p class="language__info">Basic JavaScript Development</p>
+                        <h3 class="language__description">
+                            Language Description goes here
+                        </h3>
+                        <a href="#" class="card card__button" id="js-card-btn">Read more</a>
+                    </div>
+                </div>
 
-          <div class="card card__hover--active">
-            <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
+                <div class="card card__hover--active">
+                    <div class="card__background"></div>
+                    <div class="card card__image card__image2">
+                        <img src="./img/css-img.png" alt="" />
+                    </div>
+                    <div class="card__body">
+                        <p class="language__info">Advanced JavaScript Development</p>
+                        <h3 class="language__description">
+                            Language Description goes here
+                        </h3>
+                        <a href="#" class="card card__button" id="ajs-card-btn">Read more</a>
+                    </div>
+                </div>
+            </section>
+            <h3 class="academy__sub-heading">SECOND SEMESTER</h3>
+            <div class="academy__paragraph">
+                The students cane choose between 2 different tracks in the second
+                semester
+                <ul>
+                    <li><a href="#">.Net Track</a></li>
+                    <li><a href="#">FS JScript Track</a></li>
+                </ul>
             </div>
-            <div class="card__body">
-              <p class="language__info">Advanced JavaScript Development</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="ajs-card-btn"
-                >Read more</a
-              >
+            <h3 class="academy__sub-heading">FS JS VLP</h3>
+            <section class="cards__container">
+                <div class="card card__hover--active">
+                    <div class="card__background"></div>
+                    <div class="card card__image card__image1">
+                        <img src="./img/html-img.png" alt="" />
+                    </div>
+                    <div class="card__body">
+                        <p class="language__info">Node JS Basic</p>
+                        <h3 class="language__description">
+                            Language Description goes here
+                        </h3>
+                        <a href="#" class="card card__button" id="nodejs-card-btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="card card__hover--active">
+                    <div class="card__background"></div>
+                    <div class="card card__image card__image2">
+                        <img src="./img/css-img.png" alt="" />
+                    </div>
+                    <div class="card__body">
+                        <p class="language__info">Node JS Advanced</p>
+                        <h3 class="language__description">
+                            Language Description goes here
+                        </h3>
+                        <a href="#" class="card card__button" id="anodejs-card-btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="card card__hover--active">
+                    <div class="card__background"></div>
+                    <div class="card card__image card__image2">
+                        <img src="./img/css-img.png" alt="" />
+                    </div>
+                    <div class="card__body">
+                        <p class="language__info">Final Node JS Application</p>
+                        <h3 class="language__description">
+                            Language Description goes here
+                        </h3>
+                        <a href="#" class="card card__button" id="fnodejs-card-btn">Read more</a>
+                    </div>
+                </div>
+            </section>
+            <h3 class="academy__sub-heading">.NET VLP</h3>
+            <section class="cards__container">
+                <div class="card card__hover--active">
+                    <div class="card__background"></div>
+                    <div class="card card__image card__image1">
+                        <img src="./img/html-img.png" alt="" />
+                    </div>
+                    <div class="card__body">
+                        <p class="language__info">OOP Programming with C#</p>
+                        <h3 class="language__description">
+                            Language Description goes here
+                        </h3>
+                        <a href="#" class="card card__button" id="oop-card-btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="card card__hover--active">
+                    <div class="card__background"></div>
+                    <div class="card card__image card__image2">
+                        <img src="./img/css-img.png" alt="" />
+                    </div>
+                    <div class="card__body">
+                        <p class="language__info">Advanced C# development</p>
+                        <h3 class="language__description">
+                            Language Description goes here
+                        </h3>
+                        <a href="#" class="card card__button" id="aoop-card-btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="card card__hover--active">
+                    <div class="card__background"></div>
+                    <div class="card card__image card__image2">
+                        <img src="./img/css-img.png" alt="" />
+                    </div>
+                    <div class="card__body">
+                        <p class="language__info">Developing ASP.NET Web Applications</p>
+                        <h3 class="language__description">
+                            Language Description goes here
+                        </h3>
+                        <a href="#" class="card card__button" id="app-card-btn">Read more</a>
+                    </div>
+                </div>
+            </section>
+            <h3 class="academy__sub-heading">COMPETENCIES</h3>
+            <div class="academy__paragraph">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                    voluptas inventore laboriosam officiis tempore delectus fugit
+                    maiores ipsam recusandae aspernatur velit reiciendis quod
+                    necessitatibus magnam repellendus deleniti, doloremque suscipit
+                    aliquid!
+                </p>
+                <ul>
+                    <li>Be good at programming</li>
+                    <li>Be good at programming</li>
+                    <li>Be good at programming</li>
+                    <li>Be good at programming</li>
+                    <li>Be good at programming</li>
+                </ul>
             </div>
-          </div>
         </section>
-        <h3 class="academy__sub-heading">SECOND SEMESTER</h3>
-        <div class="academy__paragraph">
-          The students cane choose between 2 different tracks in the second
-          semester
-          <ul>
-            <li><a href="#">.Net Track</a></li>
-            <li><a href="#">FS JScript Track</a></li>
-          </ul>
-        </div>
-        <h3 class="academy__sub-heading">FS JS VLP</h3>
-        <section class="cards__container">
-          <div class="card card__hover--active">
-            <div class="card__background"></div>
-            <div class="card card__image card__image1">
-              <img src="./img/html-img.png" alt="" />
-            </div>
-            <div class="card__body">
-              <p class="language__info">Node JS Basic</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="nodejs-card-btn"
-                >Read more</a
-              >
-            </div>
-          </div>
 
-          <div class="card card__hover--active">
-            <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
-            </div>
-            <div class="card__body">
-              <p class="language__info">Node JS Advanced</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="anodejs-card-btn"
-                >Read more</a
-              >
-            </div>
-          </div>
 
-          <div class="card card__hover--active">
-            <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
-            </div>
-            <div class="card__body">
-              <p class="language__info">Final Node JS Application</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="fnodejs-card-btn"
-                >Read more</a
-              >
-            </div>
-          </div>
-        </section>
-        <h3 class="academy__sub-heading">.NET VLP</h3>
-        <section class="cards__container">
-          <div class="card card__hover--active">
-            <div class="card__background"></div>
-            <div class="card card__image card__image1">
-              <img src="./img/html-img.png" alt="" />
-            </div>
-            <div class="card__body">
-              <p class="language__info">OOP Programming with C#</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="oop-card-btn"
-                >Read more</a
-              >
-            </div>
-          </div>
 
-          <div class="card card__hover--active">
-            <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
+        <aside class="aside">
+            <div class="aside__item">
+                <a class="aside__item-link" href="#">Tuition Fees & Payment</a>
             </div>
-            <div class="card__body">
-              <p class="language__info">Advanced C# development</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="aoop-card-btn"
-                >Read more</a
-              >
+            <div class="aside__item">
+                <a class="aside__item-link" href="#">Academy For Programming</a>
             </div>
-          </div>
-
-          <div class="card card__hover--active">
-            <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
+            <div class="aside__item">
+                <a class="aside__item-link" href="#">Academy For Computer Networks</a>
             </div>
-            <div class="card__body">
-              <p class="language__info">Developing ASP.NET Web Applications</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="app-card-btn"
-                >Read more</a
-              >
+            <div class="aside__item">
+                <a class="aside__item-link" href="#">Academy For Design</a>
             </div>
-          </div>
-        </section>
-        <h3 class="academy__sub-heading">COMPETENCIES</h3>
-        <div class="academy__paragraph">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            voluptas inventore laboriosam officiis tempore delectus fugit
-            maiores ipsam recusandae aspernatur velit reiciendis quod
-            necessitatibus magnam repellendus deleniti, doloremque suscipit
-            aliquid!
-          </p>
-          <ul>
-            <li>Be good at programming</li>
-            <li>Be good at programming</li>
-            <li>Be good at programming</li>
-            <li>Be good at programming</li>
-            <li>Be good at programming</li>
-          </ul>
-        </div>
-      </section>
-      <aside class="aside">
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">Tuition Fees & Payment</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">Academy For Programming</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">Academy For Computer Networks</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">Academy For Design</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">Academy For Software Testing</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">Academy For Data Science</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">Academy For Digital Marketing</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">Student Portfolios</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">IThink Aacademy</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">FAQ</a>
-        </div>
-      </aside>
+            <div class="aside__item">
+                <a class="aside__item-link" href="#">Academy For Software Testing</a>
+            </div>
+            <div class="aside__item">
+                <a class="aside__item-link" href="#">Academy For Data Science</a>
+            </div>
+            <div class="aside__item">
+                <a class="aside__item-link" href="#">Academy For Digital Marketing</a>
+            </div>
+            <div class="aside__item">
+                <a class="aside__item-link" href="#">Student Portfolios</a>
+            </div>
+            <div class="aside__item">
+                <a class="aside__item-link" href="#">IThink Aacademy</a>
+            </div>
+            <div class="aside__item">
+                <a class="aside__item-link" href="#">FAQ</a>
+            </div>
+        </aside>
     </main>
     <!--Card Design Ends Here-->
 
+
+
+    <!-- About us page starts here -->
+    <section class="about__us-page">
+
+        <div class="about">
+            <div class="about_img">
+                <img src="/sp2021-cp09-vlp/img/SEDC.jpg" alt="">
+            </div>
+            <div class="about_info">
+                <h1>About Us</h1>
+                <p>
+                    <span> Seavus Education & Development Center (SEDC) </span> is a private company established in
+                    September 2010 as part of the
+                    Seavus
+                    Group and a specialized training center for education of staff in the fields of programming,
+                    design,
+                    computer
+                    networks
+                    and software testing. Its rich portfolio of educational programs includes organization of annual
+                    academies intended
+                    for
+                    children, young people and adults, specialized trainings for employees and short trainings for
+                    individuals. Its
+                    educational program provides proof that ‘’SEDC’’ follows the world’s trends by responding to the
+                    growing demand for
+                    professionals in the IT and the design industry.
+
+                    Since 2018, ‘’SEDC’’ is the largest Academy for technology and design in Macedonia earning the
+                    trust
+                    of over 250
+                    students, annually. In 2019, within the educational center, one of the three Accelerators
+                    supported
+                    by the
+                    Innovation
+                    and Development Fund which aims to stimulate the entrepreneurship in Macedonia, through support
+                    and
+                    investment in
+                    new
+                    startup businesses, is also opened.
+                </p>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="about_cards">
+
+            <div class="about_cards-mission-info">
+                <h1>MISSION</h1>
+                <p>Primary goals of our <span> mission: </span></p>
+                <ul>
+                    <li>Qualification and retraining of young people and adults who want to start a career in the
+                        most
+                        popular professions in
+                        the IT and the design industry;</li>
+                    <li>Educating children in order to familiarize them with technology and design;</li>
+                    <li>Specialization of employees in certain business sectors; and</li>
+                    <li>Encouraging and developing entrepreneurship through investment support for startup
+                        businesses.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="about_cards-vision-info">
+                <h1>VISION</h1>
+                <p>Our vision is to create a new educational system that will educate the best staff for technology
+                    and
+                    design and to boost
+                    the Balkan startup scene through investments and development of new innovative businesses.</p>
+            </div>
+
+            <div class="about_cards-auth-info">
+                <h1>AUTHORIZATION AND CERTIFICATES</h1>
+                <p>Seavus Group is proud to say that the <span> Seavus Education and Development Center (SEDC) along
+                        with Seavus Alexandria have lasting partnership agreements with the largest IT Education,
+                        Delivery and Testing companies in the world. </span> Our competencies are continuously
+                    improving
+                    over the years, which can be seen by the ever increasing quality and success in
+                    the trainings we provide.</p>
+                <ul>
+                    <li>Microsoft Learning Partner</li>
+                    <li>Cisco Networking Academy</li>
+                    <li>EC – Council Accredited Training Centar</li>
+                    <li>CompTIA Learning Partner</li>
+                    <li>Adobe Training Center</li>
+                    <li>Prometric Testing Center</li>
+                    <li>PearsonVUE Testing Center</li>
+                    <li>Certiport Testing Center</li>
+                    <li>Nextec Testing Center</li>
+                    <li>Kryterion Testing Center</li>
+                    <li>EC – Council Testing Center</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="about_us-team">
+
+            <h1>THE TEAM OF SEDC</h1>
+            <p class="description"> <span> SEDC team </span> is made of unique group of <span> enthusiastic,
+                    experienced
+                    and dedicated professionals </span> working in different fields
+                of specialized education. Together, we believe we are shaping the new-era education in the region.
+                We
+                write stories, we
+                change lives, we design the future</p>
+
+            <div class="team">
+
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="/sp2021-cp09-vlp/img/mike_ross.jpg" alt="Team_image">
+                    </div>
+                    <h3>Rosie Meg</h3>
+                    <p class="role">Tester</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas
+                        facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                </div>
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="/sp2021-cp09-vlp/img/mike_ross.jpg" alt="Team_image">
+                    </div>
+                    <h3>Rosie Meg</h3>
+                    <p class="role">Tester</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas
+                        facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                </div>
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="/sp2021-cp09-vlp/img/mike_ross.jpg" alt="Team_image">
+                    </div>
+                    <h3>Rosie Meg</h3>
+                    <p class="role">Tester</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas
+                        facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                </div>
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="/sp2021-cp09-vlp/img/mike_ross.jpg" alt="Team_image">
+                    </div>
+                    <h3>Rosie Meg</h3>
+                    <p class="role">Tester</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas
+                        facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                </div>
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="/sp2021-cp09-vlp/img/mike_ross.jpg" alt="Team_image">
+                    </div>
+                    <h3>Rosie Meg</h3>
+                    <p class="role">Tester</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas
+                        facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                </div>
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="/sp2021-cp09-vlp/img/mike_ross.jpg" alt="Team_image">
+                    </div>
+                    <h3>Rosie Meg</h3>
+                    <p class="role">Tester</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas
+                        facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- About us page ends here -->
+
+
+
+
+
+
+
     <footer class="footer">
-      <div class="footer__block">
-        <ul>
-          <li>
-            <h2>Contact</h2>
-          </li>
-          <li><a href="#">127, woodston</a></li>
-          <li><a href="#">DA15 Sodcup</a></li>
-          <li><a href="#">217-918-3294</a></li>
-          <li><a href="#">London UK</a></li>
-        </ul>
-      </div>
-      <div class="footer__block">
-        <ul>
-          <li>
-            <h2>About us</h2>
-          </li>
-          <li><a href="#">Our Project</a></li>
-          <li><a href="#">Achievements</a></li>
-          <li><a href="#">Company Goals</a></li>
-          <li><a href="#">Company Culture</a></li>
-        </ul>
-      </div>
-      <div class="footer__block">
-        <ul>
-          <li>
-            <h2>Social Media</h2>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-linkedin"></i> LinkendIn</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-youtube"></i> Youtube</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
-          </li>
-        </ul>
-      </div>
-      <a class="footer__icon" href="#header"
-        ><i class="fas fa-arrow-circle-up fa-3x"></i>
-      </a>
-      <div class="footer__logo">
-        <img src="img/aricoma-group-logo.png" alt="error_logo.png" />
-      </div>
-      <div class="footer__copyright">
-        <small
-          >&copy; Copyright 2020. All rights reserved. Seavus education and
-          development center</small
-        >
-      </div>
+        <div class="footer__block">
+            <ul>
+                <li>
+                    <h2>Contact</h2>
+                </li>
+                <li><a href="#">127, woodston</a></li>
+                <li><a href="#">DA15 Sodcup</a></li>
+                <li><a href="#">217-918-3294</a></li>
+                <li><a href="#">London UK</a></li>
+            </ul>
+        </div>
+        <div class="footer__block">
+            <ul>
+                <li>
+                    <h2>About us</h2>
+                </li>
+                <li><a href="#">Our Project</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Company Goals</a></li>
+                <li><a href="#">Company Culture</a></li>
+            </ul>
+        </div>
+        <div class="footer__block">
+            <ul>
+                <li>
+                    <h2>Social Media</h2>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-linkedin"></i> LinkendIn</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-youtube"></i> Youtube</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                </li>
+            </ul>
+        </div>
+        <a class="footer__icon" href="#header"><i class="fas fa-arrow-circle-up fa-3x"></i>
+        </a>
+        <div class="footer__logo">
+            <img src="img/aricoma-group-logo.png" alt="error_logo.png" />
+        </div>
+        <div class="footer__copyright">
+            <small>&copy; Copyright 2020. All rights reserved. Seavus education and
+                development center</small>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>
