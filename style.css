@@ -310,6 +310,7 @@ body {
   border-radius: 7px;
   transition: 0.3s;
   position: relative;
+  box-shadow: 0 0 10px 0 hsla(212, 100%, 19%, 0.5);
 }
 
 .card__button--active:hover {
@@ -321,7 +322,7 @@ body {
 
 .card__hover--active:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 15px 1px hsla(212, 100%, 19%, 0.5);
   transition: 0.3s;
 }
 
@@ -385,9 +386,8 @@ body {
 
 i.fab {
   font-size: 35px;
-  color:var(--primaryColor)
+  color: var(--primaryColor);
 }
-
 
 /* Card Styles End Here*/
 
