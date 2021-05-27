@@ -905,6 +905,9 @@ body {
   .landing-cards__container {
     padding: 2rem 10rem;
   }
+  .about {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -929,6 +932,47 @@ body {
   .header__logo-title {
     width: 300px;
     font-size: 1.2rem;
+  }
+  .about_info {
+    background-color: #ffffff;
+    width: 90%;
+    position: absolute;
+    left: 60px;
+  }
+
+  .about_info p {
+    width: 100%;
+  }
+
+  .about_cards {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about_cards-mission-info,
+  .about_cards-vision-info,
+  .about_cards-auth-info {
+    width: 90%;
+  }
+  .about_us-team {
+    width: 100%;
+  }
+  .about_us-team h1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about_us-team .description {
+    width: 90%;
+    margin-left: 50px;
+  }
+  .team {
+    margin-left: 0px;
+  }
+  .team .team_member {
+    width: 40%;
+    margin-left: 0px;
   }
   .about_img {
     display: none;
@@ -974,7 +1018,7 @@ body {
     background-color: #ffffff;
     width: 90%;
     position: absolute;
-    left: 45px;
+    left: 40px;
   }
 
   .about_info p {
@@ -982,8 +1026,8 @@ body {
   }
 
   .about_cards {
-    width: auto;
-    margin-left: 10px;
+    width: 100%;
+    margin-left: 0px;
     margin-top: 50px;
   }
 
@@ -993,8 +1037,8 @@ body {
     width: 90%;
   }
   .about_us-team {
-    width: 100%;
-    margin-left: 10px;
+    width: 95%;
+    margin-left: 25px;
   }
   .about_us-team h1 {
     width: 100%;
@@ -1003,11 +1047,10 @@ body {
   }
   .about_us-team .description {
     width: 90%;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .team {
-    margin-right: 40px;
-  }
+
   .team .team_member {
     width: 40%;
   }
@@ -1180,7 +1223,7 @@ body {
   .about_info {
     position: relative;
     top: 30px;
-    left: 55px;
+    left: 35px;
     width: 90%;
   }
 
@@ -1190,7 +1233,7 @@ body {
 
   .about_cards {
     width: 100%;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 50px;
   }
 
@@ -1200,19 +1243,25 @@ body {
     width: 80%;
   }
 
+  .about_us-team {
+    margin-left: 20px;
+  }
+
   .about_us-team h1 {
     width: 100%;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about_us-team .description {
     width: 80%;
-    margin-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .team .team_member {
     width: 60%;
-    margin-left: 80px;
+    margin-left: 20px;
   }
 
   .footer {
@@ -1327,7 +1376,7 @@ body {
     margin-bottom: 100px;
     width: 90%;
     position: relative;
-    left: 30px;
+    left: 20px;
   }
 
   .about_info p {
@@ -1335,14 +1384,14 @@ body {
   }
 
   .about_cards {
-    width: 90%;
-    margin-left: 30px;
+    width: 100%;
+    margin-left: 0px;
   }
 
   .about_cards-mission-info,
   .about_cards-vision-info,
   .about_cards-auth-info {
-    width: 90%;
+    width: 80%;
   }
 
   .about_us-team h1 {
@@ -1356,7 +1405,8 @@ body {
   }
 
   .team .team_member {
-    width: 100%;
-    margin-left: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
