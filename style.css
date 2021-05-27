@@ -286,7 +286,7 @@ body {
 
 /* Headings Styles End Here */
 
-/* Card Styles Star Here */
+/* Card Styles Start Here */
 
 .cards__container {
   width: 100%;
@@ -306,14 +306,21 @@ body {
 .card {
   width: 100%;
   max-height: 500px;
-  background: #9fcfeb;
-  border-radius: 10px;
+  background: #ffffff;
+  border-radius: 7px;
   transition: 0.3s;
   position: relative;
 }
 
+.card__button--active:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+  background-color: var(--secondaryColor);
+}
+
 .card__hover--active:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
   transition: 0.3s;
 }
@@ -323,24 +330,27 @@ body {
   background-color: #002c5f;
   border-radius: 10px 10px 0 0;
   margin-bottom: 30px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .language__description {
   padding-left: 5%;
   padding-bottom: 15px;
-  border-bottom: 2px solid var(--primaryColor);
+  font-family: var(--Open-Sans);
 }
 
 .language__info {
   padding-left: 5%;
   margin-bottom: 10%;
+  font-family: var(--Open-Sans);
 }
 
 .card__body {
   padding: 0px 20px;
   font-size: 17px;
   color: var(--primaryColor);
-  background-color: var(--tertiaryColor);
+  background-color: #ffffff;
   padding-bottom: 70px;
   border-radius: 0 0 10px 10px;
 }
@@ -349,18 +359,18 @@ body {
   display: block;
   color: white;
   text-align: center;
-  background: #0079c8;
+  background: var(--primaryColor);
   text-decoration: none;
-  padding: 10px 5px;
+  padding: 7px 5px;
   max-width: 100px;
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  margin-bottom: 0;
+  bottom: 5px;
+  right: 5px;
+  margin: 13px;
 }
 
-.card__image {
-  background: #9fcfeb;
+.card__logo__placeholder {
+  background: #ffffff;
   width: 50px;
   height: 50px;
   position: relative;
@@ -373,25 +383,11 @@ body {
   margin: 1;
 }
 
-.card__image1 img {
-  width: 110px;
-  position: relative;
-  left: 15px;
-  top: 5px;
-}
-.card__image2 img {
-  width: 110px;
-  position: relative;
-  right: 25px;
-  top: 5px;
+i.fab {
+  font-size: 35px;
+  color:var(--primaryColor)
 }
 
-.card__image3 img {
-  width: 110px;
-  position: relative;
-  right: 4px;
-  bottom: 33px;
-}
 
 /* Card Styles End Here*/
 
