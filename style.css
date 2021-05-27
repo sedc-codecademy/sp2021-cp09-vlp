@@ -539,7 +539,7 @@ body {
   right: 0px;
   width: 1000px;
   background-color: #fff;
-  padding: 100px 80px;
+  padding: 60px 70px;
   text-align: justify;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
@@ -558,10 +558,11 @@ body {
 .about_info p {
   font-size: 15px;
   color: #545454;
-  line-height: 20px;
-  text-align: justify;
+  line-height: 1.5rem;
+  text-align: left;
+  font-size: 1rem;
   margin-bottom: 40px;
-  width: 850px;
+  width: 100%;
   font-family: var(--Open-Sans);
 }
 
@@ -592,11 +593,14 @@ body {
 .about_img img {
   width: 1000px;
   border-radius: 0px 5px 5px 0px;
+  border-radius: 5px;
+  margin-left: 50px;
 }
 
 /* about us cards part */
 .about_cards {
   display: flex;
+  margin-top: 60px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -685,7 +689,8 @@ body {
 
 .about_us-team .description {
   margin: 0px auto;
-  width: 1100px;
+  padding: 30px 200px;
+  /* width: 1100px; */
   text-align: center;
   margin-bottom: 60px;
   flex-wrap: wrap;
@@ -716,7 +721,6 @@ body {
   line-height: 20px;
   color: #8e8b8b;
   position: relative;
-  margin-left: 50px;
   font-family: var(--Comfortaa);
   border-radius: 10px;
 }
@@ -930,6 +934,19 @@ body {
     width: 300px;
     font-size: 1.2rem;
   }
+  .about {
+    position: relative;
+    min-height: 70vh;
+    text-align: left;
+  }
+
+  .about_info {
+    top: 0;
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+  }
+
   .about_img {
     display: none;
   }
@@ -973,17 +990,13 @@ body {
   .about_info {
     background-color: #ffffff;
     width: 90%;
-    position: absolute;
-    left: 45px;
-  }
-
-  .about_info p {
-    width: 100%;
+    padding: 50px 60px;
   }
 
   .about_cards {
-    width: auto;
+    width: 100%;
     margin-left: 10px;
+    margin: 0;
     margin-top: 50px;
   }
 
@@ -991,10 +1004,10 @@ body {
   .about_cards-vision-info,
   .about_cards-auth-info {
     width: 90%;
+    padding: 50px 60px;
   }
   .about_us-team {
     width: 100%;
-    margin-left: 10px;
   }
   .about_us-team h1 {
     width: 100%;
@@ -1003,10 +1016,7 @@ body {
   }
   .about_us-team .description {
     width: 90%;
-    margin-left: 50px;
-  }
-  .team {
-    margin-right: 40px;
+    padding: 20px 100px;
   }
   .team .team_member {
     width: 40%;
@@ -1178,10 +1188,7 @@ body {
   }
 
   .about_info {
-    position: relative;
-    top: 30px;
-    left: 55px;
-    width: 90%;
+    width: 95%;
   }
 
   .about_info p {
@@ -1190,29 +1197,32 @@ body {
 
   .about_cards {
     width: 100%;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-top: 50px;
+    box-shadow: none;
   }
 
   .about_cards-mission-info,
   .about_cards-vision-info,
   .about_cards-auth-info {
-    width: 80%;
+    width: 90%;
   }
 
   .about_us-team h1 {
     width: 100%;
-    margin-left: 20px;
+    font-size: 2.5rem;
+    /* margin-left: 20px; */
   }
 
   .about_us-team .description {
     width: 80%;
-    margin-left: 80px;
+    padding: 20px 20px;
+    /* margin-left: 80px; */
   }
 
   .team .team_member {
-    width: 60%;
-    margin-left: 80px;
+    width: 70%;
+    /* margin-left: 80px; */
   }
 
   .footer {
@@ -1323,40 +1333,24 @@ body {
     width: 80%;
   }
 
-  .about_info {
-    margin-bottom: 100px;
-    width: 90%;
-    position: relative;
-    left: 30px;
+  .about {
+    margin-top: 20px;
   }
 
-  .about_info p {
-    width: 100%;
+  .about_cards div h1 {
+    font-size: 1.3rem;
   }
 
-  .about_cards {
-    width: 90%;
-    margin-left: 30px;
+  .about_cards div {
+    padding: 30px 40px;
+    width: 95%;
   }
 
-  .about_cards-mission-info,
-  .about_cards-vision-info,
-  .about_cards-auth-info {
+  .team .team_member {
     width: 90%;
   }
 
   .about_us-team h1 {
-    width: 80%;
-    margin-left: 40px;
-  }
-
-  .about_us-team .description {
-    width: 80%;
-    margin-left: 40px;
-  }
-
-  .team .team_member {
-    width: 100%;
-    margin-left: 40px;
+    font-size: 1.7rem;
   }
 }
