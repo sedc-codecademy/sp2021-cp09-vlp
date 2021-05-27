@@ -249,9 +249,10 @@ body {
 
 .academy__sub-heading {
   color: var(--primaryColor);
-  background-color: white;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.7);
   margin: 2rem 4rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 0;
   padding: 10px;
   padding-left: 30px;
@@ -787,6 +788,8 @@ i.fab {
   display: block;
   margin-bottom: 8px;
   background-color: #fff;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 16px 10px 16px 0;
   text-decoration: none;
   text-align: right;
