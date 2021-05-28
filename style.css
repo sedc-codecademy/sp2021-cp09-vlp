@@ -534,7 +534,6 @@ i.fab {
   width: 1000px;
   background-color: #fff;
   padding: 60px 70px;
-  text-align: justify;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   margin-top: 50px;
@@ -544,7 +543,9 @@ i.fab {
 .about h1 {
   margin-bottom: 30px;
   font-size: 30px;
-  font-weight: 900;
+  /* font-weight: 900; */
+  font-weight: 600;
+  font-size: 2rem;
   color: var(--secondaryColor);
   font-family: var(--Open-Sans);
 }
@@ -564,14 +565,13 @@ i.fab {
   font-size: 18px;
   letter-spacing: 1px;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 8px 12px;
   background-color: var(--secondaryColor);
   color: #fff;
   cursor: pointer;
   transition: 0.5s;
   text-decoration: none;
-  font-family: var(--Comfortaa);
 }
 
 .about_info a:hover {
@@ -589,6 +589,7 @@ i.fab {
   border-radius: 0px 5px 5px 0px;
   border-radius: 5px;
   margin-left: 50px;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* about us cards part */
@@ -598,15 +599,14 @@ i.fab {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondaryColor);
-  box-shadow: 0 8px 12px var(--primaryColor);
+  background-color: #003777;
 }
 
 .about_cards-mission-info {
   width: 1000px;
   padding: 40px 80px;
   background-color: #ffffff;
-  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
   margin-top: 50px;
   border-radius: 5px;
 }
@@ -614,7 +614,7 @@ i.fab {
   width: 1000px;
   padding: 40px 80px;
   background-color: #ffffff;
-  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
   margin-top: 50px;
   border-radius: 5px;
 }
@@ -623,7 +623,7 @@ i.fab {
   width: 1000px;
   padding: 40px 80px;
   background-color: #ffffff;
-  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 5px;
@@ -633,9 +633,8 @@ i.fab {
 .about_cards-vision-info h1,
 .about_cards-auth-info h1 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--secondaryColor);
-  font-family: var(--Open-Sans);
 }
 
 .about_cards-mission-info p,
@@ -643,13 +642,11 @@ i.fab {
 .about_cards-auth-info p {
   margin-top: 5px;
   font-weight: 500;
-  font-family: var(--Open-Sans);
 }
 
 .about_cards-mission-info ul,
 .about_cards-auth-info ul {
   margin-top: 15px;
-  font-family: var(--Comfortaa);
   line-height: 30px;
   list-style-position: inside;
 }
@@ -657,14 +654,6 @@ i.fab {
 .about_cards-auth-info span,
 .about_cards-mission-info span {
   font-weight: bold;
-}
-
-.about_cards-mission-info:hover,
-.about_cards-vision-info:hover,
-.about_cards-auth-info:hover {
-  box-shadow: 10px 10px 15px var(--primaryColor);
-  transform: scale(1.05);
-  transition: 0.3s ease-in-out;
 }
 
 /* about us - team part */
@@ -679,12 +668,12 @@ i.fab {
   margin-bottom: 40px;
   text-align: center;
   color: var(--secondaryColor);
+  font-weight: 600;
 }
 
 .about_us-team .description {
   margin: 0px auto;
   padding: 30px 200px;
-  /* width: 1100px; */
   text-align: center;
   margin-bottom: 60px;
   flex-wrap: wrap;
@@ -716,24 +705,15 @@ i.fab {
   color: #8e8b8b;
   position: relative;
   font-family: var(--Comfortaa);
-  border-radius: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
 }
-
-.team .team_member:hover {
-  background-color: var(--primaryColor);
-  color: #ffff;
-  transition: 0.5s ease-in-out;
-}
-
-.team .team_member:hover p.role {
-  color: var(--backgroundGray);
-}
-
 .team .team_member h3 {
   color: var(--secondaryColor);
   font-size: 26px;
   margin-top: 50px;
   font-family: var(--Open-Sans);
+  font-weight: 600;
 }
 
 .team .team_member p.role {
@@ -755,6 +735,7 @@ i.fab {
   height: 100px;
   border-radius: 50%;
   background: #fff;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
 }
 
 .team .team_member .team_img img {
