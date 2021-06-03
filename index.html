@@ -13,6 +13,7 @@
     <script defer src="./scripts/app.js"></script>
     <title>Academies</title>
   </head>
+
   <body>
     <div class="modal__outer">
       <div class="modal__inner">
@@ -53,7 +54,7 @@
         </div>
         <small
           >This course is part of the
-          <a href="#" class="modal__bottom-link">Web Developer</a>
+          <a href="#" class="modal__bottom-link">Web Development</a>
           Academy</small
         >
       </div>
@@ -67,7 +68,9 @@
       </div>
       <nav class="header__nav">
         <ul class="nav__list">
-          <li class="nav__list-item"><a href="">About us</a></li>
+          <li class="nav__list-item">
+            <a href="" class="aboutBtn">About us</a>
+          </li>
           <li class="nav__list-item"><a href="">Academies</a></li>
           <li class="nav__list-item"><a href="">Contact</a></li>
           <li class="nav__list-item"><a href="">Tuition & Fees</a></li>
@@ -117,9 +120,9 @@
                   <li>MERN/MEAN Expertise</li>
                 </ul>
 
-                <button type="button" id="ccard-webdev-btn">
+                <a type="button" href="#" id="ccard-webdev-btn">
                   GO TO ACADEMY
-                </button>
+                </a>
               </figure>
             </div>
           </div>
@@ -217,7 +220,7 @@
       </section>
 
       <section class="academy__container">
-        <h1 class="academy__heading">&lt;/&gt; Academy for Programming</h1>
+        <h1 class="academy__heading">Academy For Web Development</h1>
         <h3 class="academy__sub-heading">OVERVIEW</h3>
         <div class="academy__paragraph">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -229,29 +232,16 @@
         <section class="cards__container">
           <div class="card card__hover--active">
             <div class="card__background"></div>
-            <div class="card card__image card__image1">
-              <img src="./img/html-img.png" alt="" />
+            <div class="card card__logo__placeholder card__image1">
+              <i class="fab fa-html5"></i>
             </div>
             <div class="card__body">
-              <p class="language__info">HTML5</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a class="card card__button" id="html-card-btn">Read more</a>
-            </div>
-          </div>
-
-          <div class="card card__hover--active">
-            <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
-            </div>
-            <div class="card__body">
-              <p class="language__info">CSS3</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="css-card-btn"
+              <h3 class="language__info">Introduction to HTML5 & CSS</h3>
+              <p class="language__description">Course Description</p>
+              <a
+                href="#"
+                class="card card__button card__button--active"
+                id="html-card-btn"
                 >Read more</a
               >
             </div>
@@ -259,15 +249,16 @@
 
           <div class="card card__hover--active">
             <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
+            <div class="card card__logo__placeholder card__image2">
+              <i class="fab fa-js-square"></i>
             </div>
             <div class="card__body">
-              <p class="language__info">Basic JavaScript Development</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="js-card-btn"
+              <h3 class="language__info">Basic JavaScript Development</h3>
+              <p class="language__description">Course Description</p>
+              <a
+                href="#"
+                class="card card__button card__button--active"
+                id="js-card-btn"
                 >Read more</a
               >
             </div>
@@ -275,15 +266,16 @@
 
           <div class="card card__hover--active">
             <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
+            <div class="card card__logo__placeholder card__image2">
+              <i class="fab fa-js-square"></i>
             </div>
             <div class="card__body">
-              <p class="language__info">Advanced JavaScript Development</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="ajs-card-btn"
+              <h3 class="language__info">Advanced JavaScript Development</h3>
+              <p class="language__description">Course Description</p>
+              <a
+                href="#"
+                class="card card__button card__button--active"
+                id="ajs-card-btn"
                 >Read more</a
               >
             </div>
@@ -294,23 +286,24 @@
           The students cane choose between 2 different tracks in the second
           semester
           <ul>
-            <li><a href="#">.Net Track</a></li>
-            <li><a href="#">FS JScript Track</a></li>
+            <li><a href="#">.NET Track</a></li>
+            <li><a href="#">Full Stack JavaScript Track</a></li>
           </ul>
         </div>
-        <h3 class="academy__sub-heading">FS JS VLP</h3>
+        <h3 class="academy__sub-heading">Full Stack JavaScript Track</h3>
         <section class="cards__container">
           <div class="card card__hover--active">
             <div class="card__background"></div>
-            <div class="card card__image card__image1">
-              <img src="./img/html-img.png" alt="" />
+            <div class="card card__logo__placeholder card__image1">
+              <i class="fab fa-node"></i>
             </div>
             <div class="card__body">
-              <p class="language__info">Node JS Basic</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="nodejs-card-btn"
+              <h3 class="language__info">Node JS Basic</h3>
+              <p class="language__description">Course Description</p>
+              <a
+                href="#"
+                class="card card__button card__button--active"
+                id="nodejs-card-btn"
                 >Read more</a
               >
             </div>
@@ -318,15 +311,16 @@
 
           <div class="card card__hover--active">
             <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
+            <div class="card card__logo__placeholder card__image2">
+              <i class="fab fa-js-square"></i>
             </div>
             <div class="card__body">
-              <p class="language__info">Node JS Advanced</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="anodejs-card-btn"
+              <h3 class="language__info">Node JS Advanced</h3>
+              <p class="language__description">Course Description</p>
+              <a
+                href="#"
+                class="card card__button card__button--active"
+                id="anodejs-card-btn"
                 >Read more</a
               >
             </div>
@@ -334,33 +328,35 @@
 
           <div class="card card__hover--active">
             <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
+            <div class="card card__logo__placeholder card__image2">
+              <i class="fab fa-node-js"></i>
             </div>
             <div class="card__body">
-              <p class="language__info">Final Node JS Application</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="fnodejs-card-btn"
+              <h3 class="language__info">Final Node JS Application</h3>
+              <p class="language__description">Course Description</p>
+              <a
+                href="#"
+                class="card card__button card__button--active"
+                id="fnodejs-card-btn"
                 >Read more</a
               >
             </div>
           </div>
         </section>
-        <h3 class="academy__sub-heading">.NET VLP</h3>
+        <h3 class="academy__sub-heading">.NET Track</h3>
         <section class="cards__container">
           <div class="card card__hover--active">
             <div class="card__background"></div>
-            <div class="card card__image card__image1">
-              <img src="./img/html-img.png" alt="" />
+            <div class="card card__logo__placeholder card__image1">
+              <i class="fab fa-cuttlefish"></i>
             </div>
             <div class="card__body">
-              <p class="language__info">OOP Programming with C#</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="oop-card-btn"
+              <h3 class="language__info">OOP Programming with C#</h3>
+              <p class="language__description">Course Description</p>
+              <a
+                href="#"
+                class="card card__button card__button--active"
+                id="oop-card-btn"
                 >Read more</a
               >
             </div>
@@ -368,15 +364,16 @@
 
           <div class="card card__hover--active">
             <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
+            <div class="card card__logo__placeholder card__image2">
+              <i class="fab fa-contao"></i>
             </div>
             <div class="card__body">
-              <p class="language__info">Advanced C# development</p>
-              <h3 class="language__description">
-                Language Description goes here
-              </h3>
-              <a href="#" class="card card__button" id="aoop-card-btn"
+              <h3 class="language__info">Advanced C# development</h3>
+              <p class="language__description">Course Description</p>
+              <a
+                href="#"
+                class="card card__button card__button--active"
+                id="aoop-card-btn"
                 >Read more</a
               >
             </div>
@@ -384,15 +381,18 @@
 
           <div class="card card__hover--active">
             <div class="card__background"></div>
-            <div class="card card__image card__image2">
-              <img src="./img/css-img.png" alt="" />
+            <div class="card card__logo__placeholder card__image2">
+              <i class="fab fa-codiepie"></i>
             </div>
             <div class="card__body">
-              <p class="language__info">Developing ASP.NET Web Applications</p>
-              <h3 class="language__description">
-                Language Description goes here
+              <h3 class="language__info">
+                Developing ASP.NET Web Applications
               </h3>
-              <a href="#" class="card card__button" id="app-card-btn"
+              <p class="language__description">Course Description</p>
+              <a
+                href="#"
+                class="card card__button card__button--active"
+                id="app-card-btn"
                 >Read more</a
               >
             </div>
@@ -416,12 +416,10 @@
           </ul>
         </div>
       </section>
+
       <aside class="aside">
         <div class="aside__item">
-          <a class="aside__item-link" href="#">Tuition Fees & Payment</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">Academy For Programming</a>
+          <a class="aside__item-link" href="#">Academy For Web Development</a>
         </div>
         <div class="aside__item">
           <a class="aside__item-link" href="#">Academy For Computer Networks</a>
@@ -438,18 +436,155 @@
         <div class="aside__item">
           <a class="aside__item-link" href="#">Academy For Digital Marketing</a>
         </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">Student Portfolios</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">IThink Aacademy</a>
-        </div>
-        <div class="aside__item">
-          <a class="aside__item-link" href="#">FAQ</a>
-        </div>
       </aside>
     </main>
     <!--Card Design Ends Here-->
+
+    <!-- About us page starts here -->
+    <section class="about__us-page">
+      <div class="about">
+        <div class="about_img">
+          <img src="./img/SEDC.jpg" alt="" />
+        </div>
+        <div class="about_info">
+          <h1>About Us</h1>
+          <p>
+            <span> Seavus Education & Development Center (SEDC) </span> is a
+            private company established in September 2010 as part of the Seavus
+            Group and a specialized training center for education of staff in
+            the fields of programming, design, computer networks and software
+            testing. Its rich portfolio of educational programs includes
+            organization of annual academies intended for children, young people
+            and adults, specialized trainings for employees and short trainings
+            for individuals. Its educational program provides proof that
+            ‘’SEDC’’ follows the world’s trends by responding to the growing
+            demand for professionals in the IT and the design industry. Since
+            2018, ‘’SEDC’’ is the largest Academy for technology and design in
+            Macedonia earning the trust of over 250 students, annually. In 2019,
+            within the educational center, one of the three Accelerators
+            supported by the Innovation and Development Fund which aims to
+            stimulate the entrepreneurship in Macedonia, through support and
+            investment in new startup businesses, is also opened.
+          </p>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="about_cards">
+        <div class="about_cards-mission-info">
+          <h1>MISSION</h1>
+          <p>Primary goals of our <span> mission: </span></p>
+          <ul>
+            <li>
+              Qualification and retraining of young people and adults who want
+              to start a career in the most popular professions in the IT and
+              the design industry;
+            </li>
+            <li>
+              Educating children in order to familiarize them with technology
+              and design;
+            </li>
+            <li>
+              Specialization of employees in certain business sectors; and
+            </li>
+            <li>
+              Encouraging and developing entrepreneurship through investment
+              support for startup businesses.
+            </li>
+          </ul>
+        </div>
+
+        <div class="about_cards-vision-info">
+          <h1>VISION</h1>
+          <p>
+            Our vision is to create a new educational system that will educate
+            the best staff for technology and design and to boost the Balkan
+            startup scene through investments and development of new innovative
+            businesses.
+          </p>
+        </div>
+
+        <div class="about_cards-auth-info">
+          <h1>AUTHORIZATION AND CERTIFICATES</h1>
+          <p>
+            Seavus Group is proud to say that the
+            <span>
+              Seavus Education and Development Center (SEDC) along with Seavus
+              Alexandria have lasting partnership agreements with the largest IT
+              Education, Delivery and Testing companies in the world.
+            </span>
+            Our competencies are continuously improving over the years, which
+            can be seen by the ever increasing quality and success in the
+            trainings we provide.
+          </p>
+          <ul>
+            <li>Microsoft Learning Partner</li>
+            <li>Cisco Networking Academy</li>
+            <li>EC – Council Accredited Training Centar</li>
+            <li>CompTIA Learning Partner</li>
+            <li>Adobe Training Center</li>
+            <li>Prometric Testing Center</li>
+            <li>PearsonVUE Testing Center</li>
+            <li>Certiport Testing Center</li>
+            <li>Nextec Testing Center</li>
+            <li>Kryterion Testing Center</li>
+            <li>EC – Council Testing Center</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about_us-team">
+        <h1>THE TEAM OF SEDC</h1>
+        <p class="description">
+          <span> SEDC team </span> is made of unique group of
+          <span> enthusiastic, experienced and dedicated professionals </span>
+          working in different fields of specialized education. Together, we
+          believe we are shaping the new-era education in the region. We write
+          stories, we change lives, we design the future
+        </p>
+
+        <div class="team">
+          <div class="team_member">
+            <div class="team_img">
+              <img src="./img/mike_ross.jpg" alt="Team_image" />
+            </div>
+            <h3>John Smith</h3>
+            <p class="role">DEVELOPER</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+              quaerat tempora, voluptatum quas facere dolorum aut cumque nihil
+              nulla harum nemo distinctio quam blanditiis dignissimos.
+            </p>
+          </div>
+          <div class="team_member">
+            <div class="team_img">
+              <img src="./img/mary_andrews.jpg" alt="Team_image" />
+            </div>
+            <h3>Mary Andrews</h3>
+            <p class="role">DEVELOPER</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+              quaerat tempora, voluptatum quas facere dolorum aut cumque nihil
+              nulla harum nemo distinctio quam blanditiis dignissimos.
+            </p>
+          </div>
+          <div class="team_member">
+            <div class="team_img">
+              <img src="./img/barry_fields.jpg" alt="Team_image" />
+            </div>
+            <h3>Barry Fields</h3>
+            <p class="role">DEVELOPER</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+              quaerat tempora, voluptatum quas facere dolorum aut cumque nihil
+              nulla harum nemo distinctio quam blanditiis dignissimos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us page ends here -->
 
     <footer class="footer">
       <div class="footer__block">

@@ -25,20 +25,30 @@ const headerBurgerBtn = document.querySelector(".header__btn");
 
 const navListBurger = document.querySelector(".nav__list-burger");
 
+const aboutBtn = document.querySelector(".aboutBtn");
+
 //Category cards logic
 const webDevBtn = document.querySelector("#ccard-webdev-btn");
 const headerLogo = document.querySelector(".header__logo");
 
 hideElementsByClass(["academy__container", "aside"]);
+hideElementsByClass(["about__us-page"]);
 
 headerLogo.addEventListener("click", () => {
   hideElementsByClass(["academy__container", "aside"]);
   showElementsByClass(["landing__page"]);
+  hideElementsByClass(["about__us-page"]);
 });
 
 webDevBtn.addEventListener("click", () => {
   hideElementsByClass(["landing__page"]);
   showElementsByClass(["academy__container", "aside"]);
+});
+
+aboutBtn.addEventListener(`click`, e => {
+  e.preventDefault();
+  hideElementsByClass(["landing__page", "academy__container", "aside"]);
+  showElementsByClass(["about__us-page"]);
 });
 
 //Modal window logic
@@ -73,7 +83,7 @@ modalOuter.addEventListener("click", e => {
 
 jsCardBtn.addEventListener("click", () => {});
 
-cssCardBtn.addEventListener("click", () => {});
+// cssCardBtn.addEventListener("click", () => {});
 
 jsCardBtn.addEventListener("click", () => {});
 
