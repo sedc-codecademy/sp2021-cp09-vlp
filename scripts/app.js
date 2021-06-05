@@ -122,38 +122,43 @@ headerBurgerBtn.addEventListener("click", () => {
   }
 });
 
-const navListSubitem = document.getElementsByClassName('nav__list-subitem')
+const academiesButton = document.querySelector('.nav__list-academies')
+const academiesSubmenu = document.querySelector('.nav__item-submenu')
 
-const navListItem = document.getElementsByClassName('nav__list-item')
-// Dimi check this 
-let subMenuOpen = false
-navListItem.addEventListener('click',()=>{
-  if(!subMenuOpen){
-    navListSubitem.classList.add('open')
-    navListSubitem.style.opacity = '1'
-    navListSubitem.style.transform = "scaleX(1)"
-    subMenuOpen = true
+let academiesSubmenuOpen = false
+academiesButton.addEventListener('click',()=>{
+  if(!academiesSubmenuOpen){
+    academiesButton.classList.add('open')
+    academiesButton.style.color = "var(--tertiaryColor)"
+    academiesSubmenu.style.height = "190px"
+    academiesSubmenu.style.margin = "25px 0 0 10px"
+    academiesSubmenuOpen = true
   }else{
-    navListSubitem.classList.remove('open')
-    navListSubitem.style.opacity = '0'
-    navListSubitem.style.transform = "scaleX(0)"
-    subMenuOpen = false
+    academiesButton.classList.remove('open')
+    academiesButton.style.color = "#fff"
+    academiesSubmenu.style.height = "0"
+    academiesSubmenu.style.margin = "0 0 0 10px"
+    academiesSubmenuOpen = false
   }
 
 })
-const navListAcademies = document.querySelector('#nav__list-academies')
-const navSubmenuItem = document.querySelectorAll('.nav__item-submenu')
-// and this 
-let academieOpen = false
-navListAcademies.addEventListener('click',(e)=>{
-  e.defaultPrevented()
-  if(!academieOpen){
-    navSubmenuItem.style.display = "none"
-    academieOpen = true
-  }else{
-    navSubmenuItem.style.display = "flex"
-    academieOpen = true
+
+const navListItemClick = document.getElementById('nav__list-click')
+const navListSubmenu = document.querySelector('.nav__list-subitem')
+let academiesListMenuOpen = false
+navListItemClick.addEventListener('click',()=>{
+  if(!academiesListMenuOpen){
+    navListItemClick.classList.remove('open')
+    navListSubmenu.style.opacity = '0'
+    academiesListMenuOpen = true
+  }else {
+    navListItemClick.classList.remove('open')
+    navListSubmenu.style.opacity = '1'
+    academiesListMenuOpen = false
   }
 })
 
+
+console.log(navListItemClick)
+console.log(navListSubmenu)
 
