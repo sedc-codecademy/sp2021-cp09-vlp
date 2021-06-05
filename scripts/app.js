@@ -148,17 +148,13 @@ const navListSubmenu = document.querySelector('.nav__list-subitem')
 let academiesListMenuOpen = false
 navListItemClick.addEventListener('click',()=>{
   if(!academiesListMenuOpen){
-    navListItemClick.classList.remove('open')
     navListSubmenu.style.opacity = '0'
     academiesListMenuOpen = true
   }else {
-    navListItemClick.classList.remove('open')
     navListSubmenu.style.opacity = '1'
     academiesListMenuOpen = false
   }
 })
 
 
-console.log(navListItemClick)
-console.log(navListSubmenu)
 
