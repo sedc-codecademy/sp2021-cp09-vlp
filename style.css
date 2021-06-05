@@ -205,12 +205,17 @@ body {
 .nav__list-burger {
   display: none;
   list-style: none;
-  padding-left: 10px;
+  padding-left: 10px;  
+  user-select: none; 
+
 }
 
 .nav__list-item {
   padding: 15px;
   font-size: 1rem;
+
+  user-select: none;
+
 }
 
 .nav__list-item a {
@@ -219,14 +224,37 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   transition: 0.4s;
+
+  cursor: pointer;
+
 }
 
 .nav__list-item a:hover {
   color: var(--tertiaryColor);
 }
 
+/* Drop Down */
+.nav__list-subitem{
+  padding: 5px 0;
+  display: block;
+  position: absolute;
+  background-color: #002C5F;
+  padding: 20px 40px;
+  text-align: left;
+  transform-origin: top;
+  transition: 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+  opacity: 0;
+
+}
+
+
+.nav__list-item ul li{
+  list-style-type: none;
+
+
 .header__btn {
   display: none;
+
 }
 
 /* Header design ends here */
@@ -764,7 +792,39 @@ i.fab {
   font-family: var(--Open-Sans);
   font-size: 18px;
   font-weight: 600;
+
 }
+
+.aside__item-link {
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+  background-color: #fff;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 16px 10px 16px 0;
+  text-decoration: none;
+  text-align: right;
+  color: var(--primaryColor);
+  width: 100%;
+  line-height: 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #002d6199;
+  border-left: 2px solid #002d6166;
+  border-radius: 6px;
+  box-shadow: -8px 8px 10px #002d6133;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.aside__item-link:hover {
+  background: var(--primaryColor);
+  color: #fff;
+
+}
+/* Aside Styles End Here */
+
+/* Footer Styles Start Here */
 
 .aside__item-link {
   width: 100%;
@@ -901,6 +961,7 @@ i.fab {
     min-width: 90%;
     max-width: 95%;
     max-height: 95vh;
+
   }
 
   .header__logo img {
@@ -923,6 +984,7 @@ i.fab {
     text-align: left;
     margin: 0 auto;
   }
+
 
   .about_img {
     display: none;
@@ -1037,13 +1099,19 @@ i.fab {
     display: flex;
     flex-flow: column;
     list-style: none;
+    overflow: hidden;
+    height: 0;
     color: #fff;
-    margin-top: 25px;
+    margin-top: 0px;
     margin-left: 10px;
     padding-left: 10px;
     text-transform: uppercase;
     border-left: 3px solid #ffffff99;
     cursor: pointer;
+    transform-origin: top;
+    transition: 0.4s cubic-bezier(0.76, 0, 0.24, 1)
+
+
   }
 
   .nav__item-submenu li {
