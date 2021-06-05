@@ -145,7 +145,7 @@ academiesButton.addEventListener('click',()=>{
 
 const navListItemClick = document.getElementById('nav__list-click')
 const navListSubmenu = document.querySelector('.nav__list-subitem')
-let academiesListMenuOpen = false
+let academiesListMenuOpen = true
 navListItemClick.addEventListener('click',()=>{
   if(!academiesListMenuOpen){
     navListSubmenu.style.opacity = '0'
