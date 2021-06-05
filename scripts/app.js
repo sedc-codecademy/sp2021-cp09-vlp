@@ -27,9 +27,6 @@ const navListBurger = document.querySelector(".nav__list-burger");
 
 const aboutBtn = document.querySelector(".aboutBtn");
 
-
-
-
 //Category cards logic
 const webDevBtn = document.querySelector("#ccard-webdev-btn");
 const headerLogo = document.querySelector(".header__logo");
@@ -121,6 +118,7 @@ headerBurgerBtn.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+
 
 const academiesButton = document.querySelector('.nav__list-academies')
 const academiesSubmenu = document.querySelector('.nav__item-submenu')
