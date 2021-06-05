@@ -118,3 +118,41 @@ headerBurgerBtn.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+
+
+const academiesButton = document.querySelector('.nav__list-academies')
+const academiesSubmenu = document.querySelector('.nav__item-submenu')
+
+let academiesSubmenuOpen = false
+academiesButton.addEventListener('click',()=>{
+  if(!academiesSubmenuOpen){
+    academiesButton.classList.add('open')
+    academiesButton.style.color = "var(--tertiaryColor)"
+    academiesSubmenu.style.height = "190px"
+    academiesSubmenu.style.margin = "25px 0 0 10px"
+    academiesSubmenuOpen = true
+  }else{
+    academiesButton.classList.remove('open')
+    academiesButton.style.color = "#fff"
+    academiesSubmenu.style.height = "0"
+    academiesSubmenu.style.margin = "0 0 0 10px"
+    academiesSubmenuOpen = false
+  }
+
+})
+
+const navListItemClick = document.getElementById('nav__list-click')
+const navListSubmenu = document.querySelector('.nav__list-subitem')
+let academiesListMenuOpen = true
+navListItemClick.addEventListener('click',()=>{
+  if(!academiesListMenuOpen){
+    navListSubmenu.style.opacity = '0'
+    academiesListMenuOpen = true
+  }else {
+    navListSubmenu.style.opacity = '1'
+    academiesListMenuOpen = false
+  }
+})
+
+
+
