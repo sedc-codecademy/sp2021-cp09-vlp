@@ -1,0 +1,24 @@
+{
+  "name": "sp2021-cp09-vlp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch data/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedc-codecademy/sp2021-cp09-vlp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sedc-codecademy/sp2021-cp09-vlp/issues"
+  },
+  "homepage": "https://github.com/sedc-codecademy/sp2021-cp09-vlp#readme",
+  "devDependencies": {
+    "json-server": "^0.16.3"
+  }
+}
