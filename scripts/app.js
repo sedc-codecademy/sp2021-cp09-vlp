@@ -27,6 +27,10 @@ const navListBurger = document.querySelector(".nav__list-burger");
 
 const aboutBtn = document.querySelector(".aboutBtn");
 
+fetch("http://localhost:3000/academies")
+  .then(res => res.json())
+  .then(data => console.log(data));
+
 //Category cards logic
 const webDevBtn = document.querySelector("#ccard-webdev-btn");
 const headerLogo = document.querySelector(".header__logo");
@@ -119,40 +123,35 @@ headerBurgerBtn.addEventListener("click", () => {
   }
 });
 
+const academiesButton = document.querySelector(".nav__list-academies");
+const academiesSubmenu = document.querySelector(".nav__item-submenu");
 
-const academiesButton = document.querySelector('.nav__list-academies')
-const academiesSubmenu = document.querySelector('.nav__item-submenu')
-
-let academiesSubmenuOpen = false
-academiesButton.addEventListener('click',()=>{
-  if(!academiesSubmenuOpen){
-    academiesButton.classList.add('open')
-    academiesButton.style.color = "var(--tertiaryColor)"
-    academiesSubmenu.style.height = "190px"
-    academiesSubmenu.style.margin = "25px 0 0 10px"
-    academiesSubmenuOpen = true
-  }else{
-    academiesButton.classList.remove('open')
-    academiesButton.style.color = "#fff"
-    academiesSubmenu.style.height = "0"
-    academiesSubmenu.style.margin = "0 0 0 10px"
-    academiesSubmenuOpen = false
+let academiesSubmenuOpen = false;
+academiesButton.addEventListener("click", () => {
+  if (!academiesSubmenuOpen) {
+    academiesButton.classList.add("open");
+    academiesButton.style.color = "var(--tertiaryColor)";
+    academiesSubmenu.style.height = "190px";
+    academiesSubmenu.style.margin = "25px 0 0 10px";
+    academiesSubmenuOpen = true;
+  } else {
+    academiesButton.classList.remove("open");
+    academiesButton.style.color = "#fff";
+    academiesSubmenu.style.height = "0";
+    academiesSubmenu.style.margin = "0 0 0 10px";
+    academiesSubmenuOpen = false;
   }
+});
 
-})
-
-const navListItemClick = document.getElementById('nav__list-click')
-const navListSubmenu = document.querySelector('.nav__list-subitem')
-let academiesListMenuOpen = true
-navListItemClick.addEventListener('click',()=>{
-  if(!academiesListMenuOpen){
-    navListSubmenu.style.opacity = '0'
-    academiesListMenuOpen = true
-  }else {
-    navListSubmenu.style.opacity = '1'
-    academiesListMenuOpen = false
+const navListItemClick = document.getElementById("nav__list-click");
+const navListSubmenu = document.querySelector(".nav__list-subitem");
+let academiesListMenuOpen = true;
+navListItemClick.addEventListener("click", () => {
+  if (!academiesListMenuOpen) {
+    navListSubmenu.style.opacity = "0";
+    academiesListMenuOpen = true;
+  } else {
+    navListSubmenu.style.opacity = "1";
+    academiesListMenuOpen = false;
   }
-})
-
-
-
+});
