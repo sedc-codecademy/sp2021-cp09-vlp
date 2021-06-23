@@ -1,31 +1,9 @@
-// RM - Read more
-//
-
-const htmlCardBtn = document.querySelector("#html-card-btn");
-
-const cssCardBtn = document.querySelector("#css-card-btn");
-
-const jsCardBtn = document.querySelector("#js-card-btn");
-
-const advancedJsCardBtn = document.querySelector("#ajs-card-btn");
-
-const nodeJSCardBtn = document.querySelector("#nodejs-card-btn");
-
-const advancedNodeJSCardBtn = document.querySelector("#anodejs-card-btn");
-
-const finalNodeJSCardBtn = document.querySelector("#fnodejs-card-btn");
-
-const oopCardBtn = document.querySelector("#oop-card-btn");
-
-const advancedOopCardBtn = document.querySelector("#aoop-card-btn");
-
-const appCardBtn = document.querySelector("#app-card-btn");
-
 const headerBurgerBtn = document.querySelector(".header__btn");
 
 const navListBurger = document.querySelector(".nav__list-burger");
 
 const aboutBtn = document.querySelector(".aboutBtn");
+
 
 //Fetch call to experiment with different render functionality
 fetch("http://localhost:3000/academies")
@@ -62,16 +40,15 @@ aboutBtn.addEventListener(`click`, e => {
 
 //Modal window logic
 
-const modalCloseBtn = document.querySelector(".modal__close-btn");
 const modalOuter = document.querySelector(".modal__outer");
 
-htmlCardBtn.addEventListener("click", e => {
-  e.preventDefault();
-  showElementsByClass(["modal__outer"]);
-  document.querySelector(".modal__inner").classList.add("modal__inner--show");
-  document.querySelector(".modal__outer").classList.add("modal__outer--open");
-  document.body.style.overflow = "hidden";
-});
+// htmlCardBtn.addEventListener("click", e => {
+//   e.preventDefault();
+//   showElementsByClass(["modal__outer"]);
+//   document.querySelector(".modal__inner").classList.add("modal__inner--show");
+//   document.querySelector(".modal__outer").classList.add("modal__outer--open");
+//   document.body.style.overflow = "hidden";
+// });
 
 showElementsByClass(["modal__outer"]);
 modalOuter.addEventListener("click", e => {
@@ -89,26 +66,6 @@ modalOuter.addEventListener("click", e => {
       .classList.remove("modal__outer--open");
   }
 });
-
-jsCardBtn.addEventListener("click", () => {});
-
-// cssCardBtn.addEventListener("click", () => {});
-
-jsCardBtn.addEventListener("click", () => {});
-
-advancedJsCardBtn.addEventListener("click", () => {});
-
-nodeJSCardBtn.addEventListener("click", () => {});
-
-advancedNodeJSCardBtn.addEventListener("click", () => {});
-
-finalNodeJSCardBtn.addEventListener("click", () => {});
-
-oopCardBtn.addEventListener("click", () => {});
-
-advancedOopCardBtn.addEventListener("click", () => {});
-
-appCardBtn.addEventListener("click", () => {});
 
 //Hamburger Menu Logic
 
