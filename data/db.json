@@ -6,16 +6,12 @@
       "moduleCardData": {
         "alternateTitle": "Web Developer",
         "content": [
-          {
-            "list": [
-              "Basic and Advanced HTML & CSS",
-              "JavaScript in Depth",
-              ".Net Core Backend",
-              "SQL/No-SQL Databases",
-              "ALM Training",
-              "MERN/MEAN Expertise"
-            ]
-          }
+          "Basic and Advanced HTML & CSS",
+          "JavaScript in Depth",
+          ".Net Core Backend",
+          "SQL/No-SQL Databases",
+          "ALM Training",
+          "MERN/MEAN Expertise"
         ]
       },
       "academyContent": [
