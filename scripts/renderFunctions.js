@@ -117,3 +117,31 @@ const renderModal = (id, data) => {
 
   return modalHTML;
 };
+
+//category cards render function
+
+const renderCategoryCard = data => {
+  console.log(data.moduleCardData.content[0]);
+  const listHTML = data.moduleCardData.content
+    .map(item => {
+      return `<li>${item}</li>`;
+    })
+    .join(" ");
+
+  return `
+  <div class="category-card__container">
+    <div class="category-card">
+        <figure class="category-card__front">
+            <h1>${data.moduleCardData?.alternateTitle || data.title}</h1>
+        </figure>
+        <figure class="category-card__back">
+            <ul>
+            ${listHTML}
+            </ul>
+            <a href="#" id=${data.id} class="ccard-link"> GO TO ACADEMY </a>
+
+        </figure>
+    </div>
+  </div
+  `;
+};
