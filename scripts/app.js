@@ -29,7 +29,10 @@ const aboutBtn = document.querySelector(".aboutBtn");
 
 fetch("http://localhost:3000/academies")
   .then(res => res.json())
-  .then(data => console.log(data));
+  .then(data => {
+    const academyContainer = document.querySelector(".academy__container");
+    academyContainer.innerHTML = renderAcademy(data[0]);
+  });
 
 //Category cards logic
 const webDevBtn = document.querySelector("#ccard-webdev-btn");
@@ -44,7 +47,8 @@ headerLogo.addEventListener("click", () => {
   hideElementsByClass(["about__us-page"]);
 });
 
-webDevBtn.addEventListener("click", () => {
+webDevBtn.addEventListener("click", e => {
+  e.preventDefault();
   hideElementsByClass(["landing__page"]);
   showElementsByClass(["academy__container", "aside"]);
 });
