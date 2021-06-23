@@ -76,3 +76,44 @@ function renderAcademy(academyData) {
 
   return `<h1 class="academy__heading">${academyData.title}</h1> ${academyBodyHTML}`;
 }
+
+//Modal window render fuction
+
+const renderModal = (id, data) => {
+  const cardData = data
+    .map(item => {
+      return item.cardContainer?.cards;
+    })
+    .flat()
+    .filter(card => card && card.id === id)[0];
+
+  const modalHTML = `
+      <i class="fas fa-times modal__close-btn"></i>
+      <h1 class="modal__heading">${cardData.cardTitle}</h1>
+      <h3 class="modal__sub-heading">Course summary</h3>
+      <div class="modal__paragraph">
+        ${cardData.modalData.summary}
+      </div>
+      <h3 class="modal__sub-heading">Course Progression</h3>
+      <div class="modal__vlp-container">
+      ${cardData.modalData.progression
+        .map(item => `<div class="modal__vlp-box">${item}</div>`)
+        .join(" ")}
+      </div>
+      <h3 class="modal__sub-heading">Further Reading</h3>
+      <div class="modal__paragraph">
+        <ul>
+        ${cardData.modalData.furtherReadingLinks
+          .map(link => `<li><a href=${link.url}>${link.title}</a></li>`)
+          .join(" ")}
+        </ul>
+      </div>
+      <small
+        >This course is part of the
+        <a href="#" class="modal__bottom-link">Web Development</a>
+        Academy</small
+      >
+  `;
+
+  return modalHTML;
+};
