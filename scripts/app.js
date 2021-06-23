@@ -4,13 +4,35 @@ const navListBurger = document.querySelector(".nav__list-burger");
 
 const aboutBtn = document.querySelector(".aboutBtn");
 
+//function that handles dynamic modals and card buttton navigation
+const cardButtonsHandler = (buttonElements, data) => {
+  buttonElements.forEach(button => {
+    button.addEventListener("click", e => {
+      e.preventDefault();
+      const innerModal = document.querySelector(".modal__inner");
+      const outerModal = document.querySelector(".modal__outer");
+      const modalHTML = renderModal(e.target.id, data);
+      innerModal.innerHTML = "";
+      innerModal.innerHTML = modalHTML;
+      showElementsByClass(["modal__outer"]);
+      innerModal.classList.add("modal__inner--show");
+      outerModal.classList.add("modal__outer--open");
+      document.body.style.overflow = "hidden";
+    });
+  });
+};
 
 //Fetch call to experiment with different render functionality
 fetch("http://localhost:3000/academies")
   .then(res => res.json())
   .then(data => {
     const academyContainer = document.querySelector(".academy__container");
+
     academyContainer.innerHTML = renderAcademy(data[0]);
+
+    const cardButtons = document.querySelectorAll(".card__button");
+
+    cardButtonsHandler(cardButtons, data[0].academyContent);
   });
 
 //Category cards logic
@@ -41,14 +63,6 @@ aboutBtn.addEventListener(`click`, e => {
 //Modal window logic
 
 const modalOuter = document.querySelector(".modal__outer");
-
-// htmlCardBtn.addEventListener("click", e => {
-//   e.preventDefault();
-//   showElementsByClass(["modal__outer"]);
-//   document.querySelector(".modal__inner").classList.add("modal__inner--show");
-//   document.querySelector(".modal__outer").classList.add("modal__outer--open");
-//   document.body.style.overflow = "hidden";
-// });
 
 showElementsByClass(["modal__outer"]);
 modalOuter.addEventListener("click", e => {
