@@ -27,6 +27,7 @@ const navListBurger = document.querySelector(".nav__list-burger");
 
 const aboutBtn = document.querySelector(".aboutBtn");
 
+//Fetch call to experiment with different render functionality
 fetch("http://localhost:3000/academies")
   .then(res => res.json())
   .then(data => {
