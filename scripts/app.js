@@ -4,7 +4,8 @@ const navListBurger = document.querySelector(".nav__list-burger");
 
 const aboutBtn = document.querySelector(".aboutBtn");
 
-//function that handles dynamic modals and card buttton navigation
+//Event Handler functions
+
 const cardButtonsHandler = (buttonElements, data) => {
   buttonElements.forEach(button => {
     button.addEventListener("click", e => {
@@ -22,63 +23,78 @@ const cardButtonsHandler = (buttonElements, data) => {
   });
 };
 
-//Fetch call to experiment with different render functionality
+const categoryCardLinksHandler = (linkElements, data) => {
+  linkElements.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const academyContainer = document.querySelector(".academy__container");
+      hideElementsByClass(["landing__page"]);
+      showElementsByClass(["academy__container", "aside"]);
+
+      const academyData = data.filter(item => item.id === e.target.id)[0];
+      academyContainer.innerHTML = renderAcademy(academyData);
+
+      const cardButtons = document.querySelectorAll(".card__button");
+      cardButtonsHandler(cardButtons, data[0].academyContent);
+    });
+  });
+};
+
+const headerLogoHandler = () => {
+  const headerLogo = document.querySelector(".header__logo");
+
+  hideElementsByClass(["academy__container", "aside", "about__us-page"]);
+
+  headerLogo.addEventListener("click", () => {
+    hideElementsByClass(["academy__container", "aside", "about__us-page"]);
+    showElementsByClass(["landing__page"]);
+  });
+};
+
+const modalCloseHandler = () => {
+  const modalOuter = document.querySelector(".modal__outer");
+
+  modalOuter.addEventListener("click", e => {
+    if (
+      e.target.classList.contains("modal__outer") ||
+      e.target.classList.contains("modal__close-btn") ||
+      e.target.classList.contains("modal__bottom-link")
+    ) {
+      document.body.style.overflow = "auto";
+      document
+        .querySelector(".modal__inner")
+        .classList.remove("modal__inner--show");
+      document
+        .querySelector(".modal__outer")
+        .classList.remove("modal__outer--open");
+    }
+  });
+};
+
+modalCloseHandler();
+headerLogoHandler();
+
+//Fetch call to get all academies data
 fetch("http://localhost:3000/academies")
   .then(res => res.json())
   .then(data => {
-    const academyContainer = document.querySelector(".academy__container");
+    const landingPageContainer = document.querySelector(
+      ".landing-cards__container"
+    );
 
-    academyContainer.innerHTML = renderAcademy(data[0]);
+    landingPageContainer.innerHTML = data
+      .map(academy => renderCategoryCard(academy))
+      .join(" ");
 
-    const cardButtons = document.querySelectorAll(".card__button");
+    const categoryCardLinks = document.querySelectorAll(".ccard-link");
 
-    cardButtonsHandler(cardButtons, data[0].academyContent);
+    categoryCardLinksHandler(categoryCardLinks, data);
   });
-
-//Category cards logic
-const webDevBtn = document.querySelector("#ccard-webdev-btn");
-const headerLogo = document.querySelector(".header__logo");
-
-hideElementsByClass(["academy__container", "aside"]);
-hideElementsByClass(["about__us-page"]);
-
-headerLogo.addEventListener("click", () => {
-  hideElementsByClass(["academy__container", "aside"]);
-  showElementsByClass(["landing__page"]);
-  hideElementsByClass(["about__us-page"]);
-});
-
-webDevBtn.addEventListener("click", e => {
-  e.preventDefault();
-  hideElementsByClass(["landing__page"]);
-  showElementsByClass(["academy__container", "aside"]);
-});
 
 aboutBtn.addEventListener(`click`, e => {
   e.preventDefault();
   hideElementsByClass(["landing__page", "academy__container", "aside"]);
   showElementsByClass(["about__us-page"]);
-});
-
-//Modal window logic
-
-const modalOuter = document.querySelector(".modal__outer");
-
-showElementsByClass(["modal__outer"]);
-modalOuter.addEventListener("click", e => {
-  if (
-    e.target.classList.contains("modal__outer") ||
-    e.target.classList.contains("modal__close-btn") ||
-    e.target.classList.contains("modal__bottom-link")
-  ) {
-    document.body.style.overflow = "auto";
-    document
-      .querySelector(".modal__inner")
-      .classList.remove("modal__inner--show");
-    document
-      .querySelector(".modal__outer")
-      .classList.remove("modal__outer--open");
-  }
 });
 
 //Hamburger Menu Logic
