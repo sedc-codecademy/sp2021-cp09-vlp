@@ -35,7 +35,7 @@ const categoryCardLinksHandler = (linkElements, data) => {
       academyContainer.innerHTML = renderAcademy(academyData);
 
       const cardButtons = document.querySelectorAll(".card__button");
-      cardButtonsHandler(cardButtons, data[0].academyContent);
+      cardButtonsHandler(cardButtons, academyData.academyContent);
     });
   });
 };
