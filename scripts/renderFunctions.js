@@ -22,7 +22,7 @@ const renderParagraph = data => {
   const paragraphBodyHTML = data.content.map(item => {
     const key = Object.keys(item)[0];
     return renderMethods[key](item[key]);
-  });
+  }).join(` `);
 
   return `
       <h3 class="academy__sub-heading">${data.title}</h3>
@@ -72,7 +72,7 @@ function renderAcademy(academyData) {
   const academyBodyHTML = academyData.academyContent.map(item => {
     const key = Object.keys(item)[0];
     return renderMethods[key](item[key]);
-  });
+  }).join(` `)
 
   return `<h1 class="academy__heading">${academyData.title}</h1> ${academyBodyHTML}`;
 }
