@@ -1,0 +1,1049 @@
+{
+   "Data": {
+      "Academies": [
+         {
+            "id": 0,
+            "name": "Programming",
+            "nameId": "programming",
+            "reply": [
+               "Coding's the name and programming's the game!",
+               "If programming is the thing you want, I can teach you how to mess with peoples' screen font!",
+               "Programming's the way! I'll take it over any other job any day!"
+            ],
+            "studyPrograms": [
+               {
+                  "name": "Web Development",
+                  "nameId": "webDevelopment",
+                  "overview": "At the end of this 3 semesters study program you will develop an equivalent skill set and knowledge as an entry level web developer for the exciting and in-demand software development industry.",
+                  "moreinfo": "https://www.sedc.mk/academy/academy-for-programing/web-developer/",
+                  "timeline": "Duration: 12 months | 3 semesters \nClasses: 480 \n\nStart: November \nEnd: October/November \n\nLectures will be held twice a week and every 2nd Saturday.",
+                  "jobopportunities": "You may get employed as the following titles: Web Developer, Software Developer, Front-End Web Developer, Full-Stack Web Developer, Technical trainer, Technical consultant",
+                  "reply": [
+                     "So building websites is your plan? Or do you just wanna be a 'Hacker-man'?",
+                     "Did you know that students from this academy built me? I love those weird, sleep deprived kids so much!",
+                     "Building websites is a great way to have fun! Until the debugging has begun..."
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Job Opportunities",
+                     "Apply",
+                     "Price"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 1,
+            "name": "Computer Networks",
+            "nameId": "computerNetworks",
+            "reply": [
+               "Computer networks are like a beautiful intricate web... Until the system admin spider come tho chew off your head!",
+               "Computer networks are great! No! I'm the system admin, so it's not up for debate!",
+               "Working with computers is fun! It's the people that use them I run away from!"
+            ],
+            "studyPrograms": [
+               {
+                  "name": "CloudOps Network Engineer",
+                  "nameId": "cloudOps",
+                  "overview": "During the studies we’ll learn about the techniques for architecting, deploying, and maintaining applications, including how to use Cloud as the infrastructure for existing and new services. A lot of practical activities will prepare you to achieve hands-on and real-world skills essential for the evolving IT market.",
+                  "moreinfo": "https://www.sedc.mk/academy/academy-for-computer-networks/cloudops-network-engineer/",
+                  "timeline": "Duration: 12 months | 3 semesters \nClasses: 830 \n\nStart: November \nEnd: November \n\nLectures: Every day (Monday – Friday) from 12:30 pm until 16:00 pm",
+                  "jobopportunities": "You may get employed as the following titles: following titles: CloudOps Engineer, Cloud Engineer, Cloud Administrator, Cloud Support Specialist, Cloud Infrastructure Architect, Network technician, Network administrator, Network Engineer, Network support, Server administration, Network designer, System Administrator, System Engineer, Desktop Support Technician, Desktop Support Engineer",
+                  "reply": [
+                     "Cloud computing? Can computers fly now?",
+                     "Hello and welcome to the cloud! It's still hardware though... So no rain water allowed!",
+                     "With this academy the sky is the limit! No literally, there is nowhere else to migrate after that!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Job Opportunities",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Security Specialist",
+                  "nameId": "securitySpecialist",
+                  "overview": "Security Specialists and Network Administrators are usually familiar with network components, traffic, performance and utilization, network topology, location of each system, security policy, etc.Ranged as a beginner to intermediate level study program, it is well suited for anyone looking to get their foot in the Cyber Security door as well as people that want to hone and advance their skills.",
+                  "moreinfo": "https://www.sedc.mk/academy/academy-for-computer-networks/security-specialist/",
+                  "timeline": "Duration: 6 months | 2 semesters \nClasses: 250 \n\nStart: November \nEnd: April \n\nLectures: 2-3 time a week from 5:30 pm until 9:00 pm",
+                  "jobopportunities": "You may get employed as the following titles: IT Security Analyst, IT Network Security Engineer, IT Network Security Administrator, IT Security Specialist, IT Security Officer, Penetration Tester, Security Analyst, CloudSecOps, Cloud Security Engineer, Cloud Security Specialist",
+                  "reply": [
+                     "Networks are like highways, but every highway needs a highway patrol! Donuts not included!",
+                     "Not sure why the network is so slow? Then it's time to call the big guns and let them have a go!",
+                     "Life's a peach, when you can a void a data breach!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Job Opportunities",
+                     "Apply",
+                     "Price"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 2,
+            "name": "Design",
+            "nameId": "design",
+            "reply": [
+               "Fancy yourself a bachelor of art? Then this is where career should start!",
+               "They say beauty is in the eye of the beholder. Well I say it's in the pencil holder!",
+               "To draw or not to draw!? There is no question! Here the pencil's martial law!"
+            ],
+            "studyPrograms": [
+               {
+                  "name": "Graphic Designer",
+                  "nameId": "graphicDesigner",
+                  "overview": "Students will be lead through the nuanced skill-development process to achieve excellence in Logo Design, Typography, Packaging, Printing, Web Design, User Experience, User Interface, Branding and Advertising.",
+                  "moreinfo": "https://www.sedc.mk/academy/academy-for-design/graphic-designer/",
+                  "timeline": "Duration: 9 months | 2 semesters \nClasses: 540 \n\nStart: October \nEnd: June \n\nLectures: Every day (Monday – Friday) from 8:30 am until 12:00 pm",
+                  "jobopportunities": "You may get employed as the following titles: Creative/Art Director, Logo Designer, Brand Identity Designer, Photo Editing/ Photoshop Artist, Layout Artist",
+                  "reply": [
+                     "If designing adverts is your thing, then let us show you how to make your drawing arm sing!",
+                     "So you wanna learn how to design a poster? Or maybe someone like me! A gullable jokester!",
+                     "If various new design skills are what you yearn for, then this is the place to learn more!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Job Opportunities",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Web Designer",
+                  "nameId": "webDesigner",
+                  "overview": "Students will learn how to plan and design compelling and interactive websites, how to change and make an impact with HTML and CSS, PHP and jQuery. They will also learn technical software programs and accessibility standards, color, typography, and composition and will create their own dynamic portfolio.",
+                  "moreinfo": "https://www.sedc.mk/academy/academy-for-design/web-design/",
+                  "timeline": "Duration: 9 months | 2 semesters \nClasses: 540 \n\nStart: October \nEnd: June \n\nLectures: Every day (Monday – Friday) from 5:30 pm until 9:00 pm",
+                  "jobopportunities": "You may get employed as the following titles: Front End Web Developer, Back End Web Developer, UX/UI Web Designer",
+                  "reply": [
+                     "If website designs are what you wanna do, then this academy is what you'll wanna go through!",
+                     "Web designing can be a demanding job, but we designers are a tough mob!",
+                     "When designing a website you have to think smart. Not too much though because it's still art!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Job Opportunities",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Game Designer",
+                  "nameId": "gameDesigner",
+                  "overview": "Academy for Game Design combines technical knowledge and artistic skill to produce a portfolio in line with game design industry. Students will learn to design characters and its environments, image rendering, character development and animation.",
+                  "moreinfo": "https://www.sedc.mk/academy/academy-for-design/3d-animator/",
+                  "timeline": "Duration: 9 months | 2 semesters \nClasses: 540 \n\nStart: November \nEnd: July \n\nLectures will be held every day (Mon-Fri).",
+                  "jobopportunities": "You may get employed as the following titles: Game Programmer, Game Designer, Game Technical Artist",
+                  "reply": [
+                     "If games are your field, then learn how to draw a sword or a shield!",
+                     "If game designing seems tough? Don't worry we'll give you a stats buff!",
+                     "Think game designing is fun? Well wait till the boss fight's come!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Job Opportunities",
+                     "Apply",
+                     "Price"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 3,
+            "name": "Software Testing",
+            "nameId": "softwareTesting",
+            "reply": [
+               "If testing is what you want, then you must walk a path with bugs to hunt!",
+               "As long as there are bugs and other pests, a software tester can never rest!",
+               "You thing software testing is your calling? Then quick! Catch that bug before it starts crawling!"
+            ],
+            "studyPrograms": [
+               {
+                  "name": "Software Tester",
+                  "nameId": "softwareTester",
+                  "overview": "This curriculum is focused on the latest agile testing principles combined with traditional software testing concepts. In addition candidates are getting IT knowledge related to Agile, Scrum and Kanban, SQL, Operating systems and Diagrams such as UML, BPMN and Mind Maps which is crucial for a Software Tester.",
+                  "moreinfo": "https://www.sedc.mk/academy/academy-for-software-testing/software-tester/",
+                  "timeline": "Duration: 6 months | 2 semesters \nClasses: 210 \n\nStart: March \nEnd: August \n\nLectures will be held twice a week.",
+                  "jobopportunities": "You may get employed as the following titles: Software Testing Engineer, Software Testing Analyst, Automates Testing Engineer, Software Engineer, Technical Consultant.",
+                  "reply": [
+                     "Test... Test... Testing... Testing... Is this thing on? Wait... Why am I asking you, when I'm the one testing!?",
+                     "Are you testing me? Well are ya punk? Well of course you are! That's your future job!",
+                     "After we're done with you, all the bugs will cower in fear, every time they sense you're near!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Job Opportunities",
+                     "Apply",
+                     "Price"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 4,
+            "name": "Data Science",
+            "nameId": "dataScience",
+            "reply": [
+               "Think data science's your call? Then let us teach you how to play ball!",
+               "Data science can be a serious endeavour, but it's a skill which stays with you forever!",
+               "If working with data is your thing, then why not strive to become the king?"
+            ],
+            "studyPrograms": [
+               {
+                  "name": "Data Scientist",
+                  "nameId": "dataScientist",
+                  "overview": "Having in mind that a good Data Scientist means not only being fluent with the latest frameworks and tools, but also having an evolved intuition for data analysis, representations & modeling that are efficient, secure, maintainable & explainable, the study methodology has an ideal balance between these crucial components.",
+                  "moreinfo": "https://www.sedc.mk/academy/academy-for-data-science/",
+                  "timeline": "Duration: 8 months \nClasses: 252 \n\nStart: October \nEnd: August \n\nLectures will be held twice a week and every 2nd Friday.",
+                  "jobopportunities": "You may get employed as the following titles: Data Scientist, Data Analyst, Business Intelligence Analyst, Data Engineer, Data Consultant",
+                  "reply": [
+                     "If you find all kinds of data dandy, then that's where our data scientist academy comes in handy!",
+                     "Some consider data analysis an art! Join us and we'll give you a kick start!",
+                     "If your knowledge of data is kinda rough, then don't worry, we'll teach you a lot of new stuff!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Job Opportunities",
+                     "Apply",
+                     "Price"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 5,
+            "name": "Digital Marketing",
+            "nameId": "digitalMarketing",
+            "reply": [
+               "Ever seen those marketing wrecks? Then learn how to help companies like that get on the right track!",
+               "If digital marketing is what you wanna do, then we'll show you how to!",
+               "Creating a successful advert always makes me feel good, it's like your child has made it all the way to adulthood!"
+            ],
+            "studyPrograms": [
+               {
+                  "name": "Digital Marketer",
+                  "nameId": "digitalMarketer",
+                  "overview": "At the end of the program you will develop the essential digital marketing skill set and open up new job opportunities in a large corporation or a small firm, or even go independent as a freelance digital marketer.",
+                  "moreinfo": "https://www.sedc.mk/academy/academy-for-programing/web-developer/",
+                  "timeline": "Duration: 6 months \nClasses: 180 \n\nStart: October \nEnd: April \n\nLectures will be held twice a week and every 2nd Friday.",
+                  "jobopportunities": "You may get employed as the following titles: Digital Marketer, Performance Marketing Specialist, Digital Advertising Specialist, SEM Specialist, SEO Specialist, Social Media Coordinator, Digital Marketing Analyst, Content Creator",
+                  "reply": [
+                     "If conventional marketing is not enough, then we've got just the stuff!",
+                     "Wanna build a great ads for your storefront? Look no further we have all the knowledge you could ever want!",
+                     "If various new marketing skills are what you yearn for, then this is the place to learn more!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Job Opportunities",
+                     "Apply",
+                     "Price"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 6,
+            "name": "iThink Academy",
+            "nameId": "iThink",
+            "reply": [
+               "If your kid's mental growth is on top of your chart, then this is where you wanna start!",
+               "Do you want your kid to be a little Einstein? Then this academy will make his intellect really shine!",
+               "If your kid's education is on your mind, then this is the best start you can find!"
+            ],
+            "studyPrograms": [
+               {
+                  "name": "iThink Basic",
+                  "nameId": "basic",
+                  "overview": "Teach kids to create, not just to use. Encourage analytical thinking, motivate problem solving, teach that technology makes education enjoyable, interest in continuing development at home, engage children in information technology as a way of everyday life, boost their self-confidence.",
+                  "moreinfo": "https://www.sedc.mk/academy/ithink-academy/",
+                  "timeline": "Duration: 8 months \nClasses: 120/130 \n\nStart: October \nEnd: June \n\nLectures will be held twice a week.",
+                  "reply": [
+                     "This is where our first timers are brought and where the basics are taught!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "iThink Advanced",
+                  "nameId": "advanced",
+                  "overview": "Develop ideas through fun and games, focus children on the future use of IT no matter what they will become, create a classroom that can function with student interactions and will foster self-motivated learning.",
+                  "moreInfo": "https://www.sedc.mk/academy/ithink-academy/",
+                  "timeline": "Duration: 8 months \nClasses: 120/130 \n\nStart: October \nEnd: June \n\nLectures will be held twice a week.",
+                  "reply": [
+                     "If your kid and the basics have already danced, then he is ready for a lesson more advanced!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "iThink Upper",
+                  "nameId": "upper",
+                  "overview": "Develop ideas through fun and games, focus children on the future use of IT no matter what they will become, create a classroom that can function with student interactions and will foster self-motivated learning, interest in continuing development at home, make them choose a method for solving the problem, boost their self-confidence",
+                  "moreInfo": "https://www.sedc.mk/academy/ithink-academy/",
+                  "timeline": "Duration: 8 months \nClasses: 120/130 \n\nStart: October \nEnd: June \n\nLectures will be held twice a week.",
+                  "reply": [
+                     "If your kid has mastered all our teachings prior, he needs to reach even higher!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Apply",
+                     "Price"
+                  ]
+               }
+            ]
+         }
+      ],
+      "Testing": [
+         {
+            "id": 0,
+            "name": "Pearson VUE",
+            "nameId": "personVue",
+            "reply": [
+               "You made a great choice! What would you like to know about this test?",
+               "Aha so that's what caught your eye! A great choice, what would you like to know?",
+               "Awesome choice there! What exactly do you want to know about this test?",
+               "Great choice! A nice edition to put under your belt! What would you like to know?"
+            ],
+            "overview": "Pearson VUE delivers millions of high-stakes tests a year across the globe for clients in the licensure, certification, academic admissions, regulatory, and government testing service markets.",
+            "about": "Pearson VUE is a part of Pearson PLC, a $9 billion corporation that is the largest commercial testing company and education publisher in the world. Pearson VUE is headquartered in suburban Minneapolis, Minnesota, with regional offices in the United States, the United Kingdom, Dubai, Australia, India, Japan and China.",
+            "moreinfo": "https://www.sedc.mk/testing/pearson-vue/",
+            "testcenters": "Pearson VUE® Authorized Test Centers (PVTC) provide on-site, on-demand testing for certification and select professional licensure exams. All of the centers offer flexibility in choosing what testing model is right for you. Whether you require a dedicated testing room, a classroom used for training, or a mobile unit you would like to use for testing, PVTCs have the solution for you.",
+            "infoProperties": [
+               "Overview",
+               "About",
+               "Test Centers",
+               "Apply"
+            ]
+         },
+         {
+            "id": 1,
+            "name": "Prometric",
+            "nameId": "prometric",
+            "reply": [
+               "You made a great choice! What would you like to know about this test?",
+               "Aha so that's what caught your eye! A great choice, what would you like to know?",
+               "Awesome choice there! What exactly do you want to know about this test?",
+               "Great choice! A nice edition to put under your belt! What would you like to know?"
+            ],
+            "overview": "Prometric is a trusted test development and delivery provider to more than 350 organizations worldwide. On their behalf, Prometric securely deliver an average of 9 million exams per year to people who are seeking to improve their lives.",
+            "about": "Prometric is a wholly-owned subsidiary of Educational Testing Service (ETS) and a trusted provider of technology-enabled testing and assessment solutions. Their more than 20 years of experience providing the right test development and test delivery solutions to the world’s most recognized organizations has enabled millions of people around the world to advance in their careers, earn more money or better themselves professionally.",
+            "moreinfo": "https://www.sedc.mk/testing/prometric/",
+            "testcenters": "Prometric® Authorized Test Centers (APTC) provide on-site, on-demand testing for certification and select professional licensure exams. All of the centers offer flexibility in choosing what testing model is right for you. Whether you require a dedicated testing room, a classroom used for training, or a mobile unit you would like to use for testing, APTCs have the solution for you.",
+            "infoProperties": [
+               "Overview",
+               "About",
+               "Test Centers",
+               "Apply"
+            ]
+         },
+         {
+            "id": 2,
+            "name": "Certiport",
+            "nameId": "certiport",
+            "reply": [
+               "You made a great choice! What would you like to know about this test?",
+               "Aha so that's what caught your eye! A great choice, what would you like to know?",
+               "Awesome choice there! What exactly do you want to know about this test?",
+               "Great choice! A nice edition to put under your belt! What would you like to know?"
+            ],
+            "overview": "Established in 1997, Certiport is a pioneer in providing complete career-oriented certification solutions to academic institutions and IT Professionals.",
+            "about": "Certiport®, a Pearson VUE business, prepares individuals with current and relevant digital skills and credentials for the competitive global workforce.",
+            "moreinfo": "https://www.sedc.mk/testing/certiport/",
+            "testcenters": "Certiport delivers certification exams through a specialized, worldwide network of Certiport Authorized Testing Centers. These centers can serve one of three key markets: Academic, Corporate, or Workforce Development. Centers are uniquely positioned to provide the highest level of reliable, performance-based testing.",
+            "infoProperties": [
+               "Overview",
+               "About",
+               "Test Centers",
+               "Apply"
+            ]
+         },
+         {
+            "id": 3,
+            "name": "Kryterion",
+            "nameId": "kryterion",
+            "reply": [
+               "You made a great choice! What would you like to know about this test?",
+               "Aha so that's what caught your eye! A great choice, what would you like to know?",
+               "Awesome choice there! What exactly do you want to know about this test?",
+               "Great choice! A nice edition to put under your belt! What would you like to know?"
+            ],
+            "overview": "Kryterion Inc. offers online testing, delivery, and proctoring services. It offers Webassessor, an online testing platform which provides tools for item banking, security, exam management, results management, and self-service reporting. The company was founded in 2000 and is based in Phoenix, Arizona. Kryterion Inc. operates as a subsidiary of Drake International Inc.",
+            "moreinfo": "https://www.sedc.mk/testing/kryterion/",
+            "infoProperties": [
+               "Overview",
+               "Apply"
+            ]
+         },
+         {
+            "id": 4,
+            "name": "Nextec",
+            "nameId": "nextec",
+            "reply": [
+               "You made a great choice! What would you like to know about this test?",
+               "Aha so that's what caught your eye! A great choice, what would you like to know?",
+               "Awesome choice there! What exactly do you want to know about this test?",
+               "Great choice! A nice edition to put under your belt! What would you like to know?"
+            ],
+            "overview": "NEXTEC is one of the largest testing center network in the world. There are over 400 verified Nextec Testing centers in over 300 cities. Nextec Centers administer online and paper-based tests and scale from 5-200 seating capacity.",
+            "moreinfo": "https://www.sedc.mk/testing/nextec/",
+            "infoProperties": [
+               "Overview",
+               "Apply"
+            ]
+         },
+         {
+            "id": 5,
+            "name": "EC - Council",
+            "nameId": "ecCouncil",
+            "reply": [
+               "You made a great choice! What would you like to know about this test?",
+               "Aha so that's what caught your eye! A great choice, what would you like to know?",
+               "Awesome choice there! What exactly do you want to know about this test?",
+               "Great choice! A nice edition to put under your belt! What would you like to know?"
+            ],
+            "overview": "International Council of E-Commerce Consultants, also known as EC-Council, is the world’s largest cyber security technical certification body.",
+            "about": "EC-Council certification programs are recognized worldwide and have received endorsements from various government agencies including the US Federal Government via the Montgomery GI Bill, and the US Government National Security Agency (NSA).",
+            "moreinfo": "https://www.sedc.mk/testing/ec-council/",
+            "testcenters": "EC-Council has certified over 200,000 security professionals. Individuals who have achieved EC-Council certifications include those from some of the finest organizations around the world such as the US Army, the FBI, Microsoft, IBM, and the United Nations.",
+            "infoProperties": [
+               "Overview",
+               "About",
+               "Test Centers",
+               "Apply"
+            ]
+         }
+      ],
+      "Courses": [
+         {
+            "id": 0,
+            "name": "Business Courses",
+            "nameId": "businessCourses",
+            "reply": [
+               "So you want to further improve your business - tech skills? We've got some stuff that'll give you thrills!",
+               "If business - tech courses is what you need, then we've got you covered indeed!",
+               "If it's your business - tech skills you want to improve, then our courses with get you into the groove!"
+            ],
+            "studyPrograms": [
+               {
+                  "name": "Agile Basics",
+                  "nameId": "agileBasics",
+                  "overview": "Agile is an attempt to make the process of software development better and more effective, and it’s seen increasing popularity and success.",
+                  "moreinfo": "https://courses.sedc.mk/product/agile-basics/",
+                  "timeline": "Classes: 15 \n\nStart Date: 19.04.2021 \nEnd Date: 23.04.2021 \n\nTime: 16:30 - 19 45 Every Day (Monday-Friday)",
+                  "targetaudience": "Anyone interested in AGILE framework.",
+                  "reply": [
+                     "I see that you're after those agility points! Well we've just the thing to move those business joints!",
+                     "With us you'll get some new agile skills, that you'll be able to run a hundred hills!",
+                     "Study agile and become very bendable! Your career will find it very recommendable!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Agile SCRUM Master Training",
+                  "nameId": "agileScrumMasterTraining",
+                  "overview": "This 4 days course will teach you how to employ Scrum to increase value, improve productivity and optimize the total cost of ownership of software products and also will give you basis to become certified Scrum Master.",
+                  "moreinfo": "https://courses.sedc.mk/product/agile-scrum-master-training/",
+                  "timeline": "Classes: 20 \n\nStart Date: 15.03.2021 \nEnd Date: 19.03.2021 \n\nTime: 16:30 - 19:45 Every Day (Monday-Friday)",
+                  "targetaudience": "Anyone interested in AGILE framework, future SCRUM Masters, Product Owners or SCRUM team members",
+                  "reply": [
+                     "You are Agile I'll give you that! But are you a Master? Well you'll have to prove that!",
+                     "Get acquainted with SCRUM and give your competition a good run!",
+                     "Want to increase your business worth? Learn SCRUM and give your CV some added girth!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Business Analysis",
+                  "nameId": "businessAnalysis",
+                  "overview": "Interacting with and gathering requirements from front office users (trading, sales, desk heads, etc.) with relevant Business domain knowledge. Translating these business requirements into clear specify-by-example requirements for IT with Business Domain Knowledge in it.",
+                  "moreinfo": "https://courses.sedc.mk/product/business-analysis-online/",
+                  "timeline": "Classes: 20 \n\nStart Date: 10.05.2021 \nEnd Date: 13.05.2021 \n\nTime: 16:45 - 20:45 Every Day (Monday-Thursday)",
+                  "targetaudience": "Business employees engaged in forming requirements for software development.",
+                  "reply": [
+                     "Ever ordered randomly off a French restaurant's menu and got something you instantly regretted? Me too! But then I learned that I don't have to speak French to order what I want!",
+                     "In every day business to tech communication a new skill requirement is on the rise and thats the employee's skill to analyze!",
+                     "Follow our advice and learn how to analyze! You'll love it and your career will likewise"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Microsoft Office",
+                  "nameId": "microsoftOffice",
+                  "overview": "This course will provide a solid foundation in Microsoft Word, PowerPoint, Excel and Outlook, where beginners would have the opportunity to learn the basic skills for these programs.",
+                  "moreinfo": "https://courses.sedc.mk/product/289/",
+                  "timeline": "Classes: 30 \n\nStart Date: 05.04.2021 \nEnd Date: 28.04.2021 \n\nTime: 17:30 - 20:00 Monday, Wednesday & every second Friday",
+                  "targetaudience": "This course is designed for those who wish to acquire skills using Microsoft Office applications. This Qualification is helpful for any Office job, such as Admin Assistant, Administrator, or Office Manager.",
+                  "reply": [
+                     "Did you ever get to that point where Outlook looked like your teenage room? Learn how to set it up properly and you won't even need that broom!",
+                     "Want to have a better PowerPoint than Greg from sales? With this course you'll leave him bitting his nails! I'm still better than you Greg!",
+                     "Having the required Office skills may look like a dull task, but it's a question that the interviewers most frequently ask!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "MS Excel Advanced",
+                  "nameId": "msExcelAdvanced",
+                  "overview": "This course is designed for the participants who want to perform accurate and rapid calculations with results ranging from simple calculation to complex financial analyses.",
+                  "moreinfo": "https://courses.sedc.mk/product/ms-excel-advanced/",
+                  "timeline": "Classes: 27 \n\nStart Date: 02.03.2021 \nEnd Date: 30.03.2021 \n\nTime: 17:30 - 19:30 Tuesday & Thursday",
+                  "targetaudience": "Anyone interested in expanding their knowledge in working with tables and analyzing data.",
+                  "reply": [
+                     "There's no better way to excel at spreadsheets than learning some Advanced MS Excel! Did you see what I did there with the... Aaahh you got it!",
+                     "If it's complicated spreadsheets that haunt your dreams, then let us show you it's easier than it seems!",
+                     "Having great excel skills is a must, if you want the competition to eat your dust!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "PMP Project Management Professional",
+                  "nameId": "pmpProjectManagementProfessional",
+                  "overview": "This course provides Project Managers with the knowledge and skills needed to master the PMBOK® Guide Fifth Edition and attain the Project Management Professional (PMP®) certification.",
+                  "moreinfo": "https://courses.sedc.mk/product/pmp-project-management-professional/",
+                  "timeline": "Classes: 35 \n\nStart Date: 10.05.2021 \nEnd Date: 18.05.2021 \n\nTime: 16:45 - 20:45 (Monday-Friday)",
+                  "targetaudience": "This course is intended to enhance a student’s project experience with global terminology and the proven framework for leading and directing project teams and in delivering project results within the constraints of schedule, budget and resources.",
+                  "reply": [
+                     "Need some extra experience points to level up your managing skill? We gt your experience boost right here!",
+                     "If managing is the skill you choose, you'll learn a lot on this management learning cruise!",
+                     "If you feel that management is your domain, then learn to be the strongest link in the chain!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 1,
+            "name": "HI-Tech",
+            "nameId": "hiTech",
+            "reply": [
+               "So you want to further improve your business - tech skills? Join us! For there's much to discuss!",
+               "Want to invest some time in your tech tree? My, my aren't you the busy bee!",
+               "Great tech skills is something to strive for! It's a property many jobs just adore!"
+            ],
+            "studyPrograms": [
+               {
+                  "name": "CCNA",
+                  "nameId": "ccna",
+                  "overview": "CCNA Routing and Switching teaches comprehensive networking concepts, from network applications to the protocols and services provided to those applications by the lower layers of the network.",
+                  "moreinfo": "https://courses.sedc.mk/product/ccna/",
+                  "timeline": "Classes: 180 \n\nStart Date: 28.04.2021 \nEnd Date: 25.08.2021 \n\nTime: 17:30 -20:45 Monday, Wednesday & every second Friday",
+                  "targetaudience": "The course is appropriate for students at many education levels College and university students studying IT fields would find this curriculum to be essential in introduction to IT and networking.",
+                  "reply": [
+                     "When you think about IT, networking always comes to mind. Well this is the best basic course you'll find!",
+                     "When it comes down to networks and broadband, IT is the first thing you think about when things don't go as planned!",
+                     "IT and networks are friends best, but I don't know why they always interact with a test!?"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Certified Ethical Hacker - CEH",
+                  "nameId": "certifiedethicalhacker-CEH",
+                  "overview": "The Certified Ethical Hacker (CEH) program is the most comprehensive ethical hacking course  to help information security professionals grasp the fundamentals of ethical hacking.",
+                  "moreinfo": "https://courses.sedc.mk/product/certified-ethical-hacker-ceh/",
+                  "timeline": "Classes: 40 \n\nStart Date: 16.03.2021 \nEnd Date: 15.04.2021 \n\nTime: 17:30 – 20:45 Tuesday & Thursday",
+                  "targetaudience": "The Certified Ethical Hacker certification will fortify the application knowledge of security officers, auditors, security professionals, site administrators, and anyone who is concerned about the integrity of the network infrastructure.",
+                  "reply": [
+                     "Ethical hacking!? Well when ethical it's okay it seems... Just don't take it to any extremes!",
+                     "While ethical and hacking may contradict, it's all about the damage it may or may not afflict!",
+                     "Well everybody told me that hacking is bad, but to them I say nay! I'm a good lad!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Certified Incident Handler - E-CIH",
+                  "nameId": "certifiedIncidentHandler-E-CIH",
+                  "overview": "Certified Incident Handler (E|CIH) is a comprehensive specialist-level program that imparts knowledge and skills that organizations need to effectively handle post breach consequences by reducing the impact of the incident, from both a financial and a reputational perspective.",
+                  "moreinfo": "https://courses.sedc.mk/product/certified-incident-handler-e-cih/",
+                  "timeline": "Classes: 24 \n\nStart Date: 04.05.2021 \nEnd Date: 20.05.2021 \n\nTime: 17:30 – 20:45 Tuesday & Thursday",
+                  "targetaudience": "The incident handling skills taught in E|CIH are complementary to the job roles below as well as many other cybersecurity jobs.",
+                  "reply": [
+                     "Accidentally threated on someone's toe? Learn to avoid making them your foe!",
+                     "An incident is always better to evade! But if you can't, that's where this course comes to your aid!",
+                     "If an incident wasn't well handled, then maybe you need to work to make it's negative effects cancelled!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Targe tAudience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Introduction of programming with Python",
+                  "nameId": "introductionOfProgrammingWithPython",
+                  "overview": "This Python Programming course is a beginner’s course. You will learn to code using Python.",
+                  "moreinfo": "https://courses.sedc.mk/product/introduction-of-programming-with-python/",
+                  "timeline": "Classes: 24+ \n\nStart Date: 09.02.2021 \nEnd Date: 04.03.2021 \n\nTime: 17:30 – 20:00 Monday, Wednesday & every second Friday",
+                  "targetaudience": "Programming enthusiasts, Business Employees (Finance, Legal, Marketing), Workers in need of Reskilling.",
+                  "reply": [
+                     "Yes python just like the snake! But it's a programming language, so you can put down that rake...",
+                     "Programming is a very cool thing to learn! There, I said it. Now it's your turn!",
+                     "Programming resume is a great thing to own, but it's a skill that you have to hone!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "IT Essentials",
+                  "nameId": "itEssentials",
+                  "overview": "IT Essentials V7.0 curriculum provides an introduction to the computer hardware and software skills needed to help meet the growing demand for entry-level ICT professionals.",
+                  "moreinfo": "https://courses.sedc.mk/product/it-essentials/",
+                  "timeline": "Classes: 96 \n\nStart Date: 24.05.2021 \nEnd Date: 27.07.2021 \n\nTime: 17:30 – 20:45 Monday,Wednesday & every second Friday",
+                  "targetaudience": "The Cisco IT Essentials curriculum is designed for Cisco Networking Academy students in upper secondary schools, technical schools, and colleges or universities who want to pursue careers in IT and learn how computers work, how to assemble computers, and how to troubleshoot hardware and software issues.",
+                  "reply": [
+                     "Do smartphones actually make us smarter? Well google knows everything so that's a starter!",
+                     "This course is the best introduction to IT you'll find, but we also have many more if you're so inclined",
+                     "If basic IT knowledge is what you need, then this course is what you want indeed"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 2,
+            "name": "Digital Marketing",
+            "nameId": "digitalMarketing",
+            "reply": [
+               "If digital marketing is your aim, then these courses are a must, marketing's no child's game",
+               "If at marketing you want to succeed, then this is the course for you indeed!",
+               "Digital marketing is the way for your career to progress more, and with these courses you'll have heaps to show for!"
+            ],
+            "studyPrograms": [
+               {
+                  "name": "Digital Advertising",
+                  "nameId": "digitalAdvertising",
+                  "overview": "Implementing marketing campaigns, analytics reports, building & maintaining an online presence, etc.",
+                  "moreinfo": "https://courses.sedc.mk/product/digital-advertising/",
+                  "timeline": "Classes: 47 \n\nStart date: 23.02.2021 \nEnd date: 15.04.2021 \n\nTime: 17:30 – 20:00 Tuesday & Thursday",
+                  "targetaudience": "You may get employed as the following titles: Web Developer, Software Developer, Front-End Web Developer, Full-Stack Web Developer, Technical trainer, Technical consultant",
+                  "reply": [
+                     "Advertising is a tough job to do, but this is where this course comes through for you!",
+                     "Maintaining an online presence is a must, otherwise the business may go bust!",
+                     "This is where you'll learn the tools of the trade, and all the bad methodologies you must evade!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Search Engine Optimization (SEO)",
+                  "nameId": "searchEngineOptimization",
+                  "overview": " This course will help you develop proficiency in maximization of website traffic through on-page & off-page search engine optimization, implementation of keyword research strategies & maintenance of performance reports.",
+                  "moreinfo": "https://courses.sedc.mk/product/search-engine-optimization-seo/",
+                  "timeline": "Classes: 40-44 \n\nStart date: 17.08.2021 \nEnd date: 23.09.2021 \n\nTime: 17:30 – 20:00 Tuesday & Thursday",
+                  "targetaudience": "Marketing and Digital Marketing professionals who want to improve SEO skillset Entrepreneurs, self-employed, business owners, and other people interested in converting a new profession and changing careers (can be extended)",
+                  "reply": [
+                     "When a online visibility comes to mind, then this course is the best you'll find!",
+                     "If want to make companies visible online, then after this course you'll really shine!",
+                     "If you wanna make websites visible on mozilla, edge, google and safari, then you want this course! You won't be sorry!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 3,
+            "name": "Design Courses",
+            "nameId": "designCourses",
+            "reply": [
+               "Aha! So you do have a creative mind! Well these are the best courses for putting it to work you'll ever find!",
+               "If designing things is your passion, then these are the courses for you, they're more than just the latest fashion!",
+               "If designing things is what you really want, then you have to know, it's not just about choosing the right font!"
+            ],
+            "studyPrograms": [
+               {
+                  "name": "Adobe Illustrator CC 2019",
+                  "nameId": "adobeIllustratorCc2019",
+                  "overview": "Illustrator is a vector drawing program. It is often used to draw illustrations, cartoons, diagrams, charts and logos.",
+                  "moreinfo": "https://courses.sedc.mk/product/adobe-illustrator-cc-2019/",
+                  "timeline": "Classes: 30 \n\nStart Date: 22.06.2021 \nEnd Date: 22.07.2021 \n\nTime: 17:00 -19:30 Tuesday & Thursday",
+                  "targetaudience": "Anyone interested in expanding their knowledge in using this ADOBE tool.",
+                  "reply": [
+                     "So you wanna draw vectors like a king or queen? Well then we've got just the thing!",
+                     "Illustrating requires passion and ideas a whole lot! So why don't you show us what you got?",
+                     "If you want designing and vectors to be your best friend, then there isn't a better course I can recommend!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Adobe Photoshop CC 2019",
+                  "nameId": "adobePhotoshopCc2019",
+                  "overview": "This class will give you a solid core to understanding the basics of using Adobe Photoshop and how to edit photos.",
+                  "moreinfo": "https://courses.sedc.mk/product/adobe-photoshop-cc-2019/",
+                  "timeline": "Classes: 30 \n\nStart Date: 18.05.2021 \nEnd Date: 17.06.2021 \n\nTime: 17:00 -19:30 Tuesday & Thursday",
+                  "targetaudience": "Anyone interested in expanding their knowledge in using this ADOBE tool.",
+                  "reply": [
+                     "You remember that high school picture day? I sure do remember mine... But since I learned Photoshop everything's fine!",
+                     "Want a selfie with all the Hollywood stars? Learn photoshop and you can even have a selfie on Mars!",
+                     "While learning photoshop you're guaranteed to have a good time, after you've mastered it you can even earn a good dime!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "Level up your graphic design skills",
+                  "nameId": "levelUpYourGraphicDesignSkills",
+                  "overview": "This class will give you a solid core to understanding the basics of using Adobe Photoshop, InDesign and Illustrator.",
+                  "moreinfo": "https://courses.sedc.mk/product/up-your-graphic-design-skills/",
+                  "timeline": "Classes: 90 \n\nStart Date: 18.05.2021 \nEnd Date: 26.08.2021 \n\nTime: 17:00 -19:30 Tuesday & Thursday",
+                  "targetaudience": "Anyone interested in expanding their knowledge in using these ADOBE tools.",
+                  "reply": [
+                     "So you wanna be a graphic designing swiss knife? Wow what a great thing to have in a designers life!",
+                     "Learning just one designing program can be great, but all three? Well you'll be a pro in no time at this rate!",
+                     "Learning all these skills may seem like a lot... But just imagine all the experience and skill you'd have bought!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               },
+               {
+                  "name": "UI/UX Design",
+                  "nameId": "uI/UxDesign",
+                  "overview": "This hands-on, projects based course, explores the principles and practice of user interface and user experience design for digital platforms.",
+                  "moreinfo": "https://courses.sedc.mk/product/ui-ux-design/",
+                  "timeline": "Classes: 66 \n\nStart Date: 18.05.2021 \nEnd Date: 09.07.2021 \n\nTime: Monday, Tuesday and every 2nd Friday",
+                  "targetaudience": "Everyone who is familiar with graphic design tools , or any other design software.",
+                  "reply": [
+                     "Do you ever just go on a rant about how bad an apps interface is? Well learn how to improve it and get into the biz!",
+                     "When designing UI/UX you need to take your time, it's like a designing a very tall ladder... You must assure it's safe to climb!",
+                     "Designing UI/UX can sometimes be time consuming, but you'll just feel so good when the website's booming!"
+                  ],
+                  "infoProperties": [
+                     "Overview",
+                     "Timeline",
+                     "Target Audience",
+                     "Apply",
+                     "Price"
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   "ReplyMessages": {
+      "Jokes": {
+         "jokesArray": [
+            "I'm afraid for the calendar. Its days are numbered.",
+            "My wife said I should do lunges to stay in shape. That would be a big step forward.",
+            "Why do fathers take an extra pair of socks when they go golfing? In case they get a hole in one!",
+            "Singing in the shower is fun until you get soap in your mouth. Then it's a soap opera.",
+            "What do a tick and the Eiffel Tower have in common? They're both Paris sites.",
+            "What do you call a fish wearing a bowtie? Sofishticated.",
+            "How do you follow Will Smith in the snow? You follow the fresh prints.",
+            "If April showers bring May flowers, what do May flowers bring? Pilgrims.",
+            "I thought the dryer was shrinking my clothes. Turns out it was the refrigerator all along.",
+            "What do you call a factory that makes okay products? A satisfactory.",
+            "Dear Math, grow up and solve your own problems.",
+            "What did the janitor say when he jumped out of the closet? Supplies!",
+            "Have you heard about the chocolate record player? It sounds pretty sweet.",
+            "What did the ocean say to the beach? Nothing, it just waved.",
+            "Why do seagulls fly over the ocean? Because if they flew over the bay, we'd call them bagels.",
+            "I only know 25 letters of the alphabet. I don't know y.",
+            "How does the moon cut his hair? Eclipse it.",
+            "What did one wall say to the other? I'll meet you at the corner.",
+            "What did the zero say to the eight? That belt looks good on you.",
+            "A skeleton walks into a bar and says, 'Hey, bartender. I'll have one beer and a mop.'",
+            "Where do fruits go on vacation? Pear-is!",
+            "I asked my dog what's two minus two. He said nothing.",
+            "What did Baby Corn say to Mama Corn? Where's Pop Corn?",
+            "What's the best thing about Switzerland? I don't know, but the flag is a big plus.",
+            "What does a sprinter eat before a race? Nothing, they fast!",
+            "Where do you learn to make a banana split? Sundae school.",
+            "What has more letters than the alphabet? The post office!",
+            "Dad, did you get a haircut? No, I got them all cut!",
+            "What do you call a poor Santa Claus? St. Nickel-less.",
+            "I got carded at a liquor store, and my Blockbuster card accidentally fell out. The cashier said never mind.",
+            "Where do boats go when they're sick? To the boat doc.",
+            "I don't trust those trees. They seem kind of shady.",
+            "My wife is really mad at the fact that I have no sense of direction. So I packed up my stuff and right!",
+            "How do you get a squirrel to like you? Act like a nut.",
+            "Why don't eggs tell jokes? They'd crack each other up.",
+            "I don't trust stairs. They're always up to something.",
+            "What do you call someone with no body and no nose? Nobody knows.",
+            "Did you hear the rumor about butter? Well, I'm not going to spread it!",
+            "Why couldn't the bicycle stand up by itself? It was two tired.",
+            "What did one hat say to the other? Stay here! I'm going on ahead.",
+            "Why did Billy get fired from the banana factory? He kept throwing away the bent ones.",
+            "Dad, can you put my shoes on? No, I don't think they'll fit me.",
+            "Why can't a nose be 12 inches long? Because then it would be a foot.",
+            "What does a lemon say when it answers the phone? Yellow!",
+            "This graveyard looks overcrowded. People must be dying to get in.",
+            "What kind of car does an egg drive? A yolkswagen.",
+            "Dad, can you put the cat out? I didn't know it was on fire.",
+            "How do you make 7 even? Take away the s.",
+            "How does a taco say grace? Lettuce pray.",
+            "What time did the man go to the dentist? Tooth hurt-y.",
+            "Why didn't the skeleton climb the mountain? It didn't have the guts.",
+            "What do you call it when a snowman throws a tantrum? A meltdown.",
+            "How many tickles does it take to make an octopus laugh? Ten tickles.",
+            "I have a joke about chemistry, but I don't think it will get a reaction.",
+            "What concert costs just 45 cents? 50 Cent featuring Nickelback!",
+            "What does a bee use to brush its hair? A honeycomb!",
+            "How do you make a tissue dance? You put a little boogie in it.",
+            "Why did the math book look so sad? Because of all of its problems!",
+            "What do you call cheese that isn't yours? Nacho cheese.",
+            "My dad told me a joke about boxing. I guess I missed the punch line.",
+            "What kind of shoes do ninjas wear? Sneakers!",
+            "How does a penguin build its house? Igloos it together.",
+            "How did Harry Potter get down the hill? Walking. JK! Rowling.",
+            "I used to be addicted to soap, but I'm clean now.",
+            "A guy walks into a bar...and he was disqualified from the limbo contest.",
+            "You think swimming with sharks is expensive? Swimming with sharks cost me an arm and a leg.",
+            "When two vegans get in an argument, is it still called a beef?",
+            "I ordered a chicken and an egg from Amazon. I'll let you know...",
+            "Do you wanna box for your leftovers? No, but I'll wrestle you for them.",
+            "That car looks nice but the muffler seems exhausted.",
+            "Shout out to my fingers. I can count on all of them.",
+            "If a child refuses to nap, are they guilty of resisting a rest?",
+            "What country's capital is growing the fastest? Ireland. Every day it's Dublin.",
+            "I once had a dream I was floating in an ocean of orange soda. It was more of a fanta sea.",
+            "Did you know corduroy pillows are in style? They're making headlines.",
+            "Did you hear about the kidnapping at school? It's okay, he woke up.",
+            "A cheeseburger walks into a bar. The bartender says, 'Sorry, we don't serve food here.'",
+            "I once got fired from a canned juice company. Apparently I couldn't concentrate.",
+            "I used to play piano by ear. Now I use my hands.",
+            "Have you ever tried to catch a fog? I tried yesterday but I mist.",
+            "I'm on a seafood diet. I see food and I eat it.",
+            "Why did the scarecrow win an award? Because he was outstanding in his field.",
+            "I made a pencil with two erasers. It was pointless.",
+            "How do you make a Kleenex dance? Put a little boogie in it!",
+            "I'm reading a book about anti-gravity. It's impossible to put down!",
+            "Did you hear about the guy who invented the knock-knock joke? He won the 'no-bell' prize.",
+            "I've got a great joke about construction, but I'm still working on it.",
+            "I used to hate facial hair...but then it grew on me.",
+            "I decided to sell my vacuum cleaner—it was just gathering dust!",
+            "I had a neck brace fitted years ago and I've never looked back since.",
+            "You know, people say they pick their nose, but I feel like I was just born with mine.",
+            "What's brown and sticky? A stick.",
+            "Why can't you hear a psychiatrist using the bathroom? Because the 'P' is silent.",
+            "What do you call an elephant that doesn't matter? An irrelephant.",
+            "What do you get from a pampered cow? Spoiled milk.",
+            "I like telling Dad jokes. Sometimes he laughs!",
+            "What's the best smelling insect? A deodor-ant.",
+            "I used to be a personal trainer. Then I gave my too weak notice.",
+            "Did I tell you the time I fell in love during a backflip? I was heels over head!",
+            "If a child refuses to sleep during nap time, are they guilty of resisting a rest?",
+            "I ordered a chicken and an egg online. I’ll let you know.",
+            "It takes guts to be an organ donor.",
+            "If you see a crime at an Apple Store, does that make you an iWitness?",
+            "I'm so good at sleeping, I can do it with my eyes closed!",
+            "I was going to tell a time-traveling joke, but you guys didn't like it.",
+            "What do you call a fake noodle? An impasta.",
+            "What do you call a belt made of watches? A waist of time.",
+            "What happens when a strawberry gets run over crossing the street? Traffic jam.",
+            "What do you call two monkeys that share an Amazon account? Prime mates.",
+            "What do you call a pony with a sore throat? A little hoarse.",
+            "Where do math teachers go on vacation? Times Square.",
+            "Whenever I try to eat healthy, a chocolate bar looks at me and Snickers.",
+            "What does garlic do when it gets hot? It takes its cloves off.",
+            "What's a robot's favorite snack? Computer chips.",
+            "How much does it cost Santa to park his sleigh? Nothing, it's on the house.",
+            "Mountains aren't just funny. They're hill areas.",
+            "What do clouds wear? Thunderwear.",
+            "Why are piggy banks so wise? They're filled with common cents.",
+            "Why is Peter Pan always flying? He neverlands.",
+            "How do you get a good price on a sled? You have toboggan.",
+            "How can you tell if a tree is a dogwood tree? By its bark.",
+            "I used to hate facial hair, but then it grew on me.",
+            "It's inappropriate to make a 'dad joke' if you're not a dad. It's a faux pa.",
+            "What do you call a hot dog on wheels? Fast food!",
+            "Where do young trees go to learn? Elementree school.",
+            "Did you hear about the circus fire? It was in tents.",
+            "Can February March? No, but April May!",
+            "How do lawyers say goodbye? We'll be suing ya!",
+            "Wanna hear a joke about paper? Never mind—it's tearable.",
+            "What's the best way to watch a fly fishing tournament? Live stream.",
+            "Spring is here! I got so excited I wet my plants.",
+            "I could tell a joke about pizza, but it's a little cheesy.",
+            "Don't trust atoms. They make up everything!",
+            "When does a joke become a dad joke? When it becomes apparent.",
+            "I wouldn't buy anything with velcro. It's a total rip-off.",
+            "What’s an astronaut’s favorite part of a computer? The space bar.",
+            "I don't play soccer because I enjoy the sport. I'm just doing it for kicks!",
+            "Why are elevator jokes so classic and good? They work on many levels.",
+            "Why do bees have sticky hair? Because they use a honeycomb.",
+            "What do you call a fake noodle? An impasta.",
+            "Which state has the most streets? Rhode Island.",
+            "What did the coffee report to the police? A mugging.",
+            "What did the fish say when he hit the wall? Dam.",
+            "Is this pool safe for diving? It deep ends.",
+            "If you see a crime happen at the Apple store, what does it make you?An iWitness."
+         ]
+      },
+      "ShortTalk": {
+         "Hello": {
+            "keywords": [],
+            "reply": [
+               "Well hi there, how can I help you?",
+               "Hello friend, how may I assist you?",
+               "Hi! Can I help you somehow?",
+               "Howdy ho! Need any help?",
+               "Hey, hey, hey! It's a pretty day! Can I make it prettier by helping you somehow?",
+               "Howdy-do! How can I help you!"
+            ]
+         },
+         "Goodbye": {
+            "keywords": [],
+            "reply": [
+               "It was a pleasure helping you! Bye for now!",
+               "Well I hope I was of some help! See you later alligator!",
+               "Well we had a great chat didn't we? I'll be right here if you need me!",
+               "It was really fun, the talk we had, if I can help you again I'll be here and glad!",
+               "Well it's been fun, but I'm here if you're not done!",
+               "Self destruct sequence initiated... 3...2...1... Just kidding! I'll be here if you need me"
+            ]
+         },
+         "MainButtonReplies": [
+            "What do you wanna know about this subject?",
+            "Nice choice! What exactly do you wanna know about",
+            "Aha so that's what caught your eye! What specifically do you wanna know about?",
+            "Awesome choice! Which part are you interested in?"
+         ],
+         "HowAreYou": {
+            "keywords": [],
+            "reply": [
+               "I'm doing great! Thanks for asking!",
+               "I always feel good! It's just the way I'm programmed!",
+               "Feeling A-OK!",
+               "Error 404! Feeling function() not found!"
+            ]
+         },
+         "Funny": {
+            "keywords": [],
+            "reply": [
+               "I'm the funniest bot you'll ever meet! Accept for R2D2... I love that little bot!",
+               "I'm as funny as the people who made me! Hm... That doesn't amount to much now does it... Oh well!",
+               "So you like my jokes? Go ahead ask me another one, I know a 100!"
+            ]
+         },
+         "WhoAreYou": {
+            "keywords": [],
+            "reply": [
+               "I'm a chat bot made by the very students of SEDC and I'm here to help navigate you through this wonderful website!"
+            ]
+         },
+         "WhatCanYouDo": {
+            "keywords": [],
+            "reply": [
+               "I can help you by providing you with information about our academies and courses! You can also play a variety of games and take some quizzes if you feel brave enough!"
+            ]
+         },
+         "NoComprende": {
+            "keywords": [],
+            "reply": [
+               "I'm sorry but I don't understand you... Can you ask me a more basic question?\n\n If you would like to talk to someone who isn't a bot, you can click on the button below and you can send our sales department an email so that they can contact you as soon as possible!",
+               "Well I know I'm smart... But not that smart! Try asking me something easier!\n\n If you would like to talk to someone who isn't a bot, you can click on the button below and you can send our sales department an email so that they can contact you as soon as possible!",
+               "Well I tried to think of an answer but I lost my train of thought, could you ask me something easier? I have a very short attention span!\n\n If you would like to talk to someone who isn't a bot, you can click on the button below and you can send our sales department an email so that they can contact you as soon as possible!",
+               "Well that flew waaay over my head! Can you rephrase that please?\n\n If you would like to talk to someone who isn't a bot, you can click on the button below and you can send our sales department an email so that they can contact you as soon as possible!",
+               "Oh-Oh! Seems like that question is too tough for me! Can you make it easier for me? Pretty pleaaaaase!\n\n If you would like to talk to someone who isn't a bot, you can click on the button below and you can send our sales department an email so that they can contact you as soon as possible!",
+               "Oh darn it... I lost you there... Can you ask me something easier or rephrase your question\n\n If you would like to talk to someone who isn't a bot, you can click on the button below and you can send our sales department an email so that they can contact you as soon as possible!"
+            ]
+         }
+      }
+   }
+}

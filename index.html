@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" media='screen and (min-width: 821px)' href='./CODE/src/styles/MainStyle.css' />
+    <link rel="stylesheet" media='screen and (max-width: 820px)' href='./CODE/src/styles/MobileStyle.css' />
+
     <script
       src="https://kit.fontawesome.com/0f255abeae.js"
       crossorigin="anonymous"
@@ -60,7 +64,7 @@
         >
       </div>
     </div>
-    <header class="header" id="header">
+    <header class="headerBody" id="header">
       <div class="header__logo">
         <img src="./img/header-logo-without-text.png" alt="logo" />
         <h1 class="header__logo-title">
@@ -651,5 +655,100 @@
         >
       </div>
     </footer>
+
+    <!-- CHAT BOT HTML BEGINS HERE -->
+  <div>
+    <!-- MAIN CHAT WINDOW -->
+    <div class="main-window" id="mainWindow">
+
+      <!-- HEADER -->
+      <div class="header">
+        <!-- GAMES BUTTON -->
+        <button class="chat-games" title="Games" id="chatGames">Games</button>
+        <!-- QUIZZES BUTTON -->
+        <button class="chat-quizzes" title="Quizzes" id="chatQuizzes">Quizzes</button>
+        <!-- AVATAR NAME -->
+        <div class="chat-Name" id="chatName">Haralampiye<br>SEDC Chat Bot</div>
+        <!-- MINIMIZE BUTTON -->
+        <button class="chat-minimize" id="chatMinimize"></button>
+        <!-- AVATAR LOGO -->
+        <div class="img-logo" id="imgLogo"></div>
+      </div>
+
+      <!-- CHAT WINDOW -->
+      <div class="chat-window">
+        <!-- GAMES AND QUIZZES WRAPPER -->
+        <div class="chat" id="gamesAndQuizzesWindow" style="display: none;"></div>
+
+        <!-- TEXT-CHAT WRAPPER -->
+        <div class="chat" id="chatWindow">
+          <!-- CHAT HISTORY -->
+          <div class="chat-history" id="chatHistory"></div>
+          <!-- MAIN BUTTONS -->
+          <div class="main-chat-buttons-div" id="mainButtonsDiv"></div>
+          <!-- OPTION BUTTONS -->
+          <div class="chat-buttons-div" id="buttonsDiv"></div>
+
+          <!-- LOADER -->
+          <div id="loader">
+            <div class="loader-bubble">
+              <div class="typing">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RECOMMENDED SLIDE -->
+          <div>
+            <div class="chat-recommended-div" id="recommendedDiv">Recommendations:
+              <div class="slideDiv" id="recommendedSlide"></div>
+              <hr class="chat-hr">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEARCH INPUT -->
+      <div id="searchInputWraper">
+        <div class="chat-searchInput-div" id="searchInput">
+          <input type="text" placeholder="Type something..." id="input">
+          <button class="chat-inputButton" id="inputButton"></button>
+          <div id="voiceRecognitionLoader"><img height="35px" src="./CODE/src/img-avatars/recordingAnimation.svg"
+              alt="voiceRecognitionLoader"></div>
+          <button class="chat-inputButton voice-inputButton" id="voiceButton"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAXIMIZE BUTTON -->
+    <button class="chat-maximize" id="chatMaximize"></button>
+
+    <!-- MODAL -->
+    <div id="myModal" class="modal">
+      <div class="modal-content" id="modalContent">
+        <span class="close" id="close">&times;</span>
+        <div id="popUp" class="popUp"></div>
+        <div id="popUpQuizzes" class="popUp">
+          <form class="quiz-form" id="questionsForm"></form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./CODE/src/scripts/ContactUsService.js"></script>
+  <script src="./CODE/src/scripts/DataService.js"></script>
+  <script src="./CODE/src/scripts/ButtonsService.js"></script>
+  <script src="./CODE/src/scripts/UiService.js"></script>
+  <script src="./CODE/src/scripts/AnimationsService.js"></script>
+  <script src="./CODE/src/scripts/SearchInputService.js"></script>
+  <script src="./CODE/src/scripts/ApplyAndPriceService.js"></script>
+  <script src="./CODE/src/scripts/QuizesService.js"></script>
+  <script src="./CODE/src/scripts/GamesService.js"></script>
+  <script src="./CODE/src/scripts/LexiconService.js"></script>
+  <script src="./CODE/src/scripts/VoiceRecognitionService.js"></script>
+  <script src="./CODE/src/scripts/MainScript.js"></script>
   </body>
 </html>

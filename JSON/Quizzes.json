@@ -1,0 +1,2222 @@
+{
+	"Web-Development": [{
+			"id": "1",
+			"question": "What does HTML stand for?",
+			"answer1": "Hyperlinks and Text Markup Language",
+			"answer2": "Hypertext Markup Language",
+			"answer3": "Home Tool Markup Language",
+			"answer4": "Hyper Text Modul Language",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "2",
+			"question": "Choose the correct HTML tag for the largest heading:",
+			"answer1": "&lt;heading&gt;\n",
+			"answer2": "&lt;h6&gt;\n",
+			"answer3": "&lt;head&gt;\n",
+			"answer4": "&lt;h1&gt;\n",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "3",
+			"question": "What is the correct HTML tag for inserting a line break?",
+			"answer1": "&lt;br&gt;\n",
+			"answer2": "&lt;lb&gt;\n",
+			"answer3": "&lt;break&gt;\n",
+			"answer4": "&lt;hr&gt;\n",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "4",
+			"question": "What should be the first tag in any HTML document?",
+			"answer1": "&lt;html&gt;\n",
+			"answer2": "&lt;document&gt;\n",
+			"answer3": "&lt;title&gt;\n",
+			"answer4": "&lt;head&gt;\n",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "5",
+			"question": "What is the correct HTML for creating a hyperlink?",
+			"answer1": "&lt;a url=\"http://www.w3schools.com\"&gt;W3Schools.com&lt;/a&gt;\n",
+			"answer2": "&lt;a name=\"http://www.w3schools.com\"&gt;W3Schools.com&lt;/a&gt;\n",
+			"answer3": "&lt;a href=\"http://www.w3schools.com\"&gt;W3Schools&lt;/a&gt;\n",
+			"answer4": "&lt;a&gt;http://www.w3schools.com&lt;/a&gt;\n",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "6",
+			"question": "What is the correct HTML for inserting an image?",
+			"answer1": "&lt;img alt=\"MyImage\"&gt;image.gif&lt;/img&gt;\n",
+			"answer2": "&lt;img src=\"image.gif\" alt=\"MyImage\"&gt;\n",
+			"answer3": "&lt;image src=\"image.gif\" alt=\"MyImage\"&gt;\n",
+			"answer4": "&lt;img href=\"image.gif\" alt=\"MyImage\"&gt;\n",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "7",
+			"question": "How can you make a numbered list?",
+			"answer1": "&lt;ol&gt;\n",
+			"answer2": "&lt;ul&gt;\n",
+			"answer3": "&lt;dl&gt;\n",
+			"answer4": "&lt;list&gt;\n",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "8",
+			"question": "What is the correct HTML for making a checkbox?",
+			"answer1": "&lt;checkbox&gt;\n",
+			"answer2": "&lt;input type=\"checkbox\"&gt;\n",
+			"answer3": "&lt;check&gt;\n",
+			"answer4": "&lt;input type=\"check\"&gt;\n",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "9",
+			"question": "What does CSS stand for?",
+			"answer1": "Creative Style Sheets",
+			"answer2": "Cascading Style Sheets",
+			"answer3": "Computer Style Sheets",
+			"answer4": "Colorful Style Sheets",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "10",
+			"question": "What is the correct HTML for referring to an external style sheet?",
+			"answer1": "&lt;stylesheet&gt;mystyle.css&lt;/stylesheet&gt;\n",
+			"answer2": "&lt;style src=\"mystyle.css\"&gt;\n",
+			"answer3": "&lt;link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\"&gt;\n",
+			"answer4": "None of the above",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "11",
+			"question": "Which is the correct CSS syntax?",
+			"answer1": "body {color: black;}",
+			"answer2": "{body:color=black;}",
+			"answer3": "body:color=black;",
+			"answer4": "{body;color:black;}",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "12",
+			"question": "Which property is used to change the background color?",
+			"answer1": "color",
+			"answer2": "background-color",
+			"answer3": "bgcolor",
+			"answer4": "None of the above",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "13",
+			"question": "How do you add a background color for all &lt;h1&gt; elements?",
+			"answer1": "h1 {background-color:#FFFFFF;}",
+			"answer2": "h1.all {background-color:#FFFFFF;}",
+			"answer3": "all.h1 {background-color:#FFFFFF;}",
+			"answer4": "None of the above",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "14",
+			"question": "Which property is used to change the left margin of an element?",
+			"answer1": "padding-left",
+			"answer2": "m-l",
+			"answer3": "indent",
+			"answer4": "margin-left",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "15",
+			"question": "Which sign does jQuery use as a shortcut for jQuery?",
+			"answer1": "the ? sign",
+			"answer2": "the # sign",
+			"answer3": "the $ sign",
+			"answer4": "the @ sign",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "16",
+			"question": "What is the correct jQuery code to set the background color of all p elements to red?",
+			"answer1": "$(\"p\").css(\"background-color\",\"red\");",
+			"answer2": "$(\"p\").manipulate(\"background-color\",\"red\");",
+			"answer3": "$(\"p\").layout(\"background-color\",\"red\");",
+			"answer4": "$(\"p\").style(\"background-color\",\"red\");",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "17",
+			"question": "With jQuery, look at the following selector: $(\"div.intro\"). What does it select?",
+			"answer1": "All div elements with id=\"intro\"",
+			"answer2": "The first div element with id=\"intro\"",
+			"answer3": "The first div element with class=\"intro\"",
+			"answer4": "All div elements with class=\"intro\"",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "18",
+			"question": "Which jQuery method is used to hide selected elements?",
+			"answer1": "hidden()",
+			"answer2": "visible(false)",
+			"answer3": "hide()",
+			"answer4": "display(none)",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "19",
+			"question": "In CSS, what is the correct option to select all the tags on a page?",
+			"answer1": ".p { }",
+			"answer2": "#p { }",
+			"answer3": "&lt;p&gt; { }",
+			"answer4": "p { }",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "20",
+			"question": "In CSS, select the property to set an image in a list instead of a standard bullet:",
+			"answer1": "list-image-src:",
+			"answer2": "list-style-image:",
+			"answer3": "list-image:",
+			"answer4": "image-list:",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "21",
+			"question": "In CSS, select the appropriate option to style an element so that the next element would appear right next to it not underneath it:",
+			"answer1": "display: left;",
+			"answer2": "display: inline;",
+			"answer3": "display: horizontal;",
+			"answer4": "None of the above",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "22",
+			"question": "In CSS, choose the correct option to select this image by its id:\n&lt;img id=\"mainpic\" src=\"cat.png\"&gt;\n",
+
+
+			"answer1": "#mainpic { }",
+			"answer2": ".mainpic { }",
+			"answer3": "img { }",
+			"answer4": "mainpic { }",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "23",
+			"question": "Select the property used to create A space between the element’s border and inner content:",
+			"answer1": "border",
+			"answer2": "spacing",
+			"answer3": "padding",
+			"answer4": "margin",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "24",
+			"question": "Select the correct HTML tag to make a text bold.",
+			"answer1": "&lt;bold&gt;\n",
+			"answer2": "&lt;b&gt;\n",
+			"answer3": "&lt;bo&gt;\n",
+			"answer4": "None of the above",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "25",
+			"question": "Where in an HTML document is the correct place to refer to an external style sheet?",
+			"answer1": "In the &lt;head&gt; section",
+			"answer2": "In the &lt;body&gt; section",
+			"answer3": "At the end of the document",
+			"answer4": "None of the above",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "26",
+			"question": "Which HTML tag is used to define an internal style sheet?",
+			"answer1": "&lt;script&gt;",
+			"answer2": "&lt;css&gt;",
+			"answer3": "&lt;style&gt;",
+			"answer4": "None of the above",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "27",
+			"question": "How do you insert a comment in a CSS file?",
+			"answer1": "//comment//",
+			"answer2": "'comment'",
+			"answer3": "//comment",
+			"answer4": "/*comment*/",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "28",
+			"question": "Which CSS property is used to change the text color of an element?",
+			"answer1": "color",
+			"answer2": "text-color",
+			"answer3": "font-color",
+			"answer4": "text-background",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "29",
+			"question": "Which CSS property controls the text size?",
+			"answer1": "text-size",
+			"answer2": "font-size",
+			"answer3": "text-style",
+			"answer4": "font-style",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "30",
+			"question": "How do you display hyperlinks without an underline?",
+			"answer1": "a {underline: none;}",
+			"answer2": "a {text-decoration: no-underline;}",
+			"answer3": "a {text-decoration: none;}",
+			"answer4": "a {decoration:  no-underline;}",
+			"correctAnswer": "C"
+		}
+	],
+
+	"Graphic-Design": [{
+			"id": "1",
+			"question": "The placement of graphics and text on a graphic design is known as:",
+			"answer1": "Organization",
+			"answer2": "Art set-up",
+			"answer3": "Composition",
+			"answer4": "Graphic clean-up",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "2",
+			"question": "The Bauhaus taught us that the holy trinity of colors for graphic design are:",
+			"answer1": "Red, green, and blue.",
+			"answer2": "Red, black, and white.",
+			"answer3": "Cyan, magenta, and yellow.",
+			"answer4": "Red, blue, and yellow.",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "3",
+			"question": "Which of the following is not true about package designs?",
+			"answer1": "All package designs are designed flat and later folded in 3D.",
+			"answer2": "Graphic designers always consider the inherent symbolism of color when designing a package.",
+			"answer3": "Package designers always consider the 3 second rule.",
+			"answer4": "Convenience and recognition are key considerations.",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "4",
+			"question": "What is the single most powerful tool of tradigital design?",
+			"answer1": "Layers",
+			"answer2": "CMYK",
+			"answer3": "PhotoShop",
+			"answer4": "Illustrators",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "5",
+			"question": "Which of the following is not included in a style sheet?",
+			"answer1": "Type face (font)",
+			"answer2": "CMYK colors",
+			"answer3": "RGB colors",
+			"answer4": "None of the above",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "6",
+			"question": "A color of a triadic color scheme with red-violet in it is",
+			"answer1": "Orange",
+			"answer2": "Green",
+			"answer3": "Blue-green",
+			"answer4": "Red-orange",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "7",
+			"question": "A triadic partner for yellow is",
+			"answer1": "Green",
+			"answer2": "Violet",
+			"answer3": "Blue",
+			"answer4": "Magenta",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "8",
+			"question": "When a design calls for a spiraling text, this application would facilitate the job.",
+			"answer1": "PhotoShop",
+			"answer2": "Bridge",
+			"answer3": "Flash",
+			"answer4": "Illustrator",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "9",
+			"question": "The following is not an element of design:",
+			"answer1": "Line",
+			"answer2": "Shape",
+			"answer3": "Texture",
+			"answer4": "Unity",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "10",
+			"question": "Reappropriation is the graphic design term for which of these practices?",
+			"answer1": "Using images from the web",
+			"answer2": "Using stock photography for a reputable photographic clearing house",
+			"answer3": "Altering the image with your own style",
+			"answer4": "Repurposing an image to the point it is no longer similar or true to the original intent or context.",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "11",
+			"question": "RGB is to ppi as CMYK is to _________.",
+			"answer1": "Pixels per inch",
+			"answer2": "Dots per inch",
+			"answer3": "Screen resolution",
+			"answer4": "Lpi",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "12",
+			"question": "Vector based graphic work is _____.",
+			"answer1": "Limited by large file sizes.",
+			"answer2": "Scalable.",
+			"answer3": "Used by most digital photographers.",
+			"answer4": "Only used in Flash and PhotoShop.",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "13",
+			"question": "A graphic image with a central figure is an example of this type of composition:",
+			"answer1": "Balanced",
+			"answer2": "Framing",
+			"answer3": "Asymmetrical",
+			"answer4": "Simplicity",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "14",
+			"question": "Which is the correct way to change the eraser size in Illustrator?",
+			"answer1": "Double click on eraser and change slider",
+			"answer2": "Change point size in toolbar",
+			"answer3": "Change the line scale",
+			"answer4": "Change fill color to clear",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "15",
+			"question": "Which file format will give you the best resolution with a clear background on the web?",
+			"answer1": ".psd",
+			"answer2": ".png",
+			"answer3": ".gif",
+			"answer4": ".jpg",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "16",
+			"question": "Photographic based work produced for the web would be best designed using this application.",
+			"answer1": "PhotoShop",
+			"answer2": "Flash",
+			"answer3": "Illustrator",
+			"answer4": "Design Central",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "17",
+			"question": "Which is not a primary requirement for stamp designing?",
+			"answer1": "Color",
+			"answer2": "Denomination",
+			"answer3": "Scale",
+			"answer4": "Graphic design",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "19",
+			"question": "The guidelines in Illustrator produces are",
+			"answer1": "Blue",
+			"answer2": "Located in the arrow tool",
+			"answer3": "Layer style",
+			"answer4": "All of the above",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "20",
+			"question": "The PC keyboard command for turning on the ruler in PhotoShop is",
+			"answer1": "Option R",
+			"answer2": "Command r",
+			"answer3": "Shift R",
+			"answer4": "Control r",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "21",
+			"question": "The complement of blue is __________.",
+			"answer1": "Red",
+			"answer2": "Yellow",
+			"answer3": "Orange",
+			"answer4": "Yellow-orange",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "22",
+			"question": "One of the golden rules of graphic design is to keep the design asymmetrically balanced.  To do so, this is one of the best rules to help organize the design:",
+			"answer1": "Rule of opposition.",
+			"answer2": "Rules of odds.",
+			"answer3": "Rule of proximity.",
+			"answer4": "Rule of selective focus.",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "23",
+			"question": "The split complement of  blue-violet is ",
+			"answer1": "Yellow",
+			"answer2": "Red-orange",
+			"answer3": "Blue",
+			"answer4": "Violet",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "24",
+			"question": "This is the first color that the human eye reacts to when it comes into vision.",
+			"answer1": "Red",
+			"answer2": "Green",
+			"answer3": "Blue",
+			"answer4": "White",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "25",
+			"question": "How is a color scheme different from color selection?",
+			"answer1": "Selections are based on your personal favorite colors.",
+			"answer2": "Schemes are pairings of colors that work well together.",
+			"answer3": "Both are correct",
+			"answer4": "First two are both false.",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "26",
+			"question": "The only time it is alright to pull a graphic from google is _______.",
+			"answer1": "When the client says it is okay.",
+			"answer2": "When you are doing a thumb nail for a design.",
+			"answer3": "Whenever you need it.",
+			"answer4": "Never",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "27",
+			"question": "The major difference between graphic designers and graphic artists is:",
+			"answer1": "Graphic designers have ultimate creative control.",
+			"answer2": "Graphic artists create to serve the greater public.",
+			"answer3": "Graphic designers are advertisers.",
+			"answer4": "Graphic designers follow all client recommendations.",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "28",
+			"question": "What is the primary function of a critique of your design?",
+			"answer1": "To point out the flaws in the design.",
+			"answer2": "To make the designer feel good about the design.",
+			"answer3": "To improve the overall design.",
+			"answer4": "To improve the designer.",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "29",
+			"question": "Where is the live paint bucket on the tool bar?",
+			"answer1": "Next to the black arrow.",
+			"answer2": "Under the gradient tool",
+			"answer3": "Under the Shape builder tool",
+			"answer4": "On the layers tab",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "30",
+			"question": "The design school that used primary colors and simple shapes as part of its aesthetics and is favored by Michael Beirut is the ____________ school.",
+			"answer1": "De Stil",
+			"answer2": "Bauhaus",
+			"answer3": "Dada",
+			"answer4": "New Realism",
+			"correctAnswer": "A"
+		}
+	],
+
+
+	"Web-Design": [{
+			"id": "1",
+			"question": "Which language is used for creating Web Pages?",
+			"answer1": "PASCAL",
+			"answer2": "C",
+			"answer3": "HTML",
+			"answer4": "BASIC",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "2",
+			"question": "What is the abbreviation of HTTP?",
+			"answer1": "Hypertext tag path",
+			"answer2": "Hyper Text Transfer Protocol",
+			"answer3": "Hypertext transfer path",
+			"answer4": "None",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "3",
+			"question": "The entire web document is contained within ____",
+			"answer1": "Comments",
+			"answer2": "Tags",
+			"answer3": "Web page",
+			"answer4": "HTML element",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "4",
+			"question": "HTML document should begin with the ____",
+			"answer1": "&lt;head&gt; tag",
+			"answer2": "&lt;title&gt; tag",
+			"answer3": "&lt;body&gt; tag",
+			"answer4": "&lt;html&gt; tag",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "5",
+			"question": "GIF is the abbreviation for ___",
+			"answer1": "Graphics Interchange Format",
+			"answer2": "Graphics Instruction Format",
+			"answer3": "Graphics Item Format",
+			"answer4": "Graphics Information Format",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "6",
+			"question": "The <font> tag is similar to ____",
+			"answer1": "&lt;big&gt;tag",
+			"answer2": "&lt;small&gt;tag",
+			"answer3": "&lt;marquee&gt;tag",
+			"answer4": "&lt;big&gt;and&lt;small&gt;> tags",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "7",
+			"question": "The HTML and HTTP standard are defined by ____",
+			"answer1": "Web client",
+			"answer2": "Internet association",
+			"answer3": "WWW consortium",
+			"answer4": "WWW",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "8",
+			"question": "The tag used to add images to the HTML document is",
+			"answer1": "&lt;font&gt",
+			"answer2": "&lt;hr&gt",
+			"answer3": "&lt;hi&gt",
+			"answer4": "&lt;img&gt",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "9",
+			"question": "The ____ passes the information given by the user to a specified program.",
+			"answer1": "User",
+			"answer2": "Programmer",
+			"answer3": "Web server",
+			"answer4": "Browser",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "10",
+			"question": "____ is used to store the data within the documents on the server.",
+			"answer1": "XML",
+			"answer2": "HTML",
+			"answer3": "DHTML",
+			"answer4": "CGI",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "11",
+			"question": "How many different colours can GIF contain?",
+			"answer1": "64",
+			"answer2": "156",
+			"answer3": "256",
+			"answer4": "264",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "12",
+			"question": "Transferring your HTML code from one machine to server is known as ___",
+			"answer1": "Indexing",
+			"answer2": "Hosting",
+			"answer3": "Serving",
+			"answer4": "Sorting",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "13",
+			"question": "Which tag is used to identify the author’s name of the web document?",
+			"answer1": "Anchor tag",
+			"answer2": "Meta tag",
+			"answer3": "Title tag",
+			"answer4": "Font tag",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "14",
+			"question": "Which attribute can be used to change the colour of the links?",
+			"answer1": "&lt;link&gt",
+			"answer2": "&lt;alink&gt",
+			"answer3": "&lt;vlink&gt",
+			"answer4": "All teh abave",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "15",
+			"question": "Which indicates the beginning of an effect?",
+			"answer1": "Start tag",
+			"answer2": "End tag",
+			"answer3": "Tag",
+			"answer4": "None of the given",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "16",
+			"question": "Which option on the menu can be used to insert rows and columns?",
+			"answer1": "&lt;insert&gt",
+			"answer2": "&lt;tool&gt",
+			"answer3": "&lt;table&gt",
+			"answer4": "&lt;format&gt",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "17",
+			"question": "_____ contains the document itself.",
+			"answer1": "Structure",
+			"answer2": "Tag",
+			"answer3": "Head section",
+			"answer4": "Body section",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "18",
+			"question": "Forms are created by the attributes",
+			"answer1": "Action and Method",
+			"answer2": "Value and Method",
+			"answer3": "Method and Target",
+			"answer4": "Action and Target",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "19",
+			"question": "Software applications used for creating web pages and web sites are called as ___",
+			"answer1": "Web programs",
+			"answer2": "Web page editors",
+			"answer3": "Web master",
+			"answer4": "Web links",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "20",
+			"question": "&lt;HTML&gt is followed by how many sections?",
+			"answer1": "2",
+			"answer2": "3",
+			"answer3": "4",
+			"answer4": "6",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "21",
+			"question": "The CELLSPACING attribute is used to ___",
+			"answer1": "Specify the colour of the border",
+			"answer2": "Specify the thickness of the border",
+			"answer3": "Specify the space between cells",
+			"answer4": "Specify the space between text and border",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "22",
+			"question": "Interactive documents that can be created using a feature of HTML are called ____",
+			"answer1": "Tables",
+			"answer2": "Forms",
+			"answer3": "Files",
+			"answer4": "Frames",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "23",
+			"question": "_____ are used to allow the user to select one of the options displayed.",
+			"answer1": "Radio buttons",
+			"answer2": "Text boxes",
+			"answer3": "Check boxes",
+			"answer4": "Password controls",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "24",
+			"question": "_____ is used to separate the attributes in the selected segment of a style tag.",
+			"answer1": " :",
+			"answer2": " ;",
+			"answer3": " ,",
+			"answer4": " *",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "25",
+			"question": "RGB value for Red is",
+			"answer1": "FFOOFF",
+			"answer2": "FFFFFF",
+			"answer3": "FFOOOO",
+			"answer4": "FFFFOO",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "26",
+			"question": "What are the two segments of a style tag?",
+			"answer1": "Selector and property",
+			"answer2": "Name and content",
+			"answer3": "Head section and body section",
+			"answer4": "None",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "27",
+			"question": "The attributes that are used with &lt;MARQUEE&gt tag are ___",
+			"answer1": "size",
+			"answer2": "bg color",
+			"answer3": "direction",
+			"answer4": "bg color and direction",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "28",
+			"question": "CGI stands for ___",
+			"answer1": "Common Gateway Internet",
+			"answer2": "Common Gateway Interface",
+			"answer3": "Central Gateway Interface",
+			"answer4": "Central Gateway Internet",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "29",
+			"question": "HTML allows us to use ___ levels of headings.",
+			"answer1": "Two",
+			"answer2": "Three",
+			"answer3": "Five",
+			"answer4": "Six",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "30",
+			"question": "Which character is used after the opening angular bracket to represent the closing tag?",
+			"answer1": "/",
+			"answer2": " ",
+			"answer3": "|",
+			"answer4": " %",
+			"correctAnswer": "A"
+		}
+	],
+
+
+	"Game-Design": [{
+			"id": "1",
+			"question": " Jason is playing a game in which players must maneuver around changing barriers and moving objects inside a maze. This is an example of which type of game?",
+			"answer1": "Role playing",
+			"answer2": "Board",
+			"answer3": "Skill",
+			"answer4": "Chance",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "2",
+			"question": "Which programming element is used by a game program to track and display score information?",
+			"answer1": "Prototypes",
+			"answer2": "Variables",
+			"answer3": "Algorithms",
+			"answer4": "Events",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "3",
+			"question": "Which type of error can be difficult to identify, because the program still runs but does not do what you expect it to do?",
+			"answer1": "Logic error",
+			"answer2": "program with any type of error cannot still run.",
+			"answer3": "Runtime error",
+			"answer4": "Syntax error",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "4",
+			"question": "Which member of the game design team writes the dialog for the characters, and develops the animation and scenarios that occur during game play?",
+			"answer1": "IT specialist",
+			"answer2": "Programmer",
+			"answer3": "Game designer",
+			"answer4": "Sound engineer",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "5",
+			"question": "The actions that you want your game to perform and the goals that you want players to be able to achieve in your game are called the:",
+			"answer1": "criteria",
+			"answer2": "constraints",
+			"answer3": "interactivity",
+			"answer4": "analysis",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "6",
+			"question": " In programming languages, character, string, integer, floating-point and Boolean are all examples of:",
+			"answer1": "variable data types",
+			"answer2": "methods",
+			"answer3": "comparison operators",
+			"answer4": "expressions",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "7",
+			"question": "Which term describes the process used to plan every step of a game's animation?",
+			"answer1": "Brainstorm",
+			"answer2": "Prototype",
+			"answer3": "Storyboard",
+			"answer4": "Project",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "8",
+			"question": "Which member of the game design team writes the step-by-step computer instructions, or code, required to create games?",
+			"answer1": "Game designer",
+			"answer2": "Programmer",
+			"answer3": "IT specialist",
+			"answer4": "Sound engineer",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "9",
+			"question": "Which term describes the first functional example of a game that you are developing?",
+			"answer1": "Storyboard",
+			"answer2": "Project",
+			"answer3": "Design",
+			"answer4": "Prototype",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "10",
+			"question": "Which type of software is most commonly used to create the 3D animations and motion graphics used in games?",
+			"answer1": "Audio recording and editing applications",
+			"answer2": "Operating systems",
+			"answer3": "Game design engines",
+			"answer4": "Graphic design applications",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "11",
+			"question": "Which statement regarding methods is true?",
+			"answer1": "Methods are functions used within an object class.",
+			"answer2": "Methods can be applied to one instance of an object.",
+			"answer3": "Methods can operate outside an object.",
+			"answer4": "Methods are the variables of an object.",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "12",
+			"question": "In order to write a successful algorithm, you must first be able to:",
+			"answer1": "solve the problem manually",
+			"answer2": "use logic to plan a solution",
+			"answer3": "create a plan to execute a solution",
+			"answer4": "code a sequential structure",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "13",
+			"question": "Amy is creating a park scene for her game. She has created a class for tree objects. The park scene will require multiple trees in a variety of sizes, colors and positions. Which programming term describes the characteristics needed (size, color, etc.) for each tree object?",
+			"answer1": "Methods",
+			"answer2": "Properties",
+			"answer3": "Arguments",
+			"answer4": "Parameters",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "14",
+			"question": "Which programming element is used to provide a detailed description of an object's characteristics and specify what can be done with the object?",
+			"answer1": "Instance",
+			"answer2": "Class",
+			"answer3": "Method",
+			"answer4": "Property",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "15",
+			"question": "What is the first step in the game design process?",
+			"answer1": "Create a prototype.",
+			"answer2": "Gather feedback.",
+			"answer3": "Brainstorm ideas.",
+			"answer4": "Create a storyboard.",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "16",
+			"question": "Which type of operators includes the && (AND), || (OR) and ! (NOT) symbols?",
+			"answer1": "Logical (Boolean) operators",
+			"answer2": "Comparison operators",
+			"answer3": "Assignment operators",
+			"answer4": "Arithmetic operators",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "17",
+			"question": "Which statement correctly defines &quotIteration&quot?",
+			"answer1": "A group of commands that perform an action",
+			"answer2": "A named unit of code",
+			"answer3": "A repetition of a process",
+			"answer4": "A decision about how to proceed",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "18",
+			"question": "Which term describes a graphical diagram of the steps or decision process contained in an algorithm?",
+			"answer1": "Flow chart",
+			"answer2": "Template",
+			"answer3": "Storyboard",
+			"answer4": "Pseudo-code",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "19",
+			"question": "Jenna has created a wizard class. She has used the class to build two wizard objects in her game. Which programming term describes the objects that Jenna built using the wizard class?",
+			"answer1": "Subclasses",
+			"answer2": "Methods",
+			"answer3": "Occurrences",
+			"answer4": "Instances",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "20",
+			"question": "According to the mathematical order of precedence used in programming, which portion of an expression should be evaluated first?",
+			"answer1": "Exponentiation",
+			"answer2": "Parentheses",
+			"answer3": "Addition / subtraction",
+			"answer4": "Multiplication / division",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "21",
+			"question": "Tabitha is assigning initial values to each variable in her program. Which term describes the process of assigning an initial value to a variable?",
+			"answer1": "Storing",
+			"answer2": "Valuing",
+			"answer3": "Declaring",
+			"answer4": "Initializing",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "22",
+			"question": "Which programing structure term describes the value that is passed to a method when called so that the method knows what to do?",
+			"answer1": "An argument",
+			"answer2": "Subclasses",
+			"answer3": "A function",
+			"answer4": "Method",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "23",
+			"question": "Stefan has created a zombie class for his game. He would like the zombie objects to be able to speak, run, appear and disappear. Which programing term describes the actions that Stefan wants his zombie objects to be able to perform?",
+			"answer1": "Methods",
+			"answer2": "Instances",
+			"answer3": "Properties",
+			"answer4": "Subclasses",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "24",
+			"question": "Which programming term describes the variable that holds the data (value) needed by the method?",
+			"answer1": "A parameter",
+			"answer2": "Instances",
+			"answer3": "A argument",
+			"answer4": "Algorithm",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "25",
+			"question": "Which of the following is an example of a selection structure?",
+			"answer1": "While",
+			"answer2": "do/while",
+			"answer3": "for",
+			"answer4": "if/else",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "26",
+			"question": "Which term describes the issues that limit your ability to meet your goals, such as lack of tools or time?",
+			"answer1": "Feedback",
+			"answer2": "Constraints",
+			"answer3": "Requirements",
+			"answer4": "Criteria",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "27",
+			"question": "When creating an animated sprite, which coordinate(s) will indicate the sprite's current position on the stage?",
+			"answer1": "Z coordinate",
+			"answer2": "Y coordinate",
+			"answer3": "X and Y coordinates",
+			"answer4": "X coordinate",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "28",
+			"question": "Which variable data type is used to store a number that contains a decimal?",
+			"answer1": "Integer",
+			"answer2": "String",
+			"answer3": "Floating point",
+			"answer4": "Boolean",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "29",
+			"question": "You are designing a game to be played on iPods, iPads and iPhones. Which computer platform is the best to use when creating this game?",
+			"answer1": "Any smartphone",
+			"answer2": "Windows",
+			"answer3": "Linux",
+			"answer4": "Apple",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "30",
+			"question": "Marissa would like to learn more about game design. Her teacher explains that the first step is to learn how the audience, elements and characters in a game work together. What is the best method for completing this first step?",
+			"answer1": "Develop a game with multiple elements and characters.",
+			"answer2": "Ask your friends for feedback about your game ideas.",
+			"answer3": "Analyze existing games by deconstructing them.",
+			"answer4": "Make a list of the characters in other games you have played",
+			"correctAnswer": "C"
+		}
+	],
+
+	"Digital-Marketing": [{
+			"id": "1",
+			"question": "The most popular social networking site in the world is:",
+			"answer1": "Whatsapp",
+			"answer2": "Facebook",
+			"answer3": "LinkedIn",
+			"answer4": "Youtube",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "2",
+			"question": " ___________is an umbrella term for all of your online marketing efforts",
+			"answer1": "Email marketing",
+			"answer2": "Social marketing",
+			"answer3": "Digital marketing",
+			"answer4": "Inbound marketing",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "3",
+			"question": "The process of optimizing your website to ‘rank’ higher in search engine results pages.",
+			"answer1": "SEO",
+			"answer2": "PPC",
+			"answer3": "B2C",
+			"answer4": "B2B",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "4",
+			"question": "A type of performance-based advertising where you receive commission for promoting someone else’s products or services on your website.",
+			"answer1": "Affiliate Marketing",
+			"answer2": "Email marketing",
+			"answer3": "PPC",
+			"answer4": "Native Advertising",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "5",
+			"question": "Which of these websites is useful for monitoring changes in online search patterns over time?",
+			"answer1": "Google Trends",
+			"answer2": "Google Analytics",
+			"answer3": "Social Mention",
+			"answer4": "Radian 6",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "6",
+			"question": "What are the advantages of sponsoring influencer content, rather than trying to stimulate organic influencer content?",
+			"answer1": "No Control over message",
+			"answer2": "Credibility of message",
+			"answer3": "Guaranteed outcome",
+			"answer4": "Lower cost",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "7",
+			"question": "What action is NOT related to managing consumers' fears and phobias:",
+			"answer1": "Provide clear and effective privacy statements.",
+			"answer2": "Follow privacy and consumer protection guidelines in all markets.",
+			"answer3": "Make security of consumer data a priority.",
+			"answer4": "Define a competitive price.",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "8",
+			"question": "Which website metric tells you how many of your website visitors view only one page?",
+			"answer1": "Sessions",
+			"answer2": "Bounce rate",
+			"answer3": "Session duration",
+			"answer4": "New vs returning users",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "9",
+			"question": "When running a paid search (PPC) campaign, which of these metrics do we want to be low?",
+			"answer1": "Impressions",
+			"answer2": "Cost Per Acquisition and Cost Per Click",
+			"answer3": "Bounce Rate",
+			"answer4": "Click Through Rate",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "10",
+			"question": "Which of the following social media metrics is NOT a good measure of engagement?",
+			"answer1": "Comments on Facebook posts",
+			"answer2": "Facebook followers",
+			"answer3": "Twitter mentions",
+			"answer4": "YouTube video comments",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "11",
+			"question": "What is the main goal of social media or digital marketing?",
+			"answer1": "To connect business with consumers",
+			"answer2": "To entertain",
+			"answer3": "To be funny",
+			"answer4": "To teach about the dangers of the internet",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "12",
+			"question": "An effective promotional mix must consider the following six key issues:",
+			"answer1": "Promotional mix, interaction, integration, resourcing, infomediation and creativity.",
+			"answer2": "Promotional mix, integration, resourcing, interaction, creativity and proximity.",
+			"answer3": "Promotional mix, integration, creativity, interaction, globalization and resourcing.",
+			"answer4": "Promotional mix, integration, infomediation, proximity and resourcing.",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "13",
+			"question": "What represents the exchange for the product or what customers are willing to pay",
+			"answer1": "Promotion",
+			"answer2": "Price",
+			"answer3": "Sales",
+			"answer4": "Rebate",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "14",
+			"question": "A target market is...",
+			"answer1": "The group of customers a business seeks to attract who have specific, similar needs",
+			"answer2": "All of the customers who shop at target",
+			"answer3": "The group of 5 to 10 people that a business markets to on a daily basis",
+			"answer4": "A customer who has an unfulfilled desire and is financially able and willing to fill that desire",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "15",
+			"question": "Consumers become committed to brands and make repeat purchases from the same brands.",
+			"answer1": "Brand loyalty",
+			"answer2": "Aftersales",
+			"answer3": "Marketing Mix",
+			"answer4": "Market sales",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "16",
+			"question": "Your only pay once someone clicks on your advertisement",
+			"answer1": "Search Per Click",
+			"answer2": "Advertisement Per Click",
+			"answer3": "Referral Per Click",
+			"answer4": "Pay Per Click",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "17",
+			"question": "Viral marketing",
+			"answer1": "the % of people that buy when they visit your website",
+			"answer2": "managing how people perceive your business",
+			"answer3": "giving people something in the hopes that they buy from you later",
+			"answer4": "spreading things from person to person",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "18",
+			"question": "SEO",
+			"answer1": "working to get your content ranked higher in searches",
+			"answer2": "managing how people perceive your business",
+			"answer3": "giving people something in the hopes that they buy from you later",
+			"answer4": "the regulatory agency that regulates the stock market",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "19",
+			"question": "When consumers change their minds about ordering online it is called",
+			"answer1": "pay per click",
+			"answer2": "bounce rate",
+			"answer3": "click path",
+			"answer4": "cart abandonment",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "20",
+			"question": "C2C stands for what type of business relationship?",
+			"answer1": "Customer to Customer",
+			"answer2": "Creditor to Creditor",
+			"answer3": "Consumer to Consumer",
+			"answer4": "Company to Company",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "21",
+			"question": "The __________________________ is loosely defined as the percentage of Web site visitors who complete a desired action",
+			"answer1": "website delivery report",
+			"answer2": "conversion rate",
+			"answer3": "analytics",
+			"answer4": "compression of an image",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "22",
+			"question": "Before anything gets added to a cart, sales can't happen if a website does not select an _______",
+			"answer1": "conversion rate",
+			"answer2": "blog",
+			"answer3": "good checkout process",
+			"answer4": "appropriate audience",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "23",
+			"question": "What is an example of a search engine?",
+			"answer1": "Gale Student Resources in Context",
+			"answer2": "Gale Power Search",
+			"answer3": "Google",
+			"answer4": "Britannica",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "24",
+			"question": "Shelly will only buy Starbucks coffee is an example of",
+			"answer1": "brand position",
+			"answer2": "brand identity",
+			"answer3": "brand loyalty",
+			"answer4": "visual symbol",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "25",
+			"question": "The online presence, which comprises the different forms of online media controlled by a company, is also known as:",
+			"answer1": "Paid media.",
+			"answer2": "Owned media.",
+			"answer3": "Digital media.",
+			"answer4": "Consumer journey.",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "26",
+			"question": "What is the main goal of this website?",
+			"answer1": "E-commerce.",
+			"answer2": "New product development and research.",
+			"answer3": "Portal or media site.",
+			"answer4": "Services-oriented and relationship building.",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "27",
+			"question": "A digital marketing strategy is needed to provide consistent direction for an organization's online marketing activities. A good digital marketing strategy must:",
+			"answer1": "Be independent of the offline marketing strategy.",
+			"answer2": "Provide a present direction to the digital marketing activities.",
+			"answer3": "Offer a lower basic price and discounts for the products sold through the Internet.",
+			"answer4": "Involve the selection of strategic options to achieve digital marketing objectives and create sustainable differential competitive advantage.",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "28",
+			"question": "An online value proposition is a statement that reinforces an organization's core proposition in relation to its online offering, which must be different from the offline offering and from those of:",
+			"answer1": "Competitors.",
+			"answer2": "Suppliers.",
+			"answer3": "Customers.",
+			"answer4": "Shareholders.",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "29",
+			"question": "Having a clear online value proposition may bring several benefits, such as:",
+			"answer1": "It helps distinguishing an e-commerce site from the sites of the competitors.",
+			"answer2": "It helps provide a focus to marketing efforts so that company staff is clear about the purpose of the online activities.",
+			"answer3": "If the proposition is clear it can be used for PR, and word-of-mouth recommendations may be made about the company.",
+			"answer4": "Answers a, b and c are correct.",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "30",
+			"question": "What is NOT a pricing tactic usually applied by companies that offer digital products such as written content, music or videos?",
+			"answer1": "Subscription.",
+			"answer2": "Group purchasing.",
+			"answer3": "Bundling.",
+			"answer4": "Freemium.",
+			"correctAnswer": "B"
+		}
+	],
+
+
+	"Computer-Networks": [{
+			"id": "1",
+			"question": "every computer looking to access the Internet would be known as?",
+			"answer1": "Client",
+			"answer2": "Hub",
+			"answer3": "Desktop",
+			"answer4": "Server",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "2",
+			"question": "Which of the following identifies company or commercial site?",
+			"answer1": ".org",
+			"answer2": ".gov",
+			"answer3": ".com",
+			"answer4": ".edu",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "3",
+			"question": "What is indicated when the domain name has only two letters like .uk, .us, .au, .mx, or .ca",
+			"answer1": "Invalid Domain",
+			"answer2": "Private Domain",
+			"answer3": "Secure Domain",
+			"answer4": "Country Domain",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "4",
+			"question": " Used for educational sites (most commonly four year universities):",
+			"answer1": ".edu",
+			"answer2": ".org",
+			"answer3": ".com",
+			"answer4": ".net",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "5",
+			"question": " Network that allows information to be shared between devices over LAN:",
+			"answer1": "WiFi",
+			"answer2": "Hotspots",
+			"answer3": "Ethernet",
+			"answer4": "Server",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "6",
+			"question": " What’s the name for the process of encoding messages or information in such a way that only authorized parties can read it?",
+			"answer1": " Layering ",
+			"answer2": " Securing ",
+			"answer3": " Encryption ",
+			"answer4": " Phishing ",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "7",
+			"question": " What’s the name for the thin tubes of glass used by much of the Internet to send data quickly over long distances underground?",
+			"answer1": " Ethernet",
+			"answer2": "WiFi",
+			"answer3": "Hub",
+			"answer4": "Fiber Optic",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "8",
+			"question": " What’s the acronym for file transfer protocol?",
+			"answer1": "Http",
+			"answer2": "Https",
+			"answer3": "Ftp",
+			"answer4": "pdf",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "9",
+			"question": " Used for government sites:",
+			"answer1": ".edu",
+			"answer2": ".gov",
+			"answer3": ".com",
+			"answer4": ".net",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "10",
+			"question": " What’s the acronym for hyper text markup language that is widely considered the language of the internet?",
+			"answer1": "Https",
+			"answer2": "Http",
+			"answer3": "Ftp",
+			"answer4": "HTML",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "11",
+			"question": " Many businesses use this Wi-Fi technology to allow the public an access point to a wireless network:",
+			"answer1": "Hotspots",
+			"answer2": "Coldspot",
+			"answer3": "Satellites",
+			"answer4": "Bluetooth",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "12",
+			"question": " What’s the acronym for hyper text transfer protocol secure?",
+			"answer1": "Https",
+			"answer2": "Http",
+			"answer3": "HTML",
+			"answer4": "Ftp",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "13",
+			"question": " What’s the acronym for hyper text transfer protocol?",
+			"answer1": "Https",
+			"answer2": "Http",
+			"answer3": "HTML",
+			"answer4": "Ftp",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "14",
+			"question": " When encryption is needed to protect valuable passwords and financial transactions, this will allow you a safe and secure connection to the Internet:",
+			"answer1": "HTML",
+			"answer2": "WiFi",
+			"answer3": "Http",
+			"answer4": "Https",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "15",
+			"question": " Small device that connects computers together:",
+			"answer1": "WiFi",
+			"answer2": "Server",
+			"answer3": "Queue",
+			"answer4": "Hub",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "16",
+			"question": " Numbered label that is given to any device in a computer network. It allows for network identification and local addressing:",
+			"answer1": "Ftp",
+			"answer2": "Encryption",
+			"answer3": "Internet protocol",
+			"answer4": "url",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "17",
+			"question": " Computer network that connects computers within a limited area such as a home, school, computer laboratory, or office building, using network media:",
+			"answer1": "LAN",
+			"answer2": "MAN",
+			"answer3": "WAN",
+			"answer4": "NET",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "18",
+			"question": " Arge computer network that spans a metropolitan area and falls between a LAN and a WAN:",
+			"answer1": "LAN",
+			"answer2": "MAN",
+			"answer3": "WAN",
+			"answer4": "NET",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "19",
+			"question": " Physical addition to the computer that allows for storage of programs, information and resources:",
+			"answer1": "Server",
+			"answer2": "Queue",
+			"answer3": "Memory",
+			"answer4": "Ethernet",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "20",
+			"question": " used for Internet service providers or other types of networks:",
+			"answer1": ".com",
+			"answer2": ".net",
+			"answer3": ".org",
+			"answer4": ".edu",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "21",
+			"question": "allows information to be delivered to other computers or electronic devices that are connected:",
+			"answer1": "Network",
+			"answer2": "Web browser",
+			"answer3": "Hub",
+			"answer4": "Country",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "22",
+			"question": " Used for non-profit organization sites:",
+			"answer1": ".com",
+			"answer2": ".org",
+			"answer3": ".net",
+			"answer4": ".edu",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "23",
+			"question": " A list of data items that are reclaimed in a specific order:",
+			"answer1": "Queues",
+			"answer2": "Ftp",
+			"answer3": "Memory",
+			"answer4": "Internet protocol",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "24",
+			"question": " Artificial body placed in orbit around the earth or moon or another planet in order to collect information or for communication:",
+			"answer1": "Ethernet",
+			"answer2": "Country",
+			"answer3": "Client",
+			"answer4": "Satellite",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "25",
+			"question": " Computer that provides data to other computers. It may serve data to systems on a local area network (LAN) or a wide area network (WAN) over the internet:",
+			"answer1": "Satellite",
+			"answer2": "Hub",
+			"answer3": "Server",
+			"answer4": "NET",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "26",
+			"question": " Network that covers  a broad area using leased telecommunication lines:",
+			"answer1": "LAN",
+			"answer2": "MAN",
+			"answer3": "WAN",
+			"answer4": "NET",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "27",
+			"question": " An application used to search and find information on the internet:",
+			"answer1": "WiFi",
+			"answer2": "Server",
+			"answer3": "Web browser",
+			"answer4": "Seatch engine",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "28",
+			"question": " Allows computers, smartphones, or other devices to connect to the internet or communicate with one another wirelessly within a particular area:",
+			"answer1": "WiFi",
+			"answer2": "Html",
+			"answer3": "LAN",
+			"answer4": "Ftp",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "29",
+			"question": " The most popular search engine in the united states:",
+			"answer1": "Internet Explorer",
+			"answer2": "Google Chrome",
+			"answer3": "Google",
+			"answer4": "Mozilla Firefox",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "30",
+			"question": " Which one is NOT a web browser:",
+			"answer1": "Mozilla Firefox",
+			"answer2": "Safari",
+			"answer3": "Google",
+			"answer4": "Google Chrome",
+			"correctAnswer": "C"
+		}
+	],
+
+
+	"Software-Testing": [{
+			"id": "1",
+			"question": " We split testing into distinct stages primarily because:",
+			"answer1": " Each test stage has a different purpose",
+			"answer2": " It is easier to manage testing in stages",
+			"answer3": " We can run different tests in different environments",
+			"answer4": " The more stages we have, the better the testing",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "2",
+			"question": " Which of the following is not a test level:",
+			"answer1": " Component testing",
+			"answer2": "System testing",
+			"answer3": "Client acceptance testing",
+			"answer4": "Interrogation testing",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "3",
+			"question": " Which tool would you use if a programmer wanted to express algorithm visually?",
+			"answer1": "Flowchart",
+			"answer2": "Pseudocode",
+			"answer3": "Storyboard",
+			"answer4": "Graphic user interface",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "4",
+			"question": " Software testing activities should start:",
+			"answer1": " As soon as the code is written",
+			"answer2": " During the design stage",
+			"answer3": " When the requirements have been formally documented",
+			"answer4": " As soon as possible in the development life cycle",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "5",
+			"question": " Faults found by users are due to:",
+			"answer1": " Poor quality software",
+			"answer2": " Poor software and poor testing",
+			"answer3": "Bad luck",
+			"answer4": " Insufficient time for testing",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "6",
+			"question": " What is the main reason for testing software before releasing it?",
+			"answer1": " To show that system will work after release",
+			"answer2": " To decide when the software is of sufficient quality to release",
+			"answer3": " To find as many bugs as possible before release",
+			"answer4": "",
+			"correctAnswer": " To give information for a risk based decision about release"
+		},
+		{
+			"id": "7",
+			"question": " Which of the following statements is not true:",
+			"answer1": " Performance testing can be done during unit testing as well as during the testing of whole system",
+			"answer2": " The acceptance test does not necessarily include a regression test",
+			"answer3": " Verification activities should not involve testers (reviews, inspections etc)",
+			"answer4": " Test environments should be as similar to production as possible",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "8",
+			"question": " When reporting faults found to developers, testers should be:",
+			"answer1": " As polite, constructive and helpful as possible",
+			"answer2": " Firm about insisting that a bug is not a “feature” if it should be fixed",
+			"answer3": " Diplomatic, sensitive to the way they may react to criticism",
+			"answer4": " All of the above",
+			"correctAnswer": "D"
+		},
+		{
+			"id": "9",
+			"question": " In which order should tests be run?",
+			"answer1": " The most important tests first",
+			"answer2": " The most difficult tests first (to allow maximum time for fixing)",
+			"answer3": " The easiest tests first (to give initial confidence)",
+			"answer4": " The order they are thought of",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "10",
+			"question": " The later in the development life cycle a fault is discovered, the more expensive it is to fix. Why?",
+			"answer1": " The documentation is poor, so it takes longer to find out what the software is doing.",
+			"answer2": " Wages are rising",
+			"answer3": " The fault has been built into more documentation, code, tests, etc",
+			"answer4": " None of the above",
+			"correctAnswer": "C"
+		},
+		{
+			"id": "11",
+			"question": " Which is not true-The black box tester",
+			"answer1": " should be able to understand a functional specification or requirements document",
+			"answer2": " should be able to understand the source code",
+			"answer3": " is highly motivated to find faults",
+			"answer4": "  is creative to find the system’s weaknesses",
+			"correctAnswer": "B"
+		},
+		{
+			"id": "12",
+			"question": " A test design technique is:",
+			"answer1": " a process for selecting test cases",
+			"answer2": " a process for determining expected outputs",
+			"answer3": "  a way to measure the quality of software",
+			"answer4": " a way to measure in a test plan what has to be done",
+			"correctAnswer": "A"
+		},
+		{
+			"id": "13",
+			"question": " Testware(test cases, test dataset)",
+			"answer1": " needs configuration management just like requirements, design and code",
+			"answer2": " should be newly constructed for each new version of the software",
+			"answer3": " is needed only until the software is released into production or use",
+			"answer4": "all of the above",
+			"correctAnswer": "A"
+
+		},
+		{
+			"id": "14",
+			"question": " An incident logging system",
+			"answer1": " only records defects",
+			"answer2": " is of limited value",
+			"answer3": " is a valuable source of project information during testing if it contains all incidents",
+			"answer4": " should be used only by the test team.",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "15",
+			"question": " Increasing the quality of the software, by better development methods, will affect the time needed for testing (the test phases) by:",
+			"answer1": " reducing test time",
+			"answer2": " no change",
+			"answer3": " increasing test time",
+			"answer4": " none of the above",
+			"correctAnswer": "A"
+
+		},
+		{
+			"id": "16",
+			"question": " Coverage measurement",
+			"answer1": " is nothing to do with testing",
+			"answer2": " is a partial measure of test thoroughness",
+			"answer3": " branch coverage should be mandatory for all software",
+			"answer4": " can only be applied at unit or module testing, not at system testing",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "17",
+			"question": " When should you stop testing?",
+			"answer1": " when time for testing has run out",
+			"answer2": " when all planned tests have been run",
+			"answer3": " when the test completion criteria have been met",
+			"answer4": " when no faults have been found by the tests run",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "18",
+			"question": " Which of the following is true?",
+			"answer1": " Component testing should be black box, system testing should be white box",
+			"answer2": " If u find a lot of bugs in testing, you should not be very confident about the quality of software",
+			"answer3": " the fewer bugs you find,the better your testing was",
+			"answer4": " the more tests you run, the more bugs you will find",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "19",
+			"question": " Regression testing should be performed: (y)when the environment has changed (z)when the project manager says ",
+			"answer1": "Every week",
+			"answer2": "After the software has changed",
+			"answer3": "As often as possible",
+			"answer4": "When the project manager says",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "20",
+			"question": " What is the important criterion in deciding what testing technique to use?",
+			"answer1": " how well you know a particular technique",
+			"answer2": " the objective of the test",
+			"answer3": "how appropriate the technique is for testing the application",
+			"answer4": " whether there is a tool to support the technique",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "21",
+			"question": " If the pseudo code below were a programming language ,how many tests are required to achieve 100% statement coverage? 1.If x=3 then 2. Display_messageX; 3. If y=2 then 4. Display_messageY; 5.Else 6.Display_messageZ; 7.Else 8.Display_messageZ",
+			"answer1": " v & w are true, x, y & z are false",
+			"answer2": " w, x & y are true, v & z are false",
+			"answer3": " w & y are true, v, x & z are false",
+			"answer4": " w is true, v, x, y & z are false",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "22",
+			"question": " Which of the following is NOT a type of non-functional test?",
+			"answer1": " State-Transition",
+			"answer2": " Usability",
+			"answer3": "Performance",
+			"answer4": "Security",
+			"correctAnswer": "A"
+
+		},
+		{
+			"id": "23",
+			"question": " Which of the following  tools would you use to detect a memory leak?",
+			"answer1": " State analysis",
+			"answer2": " Coverage analysis",
+			"answer3": " Dynamic analysis",
+			"answer4": " Memory analysis",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "24",
+			"question": " What is the purpose of a test completion criterion?",
+			"answer1": " to know when a specific test has finished its execution",
+			"answer2": " to ensure that the test case specification is complete",
+			"answer3": " to set the criteria used in generating test inputs",
+			"answer4": " to determine when to stop testing",
+			"correctAnswer": "D"
+
+		},
+		{
+			"id": "25",
+			"question": " Given the following code, which statement is true about the minimum number of test cases required for full statement and branch coverage? Read p Read q IF p+q > 100 THEN Print 'Large' ENDIF IF p > 50 THEN Print 'p Large' ENDIF",
+			"answer1": " 1 test for statement coverage, 3 for branch coverage",
+			"answer2": " 1 test for statement coverage, 2 for branch coverage",
+			"answer3": " 1 test for statement coverage, 1 for branch coverage",
+			"answer4": " 2 tests for statement coverage, 2 for branch coverage",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "26",
+			"question": " Functional system testing is:",
+			"answer1": " testing that the system functions with other systems",
+			"answer2": " testing that the components that comprise the system function together",
+			"answer3": " testing the end to end functionality of the system as a whole",
+			"answer4": " testing the system performs functions within specified response times",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "27",
+			"question": " What can static analysis NOT find?",
+			"answer1": " the use of a variable before it has been defined",
+			"answer2": " unreachable (“dead”) code",
+			"answer3": " memory leaks",
+			"answer4": " array bound violations",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "28",
+			"question": " A typical commercial test execution tool would be able to perform all of the following, EXCEPT:",
+			"answer1": " calculating expected outputs",
+			"answer2": " comparison of expected outcomes with actual outcomes",
+			"answer3": " recording test inputs",
+			"answer4": " reading test values from a data file",
+			"correctAnswer": "A"
+
+		},
+		{
+			"id": "29",
+			"question": " Expected results are:",
+			"answer1": " only important in system testing",
+			"answer2": " only used in component ",
+			"answer3": " most useful when specified in advance",
+			"answer4": " derived from the code",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "30",
+			"question": " Which of the following uses Impact Analysis most?",
+			"answer1": " component testing",
+			"answer2": " non-functional system testing",
+			"answer3": " user acceptance testing",
+			"answer4": " maintenance testing",
+			"correctAnswer": "D"
+
+		}
+	],
+
+	"Data-Science": [{
+			"id": "1",
+			"question": "Point out the correct statement:",
+			"answer1": "None of the mentioned",
+			"answer2": "Machine learning focuses on prediction, based on known properties learned from the training data",
+			"answer3": "Representing data in a form which both mere mortals can understand and get valuable insights is as much a science as much as it is art",
+			"answer4": "Data Cleaning focuses on prediction, based on known properties learned from the training data",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "2",
+			"question": "________ is a multidisciplinary which involves extraction of knowledge from large volumes of data that are structured or unstructured.",
+			"answer1": "Descriptive Analysis",
+			"answer2": "Data Analysis",
+			"answer3": "Data Science",
+			"answer4": "None of the above",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "3",
+			"question": "Which of the following model is usually gold standard for data analysis?",
+			"answer1": "Casual",
+			"answer2": "Inferential",
+			"answer3": "Descriptive",
+			"answer4": "All of the above",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "4",
+			"question": "Which of the following technique comes under practical machine learning?",
+			"answer1": "Forecasting",
+			"answer2": "Decision Tree",
+			"answer3": "Data Visualization",
+			"answer4": "None of the above",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "5",
+			"question": "Which of the following diagram is used to view correlation?",
+			"answer1": "Boxplot",
+			"answer2": "Histogram",
+			"answer3": "Triangle",
+			"answer4": "Corrgram",
+			"correctAnswer": "D"
+
+		},
+		{
+			"id": "6",
+			"question": "Which of the following is definition of Raw Data?",
+			"answer1": "Easy to use for data analysis",
+			"answer2": "Processed Data",
+			"answer3": "Set of Measurement on Recorded Values",
+			"answer4": "None of the above",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "7",
+			"question": " Which of the following of a random variable is a measure of spread?",
+			"answer1": "Variance",
+			"answer2": "Empirical mean",
+			"answer3": "Standard deviation",
+			"answer4": "All of the above",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "8",
+			"question": "Why Machine Learning in Data Science?",
+			"answer1": "For Cleaning",
+			"answer2": "For Prediction",
+			"answer3": "For Visualization",
+			"answer4": "All of the above",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "9",
+			"question": " Which of the following testing is concerned with making decisions using data?",
+			"answer1": "Hypothesis",
+			"answer2": "Casual",
+			"answer3": "Probability",
+			"answer4": "None of the above",
+			"correctAnswer": "A"
+
+		},
+		{
+			"id": "10",
+			"question": " Which of the following can be considered as random variable? ",
+			"answer1": "The outcome from the roll of a dice",
+			"answer2": "The outcome of exam",
+			"answer3": "The outcome of flip of a coin",
+			"answer4": "All of the above",
+			"correctAnswer": "D"
+
+		},
+		{
+			"id": "11",
+			"question": "What is the order of execution of filters in tableau? 1) Context 2) Traditional 3) Custom 4) Show me",
+			"answer1": "3,1,2,4",
+			"answer2": "4,3,2,1",
+			"answer3": "1,2,3,4",
+			"answer4": "2,3,4,1",
+			"correctAnswer": "A"
+
+		},
+		{
+			"id": "12",
+			"question": "Sequential Modelling is done on",
+			"answer1": "KNN",
+			"answer2": "ANN",
+			"answer3": "CNN",
+			"answer4": "RNN",
+			"correctAnswer": "D"
+
+		},
+		{
+			"id": "13",
+			"question": "Pick Lazy Algorithm",
+			"answer1": "CNN",
+			"answer2": "K-Mean",
+			"answer3": "KNN",
+			"answer4": "RNN",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "14",
+			"question": "_______ is the standard deviation of a sampling distribution.",
+			"answer1": "Sampling error",
+			"answer2": "Simple error",
+			"answer3": "Standard error",
+			"answer4": "Sample error",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "15",
+			"question": "Which of the following is one of the key data science skill?",
+			"answer1": "Machine Learning",
+			"answer2": "Statistics",
+			"answer3": "Data visualization",
+			"answer4": "All of the above",
+			"correctAnswer": "A"
+
+		},
+		{
+			"id": "16",
+			"question": "3V’s in Big Data",
+			"answer1": "Volume, Velocity, Variety",
+			"answer2": "Velocity, Victory, Volume",
+			"answer3": "Volume, Viscous, Velocity",
+			"answer4": "None of the above",
+			"correctAnswer": "A"
+
+		},
+		{
+			"id": "17",
+			"question": "Weighted Average is uses in:",
+			"answer1": "Forecasting",
+			"answer2": "Classification",
+			"answer3": "Regression",
+			"answer4": "All of the above",
+			"correctAnswer": "A"
+
+		},
+		{
+			"id": "18",
+			"question": "Positive Correlation:",
+			"answer1": "Below -0.8",
+			"answer2": "Above -0.8",
+			"answer3": "Below 0.65",
+			"answer4": "Above 0.8",
+			"correctAnswer": "D"
+
+		},
+		{
+			"id": "19",
+			"question": "Which of the following is performed by Data Scientist?",
+			"answer1": "Create reproducible code",
+			"answer2": "Challenge results",
+			"answer3": "Define the question",
+			"answer4": "All of the above",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "20",
+			"question": " Which of the following are “Measures of Central Tendency”?",
+			"answer1": "Mean, Range, Mode",
+			"answer2": "Range, Standard Deviation, Variance",
+			"answer3": "Mean, Standard Deviation, Range",
+			"answer4": "Mode, Mean, Median",
+			"correctAnswer": "D"
+
+		},
+		{
+			"id": "21",
+			"question": "Who is a data scientist?",
+			"answer1": "Statistician",
+			"answer2": "Software programmer",
+			"answer3": "Mathematician",
+			"answer4": "All of the above",
+			"correctAnswer": "D"
+
+		},
+		{
+			"id": "22",
+			"question": "Which of the following is characteristic of Processed Data",
+			"answer1": "Data is not ready for analysis",
+			"answer2": "Hard to use for data analysis",
+			"answer3": "All steps should be noted",
+			"answer4": "None of the above",
+			"correctAnswer": "D"
+
+		},
+		{
+			"id": "23",
+			"question": " Which of the following is needed in K-means clustering?",
+			"answer1": "Number of clusters",
+			"answer2": "Initial guess as to cluster centroids",
+			"answer3": "Defined distance metrics",
+			"answer4": "All of the above",
+			"correctAnswer": "D"
+
+		},
+		{
+			"id": "24",
+			"question": " Which of the following is not an assumption of linear regression?",
+			"answer1": "Homoscedasticity",
+			"answer2": "auto-correlation",
+			"answer3": "Linear relationship",
+			"answer4": "Multivariate normality",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "25",
+			"question": "Which is not an activation function in neural networks?",
+			"answer1": "sine",
+			"answer2": "ReLu",
+			"answer3": "PReLu",
+			"answer4": "sigmoid",
+			"correctAnswer": "A"
+
+		},
+		{
+			"id": "26",
+			"question": "Which is not hyperparameter in decision trees?",
+			"answer1": "min_samples_split",
+			"answer2": "max_features",
+			"answer3": "max_depth",
+			"answer4": "criterion",
+			"correctAnswer": "D"
+
+		},
+		{
+			"id": "27",
+			"question": " Which of the following are some of the regularization methods?",
+			"answer1": "L1 LASSO",
+			"answer2": ".L2 Ridge",
+			"answer3": "Elasticnet",
+			"answer4": "All of the above",
+			"correctAnswer": "D"
+
+		},
+		{
+			"id": "28",
+			"question": " Which of the following packages provides machine learning functionality?",
+			"answer1": "cacheSweave",
+			"answer2": "Knitr",
+			"answer3": "gbm/pamr",
+			"answer4": "All of the above",
+			"correctAnswer": "C"
+
+		},
+		{
+			"id": "29",
+			"question": "R is technically much closer to the Scheme language than it is to the original _______ language.",
+			"answer1": "C++",
+			"answer2": "S",
+			"answer3": "C#",
+			"answer4": "C",
+			"correctAnswer": "B"
+
+		},
+		{
+			"id": "30",
+			"question": "Normal random numbers can be generated with rnorm() by setting seed value to:",
+			"answer1": "2",
+			"answer2": "3",
+			"answer3": "1",
+			"answer4": "4",
+			"correctAnswer": "C"
+
+		}
+	]
+}
