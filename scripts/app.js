@@ -43,7 +43,12 @@ const categoryCardLinksHandler = (linkElements, data) => {
 const headerLogoHandler = () => {
   const headerLogo = document.querySelector(".header__logo");
 
-  hideElementsByClass(["academy__container", "aside", "about__us-page"]);
+  hideElementsByClass([
+    "academy__container",
+    "aside",
+    "about__us-page",
+    "contact__page",
+  ]);
 
   headerLogo.addEventListener("click", () => {
     hideElementsByClass(["academy__container", "aside", "about__us-page"]);

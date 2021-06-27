@@ -565,7 +565,6 @@ i.fab {
 .about h1 {
   margin-bottom: 30px;
   font-size: 30px;
-  /* font-weight: 900; */
   font-weight: 600;
   font-size: 2rem;
   color: var(--secondaryColor);
@@ -769,6 +768,128 @@ i.fab {
 }
 
 /* About us page styles Ends here */
+
+/* Contact page style starts here */
+
+.contact__card-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 15px 0 15px 0;
+  align-items: center;
+  text-align: center;
+  grid-row: 2;
+}
+
+.contact__card-team {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  justify-content: space-around;
+  height: 400px;
+  min-width: 350px;
+  font-family: var(--Open-Sans);
+  border: 2px solid #ffffff26;
+  border-radius: 4px;
+  box-shadow: 0 0 15px -5px #002c5f4d;
+  background-color: #ffffff26;
+  backdrop-filter: blur(5px);
+}
+
+.contact__title-main {
+  color: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact__title-secondary {
+  color: var(--primaryColor);
+}
+
+.contact__office-address,
+.contact__office-address:visited {
+  text-decoration: none;
+  color: var(--secondaryColor);
+  transition: 0.2s ease-in-out;
+}
+
+.contact__office-address:hover {
+  color: var(--primaryColor);
+}
+
+.contact__card-team > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px #00000033;
+}
+
+.contact__btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__btn {
+  height: 40px;
+  width: 200px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 8px;
+  color: var(--primaryColor);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  font-family: var(--Open-Sans);
+  border: 2px solid #ffffff26;
+  border-radius: 4px;
+  box-shadow: 0 0 15px -5px #002c5f4d;
+  background-color: #ffffff26;
+  backdrop-filter: blur(5px);
+}
+
+.contact__btn:hover {
+  background-color: var(--secondaryColor);
+  border: 2px solid #ffffffd0;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px -5px #002c5f4d;
+  background-color: #ffffffd0;
+  backdrop-filter: blur(5px);
+}
+
+.contact__title-main {
+  grid-column: 2/3;
+}
+
+.contact__office-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__office-location {
+  height: 400px;
+  min-width: 340px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  border: 2px solid #ffffff26;
+  border-radius: 4px;
+  box-shadow: 0 0 15px -5px #002c5f4d;
+  background-color: #ffffff26;
+  backdrop-filter: blur(5px);
+}
+
+/* Contact page style ends here */
 
 /* Aside Styles Start Here */
 
@@ -979,6 +1100,11 @@ i.fab {
   .about_img {
     display: none;
   }
+
+  .contact__card-container {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -1173,6 +1299,15 @@ i.fab {
   .header__btn.open .header__btn-burger::after {
     transform: rotate(-45deg);
   }
+
+  .contact__card-team {
+    font-size: 14px;
+    min-width: 320px;
+  }
+  .contact__office-location {
+    font-size: 14px;
+    min-width: 320px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -1230,7 +1365,6 @@ i.fab {
 
   .about_cards {
     width: 100%;
-    /* margin-left: 20px; */
     margin-top: 50px;
     box-shadow: none;
   }
@@ -1244,18 +1378,15 @@ i.fab {
   .about_us-team h1 {
     width: 100%;
     font-size: 2.5rem;
-    /* margin-left: 20px; */
   }
 
   .about_us-team .description {
     width: 80%;
     padding: 20px 20px;
-    /* margin-left: 80px; */
   }
 
   .team .team_member {
     width: 70%;
-    /* margin-left: 80px; */
   }
 
   .footer {
@@ -1289,6 +1420,15 @@ i.fab {
     font-family: var(--Comfortaa);
     color: #ffffff;
     text-align: center;
+  }
+
+  .contact__card-container {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .contact__title-main {
+    font-size: 16px;
   }
 }
 
@@ -1391,5 +1531,22 @@ i.fab {
   .about_us-team h1 {
     font-size: 1.7rem;
   }
+
+  .contact__card-team {
+    font-size: 12px;
+    min-width: 280px;
+    height: 340px;
+    margin: none;
+  }
+  .contact__office-location {
+    font-size: 12px;
+    min-width: 280px;
+    height: 340px;
+  }
+
+  .contact__btn {
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+  }
 }
-/* dddd */
