@@ -56,6 +56,7 @@
         Academy</small>
     </div>
   </div>
+  
   <header class="header" id="header">
     <div class="header__logo">
       <img src="./img/header-logo-without-text.png" alt="logo" />
@@ -82,53 +83,32 @@
 
         <li class="nav__list-item"><a href="" class="paymentBtn">Tuition & Fees</a></li>
       </ul>
-    </nav>
-    <div class="header__btn">
-      <div class="header__btn-burger"></div>
-    </div>
-    <ul class="nav__list-burger">
-      <li class="nav__list-item"><a href="">About us</a></li>
-      <li class="nav__list-item">
-        <a class="nav__list-academies">Academies <i class="fas fa-caret-down"></i></a>
-        <ul class="nav__item-submenu">
-          <li class="nav__submenu-item">Web Developer</li>
-          <li class="nav__submenu-item">Software Tester</li>
-          <li class="nav__submenu-item">Graphic Designer</li>
-          <li class="nav__submenu-item">Game Designer</li>
-          <li class="nav__submenu-item">Data Scientist</li>
-          <li class="nav__submenu-item">Digital Marketer</li>
-        </ul>
-      </li>
-      <li class="nav__list-item"><a href="">Contact</a></li>
-      <li class="nav__list-item"><a href="">Tuition & Fees</a></li>
-    </ul>
-  </header>
+    </header>
+    <!-- Landing page and category cards  -->
 
-  <!-- Landing page and category cards  -->
+    <!--Card Design Starts Here-->
+    <main class="main">
+      <section class="landing__page">
+        <h1 class="landing__page-heading">SEDC Available Academies</h1>
+        <section class="landing-cards__container">
+          <div class="category-card__container">
+            <div class="category-card">
+              <figure class="category-card__front">
+                <h1>Web Developer</h1>
+              </figure>
+              <figure class="category-card__back">
+                <ul>
+                  <li>Basic and Advanced HTML & CSS</li>
+                  <li>JavaScript in depth</li>
+                  <li>.Net Core Backend</li>
+                  <li>SQL/No-SQL Databases</li>
+                  <li>ALM Training</li>
+                  <li>MERN/MEAN Expertise</li>
+                </ul>
+                <a href="#" id="ccard-webdev-btn"> GO TO ACADEMY </a>
 
-  <!--Card Design Starts Here-->
-
-  <main class="main">
-    <section class="landing__page">
-      <h1 class="landing__page-heading">SEDC Available Academies</h1>
-      <section class="landing-cards__container">
-        <div class="category-card__container">
-          <div class="category-card">
-            <figure class="category-card__front">
-              <h1>Web Developer</h1>
-            </figure>
-            <figure class="category-card__back">
-              <ul>
-                <li>Basic and Advanced HTML & CSS</li>
-                <li>JavaScript in depth</li>
-                <li>.Net Core Backend</li>
-                <li>SQL/No-SQL Databases</li>
-                <li>ALM Training</li>
-                <li>MERN/MEAN Expertise</li>
-              </ul>
-              <a href="#" id="ccard-webdev-btn"> GO TO ACADEMY </a>
-
-            </figure>
+              </figure>
+            </div>
           </div>
         </div>
         <div class="category-card__container">
@@ -379,6 +359,7 @@
       </div>
     </section>
 
+
     <aside class="aside">
       <div class="aside__item">
         <a class="aside__item-link" href="#">Academy For Web Development</a>
@@ -548,9 +529,78 @@
 
   <!-- About us page ends here -->
 
+ <!-- Contact page starts here -->
+    <section class="contact__page">
+      <h1 class="contact__title-main">CONTACT OUR TEAMS FOR FURTHER INFORMATION</h1>
+      <div class="contact__card-container">
+      <div class="contact__card-team">
+        <h3 class="contact__title-secondary">ADMINISTRATION</h2>
+        <img src="./img/admin_team.jpg" alt="admin_team" class="contact__img-team">
+        <p class="contact__telephone">+389 (0)78 499 781</p>
+        <p class="contact__work-hours">8:30 - 16:30, Monday-Friday</p>
+      </div>
+      <div class="contact__card-team">
+        <h3 class="contact__title-secondary">FINANCE</h2>
+        <img src="./img/finance_team.jpg" alt="finance_team" class="contact__img-team">
+        <p class="contact__telephone">+389 (0)78 499 255</p>
+        <p class="contact__work-hours">8:30 - 16:30, Monday-Friday</p>
+      </div>
+      <div class="contact__card-team">
+        <h3 class="contact__title-secondary">COURSES</h2>
+        <img src="./img/courses_team.jpg" alt="courses_team" class="contact__img-team">
+        <p class="contact__telephone">+389 (0)78 499 664</p>
+        <p class="contact__work-hours">8:30 - 16:30, Monday-Friday</p>
+      </div>
+      <div class="contact__card-team">
+        <h3 class="contact__title-secondary">ITHINK ACADEMY (KIDS, AGE: 8-14)</h2>
+        <img src="./img/ithink_team.jpg" alt="ithink_team" class="contact__img-team">
+        <p class="contact__telephone">+389 (0)78 499 273</p>
+        <p class="contact__work-hours">8:30 - 16:30, Monday-Friday</p>
+      </div>
+      <div class="contact__card-team">
+        <h3 class="contact__title-secondary">TESTING CENTER (CERTIFICATES)</h2>
+        <img src="./img/testing_team.jpg" alt="testing_team" class="contact__img-team">
+        <p class="contact__telephone">+389 (0)78 499 133</p>
+        <p class="contact__work-hours">8:30 - 16:30, Monday-Friday</p>
+      </div>
+      <div class="contact__card-team">
+        <h3 class="contact__title-secondary">ACADEMIES</h2>
+        <img src="./img/academies_team.jpg" alt="academies_team" class="contact__img-team">
+        <p class="contact__telephone"><strong>Skopje:</strong> +389 (0)78 499 462</p>
+        <p class="contact__work-hours">10:00 - 18:00, Monday-Friday</p>
+        <p class="contact__telephone"><strong>Ohrid:</strong> +389 (0)78 341 777</p>
+        <p class="contact__work-hours">09:00 - 17:00, Monday-Friday</p>
+        <p class="contact__telephone"><strong>Nish:</strong> +381 18 45 77 319; +381 60 45 77 570</p>
+        <p class="contact__work-hours">12:00 - 17:00, Monday-Friday</p>
+      </div>
+    </div>
+    <div class="contact__office-container">
+      <div class="contact__office-location">
+        <h2 class="contact__title-main">OFFICE LOCATIONS</h2>
+        <div class="contact__office-div">
+        <p><strong>Skopje: </strong></p>
+        <a href="https://goo.gl/maps/fgaAr2rzvdHhCe4A7" class="contact__office-address">11 Oktomvri 33A, 1000 Skopje</a>
+        <p class="contact_office-email">sedc@seavus.com</p>
+        </div>
+        <div class="contact__office-div">
+        <p><strong>Ohrid: </strong></p>
+        <a href="https://goo.gl/maps/ovYCeb1LVFstvoWp8" class="contact__office-address">Dame Gruev 57, 6000 Ohrid</a>
+        <p class="contact_office-email">SEDC.Ohrid@seavus.com</p>
+        </div>
+        <div class="contact__office-div">
+        <p><strong>Nish: </strong></p>
+        <a href="https://goo.gl/maps/Uwog8XE3xZ1Auike6" class="contact__office-address">Maksima Gorkog 9, 18000 Nish, Serbia</a>
+        <p class="contact_office-email">sedc.nish@seavus.com</p>
+        </div>
+      </div>
+    </div>
+      <div class="contact__btn-container">
+        <div class="contact__btn"><strong>SEND US A MESSAGE</strong></div>
+      </div>
+    </section>
+    <!-- Contact page ends here -->
+
   <section class="fees_payment-page">
-
-
 
     <div class="payment">
       <h1 class="payment__title">TUITION FEES & PAYMENT</h1>

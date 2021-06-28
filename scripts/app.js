@@ -45,7 +45,15 @@ const categoryCardLinksHandler = (linkElements, data) => {
 const headerLogoHandler = () => {
   const headerLogo = document.querySelector(".header__logo");
 
-  hideElementsByClass(["academy__container", "aside", "about__us-page", "fees_payment-page"]);
+
+  hideElementsByClass([
+    "academy__container",
+    "aside",
+    "about__us-page",
+    "contact__page",
+    "fees_payment-page"
+  ]);
+
 
   headerLogo.addEventListener("click", () => {
     hideElementsByClass(["academy__container", "aside", "about__us-page", "fees_payment-page"]);
