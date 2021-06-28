@@ -32,14 +32,18 @@ const categoryCardLinksHandler = (linkElements, data) => {
     link.addEventListener("click", e => {
       e.preventDefault();
       const academyContainer = document.querySelector(".academy__container");
-      hideElementsByClass(["landing__page"]);
-      showElementsByClass(["academy__page"]);
 
-      const academyData = data.filter(item => item.id === e.target.id)[0];
+      console.log(e.target.id);
+      const academyId = e.target.id.slice(6);
+      console.log(academyId);
+      const academyData = data.find(item => item.id === academyId);
+
       academyContainer.innerHTML = renderAcademy(academyData);
 
       const cardButtons = document.querySelectorAll(".card__button");
       cardButtonsHandler(cardButtons, academyData.academyContent);
+
+      showPageByClass("academy");
     });
   });
 };
@@ -47,21 +51,8 @@ const categoryCardLinksHandler = (linkElements, data) => {
 const headerLogoHandler = () => {
   const headerLogo = document.querySelector(".header__logo");
 
-  hideElementsByClass([
-    "academy__page",
-    "about-us__page",
-    "contact__page",
-    "tuition-fees__page",
-  ]);
-
   headerLogo.addEventListener("click", () => {
-    hideElementsByClass([
-      "academy__page",
-      "about-us__page",
-      "tuition-fees__page",
-      "contact__page",
-    ]);
-    showElementsByClass(["landing__page"]);
+    showPageByClass("landing");
   });
 };
 
@@ -85,6 +76,7 @@ const modalCloseHandler = () => {
   });
 };
 
+showPageByClass("landing");
 modalCloseHandler();
 headerLogoHandler();
 
@@ -107,35 +99,17 @@ fetch("http://localhost:3000/academies")
 
 aboutBtn.addEventListener(`click`, e => {
   e.preventDefault();
-  hideElementsByClass([
-    "landing__page",
-    "academy__page",
-    "tuition-fees__page",
-    "contact__page",
-  ]);
-  showElementsByClass(["about-us__page"]);
+  showPageByClass("about-us");
 });
 
 paymentBtn.addEventListener(`click`, e => {
   e.preventDefault();
-  hideElementsByClass([
-    "landing__page",
-    "academy__page",
-    "about-us__page",
-    "contact__page",
-  ]);
-  showElementsByClass(["tuition-fees__page"]);
+  showPageByClass("tuition-fees");
 });
 
 contactBtn.addEventListener("click", e => {
   e.preventDefault();
-  hideElementsByClass([
-    "academy__page",
-    "landing__page",
-    "about-us__page",
-    "tuition-fees__page",
-  ]);
-  showElementsByClass(["contact__page"]);
+  showPageByClass("contact");
 });
 //Hamburger Menu Logic
 
@@ -187,3 +161,5 @@ navListItemClick.addEventListener("click", () => {
     academiesListMenuOpen = false;
   }
 });
+
+// showPageByClass("academy");
