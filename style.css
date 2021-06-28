@@ -29,6 +29,9 @@ body {
   font-size: 20px;
   grid-column: 1/3;
   grid-row: 2/3;
+}
+
+.academy__page {
   display: grid;
   grid-template-columns: 2fr 8fr;
 }
@@ -1290,7 +1293,6 @@ tbody:hover tr:hover a {
     display: none;
   }
 
-
   table {
     display: table;
     border-spacing: 0;
@@ -1324,7 +1326,6 @@ tbody:hover tr:hover a {
   .contact__card-container {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-
   }
 }
 
@@ -1573,7 +1574,6 @@ tbody:hover tr:hover a {
   .contact__office-location {
     font-size: 14px;
     min-width: 320px;
-
   }
 }
 
@@ -1689,7 +1689,6 @@ tbody:hover tr:hover a {
     text-align: center;
   }
 
-
   .payment {
     margin: 0 10rem;
   }
@@ -1735,7 +1734,6 @@ tbody:hover tr:hover a {
 
   .contact__title-main {
     font-size: 16px;
-
   }
 }
 
