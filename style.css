@@ -846,6 +846,195 @@ i.fab {
 }
 /* Aside Styles End Here */
 
+/* tuition fees & payment design starts here */
+
+.payment {
+  margin: 0 20rem;
+}
+.payment__title {
+  width: 700px;
+  font-size: 3rem;
+  font-family: var(--Comfortaa);
+  color: var(--secondaryColor);
+}
+.payment__p {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.voucher {
+  margin-left: 20rem;
+  margin-bottom: 50px;
+}
+/* table */
+table {
+  border-collapse: collapse;
+  border: 1px solid var(--primaryColor);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  font-size: 1rem;
+  text-align: center;
+  width: 80%;
+  background-color: var(--backgroundGray);
+}
+thead {
+  background-color: var(--primaryColor);
+  color: var(--backgroundGray);
+  font-family: var(--Open-Sans);
+}
+tr {
+  border: 1px solid var(--primaryColor);
+  font-family: var(--Open-Sans);
+}
+th {
+  padding: 10px 150px;
+  text-shadow: 0 1px 0 #000;
+  font-weight: bold;
+  font-family: var(--Open-Sans);
+}
+td {
+  border: 1px solid var(--primaryColor);
+  transition: 300ms all ease-in-out;
+  padding: 10px 10px;
+  font-family: var(--Open-Sans);
+  color: var(--primaryColor);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primaryColor);
+  font-family: var(--Open-Sans);
+}
+
+tbody:hover td,
+tbody:hover a {
+  color: transparent;
+  text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+  color: var(--primaryColor);
+  text-shadow: 0 1px 0 #fff;
+}
+tbody:hover tr:hover a {
+  color: var(--secondaryColor);
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: var(--Open-Sans);
+}
+.discounts {
+  margin: 0 20rem;
+}
+.discounts__title {
+  font-size: 2rem;
+  font-family: var(--Comfortaa);
+  color: var(--secondaryColor);
+}
+.discounts__p {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.discounts__table-1 table {
+  border-collapse: collapse;
+  border: 1px solid var(--primaryColor);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-size: 1rem;
+  text-align: center;
+  width: 80%;
+  table-layout: auto;
+}
+.discounts__table-1 thead th {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-size: 2vh;
+  border: 1px solid var(--primaryColor);
+}
+.discounts__table-1 tbody td {
+  padding: 10px 5rem;
+  border-right: 1px solid var(--primaryColor);
+}
+
+.discounts__table-2 thead th {
+  width: 60%;
+  padding: 15px;
+  font-size: 2vh;
+  font-family: var(--Open-Sans);
+}
+
+.discounts__table-2 tbody td {
+  padding: 20px 5rem;
+}
+.discounts__table-1 thead tr th:first-child,
+.discounts__table-2 thead tr th:first-child {
+  text-align: justify;
+}
+
+.discounts__table-3 thead th {
+  width: 30%;
+  padding: 15px;
+  font-size: 2vh;
+  font-family: var(--Open-Sans);
+}
+
+.discounts__table-3 tbody td {
+  padding: 20px 5rem;
+}
+.discounts__table-3 thead tr th:first-child {
+  text-align: left;
+}
+
+/* cards */
+.information__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150vh;
+  margin-bottom: 80px;
+}
+
+.informations .card {
+  width: 800px;
+  height: 500px;
+  background-color: var(--primaryColor);
+  padding: 10px 20px;
+  margin: 20px 20px;
+  list-style-position: inside;
+  border-radius: 10px;
+  -moz-box-shadow: inset 0 0 10px #fff;
+  -webkit-box-shadow: inset 0 0 10px #fff;
+  box-shadow: inset 0 0 10px #fff;
+}
+.informations .card h2 {
+  border-bottom: 2px solid var(--backgroundGray);
+  color: #fff;
+  padding: 10px 20px;
+}
+.informations .card small {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 60px;
+  font-size: 1rem;
+}
+.informations .card p {
+  padding: 10px 40px;
+  color: #fff;
+  line-height: 2rem;
+}
+.informations .card ul {
+  padding: 20px 40px;
+  color: #fff;
+}
+.informations .card ul li {
+  line-height: 2rem;
+}
+
+/* tuition fees & payment design ends here */
+
 /* Footer Styles Start Here */
 
 .footer {
@@ -978,6 +1167,36 @@ i.fab {
 
   .about_img {
     display: none;
+  }
+
+  table {
+    display: table;
+    border-spacing: 0;
+    width: 90%;
+    border-collapse: collapse;
+  }
+  td,
+  th {
+    text-align: center;
+    padding: 8px 10px;
+  }
+  .payment {
+    margin: 0 auto;
+    width: 700px;
+  }
+  .discounts {
+    margin: 0 auto;
+    width: 700px;
+  }
+  .discounts__table-1 table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+  }
+  .discounts__table-1 tbody td,
+  .discounts__table-2 thead th {
+    padding: 20px 10px;
   }
 }
 
@@ -1173,6 +1392,51 @@ i.fab {
   .header__btn.open .header__btn-burger::after {
     transform: rotate(-45deg);
   }
+
+  .payment {
+    margin: 0 auto;
+    width: 600px;
+  }
+  .payment__title {
+    font-size: 2.5rem;
+  }
+  .discounts {
+    margin: 0 auto;
+    width: 650px;
+  }
+  .discounts__title {
+    font-size: 2rem;
+  }
+  .discounts__p {
+    width: 500px;
+  }
+  table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+  }
+  td,
+  th {
+    text-align: center;
+    padding: 8px 10px;
+  }
+
+  .discounts__table-1 table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+  }
+  .discounts__table-1 tbody td,
+  .discounts__table-2 thead th {
+    padding: 8px 10px;
+  }
+  .informations .card {
+    display: block;
+    width: 90%;
+    margin-left: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -1289,6 +1553,44 @@ i.fab {
     font-family: var(--Comfortaa);
     color: #ffffff;
     text-align: center;
+  }
+
+  .payment {
+    margin: 0 10rem;
+  }
+  .payment__title {
+    font-size: 2rem;
+  }
+  .discounts {
+    margin: 0 10rem;
+  }
+  .discounts__title {
+    font-size: 1.5rem;
+  }
+  table {
+    display: table;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .discounts__table-1 table {
+    display: table;
+    margin: 2rem 4rem;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .discounts__table-1 tbody td,
+  .discounts__table-2 thead th {
+    /* text-align: left; */
+    padding: 8px 10px;
+  }
+
+  .informations .card {
+    display: block;
+    width: 100%;
+    margin-left: 9rem;
   }
 }
 
