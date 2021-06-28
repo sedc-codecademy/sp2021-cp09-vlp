@@ -988,6 +988,7 @@ i.fab {
 .voucher {
   margin-left: 20rem;
   margin-bottom: 50px;
+  display: block;
 }
 /* table */
 table {
@@ -1030,16 +1031,6 @@ a {
   font-family: var(--Open-Sans);
 }
 
-tbody:hover td,
-tbody:hover a {
-  color: transparent;
-  text-shadow: 0 0 3px #aaa;
-}
-
-tbody:hover tr:hover td {
-  color: var(--primaryColor);
-  text-shadow: 0 1px 0 #fff;
-}
 tbody:hover tr:hover a {
   color: var(--secondaryColor);
   text-decoration: underline;
@@ -1531,14 +1522,20 @@ tbody:hover tr:hover a {
   }
   .discounts {
     margin: 0 auto;
-    width: 650px;
+    width: 100%;
+    margin: 2rem;
   }
   .discounts__title {
     font-size: 2rem;
+    margin: auto;
   }
+
   .discounts__p {
-    width: 500px;
+    width: 90%;
+    font-size: 1.2rem;
+    /* padding-right: 3rem; */
   }
+
   table {
     display: table;
     border-collapse: collapse;
@@ -1689,7 +1686,7 @@ tbody:hover tr:hover a {
     text-align: center;
   }
 
-  .payment {
+  /* .payment {
     margin: 0 10rem;
   }
   .payment__title {
@@ -1718,13 +1715,36 @@ tbody:hover tr:hover a {
   .discounts__table-1 tbody td,
   .discounts__table-2 thead th {
     /* text-align: left; */
-    padding: 8px 10px;
-  }
+  /* padding: 8px 10px;
+  } */
 
-  .informations .card {
+  /* .informations .card {
     display: block;
     width: 100%;
     margin-left: 9rem;
+  } */
+
+  /* table {
+    width: 100%;
+    margin: 2rem;
+  }
+
+  .discounts__title {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .discounts__p {
+    margin: 0;
+  } */
+
+  .discounts .discounts__title {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+
+  .discounts .discounts__p {
+    margin: auto;
   }
 
   .contact__card-container {
