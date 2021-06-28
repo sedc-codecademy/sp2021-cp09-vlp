@@ -19,10 +19,12 @@ const renderParagraph = data => {
     text: text => text,
   };
 
-  const paragraphBodyHTML = data.content.map(item => {
-    const key = Object.keys(item)[0];
-    return renderMethods[key](item[key]);
-  }).join(` `);
+  const paragraphBodyHTML = data.content
+    .map(item => {
+      const key = Object.keys(item)[0];
+      return renderMethods[key](item[key]);
+    })
+    .join(` `);
 
   return `
       <h3 class="academy__sub-heading">${data.title}</h3>
@@ -68,11 +70,12 @@ function renderAcademy(academyData) {
     paragraph: renderParagraph,
     cardContainer: renderCardContainer,
   };
-
-  const academyBodyHTML = academyData.academyContent.map(item => {
-    const key = Object.keys(item)[0];
-    return renderMethods[key](item[key]);
-  }).join(` `)
+  const academyBodyHTML = academyData.academyContent
+    .map(item => {
+      const key = Object.keys(item)[0];
+      return renderMethods[key](item[key]);
+    })
+    .join(` `);
 
   return `<h1 class="academy__heading">${academyData.title}</h1> ${academyBodyHTML}`;
 }
@@ -138,7 +141,9 @@ const renderCategoryCard = data => {
             <ul>
             ${listHTML}
             </ul>
-            <a href="#" id=${data.id} class="ccard-link"> GO TO ACADEMY </a>
+            <a href="#" id="ccard-${
+              data.id
+            }" class="ccard-link"> GO TO ACADEMY </a>
 
         </figure>
     </div>

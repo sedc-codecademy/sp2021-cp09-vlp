@@ -9,3 +9,12 @@ const showElementsByClass = elements => {
     document.querySelector(`.${element}`).classList.remove("element-hide");
   });
 };
+
+const showPageByClass = pageClass => {
+  document.querySelectorAll(".page").forEach(page => {
+    page.classList.add("element-hide");
+  });
+  document
+    .querySelector(`.${pageClass}__page`)
+    .classList.remove("element-hide");
+};
