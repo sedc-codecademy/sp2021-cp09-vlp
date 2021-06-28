@@ -4,6 +4,8 @@ const navListBurger = document.querySelector(".nav__list-burger");
 
 const aboutBtn = document.querySelector(".aboutBtn");
 
+const paymentBtn = document.querySelector('.paymentBtn')
+
 //Event Handler functions
 
 const cardButtonsHandler = (buttonElements, data) => {
@@ -43,15 +45,18 @@ const categoryCardLinksHandler = (linkElements, data) => {
 const headerLogoHandler = () => {
   const headerLogo = document.querySelector(".header__logo");
 
+
   hideElementsByClass([
     "academy__container",
     "aside",
     "about__us-page",
     "contact__page",
+    "fees_payment-page"
   ]);
 
+
   headerLogo.addEventListener("click", () => {
-    hideElementsByClass(["academy__container", "aside", "about__us-page"]);
+    hideElementsByClass(["academy__container", "aside", "about__us-page", "fees_payment-page"]);
     showElementsByClass(["landing__page"]);
   });
 };
@@ -98,9 +103,15 @@ fetch("http://localhost:3000/academies")
 
 aboutBtn.addEventListener(`click`, e => {
   e.preventDefault();
-  hideElementsByClass(["landing__page", "academy__container", "aside"]);
+  hideElementsByClass(["landing__page", "academy__container", "aside", "fees_payment-page"]);
   showElementsByClass(["about__us-page"]);
 });
+
+paymentBtn.addEventListener(`click`,e =>{
+  e.preventDefault()
+  hideElementsByClass(["landing__page", "academy__container", "aside","about__us-page"]);
+  showElementsByClass(["fees_payment-page"]);
+})
 
 //Hamburger Menu Logic
 
