@@ -126,7 +126,6 @@ const renderModal = (id, data) => {
 //category cards render function
 
 const renderCategoryCard = data => {
-  console.log(data.moduleCardData.content[0]);
   const listHTML = data.moduleCardData.content
     .map(item => {
       return `<li>${item}</li>`;
