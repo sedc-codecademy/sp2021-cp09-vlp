@@ -10,6 +10,47 @@ const contactBtn = document.querySelector(".contactBtn");
 
 //creating the different dynamic pages funcitons
 
+let urlId = ""
+
+window.addEventListener("load", e => {
+
+  urlId = e.currentTarget.location.href.replace("http://localhost:3000/","")
+
+  if (urlId.startsWith("academy")) {
+    showPageByClass("academy")
+  }
+  
+})
+
+const urlIdHandler = (data,id) => {
+  const pageIds = ["about-us","contact","tuition-fees"]
+
+  const academyIds = data.map(academy => academy.id)
+
+  const allIds = [...pageIds, ...academyIds]
+
+  if(!id) {
+    showPageByClass("landing")
+    return
+  }
+
+  if (!allIds.find(item => item === id)) {
+    showPageByClass("not-found")
+    return
+  }
+
+
+  if(id.startsWith("academy")){
+    createAcademyPage(data,id)
+    showPageByClass("academy")
+    return
+  }
+
+  showPageByClass(urlId)
+
+}
+
+
 const createAcademyPage = (data, id) => {
   const academyContainer = document.querySelector(".academy__container");
   const academyData = data.find(item => item.id === id);
@@ -62,7 +103,7 @@ const categoryCardLinksHandler = (linkElements, data) => {
 
       createAcademyPage(data, academyId);
 
-      window.history.pushState({ academyId: academyId }, "", `/${academyId}`);
+      window.history.pushState({academyId}, "", `/${academyId}`);
 
       showPageByClass("academy");
     });
@@ -114,19 +155,26 @@ const routingHandler = data => {
       showPageByClass(e.state.pageId);
     }
 
-    if (e.state?.academyId) {
-      createAcademyPage(data, academyId);
+    if (e.state.academyId) {
+      createAcademyPage(data, e.state.academyId);
       showPageByClass("academy");
+
     }
   };
 };
 
+
+
 //Fetch call to get all academies data
-fetch("http://localhost:3000/academies")
+fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
   .then(res => res.json())
   .then(data => {
-    createLandingPage(data);
-    window.onpopstate = routingHandler(data);
+
+    createLandingPage(data.academies);
+
+    urlIdHandler(data.academies,urlId)
+
+    window.onpopstate = routingHandler(data.academies);
   });
 
 aboutBtn.addEventListener(`click`, e => {

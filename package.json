@@ -1,24 +1,18 @@
 {
-  "name": "sp2021-cp09-vlp",
+  "name": "cp09-routing-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "json-server --watch data/db.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sedc-codecademy/sp2021-cp09-vlp.git"
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sedc-codecademy/sp2021-cp09-vlp/issues"
-  },
-  "homepage": "https://github.com/sedc-codecademy/sp2021-cp09-vlp#readme",
   "devDependencies": {
-    "json-server": "^0.16.3"
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
