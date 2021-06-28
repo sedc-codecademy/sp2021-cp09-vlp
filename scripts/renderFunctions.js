@@ -66,18 +66,20 @@ const renderCardContainer = data => {
 };
 
 function renderAcademy(academyData) {
+  const { academyContent, title } = academyData;
+
   const renderMethods = {
     paragraph: renderParagraph,
     cardContainer: renderCardContainer,
   };
-  const academyBodyHTML = academyData.academyContent
+  const academyBodyHTML = academyContent
     .map(item => {
       const key = Object.keys(item)[0];
       return renderMethods[key](item[key]);
     })
     .join(` `);
 
-  return `<h1 class="academy__heading">${academyData.title}</h1> ${academyBodyHTML}`;
+  return `<h1 class="academy__heading">${title}</h1> ${academyBodyHTML}`;
 }
 
 //Modal window render fuction

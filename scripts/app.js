@@ -8,21 +8,47 @@ const paymentBtn = document.querySelector(".paymentBtn");
 
 const contactBtn = document.querySelector(".contactBtn");
 
+//creating the different dynamic pages funcitons
+
+const createAcademyPage = (data, id) => {
+  const academyContainer = document.querySelector(".academy__container");
+  const academyData = data.find(item => item.id === id);
+  academyContainer.innerHTML = renderAcademy(academyData);
+  const cardButtons = document.querySelectorAll(".card__button");
+  cardButtonsHandler(cardButtons, academyData.academyContent);
+};
+
+const createLandingPage = data => {
+  const landingPageContainer = document.querySelector(
+    ".landing-cards__container"
+  );
+  landingPageContainer.innerHTML = data
+    .map(academy => renderCategoryCard(academy))
+    .join(" ");
+  const categoryCardLinks = document.querySelectorAll(".ccard-link");
+  categoryCardLinksHandler(categoryCardLinks, data);
+};
+
+const createModalWindow = (id, data) => {
+  const innerModal = document.querySelector(".modal__inner");
+  const outerModal = document.querySelector(".modal__outer");
+  const modalHTML = renderModal(id, data);
+
+  innerModal.innerHTML = "";
+  innerModal.innerHTML = modalHTML;
+  showElementsByClass(["modal__outer"]);
+  innerModal.classList.add("modal__inner--show");
+  outerModal.classList.add("modal__outer--open");
+  document.body.style.overflow = "hidden";
+};
+
 //Event Handler functions
 
 const cardButtonsHandler = (buttonElements, data) => {
   buttonElements.forEach(button => {
     button.addEventListener("click", e => {
       e.preventDefault();
-      const innerModal = document.querySelector(".modal__inner");
-      const outerModal = document.querySelector(".modal__outer");
-      const modalHTML = renderModal(e.target.id, data);
-      innerModal.innerHTML = "";
-      innerModal.innerHTML = modalHTML;
-      showElementsByClass(["modal__outer"]);
-      innerModal.classList.add("modal__inner--show");
-      outerModal.classList.add("modal__outer--open");
-      document.body.style.overflow = "hidden";
+      createModalWindow(e.target.id, data);
     });
   });
 };
@@ -31,17 +57,12 @@ const categoryCardLinksHandler = (linkElements, data) => {
   linkElements.forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault();
-      const academyContainer = document.querySelector(".academy__container");
 
-      console.log(e.target.id);
       const academyId = e.target.id.slice(6);
-      console.log(academyId);
-      const academyData = data.find(item => item.id === academyId);
 
-      academyContainer.innerHTML = renderAcademy(academyData);
+      createAcademyPage(data, academyId);
 
-      const cardButtons = document.querySelectorAll(".card__button");
-      cardButtonsHandler(cardButtons, academyData.academyContent);
+      window.history.pushState({ academyId: academyId }, "", `/${academyId}`);
 
       showPageByClass("academy");
     });
@@ -53,6 +74,7 @@ const headerLogoHandler = () => {
 
   headerLogo.addEventListener("click", () => {
     showPageByClass("landing");
+    window.history.pushState("", "", "/");
   });
 };
 
@@ -80,37 +102,54 @@ showPageByClass("landing");
 modalCloseHandler();
 headerLogoHandler();
 
+//dynamic routing function
+
+const routingHandler = data => {
+  return e => {
+    if (!e.state) {
+      showPageByClass("landing");
+    }
+
+    if (e.state?.pageId) {
+      showPageByClass(e.state.pageId);
+    }
+
+    if (e.state?.academyId) {
+      createAcademyPage(data, academyId);
+      showPageByClass("academy");
+    }
+  };
+};
+
 //Fetch call to get all academies data
 fetch("http://localhost:3000/academies")
   .then(res => res.json())
   .then(data => {
-    const landingPageContainer = document.querySelector(
-      ".landing-cards__container"
-    );
-
-    landingPageContainer.innerHTML = data
-      .map(academy => renderCategoryCard(academy))
-      .join(" ");
-
-    const categoryCardLinks = document.querySelectorAll(".ccard-link");
-
-    categoryCardLinksHandler(categoryCardLinks, data);
+    createLandingPage(data);
+    window.onpopstate = routingHandler(data);
   });
 
 aboutBtn.addEventListener(`click`, e => {
   e.preventDefault();
-  showPageByClass("about-us");
+  showPageByClass(e.target.id);
+
+  window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
 });
 
 paymentBtn.addEventListener(`click`, e => {
   e.preventDefault();
-  showPageByClass("tuition-fees");
+  showPageByClass(e.target.id);
+
+  window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
 });
 
 contactBtn.addEventListener("click", e => {
   e.preventDefault();
-  showPageByClass("contact");
+  showPageByClass(e.target.id);
+
+  window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
 });
+
 //Hamburger Menu Logic
 
 let menuOpen = false;
@@ -161,5 +200,3 @@ navListItemClick.addEventListener("click", () => {
     academiesListMenuOpen = false;
   }
 });
-
-// showPageByClass("academy");
