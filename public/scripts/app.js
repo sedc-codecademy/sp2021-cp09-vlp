@@ -1,12 +1,5 @@
 const headerBurgerBtn = document.querySelector(".header__btn");
-
 const navListBurger = document.querySelector(".nav__list-burger");
-
-const aboutBtn = document.querySelector(".aboutBtn");
-
-const paymentBtn = document.querySelector(".paymentBtn");
-
-const contactBtn = document.querySelector(".contactBtn");
 
 //creating the different dynamic pages funcitons
 
@@ -114,27 +107,6 @@ fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
     window.onpopstate = routingHandler(data.academies);
     urlIdHandler(data.academies, urlId);
   });
-
-// aboutBtn.addEventListener(`click`, (e) => {
-//   e.preventDefault();
-//   showPageByClass(e.target.id);
-
-//   window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
-// });
-
-// paymentBtn.addEventListener(`click`, (e) => {
-//   e.preventDefault();
-//   showPageByClass(e.target.id);
-
-//   window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
-// });
-
-// contactBtn.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   showPageByClass(e.target.id);
-
-//   window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
-// });
 
 //Hamburger Menu Logic
 
