@@ -193,29 +193,24 @@ body {
 .header__nav {
   height: auto;
   width: 50%;
-  background-color: var(--primaryColor);
+
   display: flex;
   align-items: center;
   border-radius: 4px 0 0 4px;
 }
 
 .nav__list {
+  background-color: var(--primaryColor);
   list-style: none;
   display: flex;
   padding-left: 10px;
-}
-
-.nav__list-burger {
-  display: none;
-  list-style: none;
-  padding-left: 10px;
-  user-select: none;
+  width: 100%;
+  overflow: auto;
 }
 
 .nav__list-item {
   padding: 15px;
   font-size: 1rem;
-
   user-select: none;
 }
 
@@ -229,21 +224,55 @@ body {
   cursor: pointer;
 }
 
+.nav__item-submenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  overflow: hidden;
+  height: 0px;
+  color: #fff;
+  margin-left: -40px;
+  margin-top: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform-origin: top;
+  background-color: var(--primaryColor);
+  transition: 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+  z-index: 2;
+}
+
+.nav__item-submenu--open {
+  padding-top: 10px;
+  height: 220px;
+}
+
+.nav__item-submenu li {
+  padding-top: 10px;
+  padding: 5px;
+  padding: 5px 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.nav__item-submenu li:hover {
+  color: var(--tertiaryColor);
+}
+
+.nav__list-academies:hover {
+  color: var(--tertiaryColor);
+}
+
+.nav__ .nav__item-submenu li:nth-of-type(1) {
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
 .nav__list-item a:hover {
   color: var(--tertiaryColor);
 }
 
-/* Drop Down */
-.nav__list-subitem {
-  padding: 5px 0;
-  display: block;
-  position: absolute;
-  background-color: #002c5f;
-  padding: 20px 40px;
-  text-align: left;
-  transform-origin: top;
-  transition: 0.4s cubic-bezier(0.76, 0, 0.24, 1);
-  opacity: 0;
+.nav__submenu-item {
+  background-color: var(--primaryColor);
 }
 
 .nav__list-item ul li {
@@ -1395,16 +1424,21 @@ tbody:hover tr:hover a {
   }
 
   .header__nav {
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .nav__list {
     display: none;
   }
 
-  .nav__list-burger {
+  .nav__list {
     display: flex;
     flex-flow: column;
     position: absolute;
     width: 300px;
     padding: 10px 80px 15px 8px;
-    top: 50px;
+    top: 0px;
     right: 20px;
     background-color: var(--primaryColor);
     box-shadow: 0 0 15px 2px #002c5f66;
@@ -1412,15 +1446,20 @@ tbody:hover tr:hover a {
     z-index: 1;
     opacity: 0;
     transform-origin: top right;
-    transform: scaleX(0) scaleY(0);
+    transform: scale(0);
     transition: 0.3s;
   }
 
+  .nav__list--open {
+    opacity: 1;
+    transform: scale(1);
+  }
+
   .nav__item-submenu {
+    position: relative;
     display: flex;
     flex-flow: column;
     list-style: none;
-    overflow: hidden;
     height: 0;
     color: #fff;
     margin-top: 0px;
@@ -1430,10 +1469,12 @@ tbody:hover tr:hover a {
     border-left: 3px solid #ffffff99;
     cursor: pointer;
     transform-origin: top;
+    background-color: var(--primaryColor);
     transition: 0.4s cubic-bezier(0.76, 0, 0.24, 1);
   }
 
   .nav__item-submenu li {
+    padding: 0px;
     padding-top: 10px;
     transition: 0.2s ease-in-out;
   }
@@ -1444,6 +1485,12 @@ tbody:hover tr:hover a {
 
   .nav__item-submenu li:nth-of-type(1) {
     padding-top: 0;
+  }
+
+  .nav__item-submenu--open {
+    height: 190px;
+    padding-top: 0;
+    margin: 25px 0 0 10px;
   }
 
   .nav__list-burger > .nav__list-item {
