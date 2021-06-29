@@ -10,46 +10,35 @@ const contactBtn = document.querySelector(".contactBtn");
 
 //creating the different dynamic pages funcitons
 
-let urlId = ""
+let urlId = "";
 
 window.addEventListener("load", e => {
+  urlId = e.currentTarget.location.href.replace("http://localhost:3000/", "");
+});
 
-  urlId = e.currentTarget.location.href.replace("http://localhost:3000/","")
+const urlIdHandler = (data, id) => {
+  const pageIds = ["about-us", "contact", "tuition-fees"];
+  const academyIds = data.map(academy => academy.id);
+  const allIds = [...pageIds, ...academyIds];
 
-  if (urlId.startsWith("academy")) {
-    showPageByClass("academy")
-  }
-  
-})
-
-const urlIdHandler = (data,id) => {
-  const pageIds = ["about-us","contact","tuition-fees"]
-
-  const academyIds = data.map(academy => academy.id)
-
-  const allIds = [...pageIds, ...academyIds]
-
-  if(!id) {
-    showPageByClass("landing")
-    return
+  if (!id || id === "index.html") {
+    showPageByClass("landing");
+    return;
   }
 
   if (!allIds.find(item => item === id)) {
-    showPageByClass("not-found")
-    return
+    showPageByClass("not-found");
+    return;
   }
 
-
-  if(id.startsWith("academy")){
-    createAcademyPage(data,id)
-    showPageByClass("academy")
-    return
+  if (id.startsWith("academy")) {
+    createAcademyPage(data, id);
+    showPageByClass("academy");
+    return;
   }
 
-  showPageByClass(urlId)
-
-}
-
+  showPageByClass(urlId);
+};
 
 const createAcademyPage = (data, id) => {
   const academyContainer = document.querySelector(".academy__container");
@@ -83,60 +72,11 @@ const createModalWindow = (id, data) => {
   document.body.style.overflow = "hidden";
 };
 
-//Event Handler functions
-
-const cardButtonsHandler = (buttonElements, data) => {
-  buttonElements.forEach(button => {
-    button.addEventListener("click", e => {
-      e.preventDefault();
-      createModalWindow(e.target.id, data);
-    });
-  });
-};
-
-const categoryCardLinksHandler = (linkElements, data) => {
-  linkElements.forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-
-      const academyId = e.target.id.slice(6);
-
-      createAcademyPage(data, academyId);
-
-      window.history.pushState({academyId}, "", `/${academyId}`);
-
-      showPageByClass("academy");
-    });
-  });
-};
-
-const headerLogoHandler = () => {
-  const headerLogo = document.querySelector(".header__logo");
-
-  headerLogo.addEventListener("click", () => {
-    showPageByClass("landing");
-    window.history.pushState("", "", "/");
-  });
-};
-
-const modalCloseHandler = () => {
-  const modalOuter = document.querySelector(".modal__outer");
-
-  modalOuter.addEventListener("click", e => {
-    if (
-      e.target.classList.contains("modal__outer") ||
-      e.target.classList.contains("modal__close-btn") ||
-      e.target.classList.contains("modal__bottom-link")
-    ) {
-      document.body.style.overflow = "auto";
-      document
-        .querySelector(".modal__inner")
-        .classList.remove("modal__inner--show");
-      document
-        .querySelector(".modal__outer")
-        .classList.remove("modal__outer--open");
-    }
-  });
+const createAsideMenu = academiesData => {
+  const asideEl = document.querySelector(".aside");
+  asideEl.innerHTML = renderAsideMenu(academiesData);
+  const asideLinks = document.querySelectorAll(".aside__item-link");
+  asideLinksHandler(asideLinks, academiesData);
 };
 
 showPageByClass("landing");
@@ -155,26 +95,22 @@ const routingHandler = data => {
       showPageByClass(e.state.pageId);
     }
 
-    if (e.state.academyId) {
+    if (e.state?.academyId) {
       createAcademyPage(data, e.state.academyId);
       showPageByClass("academy");
-
     }
   };
 };
-
-
 
 //Fetch call to get all academies data
 fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
   .then(res => res.json())
   .then(data => {
-
     createLandingPage(data.academies);
-
-    urlIdHandler(data.academies,urlId)
+    createAsideMenu(data.academies);
 
     window.onpopstate = routingHandler(data.academies);
+    urlIdHandler(data.academies, urlId);
   });
 
 aboutBtn.addEventListener(`click`, e => {
