@@ -793,7 +793,7 @@ i.fab {
   justify-self: center;
   justify-content: space-around;
   height: 400px;
-  min-width: 350px;
+  width: 350px;
   font-family: var(--Open-Sans);
   border: 2px solid #ffffff26;
   border-radius: 4px;
@@ -838,7 +838,7 @@ i.fab {
 }
 
 .contact__btn {
-  height: 40px;
+  height: 70px;
   width: 200px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -877,7 +877,7 @@ i.fab {
 
 .contact__office-location {
   height: 400px;
-  min-width: 340px;
+  max-width: 350px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -1558,11 +1558,17 @@ tbody:hover tr:hover a {
 
   .contact__card-team {
     font-size: 14px;
-    min-width: 320px;
+    width: 320px;
   }
   .contact__office-location {
     font-size: 14px;
-    min-width: 320px;
+    width: 320px;
+  }
+
+  .contact__btn {
+    height: 50px;
+    width: 200px;
+    font-size: 1.1rem;
   }
 }
 
@@ -1851,13 +1857,13 @@ tbody:hover tr:hover a {
 
   .contact__card-team {
     font-size: 12px;
-    min-width: 280px;
+    width: 280px;
     height: 340px;
     margin: none;
   }
   .contact__office-location {
     font-size: 12px;
-    min-width: 280px;
+    width: 280px;
     height: 340px;
   }
 
