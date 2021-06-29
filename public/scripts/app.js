@@ -103,7 +103,8 @@ fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
   .then(data => {
     createLandingPage(data.academies);
     createAsideMenu(data.academies);
-
+    const test = renderSubMenuLinks(data.academies);
+    console.log(test);
     window.onpopstate = routingHandler(data.academies);
     urlIdHandler(data.academies, urlId);
   });
