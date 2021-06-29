@@ -317,8 +317,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: min-content;
-  row-gap: 2rem;
-  column-gap: 2rem;
+  row-gap: 3rem;
+  column-gap: 3rem;
   padding: 0 4rem 3rem 4rem;
   box-sizing: border-box;
 }
@@ -1620,7 +1620,7 @@ tbody:hover tr:hover a {
   }
 
   .academy__sub-heading {
-    margin: 0 2.5rem 2rem 2.5rem;
+    margin: 0 2.5rem 3rem 2.5rem;
   }
 
   .header__logo img {
