@@ -1,17 +1,17 @@
 //Event Handler Functions
 
 const cardButtonsHandler = (buttonElements, data) => {
-  buttonElements.forEach(button => {
-    button.addEventListener("click", e => {
+  buttonElements.forEach((button) => {
+    button.addEventListener("click", (e) => {
       e.preventDefault();
       createModalWindow(e.target.id, data);
     });
   });
 };
 
-const asideItemSelectedHandler = id => {
+const asideItemSelectedHandler = (id) => {
   const asideLinks = document.querySelectorAll(".aside__item-link");
-  asideLinks.forEach(link => {
+  asideLinks.forEach((link) => {
     link.classList.remove("aside__item-link--selected");
     if (link.id.slice(6) === id) {
       link.classList.add("aside__item-link--selected");
@@ -20,8 +20,8 @@ const asideItemSelectedHandler = id => {
 };
 
 const categoryCardLinksHandler = (linkElements, data) => {
-  linkElements.forEach(link => {
-    link.addEventListener("click", e => {
+  linkElements.forEach((link) => {
+    link.addEventListener("click", (e) => {
       e.preventDefault();
 
       const academyId = e.target.id.slice(6);
@@ -35,8 +35,8 @@ const categoryCardLinksHandler = (linkElements, data) => {
 };
 
 const asideLinksHandler = (linkElements, data) => {
-  linkElements.forEach(link => {
-    link.addEventListener("click", e => {
+  linkElements.forEach((link) => {
+    link.addEventListener("click", (e) => {
       e.preventDefault();
       const academyId = e.target.id.slice(6);
       asideItemSelectedHandler(academyId);
@@ -58,7 +58,7 @@ const headerLogoHandler = () => {
 const modalCloseHandler = () => {
   const modalOuter = document.querySelector(".modal__outer");
 
-  modalOuter.addEventListener("click", e => {
+  modalOuter.addEventListener("click", (e) => {
     if (
       e.target.classList.contains("modal__outer") ||
       e.target.classList.contains("modal__close-btn") ||
@@ -72,5 +72,17 @@ const modalCloseHandler = () => {
         .querySelector(".modal__outer")
         .classList.remove("modal__outer--open");
     }
+  });
+};
+
+const navLinksHandler = () => {
+  const headerLinks = document.querySelectorAll(".nav__list-item");
+  headerLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (!e.target.id) return;
+      showPageByClass(e.target.id);
+      window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
+    });
   });
 };

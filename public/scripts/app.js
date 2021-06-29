@@ -12,13 +12,13 @@ const contactBtn = document.querySelector(".contactBtn");
 
 let urlId = "";
 
-window.addEventListener("load", e => {
+window.addEventListener("load", (e) => {
   urlId = e.currentTarget.location.href.replace("http://localhost:3000/", "");
 });
 
 const urlIdHandler = (data, id) => {
   const pageIds = ["about-us", "contact", "tuition-fees"];
-  const academyIds = data.map(academy => academy.id);
+  const academyIds = data.map((academy) => academy.id);
   const allIds = [...pageIds, ...academyIds];
 
   if (!id || id === "index.html") {
@@ -26,7 +26,7 @@ const urlIdHandler = (data, id) => {
     return;
   }
 
-  if (!allIds.find(item => item === id)) {
+  if (!allIds.find((item) => item === id)) {
     showPageByClass("not-found");
     return;
   }
@@ -43,18 +43,18 @@ const urlIdHandler = (data, id) => {
 
 const createAcademyPage = (data, id) => {
   const academyContainer = document.querySelector(".academy__container");
-  const academyData = data.find(item => item.id === id);
+  const academyData = data.find((item) => item.id === id);
   academyContainer.innerHTML = renderAcademy(academyData);
   const cardButtons = document.querySelectorAll(".card__button");
   cardButtonsHandler(cardButtons, academyData.academyContent);
 };
 
-const createLandingPage = data => {
+const createLandingPage = (data) => {
   const landingPageContainer = document.querySelector(
     ".landing-cards__container"
   );
   landingPageContainer.innerHTML = data
-    .map(academy => renderCategoryCard(academy))
+    .map((academy) => renderCategoryCard(academy))
     .join(" ");
   const categoryCardLinks = document.querySelectorAll(".ccard-link");
   categoryCardLinksHandler(categoryCardLinks, data);
@@ -73,7 +73,7 @@ const createModalWindow = (id, data) => {
   document.body.style.overflow = "hidden";
 };
 
-const createAsideMenu = academiesData => {
+const createAsideMenu = (academiesData) => {
   const asideEl = document.querySelector(".aside");
   asideEl.innerHTML = renderAsideMenu(academiesData);
   const asideLinks = document.querySelectorAll(".aside__item-link");
@@ -83,11 +83,12 @@ const createAsideMenu = academiesData => {
 showPageByClass("landing");
 modalCloseHandler();
 headerLogoHandler();
+navLinksHandler();
 
 //dynamic routing function
 
-const routingHandler = data => {
-  return e => {
+const routingHandler = (data) => {
+  return (e) => {
     if (!e.state) {
       showPageByClass("landing");
     }
@@ -105,8 +106,8 @@ const routingHandler = data => {
 
 //Fetch call to get all academies data
 fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
-  .then(res => res.json())
-  .then(data => {
+  .then((res) => res.json())
+  .then((data) => {
     createLandingPage(data.academies);
     createAsideMenu(data.academies);
 
@@ -114,26 +115,26 @@ fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
     urlIdHandler(data.academies, urlId);
   });
 
-aboutBtn.addEventListener(`click`, e => {
-  e.preventDefault();
-  showPageByClass(e.target.id);
+// aboutBtn.addEventListener(`click`, (e) => {
+//   e.preventDefault();
+//   showPageByClass(e.target.id);
 
-  window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
-});
+//   window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
+// });
 
-paymentBtn.addEventListener(`click`, e => {
-  e.preventDefault();
-  showPageByClass(e.target.id);
+// paymentBtn.addEventListener(`click`, (e) => {
+//   e.preventDefault();
+//   showPageByClass(e.target.id);
 
-  window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
-});
+//   window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
+// });
 
-contactBtn.addEventListener("click", e => {
-  e.preventDefault();
-  showPageByClass(e.target.id);
+// contactBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   showPageByClass(e.target.id);
 
-  window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
-});
+//   window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
+// });
 
 //Hamburger Menu Logic
 
