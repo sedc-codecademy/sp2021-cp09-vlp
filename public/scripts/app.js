@@ -34,6 +34,7 @@ const urlIdHandler = (data, id) => {
   if (id.startsWith("academy")) {
     createAcademyPage(data, id);
     showPageByClass("academy");
+    asideItemSelectedHandler(id);
     return;
   }
 
