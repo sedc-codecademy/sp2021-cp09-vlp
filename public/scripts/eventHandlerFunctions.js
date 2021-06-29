@@ -9,13 +9,23 @@ const cardButtonsHandler = (buttonElements, data) => {
   });
 };
 
+const asideItemSelectedHandler = id => {
+  const asideLinks = document.querySelectorAll(".aside__item-link");
+  asideLinks.forEach(link => {
+    link.classList.remove("aside__item-link--selected");
+    if (link.id.slice(6) === id) {
+      link.classList.add("aside__item-link--selected");
+    }
+  });
+};
+
 const categoryCardLinksHandler = (linkElements, data) => {
   linkElements.forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault();
 
       const academyId = e.target.id.slice(6);
-
+      asideItemSelectedHandler(academyId);
       createAcademyPage(data, academyId);
       window.history.pushState({ academyId }, "", `/${academyId}`);
 
@@ -29,7 +39,7 @@ const asideLinksHandler = (linkElements, data) => {
     link.addEventListener("click", e => {
       e.preventDefault();
       const academyId = e.target.id.slice(6);
-
+      asideItemSelectedHandler(academyId);
       createAcademyPage(data, academyId);
       window.history.pushState({ academyId }, "", `/${academyId}`);
     });
