@@ -80,9 +80,71 @@ const navLinksHandler = () => {
   headerLinks.forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault();
-      if (!e.target.id) return;
+      if (!e.target.id || e.target.id.startsWith("nav")) return;
       showPageByClass(e.target.id);
       window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
     });
+  });
+};
+
+const subMenuLinksHandler = (linkElements, academiesData) => {
+  linkElements.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const academyId = e.target.id.slice(4);
+      asideItemSelectedHandler(academyId);
+      createAcademyPage(academiesData, academyId);
+      showPageByClass("academy");
+      window.history.pushState({ academyId }, "", `/${academyId}`);
+
+      document
+        .querySelector(".nav__item-submenu")
+        .classList.remove("nav__item-submenu--open");
+
+      document
+        .querySelector(".burger__icon")
+        .classList.toggle("burger__icon--selected");
+
+      document.querySelector(".nav__list").classList.toggle("nav__list--open");
+    });
+  });
+};
+
+const burgerBtnEventHandler = () => {
+  const headerBurgerBtn = document.querySelector(".header__btn");
+
+  headerBurgerBtn.addEventListener("click", () => {
+    document.querySelector(".nav__list").classList.toggle("nav__list--open");
+    document
+      .querySelector(".burger__icon")
+      .classList.toggle("burger__icon--selected");
+  });
+};
+
+const academiesButtonEventHandler = () => {
+  const academiesButton = document.querySelector(".nav__list-academies");
+
+  academiesButton.addEventListener("click", () => {
+    document
+      .querySelector(".nav__item-submenu")
+      .classList.toggle("nav__item-submenu--open");
+  });
+};
+
+const subMenuBurgerCloseHandler = () => {
+  document.body.addEventListener("click", e => {
+    console.log(e.target.classList);
+    if (!e.target.classList.contains("nav__list-academies")) {
+      document
+        .querySelector(".nav__item-submenu")
+        .classList.remove("nav__item-submenu--open");
+    }
+    if (!e.target.classList.contains("burger__block")) {
+      document.querySelector(".nav__list").classList.toggle("nav__list--open");
+      document
+        .querySelector(".burger__icon")
+        .classList.remove("burger__icon--selected");
+    }
+    e.preventDefault();
   });
 };
