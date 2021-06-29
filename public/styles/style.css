@@ -1488,7 +1488,7 @@ tbody:hover tr:hover a {
   }
 
   .nav__item-submenu--open {
-    height: 190px;
+    height: 205px;
     padding-top: 0;
     margin: 25px 0 0 10px;
   }
@@ -1499,7 +1499,7 @@ tbody:hover tr:hover a {
 
   .header__btn {
     display: flex;
-    padding: 0 10px 0 10px;
+    /* padding: 0 10px 0 10px; */
     margin-right: 20px;
     background-color: var(--primaryColor);
     border-radius: 5px;
@@ -1509,47 +1509,35 @@ tbody:hover tr:hover a {
     height: 50px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    z-index: 2;
+    z-index: 3;
+    position: relative;
   }
 
-  .header__btn-burger {
-    width: 30px;
-    height: 4px;
-    background: #fff;
-    border-radius: 4px;
-    transition: all 0.3s ease-in-out;
+  .burger__icon {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: 0.3s ease-in-out;
   }
 
-  .header__btn-burger::before,
-  .header__btn-burger::after {
-    content: "";
+  .burger__block {
     position: absolute;
-    width: 30px;
-    height: 4px;
-    background: #fff;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    height: 100%;
+    width: 100%;
   }
 
-  .header__btn-burger::before {
-    transform: translateY(-10px);
+  .burger__icon::before {
+    z-index: -10;
   }
 
-  .header__btn-burger::after {
-    transform: translateY(10px);
+  .burger__block:hover .burger__icon {
+    color: var(--tertiaryColor);
   }
 
-  /* Hamburger Button Animation */
-  .header__btn.open .header__btn-burger {
-    background: transparent;
-  }
-
-  .header__btn.open .header__btn-burger::before {
-    transform: rotate(45deg);
-  }
-
-  .header__btn.open .header__btn-burger::after {
-    transform: rotate(-45deg);
+  .burger__icon--selected {
+    color: var(--tertiaryColor);
   }
 
   .payment {

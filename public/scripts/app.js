@@ -1,6 +1,3 @@
-const headerBurgerBtn = document.querySelector(".header__btn");
-const navList = document.querySelector(".nav__list");
-
 //creating the different dynamic pages funcitons
 
 let urlId = "";
@@ -73,6 +70,13 @@ const createAsideMenu = academiesData => {
   asideLinksHandler(asideLinks, academiesData);
 };
 
+const createHeaderSubMenu = academiesData => {
+  const subMenu = document.querySelector(".nav__item-submenu");
+  subMenu.innerHTML = renderSubMenuLinks(academiesData);
+  const subMenuLinks = document.querySelectorAll(".nav__submenu-item");
+  subMenuLinksHandler(subMenuLinks, academiesData);
+};
+
 showPageByClass("landing");
 modalCloseHandler();
 headerLogoHandler();
@@ -103,22 +107,14 @@ fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
   .then(data => {
     createLandingPage(data.academies);
     createAsideMenu(data.academies);
-    const test = renderSubMenuLinks(data.academies);
-    console.log(test);
+    createHeaderSubMenu(data.academies);
+
     window.onpopstate = routingHandler(data.academies);
     urlIdHandler(data.academies, urlId);
   });
 
 //Hamburger Menu Logic
 
-headerBurgerBtn.addEventListener("click", () => {
-  navList.classList.toggle("nav__list--open");
-});
-
-const academiesButton = document.querySelector(".nav__list-academies");
-const academiesSubmenu = document.querySelector(".nav__item-submenu");
-
-// let academiesSubmenuOpen = false;
-academiesButton.addEventListener("click", () => {
-  academiesSubmenu.classList.toggle("nav__item-submenu--open");
-});
+academiesButtonEventHandler();
+burgerBtnEventHandler();
+subMenuBurgerCloseHandler();
