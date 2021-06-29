@@ -166,3 +166,15 @@ const renderAsideMenu = academiesData => {
 
   return asideHTML;
 };
+
+`<li class="nav__submenu-item">Web Developer</li>`;
+
+const renderSubMenuLinks = acadmiesData => {
+  const subMenuHTML = acadmiesData
+    .map(
+      academy =>
+        `<li class="nav__submenu-item" id="nav-${academy.id}">${academy.moduleCardData.alternateTitle}</li>`
+    )
+    .join(" ");
+  return subMenuHTML;
+};
