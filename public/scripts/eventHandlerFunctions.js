@@ -139,8 +139,12 @@ const subMenuBurgerCloseHandler = () => {
         .querySelector(".nav__item-submenu")
         .classList.remove("nav__item-submenu--open");
     }
-    if (!e.target.classList.contains("burger__block")) {
-      document.querySelector(".nav__list").classList.toggle("nav__list--open");
+    if (
+      !e.target.classList.contains("burger__block") &&
+      !e.target.classList.contains("nav__list-academies") &&
+      !e.target.classList.contains("nav__list-item")
+    ) {
+      document.querySelector(".nav__list").classList.remove("nav__list--open");
       document
         .querySelector(".burger__icon")
         .classList.remove("burger__icon--selected");
