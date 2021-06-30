@@ -113,8 +113,15 @@ fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
     urlIdHandler(data.academies, urlId);
   });
 
-//Hamburger Menu Logic
+//Back to top
+backToTopBtn = document.querySelector(".footer__icon");
+backToTopBtn.addEventListener("click", e => {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0; // Safari
+  e.preventDefault();
+});
 
+//Hamburger Menu Logic
 academiesButtonEventHandler();
 burgerBtnEventHandler();
 subMenuBurgerCloseHandler();
