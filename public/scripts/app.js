@@ -81,7 +81,7 @@ showPageByClass("landing");
 modalCloseHandler();
 headerLogoHandler();
 navLinksHandler();
-
+footerAboutUs()
 //dynamic routing function
 
 const routingHandler = data => {
