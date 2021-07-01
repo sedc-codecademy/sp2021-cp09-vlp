@@ -149,30 +149,28 @@ const subMenuBurgerCloseHandler = () => {
         .querySelector(".burger__icon")
         .classList.remove("burger__icon--selected");
     }
-    ;
   });
 };
 
-// footer develop 
+// footer develop
 
-const footerAboutUs = ()=>{
-  const achivement = document.querySelector('#Achivement')
-  const companyGoals = document.querySelector('#Company-goals')
-  const companyCulture = document.querySelector('#Company-culture')
-  achivement.addEventListener('click',(e)=>{
+const footerAboutUs = () => {
+  const achivement = document.querySelector("#Achivement");
+  const companyGoals = document.querySelector("#Company-goals");
+  const companyCulture = document.querySelector("#Company-culture");
+  achivement.addEventListener("click", e => {
     e.preventDefault();
-      showPageByClass("about-us")
-  })
-  companyGoals.addEventListener('click',(e)=>{
+    showPageByClass("about-us");
+    window.history.pushState({ pageId: "about-us" }, "", `/about-us`);
+  });
+  companyGoals.addEventListener("click", e => {
     e.preventDefault();
-      showPageByClass("about-us")
-  })
-  companyCulture.addEventListener('click',(e)=>{
+    showPageByClass("about-us");
+    window.history.pushState({ pageId: "about-us" }, "", `/about-us`);
+  });
+  companyCulture.addEventListener("click", e => {
     e.preventDefault();
-      showPageByClass("about-us")
-  })
-
-}
-
-
-
+    showPageByClass("about-us");
+    window.history.pushState({ pageId: "about-us" }, "", `/about-us`);
+  });
+};
