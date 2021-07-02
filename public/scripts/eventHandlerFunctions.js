@@ -149,6 +149,28 @@ const subMenuBurgerCloseHandler = () => {
         .querySelector(".burger__icon")
         .classList.remove("burger__icon--selected");
     }
+  });
+};
+
+// footer develop
+
+const footerAboutUs = () => {
+  const achivement = document.querySelector("#Achivement");
+  const companyGoals = document.querySelector("#Company-goals");
+  const companyCulture = document.querySelector("#Company-culture");
+  achivement.addEventListener("click", e => {
     e.preventDefault();
+    showPageByClass("about-us");
+    window.history.pushState({ pageId: "about-us" }, "", `/about-us`);
+  });
+  companyGoals.addEventListener("click", e => {
+    e.preventDefault();
+    showPageByClass("about-us");
+    window.history.pushState({ pageId: "about-us" }, "", `/about-us`);
+  });
+  companyCulture.addEventListener("click", e => {
+    e.preventDefault();
+    showPageByClass("about-us");
+    window.history.pushState({ pageId: "about-us" }, "", `/about-us`);
   });
 };
