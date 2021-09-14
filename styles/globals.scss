@@ -1,14 +1,18 @@
-html,
+@use "./variables.scss" as var;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap");
+
+html {
+  font-size: var.$global-font-size;
+  font-family: var.$font-open-sans, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-size: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-h1 {
-  font-size: 3rem;
+  font-size: 1.6rem;
 }
 
 a {
