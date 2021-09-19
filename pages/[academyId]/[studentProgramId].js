@@ -6,6 +6,10 @@ import Modal from "../../components/UI/Modal/Modal"
 
 import axios from "axios";
 
+import Link from "next/link";
+import AcademiesLayout from "../../components/AcademiesLayout/AcademiesLayout";
+import classes from './studentProgramId.module.scss';
+
 const AcademyPage = props => {
   const router = useRouter();
 
@@ -25,21 +29,37 @@ const AcademyPage = props => {
       <Head>
         <title>SEDC - {selectedAcademy.title}</title>
       </Head>
-      <h1>{academyData.title}</h1>
+      <main  className={classes.academiesMain} >
 
-      {academyData.study_programs.map(program => (
-        <button
-          key={program.id}
-          onClick={() => {
-            router.push(`/${router.query.academyId}/${program.id}`, undefined, {
-              shallow: true,
-            });
-          }}
-        >
-          {program.title}
-        </button>
-      ))}
-      <h2>{selectedAcademy.title}</h2>
+        <Link href={`/`}>
+          <div className={classes.backDiv}>
+            <img className={classes.arrow} src="/images/Arrow.png" alt="" />
+            <p className={classes.backToHome}>Back to home</p>
+          </div>
+        </Link>
+      
+        <img className={classes.screenIcon} src="/images/Rectangle18.png" alt="" />
+        <h1 className={classes.title}>{academyData.title}</h1>
+
+        
+        <div className={classes.buttonsDiv}>
+          {academyData.study_programs.map(program => (
+            <button 
+              className={classes.academyBtn}
+              key={program.id}
+              onClick={e => {
+                router.push(`/${router.query.academyId}/${program.id}`, undefined, {
+                  shallow: true,
+                });
+              }}
+            >
+              {program.title}
+            </button>
+          ))}
+        </div>
+
+        <AcademiesLayout academy = {selectedAcademy} />  
+      </main>
     </div>
   );
 };

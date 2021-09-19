@@ -10,6 +10,7 @@ import { Fragment } from "react";
 
 export default function HomePage(props) {
   const { academies } = props.data;
+  console.log(academies);
 
   return (
     <Fragment>
@@ -65,7 +66,6 @@ export default function HomePage(props) {
         </div>
       </div>
     </Fragment>
-
   );
 }
 

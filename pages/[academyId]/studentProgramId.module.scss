@@ -1,0 +1,133 @@
+@use "../../styles/variables.scss" as var;
+@use "../../styles/mixins.scss" as mixins;
+
+.academiesMain {
+    background: var.$navy-medium;
+    color: #fff;
+    font-family: var.$font-poppins;
+    padding: 3rem 6.5rem;
+
+    @include mixins.breakpoint(mobileonly) {
+        padding: 1.5rem 3rem;
+    }
+}
+
+.arrow{
+    width: 1.2rem;
+
+    @include mixins.breakpoint(mobileonly) {
+        float: left;
+    }
+}
+
+.backToHome {
+    margin: 1.2rem;
+
+    @include mixins.breakpoint(tablet) {
+        margin: 0.2em;
+    }
+
+    @include mixins.breakpoint(mobileonly) {
+        display: none;
+    }
+
+}
+
+.backDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+
+    @include mixins.breakpoint(mobileonly) {
+        float: left;
+    }
+}
+
+.backDiv:hover {
+    color: var.$navy-dark;
+}
+
+.screenIcon {
+    width: 11rem;
+    margin: 2rem;
+
+    @include mixins.breakpoint(mobileonly) {
+        width: 7rem;
+        margin-left: 2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+.title {
+    margin-top: 1rem;
+
+    @include mixins.breakpoint(tablet) {
+        font-size: 2.4rem;
+        margin-top: 0;
+    }
+
+    @include mixins.breakpoint(mobileonly) {
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+}
+
+.buttonsDiv {
+    display: flex;
+    align-items: center; 
+
+    @include mixins.breakpoint(tablet) {
+        display: inline;
+    }
+
+    @include mixins.breakpoint(mobileonly) {
+        display: inline;
+    }
+}
+
+.academyBtn {
+    background: var.$navy-medium;
+    color: #fff;
+    font-family: var.$font-poppins;
+    font-size: 1.8rem;
+    width: 18rem;
+    height: 5rem;
+    border: 3px solid #FFFFFF;
+    border-radius: 2.5rem;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+
+    @include mixins.breakpoint(tablet) {
+        font-size: 1.5rem;
+        width: 16rem;
+        height: fit-content;
+        margin-bottom: 1rem;
+        padding: 0.6rem;
+    }
+
+    @include mixins.breakpoint(mobileonly) {
+        font-size: 1.3rem;
+        width: 16rem;
+        height: fit-content;
+        margin-bottom: 1rem;
+        padding: 0.6rem;
+        border: 2px solid #FFFFFF;
+    }
+}
+
+.academyBtn:hover {
+    background: var.$navy-light;
+    color: var.$logo-blue-dark;
+    border: 3px solid var.$logo-blue-dark;
+
+    @include mixins.breakpoint(mobileonly) {
+        border: 2px solid var.$logo-blue-dark;
+    }
+}
+
+.academyBtn:active {
+    transform: scale(0.98);
+}
