@@ -1,0 +1,109 @@
+@use "./mixins.scss" as mixins;
+@use "./variables.scss" as var;
+
+.heroDiv {
+  display: flex;
+  justify-content: space-between;
+  background-color: var.$navy-light;
+  width: 100%;
+  height: 60rem;
+
+  h1 {
+    margin-top: 12rem;
+    margin-left: 8rem;
+    justify-self: center;
+    text-align: left;
+    font-family: var.$font-poppins;
+    font-weight: 800;
+    color: var.$logo-blue-dark;
+    width: 50rem;
+    font-size: 6rem;
+  }
+  h4 {
+    width: 50rem;
+    margin-left: 8rem;
+    justify-self: center;
+    align-self: center;
+    font-family: var.$font-poppins;
+    font-weight: 500;
+    font-size: 3rem;
+    color: var.$logo-blue-dark;
+  }
+  img {
+    margin-right: 8rem;
+    margin-bottom: 1.5rem;
+    align-self: flex-end;
+  }
+}
+
+.availableAcademiesTitle {
+  margin: 8rem 8rem 2rem 8rem;
+  font-family: var.$font-poppins;
+  font-size: 7rem;
+  font-weight: 500;
+  color: var.$logo-blue-dark;
+}
+
+.academyCardContainer {
+  margin: 0 5.5rem 0 5.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.academyCard {
+  background-color: #fff;
+  margin: 2rem 0 4rem 0;
+  width: 24rem;
+  height: 28rem;
+  border-radius: 1rem;
+  box-shadow: #002c5f4d 0 0 1rem -0.2rem;
+  color: var.$logo-blue-dark;
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: var.$font-poppins;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  .academyLogo {
+    width: 18rem;
+    height: 18rem;
+    background-size: 15.5rem;
+    background-position: center;
+  }
+}
+
+.academyRates {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.academyRate {
+  margin: 0 2rem 0 2rem;
+  width: 50rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: var.$font-poppins;
+  color: var.$logo-blue-dark;
+  h1 {
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    color: var.$navy-medium;
+    font-size: 10rem;
+    font-family: var.$font-poppins;
+    font-weight: 800;
+  }
+  h4 {
+    margin-top: 0.2rem;
+  }
+}
+
+.contentContainer {
+  background: transparent
+    linear-gradient(180deg, #fff 50%, #eaf3ff 60%, #e9f2ff 100%);
+}

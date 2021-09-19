@@ -22,14 +22,14 @@ const AcademyPage = props => {
   return (
     <div>
       <Head>
-        <title>SEDC- {selectedAcademy.title}</title>
+        <title>SEDC - {selectedAcademy.title}</title>
       </Head>
       <h1>{academyData.title}</h1>
 
       {academyData.study_programs.map(program => (
         <button
           key={program.id}
-          onClick={e => {
+          onClick={() => {
             router.push(`/${router.query.academyId}/${program.id}`, undefined, {
               shallow: true,
             });
@@ -43,6 +43,7 @@ const AcademyPage = props => {
   );
 };
 
+// STATIC DATA FETCHING AND STATIC PATH GENERATION - DON'T EDIT
 export async function getStaticPaths() {
   const response = await axios.get("https://vlp-data.herokuapp.com/academies");
 
@@ -79,5 +80,6 @@ export async function getStaticProps(context) {
     },
   };
 }
+// STATIC DATA FETCHING AND STATIC PATH GENERATION - DON'T EDIT
 
 export default AcademyPage;
