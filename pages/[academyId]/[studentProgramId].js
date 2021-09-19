@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Modal from "../../components/UI/Modal/Modal"
 
 import axios from "axios";
 
