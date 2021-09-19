@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import AccordionApp from "../components/Layout/Accordion/AccordionApp";
 
 import axios from "axios";
 
@@ -12,7 +13,7 @@ export default function HomePage(props) {
         <title>SEDC - Academies</title>
       </Head>
       <h1>Homepage</h1>
-      {academies.map(academy => (
+      {academies.map((academy) => (
         <Link
           href={`/${academy.id}/${academy.study_programs[0].id}`}
           key={academy.id}
