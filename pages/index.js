@@ -5,12 +5,11 @@ import axios from "axios";
 
 export default function HomePage(props) {
   const { academies } = props.data;
+  console.log(academies);
 
   return (
     <div>
-      <Head>
-        <title>SEDC - Academies</title>
-      </Head>
+      
       <h1>Homepage</h1>
       {academies.map(academy => (
         <Link
