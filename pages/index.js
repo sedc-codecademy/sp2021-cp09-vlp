@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
+
+import AccordionApp from "../components/Layout/Accordion/AccordionApp";
 import classes from "../styles/HomePage.module.scss";
+
 
 import axios from "axios";
 import { Fragment } from "react";
@@ -62,6 +65,7 @@ export default function HomePage(props) {
         </div>
       </div>
     </Fragment>
+
   );
 }
 
