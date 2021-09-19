@@ -1,0 +1,213 @@
+@use "../../../styles/variables.scss" as var;
+@use "../../../styles/mixins.scss" as mixins;
+
+
+.modalBackground {  
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow-y:scroll;
+    background-color: rgba(0,149,214,0.74);
+    text-align:center;
+    max-width: 100%;
+    max-height: 100%;
+
+    
+}
+
+.modal{
+    background-color: #FFF;
+    margin: 15% auto; 
+    padding: 2rem;
+    border: 0.3rem solid var.$navy-dark;
+    border-radius: 1rem;
+    // width: 100%;
+    // height:100%;
+    font-family: var.$font-poppins;
+    overflow:hidden;    
+    color:var.$navy-dark;
+    
+    @include mixins.breakpoint("mobile"){
+        width: 100vh;
+        height:100vw;
+
+    }
+
+    @include mixins.breakpoint("tablet"){
+        width: 100vw;
+        height:100vh;
+
+    }
+
+    @include mixins.breakpoint("laptop"){
+      width: 85vw;
+      height:85vh;
+    }
+
+    @include mixins.breakpoint("desktop"){
+        width:80vw;
+        height:90vh; 
+    }
+}
+
+.infoSection{
+
+    @include mixins.breakpoint("mobileonly"){
+        .subjectInfo{
+            font-size:1.4rem;
+            text-align:left;
+        }
+    }
+  
+
+    @include mixins.breakpoint("tablet"){
+        margin-top:6.5rem;
+        margin-bottom: 4.5rem;
+        .courseMainTitle{
+            font-size:3rem;
+        }
+        .courseSubTitle{
+            font-size:2.3rem;
+        
+        }
+    }
+
+    @include mixins.breakpoint("laptop"){
+        margin-top:0;
+        margin-bottom:0;    
+        
+    }
+
+
+    @include mixins.breakpoint("desktop"){
+        margin-bottom: 3rem;
+        .courseMainTitle{
+            font-size:3.5rem;
+        }
+        .courseSubTitle{
+            font-size:3rem;
+        }
+        .courseHeader{
+            font-size:2.5rem;
+            margin-bottom:0;
+        }
+        .subjectInfo{
+            font-size:1.7rem;
+        }
+        h4{
+            margin:0;
+        }
+
+    }
+
+    .courseSubTitle{
+        margin-top:1rem;
+        font-size:2.5rem;
+
+    }
+
+    .courseHeader{  
+        text-align: left;
+    }
+
+  
+}
+
+.courseProgression{
+    margin:0 auto;
+    font-size:2rem;
+    text-align: left;
+}
+
+.btnContainer {
+    display:flex;
+    justify-content: flex-end;
+    background-color: none;
+    margin:0;
+    padding:0;
+
+
+    .closeBtn{
+        border: none;
+        font-size: 3.5rem;
+        background:none;
+    }
+}
+
+.infoContainer {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    
+    .infoBox {
+        margin:1rem;
+        border: solid 0.3rem var.$navy-dark;
+        border-radius: 1rem;
+        background: var.$navy-light;
+    
+        @include mixins.breakpoint("mobileonly"){
+          width: 10rem;
+          height:7rem;
+          font-size:1.3rem;
+        }
+
+        @include mixins.breakpoint("tablet"){
+            width: 13.8rem;
+            height: 10.5rem;
+            font-size:1.6rem;
+        }
+
+        @include mixins.breakpoint("laptop"){
+          font-size:1.8rem;
+          width: 14.5rem;
+          height:13rem;
+       
+        }
+
+        @include mixins.breakpoint("desktop"){
+            width:16rem;
+            height:14rem;
+        }
+
+        @include mixins.breakpoint("tv"){
+            width:20.5rem;
+            height:16rem
+        }
+    }
+
+    @include mixins.breakpoint("mobileonly"){
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include mixins.breakpoint("tablet"){
+        flex-direction: row;
+        margin-bottom:3rem;
+        margin-top:3rem;
+    }
+
+    @include mixins.breakpoint("laptop"){
+      flex-direction: row;
+      margin:0;
+    }
+
+    @include mixins.breakpoint("desktop"){
+     flex-direction: row;
+     
+    }
+
+}
+
+.linkSection{
+    text-align: left;
+    @include mixins.breakpoint("mobileonly"){
+        text-align: center;
+        line-height: 2.3rem;
+    }
+}
+
