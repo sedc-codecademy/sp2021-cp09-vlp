@@ -1,6 +1,6 @@
 @use "../../styles/variables.scss" as var;
 @use "../../styles/mixins.scss" as mixins;
-  
+
 .academyContainer {
   background: white;
   color: var.$logo-blue-dark;
@@ -8,14 +8,12 @@
   border-radius: 1rem;
   font-family: var.$font-poppins;
   padding: 1rem 5rem;
-  margin-top: 2rem; 
+  margin-top: 2rem;
 
   @include mixins.breakpoint(mobileonly) {
     border: 2px solid var.$logo-blue-dark;
     padding: 1rem 2rem;
   }
-
-
 
   .title {
     font-weight: bold;
@@ -27,13 +25,14 @@
   }
 
   .h2Tag {
-
     @include mixins.breakpoint(mobileonly) {
       font-size: 1.7rem;
     }
   }
 
-  .moneyIcon, .calendarIcon, .timeIcon  {
+  .moneyIcon,
+  .calendarIcon,
+  .timeIcon {
     height: 4rem;
     margin-left: 1rem;
 
@@ -142,12 +141,21 @@
     border: 0.1rem solid var.$logo-blue-dark;
     border-radius: 1rem;
 
-    
-    @include mixins.scrollbars(10rem, 0.8rem, var.$logo-blue-dark, var.$lavander-light);
+    @include mixins.scrollbars(
+      10rem,
+      0.8rem,
+      var.$logo-blue-dark,
+      var.$lavender-light
+    );
 
     @include mixins.breakpoint(mobileonly) {
       padding: 1rem;
-      @include mixins.scrollbars(10rem, 0.6rem, var.$logo-blue-dark, var.$lavander-light);
+      @include mixins.scrollbars(
+        10rem,
+        0.6rem,
+        var.$logo-blue-dark,
+        var.$lavender-light
+      );
     }
   }
 
@@ -159,24 +167,23 @@
     width: 100%;
 
     @include mixins.breakpoint(mobileonly) {
-    font-size: 1.3rem;
+      font-size: 1.3rem;
     }
   }
 
   .tableMainHeader {
     font-size: 2.2rem;
     border: 0.2rem solid var.$logo-blue-dark;
-    background: var.$lavander-light;
+    background: var.$lavender-light;
 
     @include mixins.breakpoint(mobileonly) {
       font-size: 1.6rem;
     }
-    
   }
 
   .tableHeader {
     border: 0.2rem solid var.$logo-blue-dark;
-    background: var.$lavander-light;
+    background: var.$lavender-light;
     padding: 1rem;
   }
 
@@ -192,7 +199,6 @@
     font-weight: bold;
   }
 
-
   .termsDiv {
     margin-top: 5rem;
     padding: 1.6rem;
@@ -204,11 +210,11 @@
   .programDiv {
     padding: 1.6rem;
     margin-top: 3rem;
-    
-    p{
+
+    p {
       font-weight: bold;
       margin-left: 3rem;
-    
+
       @include mixins.breakpoint(mobileonly) {
         font-size: 1.3rem;
         margin-top: 1rem;
@@ -228,7 +234,7 @@
     border-radius: 1rem;
     background: var.$navy-light;
 
-    p{
+    p {
       font-weight: bold;
     }
   }
@@ -239,7 +245,4 @@
   }
 }
 
-
-
-
-  /*# sourceMappingURL=academies.css.map */
+/*# sourceMappingURL=academies.css.map */
