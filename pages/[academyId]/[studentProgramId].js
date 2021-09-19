@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Modal from "../../components/UI/Modal/Modal"
 
 import axios from "axios";
 
@@ -26,9 +27,8 @@ const AcademyPage = props => {
   return (
     <div>
       <Head>
-        <title>SEDC- {selectedAcademy.title}</title>
+        <title>SEDC - {selectedAcademy.title}</title>
       </Head>
-
       <main  className={classes.academiesMain} >
 
         <Link href={`/`}>
@@ -58,13 +58,13 @@ const AcademyPage = props => {
           ))}
         </div>
 
-        <AcademiesLayout academy = {selectedAcademy} />
-        
+        <AcademiesLayout academy = {selectedAcademy} />  
       </main>
     </div>
   );
 };
 
+// STATIC DATA FETCHING AND STATIC PATH GENERATION - DON'T EDIT
 export async function getStaticPaths() {
   const response = await axios.get("https://vlp-data.herokuapp.com/academies");
 
@@ -101,5 +101,6 @@ export async function getStaticProps(context) {
     },
   };
 }
+// STATIC DATA FETCHING AND STATIC PATH GENERATION - DON'T EDIT
 
 export default AcademyPage;
