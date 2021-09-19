@@ -4,7 +4,6 @@ import Link from "next/link";
 import AccordionApp from "../components/Layout/Accordion/AccordionApp";
 import classes from "../styles/HomePage.module.scss";
 
-
 import axios from "axios";
 import { Fragment } from "react";
 
@@ -46,7 +45,7 @@ export default function HomePage(props) {
             Available academies
           </h1>
           <div className={classes.academyCardContainer}>
-            {academies.map(academy => (
+            {academies.map((academy) => (
               <Link
                 href={`/${academy.id}/${academy.study_programs[0].id}`}
                 key={academy.id}
@@ -63,6 +62,7 @@ export default function HomePage(props) {
               </Link>
             ))}
           </div>
+          <AccordionApp />
         </div>
       </div>
     </Fragment>
