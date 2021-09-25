@@ -38,7 +38,7 @@ const AcademyPage = props => {
           </div>
         </Link>
       
-        <img className={classes.screenIcon} src="/images/Rectangle18.png" alt="" />
+        <img className={classes.screenIcon} src={`/img/${academyData.id}.png`}  alt="" />
         <h1 className={classes.title}>{academyData.title}</h1>
 
         
