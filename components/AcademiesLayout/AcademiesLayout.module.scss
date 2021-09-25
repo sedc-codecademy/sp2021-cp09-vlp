@@ -2,6 +2,7 @@
 @use "../../styles/mixins.scss" as mixins;
 
 .academyContainer {
+
   background: white;
   color: var.$logo-blue-dark;
   border: 3px solid var.$logo-blue-dark;
@@ -9,10 +10,12 @@
   font-family: var.$font-poppins;
   padding: 1rem 5rem;
   margin-top: 2rem;
+  padding-bottom: 4rem;
 
   @include mixins.breakpoint(mobileonly) {
     border: 2px solid var.$logo-blue-dark;
     padding: 1rem 2rem;
+   padding-bottom: 2rem;
   }
 
   .title {
@@ -139,7 +142,8 @@
     clear: both;
     width: 100%;
     border: 0.1rem solid var.$logo-blue-dark;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    padding: 1rem;
 
     @include mixins.scrollbars(
       10rem,
@@ -149,7 +153,7 @@
     );
 
     @include mixins.breakpoint(mobileonly) {
-      padding: 1rem;
+      
       @include mixins.scrollbars(
         10rem,
         0.6rem,
@@ -201,7 +205,7 @@
 
   .termsDiv {
     margin-top: 5rem;
-    padding: 1.6rem;
+    padding: 1.6rem  4rem;
     border: 0.2rem solid var.$logo-blue-dark;
     border-radius: 1rem;
     background: var.$navy-light;
@@ -229,7 +233,7 @@
 
   .scholarshipDiv {
     margin-top: 3rem;
-    padding: 1.6rem;
+    padding: 1.6rem  4rem;
     border: 0.2rem solid var.$logo-blue-dark;
     border-radius: 1rem;
     background: var.$navy-light;
@@ -237,11 +241,37 @@
     p {
       font-weight: bold;
     }
+
+    @include mixins.breakpoint(mobileonly) {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
   }
 
   .referralProgramDiv {
     padding: 1.6rem;
     margin: 3rem auto;
+
+    @include mixins.breakpoint(mobileonly) {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-weight: normal;
+    }
+  }
+
+
+  .jobDiv {
+    margin-top: 3rem;
+    padding: 1.6rem  4rem;
+    border-radius: 1rem;
+    background: var.$logo-blue-dark;
+    color: white;
+ 
+    @include mixins.breakpoint(mobileonly) {
+      font-size: 1.3rem;
+      margin-top: 0.8rem;
+    }
   }
 }
 

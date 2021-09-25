@@ -77,6 +77,8 @@
 .buttonsDiv {
     display: flex;
     align-items: center; 
+    // white-space: nowrap;
+    // overflow: visible;
 
     @include mixins.breakpoint(tablet) {
         display: inline;
