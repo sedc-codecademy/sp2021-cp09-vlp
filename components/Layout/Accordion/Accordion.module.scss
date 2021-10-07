@@ -2,15 +2,17 @@
 @use "../../../styles/variables.scss" as var;
 
 .app_ready {
-  max-width: 600px;
+  max-width: 900px;
   min-width: 300px;
+  width: auto;
+  margin-top: 3rem;
 }
 
 .heading {
   font-size: 25px;
   font-family: var.$font-poppins;
   color: #002061;
-  padding-left: 40px;
+  padding-left: 50px;
   padding-bottom: 3px;
 }
 
@@ -18,7 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 80%;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .accordion_item {
@@ -44,8 +46,8 @@
   color: var.$logo-blue-dark;
   width: 90%;
   height: 100%;
-  padding: 10px;
-  padding-left: 20px;
+  padding: 10px 10px 10px 20px;
+  font-weight: 500;
 }
 
 .accordion_arrow {
@@ -55,7 +57,7 @@
   top: 30%;
   right: 1%;
   cursor: pointer;
-  background-color: white;
+  background-color: #e9f2ff;
   border: white;
   font: 20px bolder;
   font-style: oblique;
@@ -64,13 +66,16 @@
 .accordion_content {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+  justify-content: space-between;
   width: 100%;
-  padding: 18px;
+  padding: 5px 10px;
   margin-top: 10px;
-  border: 2px solid #002061;
+  border: 1.5px solid #002061;
   color: var.$logo-blue-dark;
   background: var.$navy-light;
+  border-radius: 4px;
+  min-height: 6.5rem;
+  align-items: center;
 }
 
 .accordion_content_text {
@@ -81,24 +86,15 @@
 }
 
 .read_more {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 36%;
-  right: 2%;
   padding-left: 20px;
   padding-right: 20px;
-  width: 24%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  width: auto;
+  border-radius: 0.4rem;
   background: #ffffff;
-  border: 3px solid #002061;
+  border: 1.5px solid #002061;
   font: 30px;
   color: var.$logo-blue-dark;
   font-family: var.$font-poppins;
-  justify-content: center;
   white-space: nowrap;
   overflow: visible;
   cursor: pointer;
