@@ -14,8 +14,8 @@ const AccordionApp = (props) => {
           <Accordion key={index} title={title} content={content} isModalOpen={isModalOpen} toggleModal={toggleModal} />
         ))}
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default AccordionApp;
