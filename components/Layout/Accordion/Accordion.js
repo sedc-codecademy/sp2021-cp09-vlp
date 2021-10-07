@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import classes from "./Accordion.module.scss";
+import Modal from "../../UI/Modal/Modal"
 
-const Accordion = ({ title, content }) => {
+const Accordion = (props) => {
   const [isActive, setIsActive] = useState(false);
+  const { title, content,  academy, isModalOpen, toggleModal } = props;
+  console.log('Rendered accordion')
 
   return (
     <React.Fragment>
@@ -21,12 +24,13 @@ const Accordion = ({ title, content }) => {
         {isActive && (
           <div className={classes.accordion_content}>
             <div className={classes.accordion_content_text}>{content} </div>
-            <button type="button" className={classes.read_more}>
+            <button type="button" className={classes.read_more} onClick={()=>toggleModal(isModalOpen)}>
               Read More
             </button>
           </div>
         )}
       </div>
+      {isModalOpen && <Modal toggleModal={toggleModal} isModalOpen={isModalOpen}/>} 
     </React.Fragment>
   );
 };
