@@ -5,7 +5,6 @@ import classes from "./Accordion.module.scss";
 
 const AccordionApp = props => {
   const { isModalOpen, toggleModal } = props;
-  console.log("rendered porpos in accordion app");
   return (
     <div className={classes.app_ready}>
       <div className={classes.heading}>Study Program</div>
