@@ -7,17 +7,17 @@ import axios from "axios";
 
 import Link from "next/link";
 import AcademiesLayout from "../../components/AcademiesLayout/AcademiesLayout";
-import classes from './studentProgramId.module.scss';
+import classes from "./studentProgramId.module.scss";
 
 const AcademyPage = props => {
   const router = useRouter();
 
   const { academyData } = props;
   const [selectedAcademy, setSelectedAcademy] = useState({});
-  const [isModalOpen, setModalIsOpen] = useState(false); 
+  const [isModalOpen, setModalIsOpen] = useState(false);
 
-  const toggleModal = () =>{
-    setModalIsOpen(!isModalOpen)
+  const toggleModal = () => {
+    setModalIsOpen(!isModalOpen);
   };
 
   useEffect(() => {
@@ -31,11 +31,13 @@ const AcademyPage = props => {
   return (
     <div>
       <Head>
-        <script src="https://kit.fontawesome.com/d32ad62e17.js" crossorigin="anonymous"></script>
+        <script
+          src="https://kit.fontawesome.com/d32ad62e17.js"
+          crossorigin="anonymous"
+        ></script>
         <title>SEDC - {selectedAcademy.title}</title>
       </Head>
-      <main  className={classes.academiesMain} >
-
+      <main className={classes.academiesMain}>
         <Link href={`/`}>
           <div className={classes.backDiv}>
             <i className="fas fa-chevron-left"></i>
@@ -44,20 +46,27 @@ const AcademyPage = props => {
         </Link>
 
         <div className={classes.academyTitleDiv}>
-          <img className={classes.screenIcon} src={`/img/${academyData.id}.png`}  alt="" />
+          <img
+            className={classes.screenIcon}
+            src={`/img/${academyData.id}.png`}
+            alt=""
+          />
           <h1 className={classes.title}>{academyData.title}</h1>
         </div>
 
-        
         <div className={classes.buttonsDiv}>
           {academyData.study_programs.map(program => (
-            <button 
+            <button
               className={classes.academyBtn}
               key={program.id}
               onClick={e => {
-                router.push(`/${router.query.academyId}/${program.id}`, undefined, {
-                  shallow: true,
-                });
+                router.push(
+                  `/${router.query.academyId}/${program.id}`,
+                  undefined,
+                  {
+                    shallow: true,
+                  }
+                );
               }}
             >
               {program.title}
@@ -65,7 +74,11 @@ const AcademyPage = props => {
           ))}
         </div>
 
-        <AcademiesLayout academy = {selectedAcademy} isModalOpen={isModalOpen} toggleModal={toggleModal}/>
+        <AcademiesLayout
+          academy={selectedAcademy}
+          isModalOpen={isModalOpen}
+          toggleModal={toggleModal}
+        />
         {/* <button onClick={toggleModal} type="button"> Read More </button> */}
         {/* {isModalOpen && <Modal onRequestClose={toggleModal} />}   */}
       </main>

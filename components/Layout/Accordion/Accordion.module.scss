@@ -2,8 +2,8 @@
 @use "../../../styles/variables.scss" as var;
 
 .app_ready {
-  max-width: 900px;
-  min-width: 300px;
+  max-width: auto;
+
   width: auto;
   margin-top: 3rem;
 }
@@ -12,15 +12,16 @@
   font-size: 25px;
   font-family: var.$font-poppins;
   color: #002061;
-  padding-left: 50px;
+  font-weight: 700;
   padding-bottom: 3px;
 }
 
 .accordion_data {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 80%;
-  padding-left: 30px;
+  width: 90%;
+  margin: 1rem 0rem;
 }
 
 .accordion_item {
@@ -30,11 +31,9 @@
 
 .accordion_title {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   height: 100%;
   width: 100%;
-  position: relative;
-  flex-direction: row;
   color: var.$logo-blue-dark;
   border-bottom: 1.5px solid;
 }
@@ -51,16 +50,16 @@
 }
 
 .accordion_arrow {
-  width: 5%;
-  height: 30%;
-  position: absolute;
-  top: 30%;
-  right: 1%;
+  padding-right: 2rem;
+  padding-top: 2rem;
   cursor: pointer;
-  background-color: #e9f2ff;
   border: white;
   font: 20px bolder;
   font-style: oblique;
+}
+
+.accordion_content_container {
+  width: 100%;
 }
 
 .accordion_content {
@@ -95,11 +94,13 @@
   font: 30px;
   color: var.$logo-blue-dark;
   font-family: var.$font-poppins;
-  white-space: nowrap;
-  overflow: visible;
   cursor: pointer;
+  background: var.$navy-light;
+  color: var.$logo-blue-dark;
+  border: 0.15rem solid var.$logo-blue-dark;
+  transition: 0.3s ease;
 }
 
 .read_more:hover {
-  background-color: #0095d6;
+  background-color: #a9d1ff;
 }

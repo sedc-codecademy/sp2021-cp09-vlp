@@ -1,14 +1,14 @@
 export const accordionData = [
   {
     title: "First Semester",
-    content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente`,
+    content: `Introduction to HTML & CSS`,
   },
   {
     title: "Second Semester",
-    content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam`,
+    content: `Node JS Basics`,
   },
   {
     title: "Third Semester",
-    content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti?`,
+    content: `Advanced JS Development and Deployment`,
   },
 ];
