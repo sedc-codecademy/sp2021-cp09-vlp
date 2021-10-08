@@ -2,9 +2,9 @@ import { Fragment } from "react";
 import AccordionApp from "../Layout/Accordion/AccordionApp";
 import classes from './AcademiesLayout.module.scss';
 
-const AcademiesLayout = props => {
+const AcademiesLayout = (props) => {
    
-    const { academy } = props;
+    const { academy, isModalOpen, toggleModal } = props;
     console.log(academy);
    
     return (
@@ -55,7 +55,7 @@ const AcademiesLayout = props => {
                     </div>
 
 
-                    <AccordionApp academy = {academy}/>
+                    <AccordionApp academy = {academy} isModalOpen={isModalOpen} toggleModal={toggleModal}/>
                 
                  
                     <h2 className={classes.h2Tag}>Competencies</h2>

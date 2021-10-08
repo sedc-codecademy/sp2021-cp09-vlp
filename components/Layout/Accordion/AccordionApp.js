@@ -3,13 +3,15 @@ import Accordion from "./Accordion";
 import { accordionData } from "./AccordionElements";
 import classes from "./Accordion.module.scss";
 
-const AccordionApp = () => {
+const AccordionApp = (props) => {
+  const { isModalOpen, toggleModal } = props;
+  console.log('rendered porpos in accordion app')
   return (
     <div className={classes.app_ready}>
       <div className={classes.heading}>Study Program</div>
       <div className={classes.accordion_data}>
         {accordionData.map(({ title, content }, index) => (
-          <Accordion key={index} title={title} content={content} />
+          <Accordion key={index} title={title} content={content} isModalOpen={isModalOpen} toggleModal={toggleModal} />
         ))}
       </div>
     </div>

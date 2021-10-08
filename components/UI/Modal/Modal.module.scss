@@ -1,213 +1,406 @@
 @use "../../../styles/variables.scss" as var;
 @use "../../../styles/mixins.scss" as mixins;
 
-
 .modalBackground {  
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow-y:scroll;
-    background-color: rgba(0,149,214,0.74);
-    text-align:center;
-    max-width: 100%;
-    max-height: 100%;
+    // position: fixed; 
+    // z-index: 1; 
+    // left: 0;
+    // top: 0;
+    // width: 100%; 
+    // height: 100%; 
+    // overflow-y:scroll;
+    // background-color: rgba(0,149,214,0.74);
+    // text-align:center;
+    // max-width: 100%;
+    // max-height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.2) ;
 
-    
 }
 
 .modal{
     background-color: #FFF;
-    margin: 15% auto; 
-    padding: 2rem;
-    border: 0.3rem solid var.$navy-dark;
-    border-radius: 1rem;
-    // width: 100%;
-    // height:100%;
-    font-family: var.$font-poppins;
+    // border: 0.3rem solid var.$navy-dark;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-family: var.$font-open-sans;
+    border-radius: 0.4rem;
     overflow:hidden;    
     color:var.$navy-dark;
-    
-    @include mixins.breakpoint("mobile"){
-        width: 100vh;
-        height:100vw;
-
-    }
-
-    @include mixins.breakpoint("tablet"){
-        width: 100vw;
-        height:100vh;
-
-    }
-
-    @include mixins.breakpoint("laptop"){
-      width: 85vw;
-      height:85vh;
-    }
-
-    @include mixins.breakpoint("desktop"){
-        width:80vw;
-        height:90vh; 
-    }
+    margin-right: -2.5rem;
+    position:relative;
+    height:80vh;
+    width:80vw;
 }
 
 .infoSection{
-
-    @include mixins.breakpoint("mobileonly"){
-        .subjectInfo{
-            font-size:1.4rem;
-            text-align:left;
-        }
-    }
-  
-
-    @include mixins.breakpoint("tablet"){
-        margin-top:6.5rem;
-        margin-bottom: 4.5rem;
-        .courseMainTitle{
-            font-size:3rem;
-        }
-        .courseSubTitle{
-            font-size:2.3rem;
-        
-        }
-    }
-
-    @include mixins.breakpoint("laptop"){
-        margin-top:0;
-        margin-bottom:0;    
-        
-    }
-
-
-    @include mixins.breakpoint("desktop"){
-        margin-bottom: 3rem;
-        .courseMainTitle{
-            font-size:3.5rem;
-        }
-        .courseSubTitle{
-            font-size:3rem;
-        }
-        .courseHeader{
-            font-size:2.5rem;
-            margin-bottom:0;
-        }
-        .subjectInfo{
-            font-size:1.7rem;
-        }
-        h4{
-            margin:0;
-        }
-
-    }
-
-    .courseSubTitle{
-        margin-top:1rem;
-        font-size:2.5rem;
-
-    }
-
-    .courseHeader{  
-        text-align: left;
-    }
-
-  
+    text-align: center;
 }
 
-.courseProgression{
-    margin:0 auto;
-    font-size:2rem;
-    text-align: left;
-}
 
-.btnContainer {
-    display:flex;
-    justify-content: flex-end;
-    background-color: none;
-    margin:0;
-    padding:0;
-
-
-    .closeBtn{
-        border: none;
-        font-size: 3.5rem;
-        background:none;
+.closeBtn{
+    border: none;
+    position: absolute;
+    top:2rem;
+    right:2rem;
+    background:none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color:var.$logo-blue-dark;
+    font-size: 4rem;
+    &:hover {
+        opacity: 0.5;
+        transform: scale(1.3);
     }
 }
+
 
 .infoContainer {
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: center;
-    
-    .infoBox {
-        margin:1rem;
-        border: solid 0.3rem var.$navy-dark;
-        border-radius: 1rem;
-        background: var.$navy-light;
-    
-        @include mixins.breakpoint("mobileonly"){
-          width: 10rem;
-          height:7rem;
-          font-size:1.3rem;
-        }
-
-        @include mixins.breakpoint("tablet"){
-            width: 13.8rem;
-            height: 10.5rem;
-            font-size:1.6rem;
-        }
-
-        @include mixins.breakpoint("laptop"){
-          font-size:1.8rem;
-          width: 14.5rem;
-          height:13rem;
-       
-        }
-
-        @include mixins.breakpoint("desktop"){
-            width:16rem;
-            height:14rem;
-        }
-
-        @include mixins.breakpoint("tv"){
-            width:20.5rem;
-            height:16rem
-        }
-    }
-
-    @include mixins.breakpoint("mobileonly"){
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    @include mixins.breakpoint("tablet"){
-        flex-direction: row;
-        margin-bottom:3rem;
-        margin-top:3rem;
-    }
-
-    @include mixins.breakpoint("laptop"){
-      flex-direction: row;
-      margin:0;
-    }
-
-    @include mixins.breakpoint("desktop"){
-     flex-direction: row;
-     
-    }
-
+}
+  
+.infoBox {
+    border: solid 0rem var.$navy-dark;
+    border-radius: 0.4rem;
+    background: var.$logo-blue-dark;
+    text-align:center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: #FFF;
 }
 
 .linkSection{
     text-align: left;
-    @include mixins.breakpoint("mobileonly"){
-        text-align: center;
-        line-height: 2.3rem;
+    .link{
+        cursor: pointer;
     }
 }
 
+@include mixins.breakpoint("mobileonly"){
+   .modal{
+        width:100vw;
+        height:100vh;
+        border-radius:0;
+    }
+    .courseMainTitle{
+        text-align: center;
+        font-size:1.6rem;
+        padding:1rem 1rem 0.5rem 1rem;
+        // margin: 2rem 2.3rem 1rem 2.3rem;
+    }
+
+    .courseSubTitle{
+        font-size:1.5rem;
+        // margin: 0 0.5rem 1.4rem 0.5em;
+        padding:0.5rem;
+    
+    }
+
+    .courseHeader{
+        text-align: left;
+        // margin: 0 0 0.5rem 2.3rem;
+        font-size:1.4rem;
+        padding:0.5 0.3rem;
+
+    }
+
+    .subjectInfo{
+        font-size:1.2rem;
+        text-align:left;
+        // margin: 0 2.3rem 0.5rem 2.3rem;
+        padding: 0.5rem 0.3rem;
+    }
+
+    .courseProgression{
+        text-align:start;
+        // margin: 0 2.3rem 1.3rem 2.3rem;
+        font-size:1.4rem;
+    }
+
+    .closeBtn{
+        font-size: 2.3rem;
+    }
+
+    .infoContainer {
+       display:flex;
+       flex-direction: column;
+    }
+    .infoContainer:first-child{
+        margin-left:0;
+    }
+
+    .infoBox{
+        width: 28.5rem;
+        height:8rem;
+        margin: 0 1rem 2rem 1rem;
+        div {   
+           font-size:1.2rem;
+           padding:2rem;
+           text-align:center;
+        }
+    }
+
+    .linkSection{
+        // margin: 0 0 1rem 2.8rem;
+        text-align: left;
+        font-size:1.2rem;
+        .linkHeader{
+            font-size:1.4rem;
+            // margin: 1rem 0 1rem 0;
+        }
+    }
+
+
+}
+
+// @include mixins.breakpoint("tablet"){
+//  .modal{
+//     width:100vw;
+//     height:100vh;
+//     border-radius:0;
+//  }
+//     .courseMainTitle{
+//         font-size:2.4rem;
+//         // margin:4.5rem 3rem 2.5rem 3rem;
+//         padding:1rem;
+//     }
+
+//     .courseSubTitle{
+//         font-size:2rem;
+//         // margin: 0 2rem 4.5rem 2rem;
+//         padding:1rem 0.5rem 1rem 0.5rem;
+
+//     }
+
+//     .courseHeader{
+//         font-size:1.8rem;
+//         // margin: 0 2rem 2rem 2rem;
+//         text-align: left;
+//         padding:1rem 1rem 0rem 1rem;
+
+//     }
+
+//     .subjectInfo{
+//         text-align: left;
+//         // margin: 0 2rem 1rem 2rem;
+//         font-size: 1.6rem;
+//         padding:0.5rem 1rem 2.5rem 1rem;
+
+//     }
+
+//     .courseProgression{
+//         text-align: left;
+//         font-size: 1.8rem;
+//         // margin: 0rem 2rem 1.5rem 2rem;
+//         padding:1rem;
+//     }
+
+//     .infoContainer{
+//         margin: 0 2rem 3.5rem 2rem;
+//         display:flex;
+//         // justify-content: space-around;
+//         flex-direction: row;
+//     }
+//     .closeBtn{
+//         font-size: 2.9rem;
+//     }
+
+//     .infoBox{
+//         width:12rem;
+//         height: 11rem;
+//         margin:0 0.3rem 0 0.3rem;
+//         div {
+//             font-size:1.3rem;
+//         }
+//     }
+//     .linkSection{
+//         margin: 0 2rem 0rem 2rem;
+//         font-size:1.6rem;
+//         padding:0 1rem 0 1rem;;
+//         .linkHeader{
+//             margin: 1rem 0 1rem 0;
+//             font-size:1.8rem;
+//         }
+//     }
+// }
+
+// @include mixins.breakpoint("laptop"){
+//     .modal{
+//         margin:15% auto;
+//         width:83vw;
+//         height:83vh;
+//         border-radius: 1rem;
+//     }
+//     .courseMainTitle{
+//         // margin:3.5rem 3.5rem 1.9rem 3.5rem;
+//         font-size:2.6rem;
+//     }
+
+//     .courseSubTitle{
+//         font-size:2.2rem;
+//         // margin: 0 3.6rem 2.5rem 3.6rem;
+//         // padding: 1rem;
+    
+//     }
+
+//     .courseHeader{
+//       font-size: 1.8rem;   
+//     //   margin:0 0 0.7rem 1.5rem; 
+//     //   padding:0 1rem 1rem 1rem;
+
+//     }
+
+//     .courseProgression{
+//         text-align: start;
+//         // margin: 0 0 0.7rem 1.5rem;
+//         font-size:1.8rem;
+//         // padding: 0 1rem 1rem 1rem;
+//     }
+//     .subjectInfo{
+//         // margin:0 2rem 0.7rem 2rem;
+//         font-size:1.4rem;
+//         // padding: 0 1rem 1rem 1rem;
+//     }
+
+//     .infoContainer{
+//         margin: 0 1.3rem 1.5rem 1.3rem;
+
+//     }
+
+//     .infoBox{
+//         width: 13.5rem;
+//         height:11.5rem;
+//         text-align: center;
+//         display:flex; 
+//         div {
+//           font-size:1.3rem;
+//           align-self: center;
+//           padding:0.5rem;
+//           text-align:center;
+//        }
+//     }
+//     .linkSection{
+//         font-size:1.5rem;
+//         margin: 1rem 1.5rem 1rem 1.5rem;
+//         // padding: 1rem 1rem 0 1rem;
+//         .linkHeader{
+//             font-size:1.8rem;
+//             margin:0 0 1rem 0;
+//         }
+//     }
+// }
+    
+
+@include mixins.breakpoint("desktop"){
+    .modal{
+        margin: 15% auto;
+        width:80vw;
+        height:80vh; 
+        border-radius: 1rem;
+   }
+    .courseMainTitle{
+        font-size:4.5rem;
+        margin:0;
+        padding:4rem 5rem 4rem 5rem;
+        font-weight: 350;
+        text-align: center;
+
+    }
+
+    .courseHeader{
+        font-size:2.5rem;
+        font-weight: 300;
+        // margin:0 3rem 2rem 3rem;
+        margin:0;
+        padding:0 3rem 3rem 3rem;
+        text-align: left;
+    }
+    .courseProgression{
+        // margin: 0 3rem 1rem 3rem;
+        font-size: 2.5rem;
+        margin:0;
+        padding: 0 3rem 3rem 3rem;
+        text-align:left;
+        font-weight: 300;
+    }
+
+    .subjectInfo{
+        font-size:1.9rem;
+        margin:0;
+        padding:0 3rem 3rem 3rem;
+        text-align: left;
+        // padding:2rem;
+        // margin: 0 3.2rem 1rem 3.2rem;
+    }
+    .infoContainer{
+        margin: 0 3.5rem 3.5rem 3rem;
+    }
+    .infoBox{
+        width:25.5rem;
+        height:19rem;
+        margin-right:3rem;
+        display:flex;
+        div{
+            text-align: center;
+            font-size:1.6rem;
+            padding:1rem;
+            align-self: center;
+        }
+    }
+    .linkSection{
+        margin: 0 3rem 0 3rem;
+        font-size:1.8rem;
+        line-height: 3rem;
+        .linkHeader{
+            padding:0 0 2rem 0;
+            margin: 0;
+            font-size:2.5rem;
+            font-weight: 300;
+        }
+        .link{
+            display:block;
+        }
+    }
+}
+
+// @include mixins.breakpoint("tv"){
+//     .courseSubTitle{
+//         font-size: 2.5rem;
+//         // margin: 0 3.8rem 3rem 3.8rem;
+//     }
+//     .courseHeader{
+//         font-size: 2.1rem;
+//         margin:0 3rem 2.1rem 3rem;
+//     }
+//     .courseProgression{
+//         font-size:2.1rem;
+//         margin: 0 3rem 1.2rem 3rem;
+//     }
+//     .subjectInfo{
+//         font-size:1.7rem;
+//         margin: 0 3.3rem 1.5rem 3.3rem;
+//     }
+//     .linkSection{
+//         font-size:1.7rem;
+//         .linkHeader{
+//             font-size:2.1rem;
+//             margin: 0 0 2.1rem 0;
+//         }
+//     }
+//     .infoBox{
+//         min-width:16.5rem;
+//         height:15.5rem;
+//         margin-right: 3rem;
+//         div{
+//             font-size:1.5rem;
+//         }
+//     }
+
+// }

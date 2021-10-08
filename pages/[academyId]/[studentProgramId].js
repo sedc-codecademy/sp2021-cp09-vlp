@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Modal from "../../components/UI/Modal/Modal"
 
 import axios from "axios";
 
@@ -15,6 +14,11 @@ const AcademyPage = props => {
 
   const { academyData } = props;
   const [selectedAcademy, setSelectedAcademy] = useState({});
+  const [isModalOpen, setModalIsOpen] = useState(false); 
+
+  const toggleModal = () =>{
+    setModalIsOpen(!isModalOpen)
+  };
 
   useEffect(() => {
     setSelectedAcademy(
@@ -58,7 +62,9 @@ const AcademyPage = props => {
           ))}
         </div>
 
-        <AcademiesLayout academy = {selectedAcademy} />  
+        <AcademiesLayout academy = {selectedAcademy} isModalOpen={isModalOpen} toggleModal={toggleModal}/>
+        {/* <button onClick={toggleModal} type="button"> Read More </button> */}
+        {/* {isModalOpen && <Modal onRequestClose={toggleModal} />}   */}
       </main>
     </div>
   );
