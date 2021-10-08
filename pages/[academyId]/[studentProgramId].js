@@ -31,19 +31,22 @@ const AcademyPage = props => {
   return (
     <div>
       <Head>
+        <script src="https://kit.fontawesome.com/d32ad62e17.js" crossorigin="anonymous"></script>
         <title>SEDC - {selectedAcademy.title}</title>
       </Head>
       <main  className={classes.academiesMain} >
 
         <Link href={`/`}>
           <div className={classes.backDiv}>
-            <img className={classes.arrow} src="/images/Arrow.png" alt="" />
+            <i className="fas fa-chevron-left"></i>
             <p className={classes.backToHome}>Back to home</p>
           </div>
         </Link>
-      
-        <img className={classes.screenIcon} src={`/img/${academyData.id}.png`}  alt="" />
-        <h1 className={classes.title}>{academyData.title}</h1>
+
+        <div className={classes.academyTitleDiv}>
+          <img className={classes.screenIcon} src={`/img/${academyData.id}.png`}  alt="" />
+          <h1 className={classes.title}>{academyData.title}</h1>
+        </div>
 
         
         <div className={classes.buttonsDiv}>

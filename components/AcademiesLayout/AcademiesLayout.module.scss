@@ -5,21 +5,23 @@
 
   background: white;
   color: var.$logo-blue-dark;
-  border: 3px solid var.$logo-blue-dark;
-  border-radius: 1rem;
+  border: 0.15rem solid var.$logo-blue-dark;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 0.4rem;
   font-family: var.$font-poppins;
   padding: 1rem 5rem;
   margin-top: 2rem;
   padding-bottom: 4rem;
 
   @include mixins.breakpoint(mobileonly) {
-    border: 2px solid var.$logo-blue-dark;
+    border: 0.2rem solid var.$logo-blue-dark;
     padding: 1rem 2rem;
    padding-bottom: 2rem;
   }
 
   .title {
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 3.2rem;
     margin-left: 1rem;
 
     @include mixins.breakpoint(mobileonly) {
@@ -31,6 +33,17 @@
     @include mixins.breakpoint(mobileonly) {
       font-size: 1.7rem;
     }
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .iconsDiv {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
   }
 
   .moneyIcon,
@@ -50,26 +63,17 @@
     margin-left: 2rem;
     margin-right: 4rem;
 
-    //KOGA NAMALUCAM ZA TABLET MI SE NAMALUVA I ZA SE SHTO E POGOLEMO
-    // @include mixins.breakpoint(tablet) {
-    //   font-size: 1.8rem;
-    // }
-
     @include mixins.breakpoint(mobileonly) {
       font-size: 1.6rem;
       margin-left: 1rem;
     }
   }
 
-  .iconsDiv {
-    display: inline-block;
-    margin-top: 1rem;
-  }
-
   .courseInfoDiv {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    margin: 2rem auto;
 
     @include mixins.breakpoint(mobileonly) {
       display: block;
@@ -79,6 +83,7 @@
   .aboutCourseDiv {
     width: 55%;
     padding: 1rem 3rem;
+    padding-right: 8rem;
 
     @include mixins.breakpoint(mobileonly) {
       width: 100%;
@@ -93,7 +98,10 @@
     color: white;
     padding: 1rem 4rem;
     margin-top: 5rem;
-    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-right: 5rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
     @include mixins.breakpoint(mobileonly) {
       width: 100%;
@@ -103,8 +111,17 @@
     }
   }
 
+  .competenciesTitle {
+    margin-top: 5rem;
+
+    @include mixins.breakpoint(mobileonly) {
+      font-size: 1.7rem;
+    }
+  }
+
   .competenciesList {
     list-style-type: none;
+    margin-left: 1rem;
   }
 
   .competenciesListItem {
@@ -141,9 +158,10 @@
     overflow-x: auto;
     clear: both;
     width: 100%;
-    border: 0.1rem solid var.$logo-blue-dark;
-    border-radius: 1rem 1rem 0 0;
-    padding: 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-left: 0.1rem solid var.$logo-blue-dark;
+    border-right: 0.1rem solid var.$logo-blue-dark;
 
     @include mixins.scrollbars(
       10rem,
@@ -164,7 +182,6 @@
   }
 
   .priceTable {
-    //border: 0.1rem solid var.$logo-blue-dark;
     border-radius: 1rem;
     padding: 1rem;
     border-collapse: collapse;
@@ -175,45 +192,44 @@
     }
   }
 
-  .tableMainHeader {
-    font-size: 2.2rem;
-    border: 0.2rem solid var.$logo-blue-dark;
-    background: var.$lavender-light;
+  .tableRow {
+    border-top: 0.1rem solid var.$logo-blue-dark;
+    border-bottom: 0.1rem solid var.$logo-blue-dark;
 
-    @include mixins.breakpoint(mobileonly) {
-      font-size: 1.6rem;
+    td:nth-child(5) {
+      border-right: none;
+    }
+
+    th:nth-child(5) {
+      border-right: none;
     }
   }
 
   .tableHeader {
-    border: 0.2rem solid var.$logo-blue-dark;
-    background: var.$lavender-light;
+    background: var.$navy-light;
     padding: 1rem;
-  }
-
-  .tableHeader1 {
-    border: 0.2rem solid var.$logo-blue-dark;
-    padding: 1rem;
+    border-right: 0.1rem solid var.$logo-blue-dark;
   }
 
   .tableCell {
-    border: 0.2rem solid var.$logo-blue-dark;
     padding: 1rem;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    border-right: 0.1rem solid var.$logo-blue-dark;
   }
 
   .termsDiv {
     margin-top: 5rem;
     padding: 1.6rem  4rem;
-    border: 0.2rem solid var.$logo-blue-dark;
-    border-radius: 1rem;
+    border: 0.1rem solid var.$logo-blue-dark;
+    border-radius: 0.4rem;
     background: var.$navy-light;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   }
 
   .programDiv {
     padding: 1.6rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
 
     p {
       font-weight: bold;
@@ -232,11 +248,12 @@
   }
 
   .scholarshipDiv {
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 1.6rem  4rem;
-    border: 0.2rem solid var.$logo-blue-dark;
-    border-radius: 1rem;
+    border: 0.1rem solid var.$logo-blue-dark;
+    border-radius: 0.4rem;
     background: var.$navy-light;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
     p {
       font-weight: bold;
@@ -251,6 +268,9 @@
   .referralProgramDiv {
     padding: 1.6rem;
     margin: 3rem auto;
+    border-radius: 0.4rem;
+    border: 0.1rem solid var.$logo-blue-dark;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
     @include mixins.breakpoint(mobileonly) {
       font-size: 1.3rem;
@@ -260,13 +280,14 @@
     }
   }
 
-
   .jobDiv {
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding: 1.6rem  4rem;
-    border-radius: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 0.4rem;
     background: var.$logo-blue-dark;
     color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
  
     @include mixins.breakpoint(mobileonly) {
       font-size: 1.3rem;
