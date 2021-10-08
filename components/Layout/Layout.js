@@ -1,16 +1,15 @@
 import { Fragment } from "react";
 
 const Layout = props => {
-
   return (
     <Fragment>
-      <header>
+      {/* <header>
         <h3>HEADER PLACEHOLDER</h3>
-      </header>
+      </header> */}
       <main>{props.children}</main>
-      <footer>
+      {/* <footer>
         <h3>FOOTER PLACEHOLDER</h3>
-      </footer>
+      </footer> */}
     </Fragment>
   );
 };
