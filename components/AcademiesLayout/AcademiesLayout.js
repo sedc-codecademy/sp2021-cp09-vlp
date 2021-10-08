@@ -18,19 +18,21 @@ const AcademiesLayout = props => {
                 <div className={classes.academyContainer}>
                     <h2 className={classes.title}>{academy.title}</h2>
 
-                    <div className={classes.iconsDiv}>
-                        <img className={classes.moneyIcon} src="/images/Group 219.svg" alt="" />
-                        <span className={classes.iconSpan}>{academy.price} &euro;</span>
-                    </div>
-                    
-                    <div className={classes.iconsDiv}>
-                        <img className={classes.calendarIcon} src="/images/Group 220.svg" alt="" />
-                        <span className={classes.iconSpan}>{academy.timeline?.duration}</span>
-                    </div>
-                    
-                    <div className={classes.iconsDiv}>
-                        <img className={classes.timeIcon} src="/images/Group 221.svg" alt="" />
-                        <span className={classes.iconSpan}>{academy.timeline?.classes}</span>
+                    <div className={classes.icons}>
+                        <div className={classes.iconsDiv}>
+                            <img className={classes.moneyIcon} src="/images/Group 219.svg" alt="" />
+                            <span className={classes.iconSpan}>{academy.price} &euro;</span>
+                        </div>
+                        
+                        <div className={classes.iconsDiv}>
+                            <img className={classes.calendarIcon} src="/images/Group 220.svg" alt="" />
+                            <span className={classes.iconSpan}>{academy.timeline?.duration}</span>
+                        </div>
+                        
+                        <div className={classes.iconsDiv}>
+                            <img className={classes.timeIcon} src="/images/Group 221.svg" alt="" />
+                            <span className={classes.iconSpan}>{academy.timeline?.classes}</span>
+                        </div>
                     </div>
 
                     <div className={classes.courseInfoDiv}>
@@ -58,7 +60,7 @@ const AcademiesLayout = props => {
                     <AccordionApp academy = {academy}/>
                 
                  
-                    <h2 className={classes.h2Tag}>Competencies</h2>
+                    <h2 className={classes.competenciesTitle}>Competencies</h2>
 
                     <div className={classes.competenciesList}>
                         {academy.competencies.list_data.map(data => (
@@ -74,22 +76,22 @@ const AcademiesLayout = props => {
 
                     <div className={classes.tableDiv}>
                         <table className={classes.priceTable}>
-                            <tr>
-                                <th className={classes.tableMainHeader}>Type of Payment</th>
+                            <tr className={classes.tableRow}>
+                                <th className={classes.tableHeader}>Type of Payment</th>
                                 <th className={classes.tableHeader}>April 1st</th>
                                 <th className={classes.tableHeader}>May 15th</th>
                                 <th className={classes.tableHeader}>July 15th</th>
                                 <th className={classes.tableHeader}>September 15th</th>
                             </tr>
-                            <tr>
-                                <th className={classes.tableHeader1}>Discount for payment up to "x" installments</th>
+                            <tr className={classes.tableRow}>
+                                <td className={classes.tableCell}>Discount for payment up to "x" installments</td>
                                 <td className={classes.tableCell}>400&euro;</td>
                                 <td className={classes.tableCell}>250&euro;</td>
                                 <td className={classes.tableCell}>100&euro;</td>
                                 <td className={classes.tableCell}>none</td>
                             </tr>
-                            <tr>
-                                <th className={classes.tableHeader1}>Cash Payment</th>
+                            <tr className={classes.tableRow}>
+                                <td className={classes.tableCell}>Cash Payment</td>
                                 <td className={classes.tableCell}>500&euro;</td>
                                 <td className={classes.tableCell}>350&euro;</td>
                                 <td className={classes.tableCell}>200&euro;</td>
@@ -145,6 +147,11 @@ const AcademiesLayout = props => {
                             <li>{job}</li>
                         ))}
                     </div>
+
+                    {/* <div className={classes.trainersDiv}>
+                        <h2>Trainers:</h2>
+                        <p>{academy.trainers}</p>
+                    </div> */}
 
                 </div>)
             }
