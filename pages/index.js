@@ -45,24 +45,24 @@ export default function HomePage(props) {
             Available academies
           </h1>
           <div className={classes.academyCardContainer}>
-            {academies.map((academy) => (
+            {academies.map(academy => (
               <Link
                 href={`/${academy.id}/${academy.study_programs[0].id}`}
                 key={academy.id}
               >
                 <div className={classes.academyCard}>
-                  <div
+                  <img
                     className={classes.academyLogo}
-                    style={{
-                      background: `url("./img/${academy.id}.png") no-repeat`,
-                    }}
-                  ></div>
+                    src={`/img/${academy.id}.png`}
+                  ></img>
                   <a>{academy.title.replace("Academy For ", "")}</a>
                 </div>
               </Link>
             ))}
           </div>
-          <AccordionApp />
+          <div className={classes.copyrightTextContainer}>
+            <small>&copy;Seavus Education and Development Center</small>
+          </div>
         </div>
       </div>
     </Fragment>
