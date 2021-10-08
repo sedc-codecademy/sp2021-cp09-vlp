@@ -61,7 +61,10 @@ export default function HomePage(props) {
             ))}
           </div>
           <div className={classes.copyrightTextContainer}>
-            <small>&copy;Seavus Education and Development Center</small>
+            <small>
+              &copy; 2021. All rights reserved. Seavus Education and Development
+              Center
+            </small>
           </div>
         </div>
       </div>
