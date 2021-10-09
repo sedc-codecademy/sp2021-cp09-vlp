@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import AccordionApp from "../Layout/Accordion/AccordionApp";
+import ExpansionPanel from "../UI/ExpansionPanel/ExpansionPanel";
 import classes from "./AcademiesLayout.module.scss";
 
 const AcademiesLayout = props => {
@@ -82,7 +83,24 @@ const AcademiesLayout = props => {
             toggleModal={toggleModal}
           />
 
-          <h2 className={classes.competenciesTitle}>Competencies</h2>
+          <ExpansionPanel
+            title="Competencies"
+            summary=""
+            startingHeight="200px"
+          >
+            <div className={classes.competenciesList}>
+              {academy.competencies.list_data.map((data, i) => (
+                <div key={i}>
+                  <span className={classes.checkSign}></span>
+                  <li key={i} className={classes.competenciesListItem}>
+                    {data}
+                  </li>
+                </div>
+              ))}
+            </div>
+          </ExpansionPanel>
+
+          {/* <h2 className={classes.competenciesTitle}>Competencies</h2>
 
           <div className={classes.competenciesList}>
             {academy.competencies.list_data.map((data, i) => (
@@ -93,7 +111,7 @@ const AcademiesLayout = props => {
                 </li>
               </div>
             ))}
-          </div>
+          </div> */}
           <br />
 
           <h2 className={classes.h2Tag}>Discounts for early registration</h2>
