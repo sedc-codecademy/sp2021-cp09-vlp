@@ -1,163 +1,157 @@
 @use "../../../styles/variables.scss" as var;
 @use "../../../styles/mixins.scss" as mixins;
 
-.modalBackground {  
-    // position: fixed; 
-    // z-index: 1; 
-    // left: 0;
-    // top: 0;
-    // width: 100%; 
-    // height: 100%; 
-    // overflow-y:scroll;
-    // background-color: rgba(0,149,214,0.74);
-    // text-align:center;
-    // max-width: 100%;
-    // max-height: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position:fixed;
-    z-index:1;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:rgba(0,0,0,0.2) ;
-
+.modalBackground {
+  // position: fixed;
+  // z-index: 1;
+  // left: 0;
+  // top: 0;
+  // width: 100%;
+  // height: 100%;
+  // overflow-y:scroll;
+  // background-color: rgba(0,149,214,0.74);
+  // text-align:center;
+  // max-width: 100%;
+  // max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
 }
 
-.modal{
-    background-color: #FFF;
-    // border: 0.3rem solid var.$navy-dark;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    font-family: var.$font-open-sans;
-    border-radius: 0.4rem;
-    overflow:hidden;    
-    color:var.$navy-dark;
-    margin-right: -2.5rem;
-    position:relative;
-    height:80vh;
-    width:80vw;
+.modal {
+  background-color: #fff;
+  // border: 0.3rem solid var.$navy-dark;
+  padding: 2rem 4rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-family: var.$font-open-sans;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  color: var.$navy-dark;
+  margin-right: -2.5rem;
+  position: relative;
+  height: 80vh;
+  width: 80vw;
 }
 
-.infoSection{
-    text-align: center;
+.infoSection {
+  text-align: center;
 }
 
-
-.closeBtn{
-    border: none;
-    position: absolute;
-    top:2rem;
-    right:2rem;
-    background:none;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    color:var.$logo-blue-dark;
-    font-size: 4rem;
-    &:hover {
-        opacity: 0.5;
-        transform: scale(1.3);
-    }
+.closeBtn {
+  border: none;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: var.$logo-blue-dark;
+  font-size: 4rem;
+  &:hover {
+    opacity: 0.5;
+    transform: scale(1.3);
+  }
 }
-
 
 .infoContainer {
-    display:flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-  
+
 .infoBox {
-    border: solid 0rem var.$navy-dark;
-    border-radius: 0.4rem;
-    background: var.$logo-blue-dark;
-    text-align:center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: #FFF;
+  border: solid 0rem var.$navy-dark;
+  border-radius: 0.4rem;
+  background: var.$logo-blue-dark;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: #fff;
 }
 
-.linkSection{
+.linkSection {
+  text-align: left;
+  .link {
+    cursor: pointer;
+  }
+}
+
+@include mixins.breakpoint("mobileonly") {
+  .modal {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+  .courseMainTitle {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    // margin: 2rem 2.3rem 1rem 2.3rem;
+  }
+
+  .courseSubTitle {
+    font-size: 1.5rem;
+    // margin: 0 0.5rem 1.4rem 0.5em;
+    padding: 0.5rem;
+  }
+
+  .courseHeader {
     text-align: left;
-    .link{
-        cursor: pointer;
-    }
-}
+    // margin: 0 0 0.5rem 2.3rem;
+    font-size: 1.4rem;
+    padding: 0.5 0.3rem;
+  }
 
-@include mixins.breakpoint("mobileonly"){
-   .modal{
-        width:100vw;
-        height:100vh;
-        border-radius:0;
-    }
-    .courseMainTitle{
-        text-align: center;
-        font-size:1.6rem;
-        padding:1rem 1rem 0.5rem 1rem;
-        // margin: 2rem 2.3rem 1rem 2.3rem;
-    }
+  .subjectInfo {
+    font-size: 1.2rem;
+    text-align: left;
+    // margin: 0 2.3rem 0.5rem 2.3rem;
+    padding: 0.5rem 0.3rem;
+  }
 
-    .courseSubTitle{
-        font-size:1.5rem;
-        // margin: 0 0.5rem 1.4rem 0.5em;
-        padding:0.5rem;
-    
+  .courseProgression {
+    text-align: start;
+    // margin: 0 2.3rem 1.3rem 2.3rem;
+    font-size: 1.4rem;
+  }
+
+  .closeBtn {
+    font-size: 2.3rem;
+  }
+
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .infoContainer:first-child {
+    margin-left: 0;
+  }
+
+  .infoBox {
+    width: 28.5rem;
+    height: 8rem;
+    margin: 0 1rem 2rem 1rem;
+    div {
+      font-size: 1.2rem;
+      padding: 2rem;
+      text-align: center;
     }
+  }
 
-    .courseHeader{
-        text-align: left;
-        // margin: 0 0 0.5rem 2.3rem;
-        font-size:1.4rem;
-        padding:0.5 0.3rem;
-
+  .linkSection {
+    // margin: 0 0 1rem 2.8rem;
+    text-align: left;
+    font-size: 1.2rem;
+    .linkHeader {
+      font-size: 1.4rem;
+      // margin: 1rem 0 1rem 0;
     }
-
-    .subjectInfo{
-        font-size:1.2rem;
-        text-align:left;
-        // margin: 0 2.3rem 0.5rem 2.3rem;
-        padding: 0.5rem 0.3rem;
-    }
-
-    .courseProgression{
-        text-align:start;
-        // margin: 0 2.3rem 1.3rem 2.3rem;
-        font-size:1.4rem;
-    }
-
-    .closeBtn{
-        font-size: 2.3rem;
-    }
-
-    .infoContainer {
-       display:flex;
-       flex-direction: column;
-    }
-    .infoContainer:first-child{
-        margin-left:0;
-    }
-
-    .infoBox{
-        width: 28.5rem;
-        height:8rem;
-        margin: 0 1rem 2rem 1rem;
-        div {   
-           font-size:1.2rem;
-           padding:2rem;
-           text-align:center;
-        }
-    }
-
-    .linkSection{
-        // margin: 0 0 1rem 2.8rem;
-        text-align: left;
-        font-size:1.2rem;
-        .linkHeader{
-            font-size:1.4rem;
-            // margin: 1rem 0 1rem 0;
-        }
-    }
-
-
+  }
 }
 
 // @include mixins.breakpoint("tablet"){
@@ -247,12 +241,12 @@
 //         font-size:2.2rem;
 //         // margin: 0 3.6rem 2.5rem 3.6rem;
 //         // padding: 1rem;
-    
+
 //     }
 
 //     .courseHeader{
-//       font-size: 1.8rem;   
-//     //   margin:0 0 0.7rem 1.5rem; 
+//       font-size: 1.8rem;
+//     //   margin:0 0 0.7rem 1.5rem;
 //     //   padding:0 1rem 1rem 1rem;
 
 //     }
@@ -278,7 +272,7 @@
 //         width: 13.5rem;
 //         height:11.5rem;
 //         text-align: center;
-//         display:flex; 
+//         display:flex;
 //         div {
 //           font-size:1.3rem;
 //           align-self: center;
@@ -296,78 +290,77 @@
 //         }
 //     }
 // }
-    
 
-@include mixins.breakpoint("desktop"){
-    .modal{
-        margin: 15% auto;
-        width:80vw;
-        height:80vh; 
-        border-radius: 1rem;
-   }
-    .courseMainTitle{
-        font-size:4.5rem;
-        margin:0;
-        padding:4rem 5rem 4rem 5rem;
-        font-weight: 350;
-        text-align: center;
+@include mixins.breakpoint("desktop") {
+  .modal {
+    margin: 15% auto;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 1rem;
+  }
+  .courseMainTitle {
+    font-size: 4.5rem;
+    margin: 0;
+    // padding: 4rem 5rem 4rem 5rem;
+    padding-top: 2rem;
+    font-weight: 350;
+    text-align: center;
+  }
 
-    }
+  .courseHeader {
+    font-size: 2.5rem;
+    font-weight: 300;
+    // margin:0 3rem 2rem 3rem;
+    margin: 0;
+    padding: 0 3rem 3rem 3rem;
+    text-align: left;
+  }
+  .courseProgression {
+    // margin: 0 3rem 1rem 3rem;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0 3rem 3rem 3rem;
+    text-align: left;
+    font-weight: 300;
+  }
 
-    .courseHeader{
-        font-size:2.5rem;
-        font-weight: 300;
-        // margin:0 3rem 2rem 3rem;
-        margin:0;
-        padding:0 3rem 3rem 3rem;
-        text-align: left;
+  .subjectInfo {
+    font-size: 1.9rem;
+    margin: 0;
+    padding: 0 3rem 3rem 3rem;
+    text-align: left;
+    // padding:2rem;
+    // margin: 0 3.2rem 1rem 3.2rem;
+  }
+  .infoContainer {
+    margin: 0 3.5rem 3.5rem 3rem;
+  }
+  .infoBox {
+    width: 25.5rem;
+    height: 19rem;
+    margin-right: 3rem;
+    display: flex;
+    div {
+      text-align: center;
+      font-size: 1.6rem;
+      padding: 1rem;
+      align-self: center;
     }
-    .courseProgression{
-        // margin: 0 3rem 1rem 3rem;
-        font-size: 2.5rem;
-        margin:0;
-        padding: 0 3rem 3rem 3rem;
-        text-align:left;
-        font-weight: 300;
+  }
+  .linkSection {
+    margin: 0 3rem 0 3rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    .linkHeader {
+      padding: 0 0 2rem 0;
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 300;
     }
-
-    .subjectInfo{
-        font-size:1.9rem;
-        margin:0;
-        padding:0 3rem 3rem 3rem;
-        text-align: left;
-        // padding:2rem;
-        // margin: 0 3.2rem 1rem 3.2rem;
+    .link {
+      display: block;
     }
-    .infoContainer{
-        margin: 0 3.5rem 3.5rem 3rem;
-    }
-    .infoBox{
-        width:25.5rem;
-        height:19rem;
-        margin-right:3rem;
-        display:flex;
-        div{
-            text-align: center;
-            font-size:1.6rem;
-            padding:1rem;
-            align-self: center;
-        }
-    }
-    .linkSection{
-        margin: 0 3rem 0 3rem;
-        font-size:1.8rem;
-        line-height: 3rem;
-        .linkHeader{
-            padding:0 0 2rem 0;
-            margin: 0;
-            font-size:2.5rem;
-            font-weight: 300;
-        }
-        .link{
-            display:block;
-        }
-    }
+  }
 }
 
 // @include mixins.breakpoint("tv"){

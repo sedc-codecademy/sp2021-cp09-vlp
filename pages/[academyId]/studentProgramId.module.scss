@@ -2,135 +2,146 @@
 @use "../../styles/mixins.scss" as mixins;
 
 .academiesMain {
-    background: var.$navy-light;
-    color: var.$logo-blue-dark;
-    font-family: var.$font-poppins;
-    padding: 3rem 6.5rem;
+  // background: var.$navy-light;
+  background-color: var.$primary-dark;
+  //   color: var.$logo-blue-dark;
+  color: white;
+  font-family: var.$font-poppins;
+  padding: 3rem 15rem;
 
-    @include mixins.breakpoint(mobileonly) {
-        padding: 1.5rem 3rem;
-    }
+  @include mixins.breakpoint(mobileonly) {
+    padding: 1.5rem 3rem;
+  }
 }
 
 .backToHome {
-    margin: 1.2rem;
-    padding-left: 0.5rem;
-    font-size: 1.8rem;
+  margin: 1.2rem;
+  padding-left: 0.5rem;
+  font-size: 1.8rem;
 
-    @include mixins.breakpoint(tablet) {
-        margin: 0.2em;
-    }
+  @include mixins.breakpoint(tablet) {
+    margin: 0.2em;
+  }
 
-    @include mixins.breakpoint(mobileonly) {
-        display: none;
-    }
+  @include mixins.breakpoint(mobileonly) {
+    display: none;
+  }
 }
 
 .backDiv {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
 
-    @include mixins.breakpoint(mobileonly) {
-        float: left;
-    }
+  @include mixins.breakpoint(mobileonly) {
+    float: left;
+  }
 }
 
 .backDiv:hover {
-    color: #718dad;
+  color: #718dad;
 }
 
 .academyTitleDiv {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .screenIcon {
-    width: auto;
-    margin: 2rem;
+  width: auto;
+  margin: 2rem;
 
-    @include mixins.breakpoint(mobileonly) {
-        width: 7rem;
-        margin-left: 2rem;
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
+  @include mixins.breakpoint(mobileonly) {
+    width: 7rem;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 .title {
-    font-family: var.$font-open-sans;
-    font-size: 6rem;
-    font-weight: 300;
-    margin-left: 2rem;
+  font-family: var.$font-open-sans;
+  font-size: 6.7rem;
+  width: 40%;
+  font-weight: 300;
+  margin-left: 2rem;
 
-    // @include mixins.breakpoint(tablet) {
-    //     font-size: 2.4rem;
-    // }
+  // @include mixins.breakpoint(tablet) {
+  //     font-size: 2.4rem;
+  // }
 
-    // @include mixins.breakpoint(mobileonly) {
-    //     font-size: 1.8rem;
-    // }
+  // @include mixins.breakpoint(mobileonly) {
+  //     font-size: 1.8rem;
+  // }
 }
 
 .buttonsDiv {
-    display: flex;
-    align-items: center; 
+  display: flex;
+  align-items: center;
 
-    @include mixins.breakpoint(tablet) {
-        display: inline;
-    }
+  @include mixins.breakpoint(tablet) {
+    display: inline;
+  }
 
-    @include mixins.breakpoint(mobileonly) {
-        display: inline;
-    }
+  @include mixins.breakpoint(mobileonly) {
+    display: inline;
+  }
 }
 
 .academyBtn {
-    background: var.$navy-light;
-    color: var.$logo-blue-dark;
-    border: 0.15rem solid var.$logo-blue-dark;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.20);
-    border-radius: 0.4rem;
-    font-family: var.$font-poppins;
-    font-size: 2rem;
-    width: auto;
-    height: fit-content;
-    margin-right: 2rem;
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    transition: 0.3s ease;
+  //   background-color: var.$light-gray;
+  background-color: white;
+  color: var.$logo-blue-dark;
+  //   border: 2px solid white;
+  border: none;
+  border-bottom: 4px solid white;
+  margin: 0;
+  font-family: var.$font-poppins;
+  font-size: 1.6rem;
+  padding: 10px;
+  width: auto;
+  height: fit-content;
+  cursor: pointer;
+  transition: 0.3s ease;
+  //   background: var.$navy-light;
+  //   border: 0.15rem solid var.$logo-blue-dark;
+  //   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2);
+  //   border-radius: 0.4rem;
+  //   margin-right: 2rem;
+  //   margin-bottom: 1.5rem;
+  //   margin-top: 2rem;
 
-    @include mixins.breakpoint(tablet) {
-        font-size: 1.5rem;
-        width: auto;
-        height: fit-content;
-        margin-bottom: 1rem;
-        padding: 0.6rem;
-    }
+  //   @include mixins.breakpoint(tablet) {
+  //     // font-size: 1.5rem;
+  //     width: auto;
+  //     height: fit-content;
+  //     // margin-bottom: 1rem;
+  //     padding: 0.6rem;
+  //   }
 
-    @include mixins.breakpoint(mobileonly) {
-        font-size: 1.3rem;
-        width: auto;
-        height: fit-content;
-        margin-bottom: 1rem;
-        padding: 0.6rem;
-        border: 2px solid #FFFFFF;
-    }
+  //   @include mixins.breakpoint(mobileonly) {
+  //     // font-size: 1.3rem;
+  //     width: auto;
+  //     height: fit-content;
+  //     margin-bottom: 1rem;
+  //     padding: 0.6rem;
+  //     border: 2px solid #ffffff;
+  //   }
 }
 
 .academyBtn:hover {
-    
-    background: #a9d1ff;
-    color: var.$logo-blue-dark;
-    border: 0.15rem solid var.$logo-blue-dark;
+  background: #a9d1ff;
+  color: var.$logo-blue-dark;
+  border-bottom: 4px solid var.$primary-light;
 
-    @include mixins.breakpoint(mobileonly) {
-        border: 2px solid var.$logo-blue-dark;
-    }
+  //   border: 0.15rem solid var.$logo-blue-dark;
+
+  //   @include mixins.breakpoint(mobileonly) {
+  //     border: 2px solid var.$logo-blue-dark;
+  //   }
 }
 
 .academyBtn:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }

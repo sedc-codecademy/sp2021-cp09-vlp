@@ -28,19 +28,30 @@ const AcademyPage = props => {
     );
   }, [router.asPath]);
 
+  console.log(router);
+  console.log(selectedAcademy.id);
+
   return (
     <div>
       <Head>
-        <script
-          src="https://kit.fontawesome.com/d32ad62e17.js"
-          crossorigin="anonymous"
-        ></script>
         <title>SEDC - {selectedAcademy.title}</title>
       </Head>
       <main className={classes.academiesMain}>
         <Link href={`/`}>
           <div className={classes.backDiv}>
-            <i className="fas fa-chevron-left"></i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              className="bi bi-chevron-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
             <p className={classes.backToHome}>Back to home</p>
           </div>
         </Link>
@@ -58,6 +69,12 @@ const AcademyPage = props => {
           {academyData.study_programs.map(program => (
             <button
               className={classes.academyBtn}
+              style={{
+                borderBottom:
+                  program.id === selectedAcademy.id ? "4px solid #0079c8" : "",
+                backgroundColor:
+                  program.id === selectedAcademy.id ? "#f5f5f6" : "",
+              }}
               key={program.id}
               onClick={e => {
                 router.push(
