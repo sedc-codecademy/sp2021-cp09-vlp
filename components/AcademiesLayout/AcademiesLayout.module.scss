@@ -2,26 +2,32 @@
 @use "../../styles/mixins.scss" as mixins;
 
 .academyContainer {
-
   background: white;
-  color: var.$logo-blue-dark;
-  border: 0.15rem solid var.$logo-blue-dark;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  border-radius: 0.4rem;
-  font-family: var.$font-poppins;
-  padding: 1rem 5rem;
-  margin-top: 2rem;
-  padding-bottom: 4rem;
 
+  color: var.$logo-blue-dark;
+  // border: 0.15rem solid var.$logo-blue-dark;
+  border-top: 1px solid var.$dark-gray;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  // border-radius: 0.4rem;
+  font-family: var.$font-poppins;
+  padding: 1rem 6rem;
+  // margin-top: 2rem;
+  padding-bottom: 4rem;
+  // margin: 3rem 6rem;
   @include mixins.breakpoint(mobileonly) {
     border: 0.2rem solid var.$logo-blue-dark;
     padding: 1rem 2rem;
-   padding-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .headingContent {
+    display: flex;
+    justify-content: space-between;
   }
 
   .title {
-    font-weight: 600;
-    font-size: 3.2rem;
+    font-weight: 300;
+    font-size: 5rem;
     margin-left: 1rem;
 
     @include mixins.breakpoint(mobileonly) {
@@ -71,8 +77,9 @@
 
   .courseInfoDiv {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    // align-items: center;
+    // align-items: flex-start;
     margin: 2rem auto;
 
     @include mixins.breakpoint(mobileonly) {
@@ -82,8 +89,9 @@
 
   .aboutCourseDiv {
     width: 55%;
-    padding: 1rem 3rem;
-    padding-right: 8rem;
+    // padding: 1rem 3rem;
+    // padding-right: 8rem;
+    font-size: 1.8rem;
 
     @include mixins.breakpoint(mobileonly) {
       width: 100%;
@@ -93,15 +101,19 @@
   }
 
   .timelineDiv {
-    width: 45%;
-    background: var.$logo-blue-dark;
+    min-width: 35%;
+    max-width: 50%;
+    // width: 35%;
+    // height: inherit;
+    // background: var.$logo-blue-dark;
+    background-color: var.$primary-dark;
     color: white;
     padding: 1rem 4rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-left: 2rem;
     margin-right: 5rem;
-    border-radius: 0.4rem;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    // border-radius: 0.4rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
     @include mixins.breakpoint(mobileonly) {
       width: 100%;
@@ -158,8 +170,8 @@
     overflow-x: auto;
     clear: both;
     width: 100%;
-    border-radius: 0.4rem;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    // border-radius: 0.4rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     border-left: 0.1rem solid var.$logo-blue-dark;
     border-right: 0.1rem solid var.$logo-blue-dark;
 
@@ -171,7 +183,6 @@
     );
 
     @include mixins.breakpoint(mobileonly) {
-      
       @include mixins.scrollbars(
         10rem,
         0.6rem,
@@ -220,11 +231,11 @@
 
   .termsDiv {
     margin-top: 5rem;
-    padding: 1.6rem  4rem;
-    border: 0.1rem solid var.$logo-blue-dark;
-    border-radius: 0.4rem;
+    padding: 1.6rem 4rem;
+    // border: 0.1rem solid var.$logo-blue-dark;
+    // border-radius: 0.4rem;
     background: var.$navy-light;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
 
   .programDiv {
@@ -249,11 +260,12 @@
 
   .scholarshipDiv {
     margin-top: 2rem;
-    padding: 1.6rem  4rem;
-    border: 0.1rem solid var.$logo-blue-dark;
-    border-radius: 0.4rem;
+    margin-bottom: 4rem;
+    padding: 1.6rem 4rem;
+    // border: 0.1rem solid var.$logo-blue-dark;
+    // border-radius: 0.4rem;
     background: var.$navy-light;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
     p {
       font-weight: bold;
@@ -268,9 +280,9 @@
   .referralProgramDiv {
     padding: 1.6rem;
     margin: 3rem auto;
-    border-radius: 0.4rem;
-    border: 0.1rem solid var.$logo-blue-dark;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    // border-radius: 0.4rem;
+    // border: 0.1rem solid var.$logo-blue-dark;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
     @include mixins.breakpoint(mobileonly) {
       font-size: 1.3rem;
@@ -282,13 +294,13 @@
 
   .jobDiv {
     margin-top: 1rem;
-    padding: 1.6rem  4rem;
+    padding: 1.6rem 4rem;
     padding-bottom: 3rem;
-    border-radius: 0.4rem;
+    // border-radius: 0.4rem;
     background: var.$logo-blue-dark;
     color: white;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
- 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
     @include mixins.breakpoint(mobileonly) {
       font-size: 1.3rem;
       margin-top: 0.8rem;

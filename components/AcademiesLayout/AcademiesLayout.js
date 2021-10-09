@@ -55,9 +55,22 @@ const AcademiesLayout = props => {
             <div className={classes.timelineDiv}>
               <h3>Timeline</h3>
 
-              {academy.timeline?.semesters.map(data =>
-                data.list_data.map(list => <li>{list}</li>)
-              )}
+              {academy.timeline?.semesters.map(timeline => {
+                return (
+                  <div key={timeline.list_title}>
+                    <p>{timeline.list_title}:</p>
+                    <ul>
+                      {timeline.list_data.map((listItem, i) => (
+                        <li key={i}>{listItem}</li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
+
+              {/* {academy.timeline?.semesters.map(data =>
+                data.list_data.map((list, i) => <li key={i}>{list}</li>)
+              )} */}
 
               <p>{academy.timeline?.lectures}</p>
             </div>
@@ -72,11 +85,13 @@ const AcademiesLayout = props => {
           <h2 className={classes.competenciesTitle}>Competencies</h2>
 
           <div className={classes.competenciesList}>
-            {academy.competencies.list_data.map(data => (
-              <>
+            {academy.competencies.list_data.map((data, i) => (
+              <div key={i}>
                 <span className={classes.checkSign}></span>
-                <li className={classes.competenciesListItem}>{data}</li>
-              </>
+                <li key={i} className={classes.competenciesListItem}>
+                  {data}
+                </li>
+              </div>
             ))}
           </div>
           <br />
@@ -160,19 +175,19 @@ const AcademiesLayout = props => {
             <p>6 full/ 10 half Scholarships (based on a competition)</p>
           </div>
 
-          <div className={classes.referralProgramDiv}>
+          {/* <div className={classes.referralProgramDiv}>
             <h2 className={classes.h2Tag}>Program package includes</h2>
 
             <h3>
               Referral Program: 50&euro; additional discount for the new
               student, 50&euro; reward for the alumni member
             </h3>
-          </div>
+          </div> */}
 
           <div className={classes.jobDiv}>
             <h2>Job Opportunities:</h2>
             {academy.job_opportunities.split(",").map(job => (
-              <li>{job}</li>
+              <li key={job}>{job}</li>
             ))}
           </div>
 
