@@ -1,0 +1,376 @@
+@use "./mixins.scss" as mixins;
+@use "./variables.scss" as var;
+
+.whiteBack {
+  background-color: white;
+}
+
+.heroDiv {
+  background-image: url("../public/img/mobileBackground.jpeg");
+  opacity: 0.9;
+  display: flex;
+  min-height: 82vh;
+  padding-top: 10rem;
+
+  @include mixins.breakpoint(tablet) {
+    background-image: url("../public/img/heroimg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 0;
+  }
+
+  @include mixins.breakpoint(laptop) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 0;
+  }
+
+  @include mixins.breakpoint(desktop) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 0;
+  }
+
+  @include mixins.breakpoint(largedesktop) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  @include mixins.breakpoint(tv) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 0;
+  }
+
+  h1 {
+    justify-self: center;
+    text-align: center;
+    color: #fff;
+    font-size: 3.7rem;
+    font-weight: 600;
+    font-family: var.$font-open-sans;
+    user-select: none;
+    margin: 15rem 5rem 0 5rem;
+    width: auto;
+
+    @include mixins.breakpoint(tablet) {
+      margin-left: 7rem;
+      margin-top: 2rem;
+      text-align: left;
+      font-weight: 500;
+      width: 30rem;
+      font-size: 6rem;
+    }
+
+    @include mixins.breakpoint(laptop) {
+      margin-left: 9rem;
+      text-align: left;
+      font-weight: 500;
+      width: 30rem;
+      font-size: 7rem;
+    }
+
+    @include mixins.breakpoint(desktop) {
+      margin-left: 12rem;
+      text-align: left;
+      font-weight: 500;
+      width: 45rem;
+      font-size: 7.5rem;
+    }
+
+    @include mixins.breakpoint(largedesktop) {
+      margin-left: 15rem;
+      text-align: left;
+      font-weight: 500;
+      width: 50rem;
+    }
+
+    @include mixins.breakpoint(tv) {
+      margin-left: 16rem;
+      text-align: left;
+      font-weight: 500;
+      width: 56rem;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 400;
+    width: auto;
+    font-family: var.$font-open-sans;
+    margin: 4rem 5rem 0 5rem;
+    user-select: none;
+
+    @include mixins.breakpoint(tablet) {
+      text-align: left;
+      width: 35rem;
+      margin-left: 8rem;
+      font-weight: 300;
+      font-size: 3rem;
+    }
+
+    @include mixins.breakpoint(laptop) {
+      text-align: left;
+      width: 35rem;
+      margin-left: 9rem;
+      font-weight: 300;
+      font-size: 3rem;
+    }
+
+    @include mixins.breakpoint(desktop) {
+      text-align: left;
+      width: 45rem;
+      margin-left: 11rem;
+      font-weight: 300;
+      font-size: 3.4rem;
+    }
+
+    @include mixins.breakpoint(largedesktop) {
+      text-align: left;
+      width: 50rem;
+      margin-left: 15rem;
+      font-weight: 300;
+    }
+
+    @include mixins.breakpoint(tv) {
+      text-align: left;
+      width: 70rem;
+      margin-left: 16rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.availableAcademiesTitle {
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 300;
+  font-family: var.$font-poppins;
+  color: var.$logo-blue-dark;
+  margin: 3rem 2rem 2rem 2rem;
+
+  @include mixins.breakpoint(tablet) {
+    font-size: 4rem;
+    margin: 5rem 2rem 3rem 2rem;
+  }
+
+  @include mixins.breakpoint(laptop) {
+    font-size: 5rem;
+    margin: 5rem 2rem 2rem 2rem;
+  }
+
+  @include mixins.breakpoint(desktop) {
+    font-size: 6rem;
+    margin: 4rem 2rem 3rem 2rem;
+  }
+
+  @include mixins.breakpoint(largedesktop) {
+    font-size: 6rem;
+    margin: 6rem 2rem 3rem 2rem;
+  }
+
+  @include mixins.breakpoint(tv) {
+    margin: 12rem 8rem 2rem 8rem;
+    font-size: 8rem;
+  }
+}
+
+.academyCardContainer {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(2, auto);
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  margin-top: 6rem;
+
+  background: linear-gradient(
+    180deg,
+    rgba(3, 4, 5, 0.001),
+    rgba(83, 104, 128, 0.15)
+  );
+
+  @include mixins.breakpoint(tablet) {
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    margin-top: 6rem;
+  }
+
+  @include mixins.breakpoint(laptop) {
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    gap: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+  }
+
+  @include mixins.breakpoint(desktop) {
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    gap: 5rem;
+    padding-bottom: 12rem;
+  }
+
+  @include mixins.breakpoint(largedesktop) {
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    gap: 6rem;
+    padding-bottom: 14rem;
+    margin-top: 8rem;
+  }
+
+  @include mixins.breakpoint(tv) {
+    grid-template-columns: repeat(6, auto);
+    justify-items: center;
+    gap: 4rem;
+    margin-top: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 20rem;
+  }
+}
+
+.academyRates {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.academyRate {
+  margin: 0 1.8rem 0 1.8rem;
+  width: 8rem;
+  text-align: center;
+  //font-size: 1.5rem;
+  font-family: var.$font-poppins;
+  color: var.$logo-blue-dark;
+  text-transform: capitalize;
+
+  @include mixins.breakpoint(tablet) {
+    margin: 0 2rem 0 2rem;
+    width: 17rem;
+  }
+
+  @include mixins.breakpoint(laptop) {
+    margin: 0 2rem 0 2rem;
+    width: 23rem;
+  }
+
+  @include mixins.breakpoint(desktop) {
+    margin: 0 2rem 0 2rem;
+    width: 30rem;
+  }
+
+  @include mixins.breakpoint(largedesktop) {
+    margin: 0 2rem 0 2rem;
+    width: 40rem;
+  }
+
+  @include mixins.breakpoint(tv) {
+    margin: 0 2rem 0 2rem;
+    width: 50rem;
+  }
+
+  h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var.$primary;
+    font-size: 3rem;
+    font-family: var.$font-poppins;
+    font-weight: 600;
+
+    @include mixins.breakpoint(tablet) {
+      margin-top: 3rem;
+      margin-bottom: 0.5rem;
+      font-size: 4.5rem;
+      font-weight: 700;
+    }
+
+    @include mixins.breakpoint(laptop) {
+      margin-top: 3rem;
+      margin-bottom: 0.5rem;
+      font-size: 6rem;
+      font-weight: 700;
+    }
+
+    @include mixins.breakpoint(desktop) {
+      margin-top: 3rem;
+      margin-bottom: 0.5rem;
+      font-size: 6.8rem;
+      font-weight: 700;
+    }
+
+    @include mixins.breakpoint(largedesktop) {
+      margin-top: 4rem;
+      margin-bottom: 0.5rem;
+      font-size: 7rem;
+      font-weight: 700;
+    }
+
+    @include mixins.breakpoint(tv) {
+      margin-top: 5rem;
+      margin-bottom: 0.5rem;
+      font-size: 8rem;
+      font-weight: 700;
+    }
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+
+    @include mixins.breakpoint(tablet) {
+      margin-right: 1.5rem;
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+
+    @include mixins.breakpoint(laptop) {
+      margin-right: 1.5rem;
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+
+    @include mixins.breakpoint(desktop) {
+      margin-right: 1.5rem;
+      font-weight: 400;
+      font-size: 2.1rem;
+    }
+
+    @include mixins.breakpoint(largedesktop) {
+      margin-right: 1.5rem;
+      font-weight: 400;
+      font-size: 2.3rem;
+    }
+
+    @include mixins.breakpoint(tv) {
+      margin-right: 1.5rem;
+      font-weight: 400;
+      font-size: 2.6rem;
+    }
+  }
+}
+
+.contentContainer {
+  background: #fcfcfc;
+}

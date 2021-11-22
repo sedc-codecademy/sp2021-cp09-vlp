@@ -1,43 +1,28 @@
-# Client Project 09 - Visual Learning Paths
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Table of Contents
-* [Project Overview](#project-overview)
-* [Technologies](#technologies)
-* [Guide](#guide)
-* [Features](#features)
-* [About Us](#about-us)
+## Getting Started
 
+First, run the development server:
 
-## Project Overview
-Visual Learning Path is the 9th client project of the ***Seavus Education and Development Center***.<br/>
-The goal of this project is to create a more visual way for the users to obtain information
-from the client website.<br/>
-To achieve this, we as a team, created a single page app (SPA) that uses cards as the main design element<br/>
-and has client-side routing to provide a better user-experience for the users.<br/>
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-## Technologies
-* HTML5/CSS3
-* Vanilla JavaScript (ES6)
-* NodeJS
-* ExpressJS
-* GitHub Pages (JSON Data)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Guide
-To open the website you have to: 
-* Install all dependencies with ```npm install``` in the project root folder via a terminal.
-* To start the server type ```npm run dev``` in the terminal.
-* To see the website open http://localhost:3000.
+## Learn More
 
-## Features
-* Single Page Application (SPA).
-* Responsive from iPhone5 and upwards.
-* Card-based minimalist design.
-* Dynamic rendering based on the database.
-* Client-Side Routing.
-* Detailed Modals for better UI/UX.
+To learn more about Next.js, take a look at the following resources:
 
-## License
-This project is available under the [MIT License](https://github.com/sedc-codecademy/sp2021-cp09-vlp/blob/main/LICENSE).
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## About Us 
-We are a team consisted of students that are a part of the ***Seavus Education and Development Center*** 2020/2021 generation.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
