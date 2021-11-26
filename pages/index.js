@@ -9,9 +9,7 @@ import { Fragment } from "react";
 
 export default function HomePage(props) {
   const seavusInfo = props.seavusInfo;
-  const { academies } = props.data;
-
-  console.log(seavusInfo);
+  const academies = props.data.academies;
 
   return (
     <Fragment>
