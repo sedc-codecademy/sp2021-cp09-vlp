@@ -1,0 +1,262 @@
+@use "../../../styles/variables.scss" as var;
+@use "../../../styles/mixins.scss" as mixins;
+
+.modalBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-family: var.$font-open-sans;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  color: var.$navy-dark;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  h2,
+  h3 {
+    font-weight: 400;
+  }
+}
+
+.infoSection {
+  text-align: left;
+  .courseMainTitle {
+    text-align: center;
+  }
+}
+
+.closeBtn {
+  border: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: var.$logo-blue-dark;
+  &:hover {
+    opacity: 0.5;
+    transform: scale(1.3);
+  }
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  .infoBox {
+    border: solid 0rem var.$navy-dark;
+    border-radius: 0.4rem;
+    background: var.$primary-dark;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: #fff;
+    margin-bottom: 1.5rem;
+    div {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.linkSection {
+  text-align: left;
+  .link {
+    cursor: pointer;
+    display: block;
+    color: var.$primary-dark;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    &:hover {
+      color: var.$primary;
+    }
+  }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@include mixins.breakpoint("mobileonly") {
+  .modal {
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem 2rem 1rem 1.5rem;
+    overflow-y: scroll;
+  }
+  .courseMainTitle {
+    font-size: 1.7rem;
+    margin: 2.5rem 0 1.5rem 0;
+  }
+
+  .courseHeader {
+    margin: 0 0 1.55rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .subjectInfo {
+    margin: 0 0 1.55rem 0;
+    font-size: 1.4rem;
+  }
+
+  .infoContainer {
+    .infoBox {
+      min-width: 100%;
+      height: 6.5rem;
+      div {
+        padding: 2rem;
+        text-align: left;
+        font-size: 1.35rem;
+      }
+    }
+  }
+  .closeBtn {
+    font-size: 2.2rem;
+  }
+  .linkHeader {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  .link {
+    font-size: 1.4rem;
+  }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@include mixins.breakpoint("tablet") {
+  .modal {
+    padding: 3rem 1.7rem 3rem 1.7rem;
+  }
+  .courseMainTitle {
+    font-size: 2.4rem;
+    margin: 0 2rem 3.5rem 2rem;
+  }
+  .infoSection {
+    margin: 2.6rem 0 2rem 0;
+  }
+  .courseHeader {
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+  }
+  .subjectInfo {
+    margin-top: 0;
+  }
+
+  .infoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 0.2rem;
+    align-content: center;
+    .infoBox {
+      max-width: 19.5rem;
+      min-width: 13.5rem;
+      min-height: 13.5rem;
+      margin: 1rem auto;
+      align-items: center;
+      div {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .closeBtn {
+    font-size: 3rem;
+  }
+  .linkHeader {
+    margin: 1rem 0 1rem 0;
+    font-size: 2rem;
+  }
+  .link {
+    font-size: 1.55rem;
+    margin-bottom: 0.3rem;
+  }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@include mixins.breakpoint("laptop") {
+  .modal {
+    height: auto;
+    width: 90vw;
+    padding: 3rem 1.2rem 3rem 1.9rem;
+  }
+  .courseMainTitle {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  .courseHeader {
+    font-size: 2.1rem;
+    margin: 0 0 2.6rem 0;
+  }
+  .subjectInfo {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+  }
+  .infoContainer {
+    flex-wrap: wrap;
+    .infoBox {
+      margin: 1rem auto;
+      min-width: 15.5rem;
+      min-height: 10.5rem;
+    }
+  }
+  .linkHeader {
+    font-size: 2.1rem;
+    margin: 2.6rem 0 1rem 0;
+  }
+  .link {
+    font-size: 1.6rem;
+  }
+}
+
+@include mixins.breakpoint("desktop") {
+  .modal {
+    padding: 2.5rem 3.5rem 3rem 3.5rem;
+    height: auto;
+    width: 90vw;
+  }
+  .courseMainTitle {
+    font-weight: 400;
+    font-size: 4rem;
+    margin-bottom: 4.5rem;
+    color: var.$primary-dark;
+  }
+  .courseHeader {
+    font-size: 2.7rem;
+  }
+  .linkHeader {
+    font-size: 2.7rem;
+    margin: 3rem 0 1.5rem 0;
+  }
+  .link {
+    line-height: 2.7rem;
+  }
+  .infoContainer {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-evenly;
+    gap: 1.5rem;
+    .infoBox {
+      margin: 0.5rem;
+      min-width: 14rem;
+      min-height: 14rem;
+    }
+  }
+}
+@include mixins.breakpoint("largedesktop") {
+  .modal {
+    width: 75vw;
+  }
+  .courseMainTitle {
+    font-size: 5rem;
+  }
+}

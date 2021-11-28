@@ -1,0 +1,53 @@
+@use "../../../styles/variables.scss" as var;
+@use "../../../styles/mixins.scss" as mixins;
+
+.panelHeading {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: var.$font-open-sans;
+
+  h2 {
+    font-weight: 400;
+    font-size: 3rem;
+  }
+}
+
+.panelData {
+  overflow: hidden;
+  max-height: 780px;
+
+  @include mixins.breakpoint(desktop) {
+    max-height: 525px;
+  }
+}
+
+.open {
+  transition: 1s ease;
+  max-height: 3000px;
+}
+
+.close {
+  //   max-height: 0;
+  transition: 0.3s;
+}
+
+.test {
+  background-color: red;
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3rem;
+  transition: 0.3s;
+}
+
+.chevronUp {
+  transform: rotate(-90deg);
+}
+
+.chevronDown {
+  transform: rotate(0deg);
+}
