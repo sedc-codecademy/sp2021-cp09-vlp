@@ -17,15 +17,10 @@ jobs:
         node-version: [15.x]
 
     steps:
-     - name: git-checkout
-       uses: actions/checkout@v2     
-       
-     - name: Install all dependencies
-       run: npm install
-       
-     - name: Build
-       run: npm run build
-       with:
-            pushToBranch: true
-            branch: 'dist'
-            githubToken: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+      - name: Build with the latest action rev
+        uses: tsg-iitkgp/next-build-export-action@v1.1
+        env:
+          BUILD_DIR: .
+          PAGES_BRANCH: sample-site-build
+          TOKEN: ${{ secrets.TOKEN }}
