@@ -17,10 +17,20 @@ jobs:
         node-version: [15.x]
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Build with the latest action rev
-        uses: tsg-iitkgp/next-build-export-action@v1.1
+      - name: git-checkout
+        uses: actions/checkout@v2
+      
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Push
+        uses: s0/git-publish-subdir-action@develop
         env:
-          BUILD_DIR: .
-          PAGES_BRANCH: sample-site-build
-          TOKEN: ${{ secrets.TOKEN }}
+          REPO: self
+          BRANCH: build
+          FOLDER: build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Build: ({sha}) {msg}"
