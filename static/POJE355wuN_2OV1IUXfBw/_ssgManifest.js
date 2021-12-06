@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002F","\u002F[academyId]\u002F[studentProgramId]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
