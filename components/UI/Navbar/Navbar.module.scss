@@ -30,6 +30,7 @@
 
 .openDrawer {
   width: 100%;
+  z-index: 10;
   @include mixins.breakpoint(desktop) {
     width: 80rem;
   }
@@ -44,7 +45,7 @@
   border-radius: 0.4rem;
   right: 2rem;
   top: 6.5rem;
-  z-index: 2;
+  z-index: 11;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   @include mixins.breakpoint(desktop) {
