@@ -8,7 +8,8 @@ import axios from "axios";
 import { Fragment } from "react";
 
 export default function HomePage(props) {
-  const { academies } = props.data;
+  const seavusInfo = props.seavusInfo;
+  const academies = props.data.academies;
 
   return (
     <Fragment>
@@ -20,10 +21,8 @@ export default function HomePage(props) {
         <div className={classes.whiteBack}>
           <div className={classes.heroDiv}>
             <div>
-              <h1>10 Years Changing Lives</h1>
-              <h2>
-                Master the most requested skills with the help of real experts
-              </h2>
+              <h1>{seavusInfo.academy_main_text}</h1>
+              <h2>{seavusInfo.academy_sub_text}</h2>
             </div>
             {/* <img src="./img/heroimg.jpg" alt="heroimg" /> */}
           </div>
@@ -31,16 +30,16 @@ export default function HomePage(props) {
         <div className={classes.contentContainer}>
           <div className={classes.academyRates}>
             <div className={classes.academyRate}>
-              <h3>75%</h3>
-              <p>students employment rate</p>
+              <h3>{seavusInfo.partner_companies_count}</h3>
+              <p>{seavusInfo.partner_companies_count_description}</p>
             </div>
             <div className={classes.academyRate}>
-              <h3>30+</h3>
-              <p>partner companies involved in the program</p>
+              <h3>{seavusInfo.student_employment_rate}</h3>
+              <p>{seavusInfo.student_employment_rate_description}</p>
             </div>
             <div className={classes.academyRate}>
-              <h3>50+</h3>
-              <p>student's project implementation in the last 5 years</p>
+              <h3>{seavusInfo.student_projects_count}</h3>
+              <p>{seavusInfo.student_projects_count_description}</p>
             </div>
           </div>
           <h3 className={classes.availableAcademiesTitle}>
@@ -59,11 +58,17 @@ export default function HomePage(props) {
 }
 
 export async function getStaticProps() {
-  const response = await axios.get("https://vlp-data.herokuapp.com/academies");
+  const academiesResponse = await axios.get(
+    "https://vlp-data.herokuapp.com/academies"
+  );
+  const frontPageInfoResponse = await axios.get(
+    "https://dev.sedc.mk/wp-json/wp/v2/pages/649"
+  );
 
   return {
     props: {
-      data: response.data,
+      seavusInfo: frontPageInfoResponse.data.ACF,
+      data: academiesResponse.data,
     },
   };
 }
