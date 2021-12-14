@@ -32,7 +32,7 @@ const linkData = {
   academyItems: [
     {
       linkTitle: "programming",
-      target: "/academy-for-progamming/web-dev",
+      target: "/academy-for-programming/web-dev",
     },
     {
       linkTitle: "design",

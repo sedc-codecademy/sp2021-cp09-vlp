@@ -1,4 +1,5 @@
 import { useState, useEffect, Fragment } from "react";
+import { webDevDataMapper } from "../../util/webDevDataMapper";
 
 import { useRouter } from "next/router";
 import Head from "next/head";
@@ -18,6 +19,7 @@ const AcademyPage = props => {
   const { academyData } = props;
   const [selectedAcademy, setSelectedAcademy] = useState({});
   const [isModalOpen, setModalIsOpen] = useState(false);
+  const [modalData, setModalData] = useState({});
 
   const toggleModal = () => {
     setModalIsOpen(!isModalOpen);
@@ -91,10 +93,15 @@ const AcademyPage = props => {
           academy={selectedAcademy}
           isModalOpen={isModalOpen}
           toggleModal={toggleModal}
+          updateModalData={setModalData}
         />
 
         {isModalOpen && (
-          <Modal toggleModal={toggleModal} setModalIsOpen={setModalIsOpen} />
+          <Modal
+            toggleModal={toggleModal}
+            setModalIsOpen={setModalIsOpen}
+            modalData={modalData}
+          />
         )}
         <BackToTop />
       </div>
@@ -127,7 +134,15 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const response = await axios.get("https://vlp-data.herokuapp.com/academies");
 
-  const { academies } = response.data;
+  const webDevResponse = await axios.get(
+    "https://dev.sedc.mk/wp-json/wp/v2/pages/4167"
+  );
+
+  const webDevData = webDevResponse?.data;
+
+  const mappedData = webDevDataMapper(webDevData.ACF);
+
+  const academies = [{ ...mappedData }];
 
   const academyData = academies.filter(
     academy => academy.id === context.params.academyId

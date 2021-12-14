@@ -6,10 +6,13 @@ import classes from "../styles/HomePage.module.scss";
 
 import axios from "axios";
 import { Fragment } from "react";
+import { webDevDataMapper } from "../util/webDevDataMapper";
 
 export default function HomePage(props) {
   const seavusInfo = props.seavusInfo;
   const academies = props.data.academies;
+
+  console.log(academies);
 
   return (
     <Fragment>
@@ -24,7 +27,6 @@ export default function HomePage(props) {
               <h1>{seavusInfo.academy_main_text}</h1>
               <h2>{seavusInfo.academy_sub_text}</h2>
             </div>
-            {/* <img src="./img/heroimg.jpg" alt="heroimg" /> */}
           </div>
         </div>
         <div className={classes.contentContainer}>
@@ -65,10 +67,21 @@ export async function getStaticProps() {
     "https://dev.sedc.mk/wp-json/wp/v2/pages/649"
   );
 
+  const webDevResponse = await axios.get(
+    "https://dev.sedc.mk/wp-json/wp/v2/pages/4167"
+  );
+
+  const webDevData = webDevResponse?.data;
+
+  const mappedData = webDevDataMapper(webDevData.ACF);
+
+  console.log("shit is broken");
+  console.log(mappedData);
+
   return {
     props: {
       seavusInfo: frontPageInfoResponse.data.ACF,
-      data: academiesResponse.data,
+      data: { academies: [{ ...mappedData }] },
     },
   };
 }

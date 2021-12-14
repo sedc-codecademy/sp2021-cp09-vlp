@@ -44,7 +44,9 @@ const placeholderAcademyData = [
 ];
 
 const AcademiesLayout = props => {
-  const { academy, isModalOpen, toggleModal } = props;
+  const { academy, isModalOpen, toggleModal, updateModalData } = props;
+
+  console.log(academy);
 
   return (
     <Fragment>
@@ -128,10 +130,11 @@ const AcademiesLayout = props => {
             // startingHeight="526px"
           >
             <div className={classes.subjectCardContainer}>
-              {placeholderAcademyData.map(subject => (
+              {academy.courses.map(course => (
                 <SubjectCard
-                  key={subject.title}
-                  cardData={subject}
+                  key={course.title}
+                  cardData={course}
+                  updateModalData={updateModalData}
                   modalHandler={toggleModal}
                 />
               ))}
@@ -159,12 +162,7 @@ const AcademiesLayout = props => {
                 Terms and documents for registration
               </h2>
               <p className={classes.pTag}>
-                Anyone who has completed at least High school can enroll at the
-                Academies.
-                <br />
-                For enrollment at the Academy the prospective students should
-                fill Application for registration and sign a Contract on
-                tuition.
+                {academy.scholarship_opportunities}
               </p>
               <h2 className={classes.h2Tag}>Scholarship opportunities</h2>
               <p>Challenge Day(mid of June)</p>

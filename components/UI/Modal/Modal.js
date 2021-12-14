@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import classes from "../Modal/Modal.module.scss";
 
-const Modal = (props) => {
-  const { toggleModal, isModalOpen, setModalIsOpen } = props;
+const Modal = props => {
+  const { toggleModal, isModalOpen, setModalIsOpen, modalData } = props;
+
+  console.log(modalData);
 
   useEffect(() => {
     function onKeyDown(event) {
@@ -24,7 +26,7 @@ const Modal = (props) => {
     <React.Fragment>
       <div
         className={classes.modalBackground}
-        onClick={(event) =>
+        onClick={event =>
           event.target.classList[0].includes("modalBackground") &&
           setModalIsOpen(false)
         }

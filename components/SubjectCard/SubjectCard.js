@@ -1,9 +1,15 @@
 import classes from ".//SubjectCard.module.scss";
 
-const SubjectCard = ({ cardData, modalHandler }) => {
+const SubjectCard = ({ cardData, modalHandler, updateModalData }) => {
   return (
-    <div className={classes.card} onClick={modalHandler}>
-      <h3>{cardData.title}</h3>
+    <div
+      className={classes.card}
+      onClick={e => {
+        modalHandler();
+        updateModalData(cardData);
+      }}
+    >
+      <h3>{cardData.course_title}</h3>
       <span className={classes.detailsLink}>Details</span>
     </div>
   );
