@@ -5,44 +5,6 @@ import SubjectCard from "../SubjectCard/SubjectCard";
 import ExpansionPanel from "../UI/ExpansionPanel/ExpansionPanel";
 import classes from "./AcademiesLayout.module.scss";
 
-const placeholderAcademyData = [
-  {
-    title: "Basic Programming Principles and Methodologies",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-    learningPath: ["Test", "Test02", "Tes03", "Test04", "Test05", "Test06"],
-    furtherReadingLinks: [
-      "http://www.google.com",
-      "https://developer.mozilla.org/en-US/",
-      "https://en.wikipedia.org/wiki/HTML",
-    ],
-  },
-  {
-    title: "Basic Web Development (HTML5/CSS3)",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-    learningPath: ["Test", "Test02", "Tes03", "Test04", "Test05", "Test06"],
-    furtherReadingLinks: [
-      "http://www.google.com",
-      "https://developer.mozilla.org/en-US/",
-      "https://en.wikipedia.org/wiki/JavaScript",
-    ],
-  },
-  { title: "Basic JavaScript Development" },
-  { title: "Advanced JavaScript Development" },
-  { title: "OOP Programming with C#" },
-  { title: "Advanced C# development" },
-  { title: "Relational database development & design" },
-  { title: "Developing ASP.NET Web Applications" },
-  { title: "RESTful Web Services Development" },
-  { title: "Advanced Data-Driven Applications Development" },
-  { title: "Software debugging and testing" },
-  { title: "Developing Cloud-ready Applications" },
-  { title: "C# Server Development" },
-  { title: "AngularJS with TypeScript" },
-  { title: "MEAN/MERN Development" },
-];
-
 const AcademiesLayout = props => {
   const { academy, isModalOpen, toggleModal, updateModalData } = props;
 
@@ -132,7 +94,7 @@ const AcademiesLayout = props => {
             <div className={classes.subjectCardContainer}>
               {academy.courses.map(course => (
                 <SubjectCard
-                  key={course.title}
+                  key={course.course_title}
                   cardData={course}
                   updateModalData={updateModalData}
                   modalHandler={toggleModal}
@@ -161,12 +123,11 @@ const AcademiesLayout = props => {
               <h2 className={classes.h2Tag}>
                 Terms and documents for registration
               </h2>
-              <p className={classes.pTag}>
-                {academy.scholarship_opportunities}
-              </p>
+              <p className={classes.pTag}>{academy.terms_and_documents}</p>
               <h2 className={classes.h2Tag}>Scholarship opportunities</h2>
-              <p>Challenge Day(mid of June)</p>
-              <p>6 full/ 10 half Scholarships (based on a competition)</p>
+              {academy.scholarship_opportunities.map(el => (
+                <p>{el}</p>
+              ))}
             </div>
             <div className={classes.tableDiv}>
               <h2 className={classes.h2Tag}>
@@ -183,50 +144,31 @@ const AcademiesLayout = props => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className={classes.tableRow}>
-                    <td className={classes.tableCell}>
-                      Discount for payment up to "x" installments
-                    </td>
-                    <td className={classes.tableCell}>400&euro;</td>
-                    <td className={classes.tableCell}>250&euro;</td>
-                    <td className={classes.tableCell}>100&euro;</td>
-                    <td className={classes.tableCell}>none</td>
-                  </tr>
-                  <tr className={classes.tableRow}>
-                    <td className={classes.tableCell}>Cash Payment</td>
-                    <td className={classes.tableCell}>500&euro;</td>
-                    <td className={classes.tableCell}>350&euro;</td>
-                    <td className={classes.tableCell}>200&euro;</td>
-                    <td className={classes.tableCell}>200&euro;</td>
-                  </tr>
+                  {academy.discount_data.map(el => (
+                    <tr className={classes.tableRow}>
+                      <td className={classes.tableCell}>
+                        {el.type_of_payments}
+                      </td>
+                      <td className={classes.tableCell}>{el.april_1st}</td>
+                      <td className={classes.tableCell}>{el.juli_15th}</td>
+                      <td className={classes.tableCell}>{el.may_15}</td>
+                      <td className={classes.tableCell}>{el.sept_15th}</td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
           </div>
 
-          <div className={classes.programContainer}>
-            <h2 className={classes.h2Tag}>Program package includes</h2>
-            <span className={classes.checkSign}></span>
-            <p>Learning materials</p>
-            <span className={classes.checkSign}></span>
-            <p>Career Counseling & Mentorship</p>
-            <span className={classes.checkSign}></span>
-            <p>Art Materials included (for Design Academy)</p>
-            <span className={classes.checkSign}></span>
-            <p>Certificates</p>
-            <span className={classes.checkSign}></span>
-            <p>
-              Loyalty Card - Loyalty Program with discounts and benefits for
-              students and family members
-            </p>
-            <span className={classes.checkSign}></span>
-            <p>Alumni Community Membership</p>
-            <span className={classes.checkSign}></span>
-            <p>
-              Access to conference and events/Competitions/Match making events
-              with Industry
-            </p>
-          </div>
+          <ul className={classes.programContainer}>
+            {academy.program_package.map(el => (
+              <li>
+                {" "}
+                <span className={classes.checkSign}></span>
+                <p>{el}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </Fragment>
