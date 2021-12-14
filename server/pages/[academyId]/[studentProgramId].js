@@ -455,7 +455,6 @@ var AcademiesLayout_module_default = /*#__PURE__*/__webpack_require__.n(Academie
 const AcademiesLayout = (props)=>{
     var ref, ref1, ref2, ref3;
     const { academy , isModalOpen , toggleModal , updateModalData  } = props;
-    console.log(academy);
     return(/*#__PURE__*/ jsx_runtime_.jsx(external_react_.Fragment, {
         children: !academy.title ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
             children: "Loading..."
@@ -540,7 +539,7 @@ const AcademiesLayout = (props)=>{
                                 /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                     children: "Timeline"
                                 }),
-                                (ref2 = academy.timeline) === null || ref2 === void 0 ? void 0 : ref2.semesters.map((timeline)=>{
+                                (ref2 = academy.timeline) === null || ref2 === void 0 ? void 0 : ref2.semesters.map((timeline, index)=>{
                                     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                         children: [
                                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
@@ -556,7 +555,7 @@ const AcademiesLayout = (props)=>{
                                                 )
                                             })
                                         ]
-                                    }, timeline.list_title));
+                                    }, index));
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                     children: (ref3 = academy.timeline) === null || ref3 === void 0 ? void 0 : ref3.lectures
@@ -573,11 +572,11 @@ const AcademiesLayout = (props)=>{
                     summary: "",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: (AcademiesLayout_module_default()).subjectCardContainer,
-                        children: academy.courses.map((course)=>/*#__PURE__*/ jsx_runtime_.jsx(SubjectCard_SubjectCard, {
+                        children: academy.courses.map((course, index)=>/*#__PURE__*/ jsx_runtime_.jsx(SubjectCard_SubjectCard, {
                                 cardData: course,
                                 updateModalData: updateModalData,
                                 modalHandler: toggleModal
-                            }, course.course_title)
+                            }, index)
                         )
                     })
                 }),
@@ -620,7 +619,7 @@ const AcademiesLayout = (props)=>{
                                 }),
                                 academy.scholarship_opportunities.map((el)=>/*#__PURE__*/ jsx_runtime_.jsx("p", {
                                         children: el
-                                    })
+                                    }, el)
                                 )
                             ]
                         }),
@@ -662,7 +661,7 @@ const AcademiesLayout = (props)=>{
                                             })
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("tbody", {
-                                            children: academy.discount_data.map((el)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("tr", {
+                                            children: academy.discount_data.map((el, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("tr", {
                                                     className: (AcademiesLayout_module_default()).tableRow,
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("td", {
@@ -686,7 +685,7 @@ const AcademiesLayout = (props)=>{
                                                             children: el.sept_15th
                                                         })
                                                     ]
-                                                })
+                                                }, index)
                                             )
                                         })
                                     ]
@@ -697,7 +696,7 @@ const AcademiesLayout = (props)=>{
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                     className: (AcademiesLayout_module_default()).programContainer,
-                    children: academy.program_package.map((el)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                    children: academy.program_package.map((el, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
                             children: [
                                 " ",
                                 /*#__PURE__*/ jsx_runtime_.jsx("span", {
@@ -707,7 +706,7 @@ const AcademiesLayout = (props)=>{
                                     children: el
                                 })
                             ]
-                        })
+                        }, index)
                     )
                 })
             ]
@@ -774,7 +773,6 @@ var Modal_module_default = /*#__PURE__*/__webpack_require__.n(Modal_module);
 
 const Modal = (props)=>{
     const { toggleModal , isModalOpen , setModalIsOpen , modalData  } = props;
-    console.log(modalData);
     (0,external_react_.useEffect)(()=>{
         function onKeyDown(event) {
             if (event.keyCode === 27 || event.keyCode === 8) {
@@ -808,7 +806,7 @@ const Modal = (props)=>{
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                 className: (Modal_module_default()).courseMainTitle,
-                                children: "Title of Subject "
+                                children: modalData.course_title
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                 className: (Modal_module_default()).courseHeader,
@@ -816,7 +814,7 @@ const Modal = (props)=>{
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                 className: (Modal_module_default()).subjectInfo,
-                                children: "Elit minim veniam ea qui ea dolor do sunt.Veniam dolore magnaElit minim veniam ea qui ea dolor do sunt.Veniam dolore magnaElit minim veniam ea qui ea dolor do sunt.Veniam dolore magnaElit minim veniam ea qui ea dolor do sunt.Veniam dolore magnaElit minim veniam ea qui ea dolor do sunt.Veniam dolore magnaElit minim veniam ea qui ea dolor do sunt.Veniam dolore magna dolore deserunt labore magna.Tempor ullamco culpa irure in sit voluptate excepteur aute consectetur exercitation.Et reprehenderit ex ea aliquip ipsum eu incididunt fugiat enim elit exercitation ex."
+                                children: modalData.course_summary
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                 className: (Modal_module_default()).courseHeader,
@@ -824,46 +822,16 @@ const Modal = (props)=>{
                             })
                         ]
                     }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: (Modal_module_default()).infoContainer,
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        children: modalData.course_progression.map((progressionData, index)=>{
+                            return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: (Modal_module_default()).infoBox,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    children: "Example "
+                                    children: progressionData
                                 })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (Modal_module_default()).infoBox,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    children: "Example "
-                                })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (Modal_module_default()).infoBox,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    children: "Example"
-                                })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (Modal_module_default()).infoBox,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    children: "Example "
-                                })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (Modal_module_default()).infoBox,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    children: "Example "
-                                })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (Modal_module_default()).infoBox,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    children: "Example "
-                                })
-                            })
-                        ]
+                            }, index));
+                        })
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (Modal_module_default()).linkSection,
@@ -872,20 +840,12 @@ const Modal = (props)=>{
                                 className: (Modal_module_default()).linkHeader,
                                 children: "Further Reading"
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                className: (Modal_module_default()).link,
-                                href: "https://en.wikipedia.org/wiki/HTML",
-                                children: "HTML introduction"
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                className: (Modal_module_default()).link,
-                                href: "https://en.wikipedia.org/wiki/CSS",
-                                children: "CSS introduction"
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                className: (Modal_module_default()).link,
-                                href: "https://en.wikipedia.org/wiki/JavaScript",
-                                children: "JavaScript introduction"
+                            modalData.further_reading.map((linkData, index)=>{
+                                return(/*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                    className: (Modal_module_default()).link,
+                                    href: linkData.further_reading_url,
+                                    children: linkData.further_reading_title
+                                }, index));
                             })
                         ]
                     })

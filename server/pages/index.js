@@ -101,7 +101,6 @@ var webDevDataMapper = __webpack_require__(6665);
 function HomePage(props) {
     const seavusInfo = props.seavusInfo;
     const academies = props.data.academies;
-    console.log(academies);
     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
@@ -202,8 +201,6 @@ async function getStaticProps() {
     const webDevResponse = await external_axios_default().get("https://dev.sedc.mk/wp-json/wp/v2/pages/4167");
     const webDevData = webDevResponse === null || webDevResponse === void 0 ? void 0 : webDevResponse.data;
     const mappedData = (0,webDevDataMapper/* webDevDataMapper */.a)(webDevData.ACF);
-    console.log("shit is broken");
-    console.log(mappedData);
     return {
         props: {
             seavusInfo: frontPageInfoResponse.data.ACF,
