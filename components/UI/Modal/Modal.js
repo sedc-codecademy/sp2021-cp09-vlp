@@ -4,8 +4,6 @@ import classes from "../Modal/Modal.module.scss";
 const Modal = props => {
   const { toggleModal, isModalOpen, setModalIsOpen, modalData } = props;
 
-  console.log(modalData);
-
   useEffect(() => {
     function onKeyDown(event) {
       if (event.keyCode === 27 || event.keyCode === 8) {
@@ -41,63 +39,37 @@ const Modal = props => {
           </button>
 
           <div className={classes.infoSection}>
-            <h2 className={classes.courseMainTitle}>Title of Subject </h2>
+            <h2 className={classes.courseMainTitle}>
+              {modalData.course_title}
+            </h2>
             <h3 className={classes.courseHeader}>Course Summary</h3>
-            <p className={classes.subjectInfo}>
-              Elit minim veniam ea qui ea dolor do sunt.Veniam dolore magnaElit
-              minim veniam ea qui ea dolor do sunt.Veniam dolore magnaElit minim
-              veniam ea qui ea dolor do sunt.Veniam dolore magnaElit minim
-              veniam ea qui ea dolor do sunt.Veniam dolore magnaElit minim
-              veniam ea qui ea dolor do sunt.Veniam dolore magnaElit minim
-              veniam ea qui ea dolor do sunt.Veniam dolore magna dolore deserunt
-              labore magna.Tempor ullamco culpa irure in sit voluptate excepteur
-              aute consectetur exercitation.Et reprehenderit ex ea aliquip ipsum
-              eu incididunt fugiat enim elit exercitation ex.
-            </p>
+            <p className={classes.subjectInfo}>{modalData.course_summary}</p>
             <h3 className={classes.courseHeader}> Course Progression</h3>
           </div>
 
           <div className={classes.infoContainer}>
-            <div className={classes.infoBox}>
-              <div>Example </div>
-            </div>
-            <div className={classes.infoBox}>
-              <div>Example </div>
-            </div>
-            <div className={classes.infoBox}>
-              <div>Example</div>
-            </div>
-            <div className={classes.infoBox}>
-              <div>Example </div>
-            </div>
-            <div className={classes.infoBox}>
-              <div>Example </div>
-            </div>
-            <div className={classes.infoBox}>
-              <div>Example </div>
-            </div>
+            {modalData.course_progression.map((progressionData, index) => {
+              return (
+                <div className={classes.infoBox} key={index}>
+                  <div>{progressionData}</div>
+                </div>
+              );
+            })}
           </div>
 
           <div className={classes.linkSection}>
             <h3 className={classes.linkHeader}>Further Reading</h3>
-            <a
-              className={classes.link}
-              href="https://en.wikipedia.org/wiki/HTML"
-            >
-              HTML introduction
-            </a>
-            <a
-              className={classes.link}
-              href="https://en.wikipedia.org/wiki/CSS"
-            >
-              CSS introduction
-            </a>
-            <a
-              className={classes.link}
-              href="https://en.wikipedia.org/wiki/JavaScript"
-            >
-              JavaScript introduction
-            </a>
+            {modalData.further_reading.map((linkData, index) => {
+              return (
+                <a
+                  className={classes.link}
+                  href={linkData.further_reading_url}
+                  key={index}
+                >
+                  {linkData.further_reading_title}
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

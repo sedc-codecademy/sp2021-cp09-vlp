@@ -12,8 +12,6 @@ export default function HomePage(props) {
   const seavusInfo = props.seavusInfo;
   const academies = props.data.academies;
 
-  console.log(academies);
-
   return (
     <Fragment>
       <Head>
@@ -74,9 +72,6 @@ export async function getStaticProps() {
   const webDevData = webDevResponse?.data;
 
   const mappedData = webDevDataMapper(webDevData.ACF);
-
-  console.log("shit is broken");
-  console.log(mappedData);
 
   return {
     props: {

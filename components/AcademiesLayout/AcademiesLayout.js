@@ -8,8 +8,6 @@ import classes from "./AcademiesLayout.module.scss";
 const AcademiesLayout = props => {
   const { academy, isModalOpen, toggleModal, updateModalData } = props;
 
-  console.log(academy);
-
   return (
     <Fragment>
       {!academy.title ? (
@@ -68,9 +66,9 @@ const AcademiesLayout = props => {
             >
               <h3>Timeline</h3>
 
-              {academy.timeline?.semesters.map(timeline => {
+              {academy.timeline?.semesters.map((timeline, index) => {
                 return (
-                  <div key={timeline.list_title}>
+                  <div key={index}>
                     <p>{timeline.list_title}:</p>
                     <ul>
                       {timeline.list_data.map((listItem, i) => (
@@ -92,9 +90,9 @@ const AcademiesLayout = props => {
             // startingHeight="526px"
           >
             <div className={classes.subjectCardContainer}>
-              {academy.courses.map(course => (
+              {academy.courses.map((course, index) => (
                 <SubjectCard
-                  key={course.course_title}
+                  key={index}
                   cardData={course}
                   updateModalData={updateModalData}
                   modalHandler={toggleModal}
@@ -126,7 +124,7 @@ const AcademiesLayout = props => {
               <p className={classes.pTag}>{academy.terms_and_documents}</p>
               <h2 className={classes.h2Tag}>Scholarship opportunities</h2>
               {academy.scholarship_opportunities.map(el => (
-                <p>{el}</p>
+                <p key={el}>{el}</p>
               ))}
             </div>
             <div className={classes.tableDiv}>
@@ -144,8 +142,8 @@ const AcademiesLayout = props => {
                   </tr>
                 </thead>
                 <tbody>
-                  {academy.discount_data.map(el => (
-                    <tr className={classes.tableRow}>
+                  {academy.discount_data.map((el, index) => (
+                    <tr key={index} className={classes.tableRow}>
                       <td className={classes.tableCell}>
                         {el.type_of_payments}
                       </td>
@@ -161,8 +159,8 @@ const AcademiesLayout = props => {
           </div>
 
           <ul className={classes.programContainer}>
-            {academy.program_package.map(el => (
-              <li>
+            {academy.program_package.map((el, index) => (
+              <li key={index}>
                 {" "}
                 <span className={classes.checkSign}></span>
                 <p>{el}</p>
