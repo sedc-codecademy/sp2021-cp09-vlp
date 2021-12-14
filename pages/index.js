@@ -73,10 +73,34 @@ export async function getStaticProps() {
 
   const mappedData = webDevDataMapper(webDevData.ACF);
 
+  const placeholderAcademiesDataset = [
+    { id: "academy-for-design", title: "Academy For Design", unfinished: true },
+    {
+      id: "academy-for-computer-networks",
+      title: "Academy For Computer Networks",
+      unfinished: true,
+    },
+    {
+      id: "academy-for-software-testing",
+      title: "Academy For Software Testing",
+      unfinished: true,
+    },
+    {
+      id: "academy-for-data-science",
+      title: "Academy For Data Science",
+      unfinished: true,
+    },
+    {
+      id: "academy-for-digital-marketing",
+      title: "Academy For Digital Marketing",
+      unfinished: true,
+    },
+  ];
+
   return {
     props: {
       seavusInfo: frontPageInfoResponse.data.ACF,
-      data: { academies: [{ ...mappedData }] },
+      data: { academies: [{ ...mappedData }, ...placeholderAcademiesDataset] },
     },
   };
 }
