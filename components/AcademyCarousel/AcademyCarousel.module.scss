@@ -42,6 +42,12 @@
       width: 1000px;
       overflow: hidden;
       display: none;
+      height: 555px;
+
+      img {
+        height: 555px;
+        width: 880px;
+      }
 
       @include mixins.breakpoint(tv) {
         display: block;

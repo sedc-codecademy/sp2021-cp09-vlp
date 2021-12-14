@@ -113,7 +113,15 @@ const AcademyPage = props => {
 export async function getStaticPaths() {
   const response = await axios.get("https://vlp-data.herokuapp.com/academies");
 
-  const { academies } = response.data;
+  const webDevResponse = await axios.get(
+    "https://dev.sedc.mk/wp-json/wp/v2/pages/4167"
+  );
+
+  const webDevData = webDevResponse?.data;
+
+  const mappedData = webDevDataMapper(webDevData.ACF);
+
+  const academies = [{ ...mappedData }];
 
   const paths = academies
     .map(academy => {

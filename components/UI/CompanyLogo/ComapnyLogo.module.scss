@@ -11,7 +11,12 @@
   cursor: pointer;
 
   .logoImage {
-    width: 5rem;
+    width: 10rem;
+
+    img {
+      width: 8rem;
+      height: 8rem;
+    }
   }
 
   .logoText {

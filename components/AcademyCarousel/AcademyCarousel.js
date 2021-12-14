@@ -1,7 +1,6 @@
 import classes from "./AcademyCarousel.module.scss";
 import { useState, useEffect } from "react";
 
-import Image from "next/image";
 import CarouselList from "./CarouselList/CarouselList";
 
 const AcademyCarousel = ({ academyData }) => {
@@ -78,13 +77,7 @@ const AcademyCarousel = ({ academyData }) => {
           style={{ transform: `translateX(${counter}00%)` }}
         >
           <div className={classes.imageContainer}>
-            <Image
-              src={`/img/carousel/${item}.jpg`}
-              alt={item}
-              height="550px"
-              width="888px"
-              layout="responsive"
-            />
+            <img src={`/img/carousel/${item}.jpg`} alt={item} />
           </div>
 
           <div className={classes.dataContainer}>{data}</div>
