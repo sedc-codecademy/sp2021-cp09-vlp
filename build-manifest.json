@@ -5,9 +5,9 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/zRepbPTh561zwODAH40Tv/_buildManifest.js",
-    "static/zRepbPTh561zwODAH40Tv/_ssgManifest.js",
-    "static/zRepbPTh561zwODAH40Tv/_middlewareManifest.js"
+    "static/GhexI2VxYLpp1IZlibCDt/_buildManifest.js",
+    "static/GhexI2VxYLpp1IZlibCDt/_ssgManifest.js",
+    "static/GhexI2VxYLpp1IZlibCDt/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
@@ -15,21 +15,21 @@
       "static/chunks/framework-91d7f78b5b4003c8.js",
       "static/chunks/main-be90e00a3c0a73d4.js",
       "static/css/a66b62d333563b7b.css",
-      "static/chunks/pages/index-755b453dc5e07d11.js"
+      "static/chunks/pages/index-563dd0e61d6970f0.js"
     ],
     "/[academyId]/[studentProgramId]": [
       "static/chunks/webpack-514908bffb652963.js",
       "static/chunks/framework-91d7f78b5b4003c8.js",
       "static/chunks/main-be90e00a3c0a73d4.js",
-      "static/css/dafcc555e66e37e5.css",
-      "static/chunks/pages/[academyId]/[studentProgramId]-65f9fe05aa8ad3c9.js"
+      "static/css/d7bc5084389e1a75.css",
+      "static/chunks/pages/[academyId]/[studentProgramId]-8a060b6db44932bd.js"
     ],
     "/_app": [
       "static/chunks/webpack-514908bffb652963.js",
       "static/chunks/framework-91d7f78b5b4003c8.js",
       "static/chunks/main-be90e00a3c0a73d4.js",
-      "static/css/605970dc84c8d9a3.css",
-      "static/chunks/pages/_app-f37c49a3c54d44b4.js"
+      "static/css/09509cbbd18610ff.css",
+      "static/chunks/pages/_app-8561c9bb5c2c677a.js"
     ],
     "/_error": [
       "static/chunks/webpack-514908bffb652963.js",

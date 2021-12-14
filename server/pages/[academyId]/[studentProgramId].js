@@ -187,6 +187,8 @@ var jsx_runtime_ = __webpack_require__(997);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+// EXTERNAL MODULE: ./util/webDevDataMapper.js
+var webDevDataMapper = __webpack_require__(6665);
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__(1853);
 // EXTERNAL MODULE: external "next/head"
@@ -200,8 +202,6 @@ var next_link = __webpack_require__(1664);
 // EXTERNAL MODULE: ./components/AcademyCarousel/AcademyCarousel.module.scss
 var AcademyCarousel_module = __webpack_require__(934);
 var AcademyCarousel_module_default = /*#__PURE__*/__webpack_require__.n(AcademyCarousel_module);
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(5675);
 // EXTERNAL MODULE: ./components/AcademyCarousel/CarouselList/CarouselList.module.scss
 var CarouselList_module = __webpack_require__(2066);
 var CarouselList_module_default = /*#__PURE__*/__webpack_require__.n(CarouselList_module);
@@ -227,7 +227,6 @@ const CarouselList = ({ list  })=>{
 /* harmony default export */ const CarouselList_CarouselList = (CarouselList);
 
 ;// CONCATENATED MODULE: ./components/AcademyCarousel/AcademyCarousel.js
-
 
 
 
@@ -302,12 +301,9 @@ const AcademyCarousel = ({ academyData  })=>{
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: (AcademyCarousel_module_default()).imageContainer,
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_image["default"], {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                         src: `/img/carousel/${item}.jpg`,
-                        alt: item,
-                        height: "550px",
-                        width: "888px",
-                        layout: "responsive"
+                        alt: item
                     })
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -374,13 +370,16 @@ var SubjectCard_module_default = /*#__PURE__*/__webpack_require__.n(SubjectCard_
 ;// CONCATENATED MODULE: ./components/SubjectCard/SubjectCard.js
 
 
-const SubjectCard = ({ cardData , modalHandler  })=>{
+const SubjectCard = ({ cardData , modalHandler , updateModalData  })=>{
     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         className: (SubjectCard_module_default()).card,
-        onClick: modalHandler,
+        onClick: (e)=>{
+            modalHandler();
+            updateModalData(cardData);
+        },
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                children: cardData.title
+                children: cardData.course_title
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("span", {
                 className: (SubjectCard_module_default()).detailsLink,
@@ -453,84 +452,10 @@ var AcademiesLayout_module_default = /*#__PURE__*/__webpack_require__.n(Academie
 
 
 
-const placeholderAcademyData = [
-    {
-        title: "Basic Programming Principles and Methodologies",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-        learningPath: [
-            "Test",
-            "Test02",
-            "Tes03",
-            "Test04",
-            "Test05",
-            "Test06"
-        ],
-        furtherReadingLinks: [
-            "http://www.google.com",
-            "https://developer.mozilla.org/en-US/",
-            "https://en.wikipedia.org/wiki/HTML", 
-        ]
-    },
-    {
-        title: "Basic Web Development (HTML5/CSS3)",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-        learningPath: [
-            "Test",
-            "Test02",
-            "Tes03",
-            "Test04",
-            "Test05",
-            "Test06"
-        ],
-        furtherReadingLinks: [
-            "http://www.google.com",
-            "https://developer.mozilla.org/en-US/",
-            "https://en.wikipedia.org/wiki/JavaScript", 
-        ]
-    },
-    {
-        title: "Basic JavaScript Development"
-    },
-    {
-        title: "Advanced JavaScript Development"
-    },
-    {
-        title: "OOP Programming with C#"
-    },
-    {
-        title: "Advanced C# development"
-    },
-    {
-        title: "Relational database development & design"
-    },
-    {
-        title: "Developing ASP.NET Web Applications"
-    },
-    {
-        title: "RESTful Web Services Development"
-    },
-    {
-        title: "Advanced Data-Driven Applications Development"
-    },
-    {
-        title: "Software debugging and testing"
-    },
-    {
-        title: "Developing Cloud-ready Applications"
-    },
-    {
-        title: "C# Server Development"
-    },
-    {
-        title: "AngularJS with TypeScript"
-    },
-    {
-        title: "MEAN/MERN Development"
-    }, 
-];
 const AcademiesLayout = (props)=>{
     var ref, ref1, ref2, ref3;
-    const { academy , isModalOpen , toggleModal  } = props;
+    const { academy , isModalOpen , toggleModal , updateModalData  } = props;
+    console.log(academy);
     return(/*#__PURE__*/ jsx_runtime_.jsx(external_react_.Fragment, {
         children: !academy.title ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
             children: "Loading..."
@@ -648,10 +573,11 @@ const AcademiesLayout = (props)=>{
                     summary: "",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: (AcademiesLayout_module_default()).subjectCardContainer,
-                        children: placeholderAcademyData.map((subject)=>/*#__PURE__*/ jsx_runtime_.jsx(SubjectCard_SubjectCard, {
-                                cardData: subject,
+                        children: academy.courses.map((course)=>/*#__PURE__*/ jsx_runtime_.jsx(SubjectCard_SubjectCard, {
+                                cardData: course,
+                                updateModalData: updateModalData,
                                 modalHandler: toggleModal
-                            }, subject.title)
+                            }, course.course_title)
                         )
                     })
                 }),
@@ -684,25 +610,18 @@ const AcademiesLayout = (props)=>{
                                     className: (AcademiesLayout_module_default()).h2Tag,
                                     children: "Terms and documents for registration"
                                 }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                     className: (AcademiesLayout_module_default()).pTag,
-                                    children: [
-                                        "Anyone who has completed at least High school can enroll at the Academies.",
-                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {
-                                        }),
-                                        "For enrollment at the Academy the prospective students should fill Application for registration and sign a Contract on tuition."
-                                    ]
+                                    children: academy.terms_and_documents
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                     className: (AcademiesLayout_module_default()).h2Tag,
                                     children: "Scholarship opportunities"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                    children: "Challenge Day(mid of June)"
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                    children: "6 full/ 10 half Scholarships (based on a competition)"
-                                })
+                                academy.scholarship_opportunities.map((el)=>/*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                        children: el
+                                    })
+                                )
                             ]
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -742,59 +661,33 @@ const AcademiesLayout = (props)=>{
                                                 ]
                                             })
                                         }),
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("tbody", {
-                                            children: [
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("tr", {
+                                        /*#__PURE__*/ jsx_runtime_.jsx("tbody", {
+                                            children: academy.discount_data.map((el)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("tr", {
                                                     className: (AcademiesLayout_module_default()).tableRow,
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("td", {
                                                             className: (AcademiesLayout_module_default()).tableCell,
-                                                            children: "Discount for payment up to \"x\" installments"
+                                                            children: el.type_of_payments
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("td", {
                                                             className: (AcademiesLayout_module_default()).tableCell,
-                                                            children: "400€"
+                                                            children: el.april_1st
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("td", {
                                                             className: (AcademiesLayout_module_default()).tableCell,
-                                                            children: "250€"
+                                                            children: el.juli_15th
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("td", {
                                                             className: (AcademiesLayout_module_default()).tableCell,
-                                                            children: "100€"
+                                                            children: el.may_15
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("td", {
                                                             className: (AcademiesLayout_module_default()).tableCell,
-                                                            children: "none"
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("tr", {
-                                                    className: (AcademiesLayout_module_default()).tableRow,
-                                                    children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("td", {
-                                                            className: (AcademiesLayout_module_default()).tableCell,
-                                                            children: "Cash Payment"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("td", {
-                                                            className: (AcademiesLayout_module_default()).tableCell,
-                                                            children: "500€"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("td", {
-                                                            className: (AcademiesLayout_module_default()).tableCell,
-                                                            children: "350€"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("td", {
-                                                            className: (AcademiesLayout_module_default()).tableCell,
-                                                            children: "200€"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("td", {
-                                                            className: (AcademiesLayout_module_default()).tableCell,
-                                                            children: "200€"
+                                                            children: el.sept_15th
                                                         })
                                                     ]
                                                 })
-                                            ]
+                                            )
                                         })
                                     ]
                                 })
@@ -802,56 +695,20 @@ const AcademiesLayout = (props)=>{
                         })
                     ]
                 }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                     className: (AcademiesLayout_module_default()).programContainer,
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                            className: (AcademiesLayout_module_default()).h2Tag,
-                            children: "Program package includes"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                            className: (AcademiesLayout_module_default()).checkSign
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            children: "Learning materials"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                            className: (AcademiesLayout_module_default()).checkSign
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            children: "Career Counseling & Mentorship"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                            className: (AcademiesLayout_module_default()).checkSign
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            children: "Art Materials included (for Design Academy)"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                            className: (AcademiesLayout_module_default()).checkSign
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            children: "Certificates"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                            className: (AcademiesLayout_module_default()).checkSign
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            children: "Loyalty Card - Loyalty Program with discounts and benefits for students and family members"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                            className: (AcademiesLayout_module_default()).checkSign
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            children: "Alumni Community Membership"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                            className: (AcademiesLayout_module_default()).checkSign
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            children: "Access to conference and events/Competitions/Match making events with Industry"
+                    children: academy.program_package.map((el)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                            children: [
+                                " ",
+                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                    className: (AcademiesLayout_module_default()).checkSign
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    children: el
+                                })
+                            ]
                         })
-                    ]
+                    )
                 })
             ]
         })
@@ -916,7 +773,8 @@ var Modal_module_default = /*#__PURE__*/__webpack_require__.n(Modal_module);
 
 
 const Modal = (props)=>{
-    const { toggleModal , isModalOpen , setModalIsOpen  } = props;
+    const { toggleModal , isModalOpen , setModalIsOpen , modalData  } = props;
+    console.log(modalData);
     (0,external_react_.useEffect)(()=>{
         function onKeyDown(event) {
             if (event.keyCode === 27 || event.keyCode === 8) {
@@ -1049,12 +907,15 @@ const Modal = (props)=>{
 
 
 
+
 const AcademyPage = (props)=>{
     const router = (0,router_.useRouter)();
     const { academyData  } = props;
     const { 0: selectedAcademy , 1: setSelectedAcademy  } = (0,external_react_.useState)({
     });
     const { 0: isModalOpen , 1: setModalIsOpen  } = (0,external_react_.useState)(false);
+    const { 0: modalData , 1: setModalData  } = (0,external_react_.useState)({
+    });
     const toggleModal = ()=>{
         setModalIsOpen(!isModalOpen);
     };
@@ -1135,11 +996,13 @@ const AcademyPage = (props)=>{
                     /*#__PURE__*/ jsx_runtime_.jsx(AcademiesLayout_AcademiesLayout, {
                         academy: selectedAcademy,
                         isModalOpen: isModalOpen,
-                        toggleModal: toggleModal
+                        toggleModal: toggleModal,
+                        updateModalData: setModalData
                     }),
                     isModalOpen && /*#__PURE__*/ jsx_runtime_.jsx(Modal_Modal, {
                         toggleModal: toggleModal,
-                        setModalIsOpen: setModalIsOpen
+                        setModalIsOpen: setModalIsOpen,
+                        modalData: modalData
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(BackToTop_BackToTop, {
                     })
@@ -1151,7 +1014,14 @@ const AcademyPage = (props)=>{
 // STATIC DATA FETCHING AND STATIC PATH GENERATION - DON'T EDIT
 async function getStaticPaths() {
     const response = await external_axios_default().get("https://vlp-data.herokuapp.com/academies");
-    const { academies  } = response.data;
+    const webDevResponse = await external_axios_default().get("https://dev.sedc.mk/wp-json/wp/v2/pages/4167");
+    const webDevData = webDevResponse === null || webDevResponse === void 0 ? void 0 : webDevResponse.data;
+    const mappedData = (0,webDevDataMapper/* webDevDataMapper */.a)(webDevData.ACF);
+    const academies = [
+        {
+            ...mappedData
+        }
+    ];
     const paths = academies.map((academy)=>{
         const academyPaths = academy.study_programs.map((program)=>({
                 params: {
@@ -1169,7 +1039,14 @@ async function getStaticPaths() {
 }
 async function getStaticProps(context) {
     const response = await external_axios_default().get("https://vlp-data.herokuapp.com/academies");
-    const { academies  } = response.data;
+    const webDevResponse = await external_axios_default().get("https://dev.sedc.mk/wp-json/wp/v2/pages/4167");
+    const webDevData = webDevResponse === null || webDevResponse === void 0 ? void 0 : webDevResponse.data;
+    const mappedData = (0,webDevDataMapper/* webDevDataMapper */.a)(webDevData.ACF);
+    const academies = [
+        {
+            ...mappedData
+        }
+    ];
     const academyData = academies.filter((academy)=>academy.id === context.params.academyId
     )[0];
     return {
@@ -1197,22 +1074,6 @@ module.exports = require("axios");
 
 "use strict";
 module.exports = require("next/dist/server/denormalize-page-path.js");
-
-/***/ }),
-
-/***/ 8028:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/server/image-config.js");
-
-/***/ }),
-
-/***/ 4957:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/head.js");
 
 /***/ }),
 
@@ -1304,14 +1165,6 @@ module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 
 /***/ }),
 
-/***/ 3018:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/to-base-64.js");
-
-/***/ }),
-
 /***/ 9232:
 /***/ ((module) => {
 
@@ -1359,7 +1212,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,675], () => (__webpack_exec__(9449)));
+var __webpack_exports__ = __webpack_require__.X(0, [730,664,665], () => (__webpack_exec__(9449)));
 module.exports = __webpack_exports__;
 
 })();

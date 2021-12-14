@@ -71,15 +71,12 @@ var jsx_runtime_ = __webpack_require__(997);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(5675);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
 // EXTERNAL MODULE: ./components/UI/CompanyLogo/ComapnyLogo.module.scss
 var ComapnyLogo_module = __webpack_require__(7557);
 var ComapnyLogo_module_default = /*#__PURE__*/__webpack_require__.n(ComapnyLogo_module);
 ;// CONCATENATED MODULE: ./components/UI/CompanyLogo/CompanyLogo.js
-
 
 
 
@@ -91,11 +88,9 @@ const CompanyLogo = ()=>{
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: (ComapnyLogo_module_default()).logoImage,
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_image["default"], {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                         src: "/img/sedc-logo.webp",
-                        alt: "SEDC Logo",
-                        height: "80px",
-                        width: "80px"
+                        alt: "SEDC Logo"
                     })
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -237,7 +232,7 @@ const linkData = {
     academyItems: [
         {
             linkTitle: "programming",
-            target: "/academy-for-progamming/web-dev"
+            target: "/academy-for-programming/web-dev"
         },
         {
             linkTitle: "design",
@@ -839,22 +834,6 @@ module.exports = require("next/dist/server/denormalize-page-path.js");
 
 /***/ }),
 
-/***/ 8028:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/server/image-config.js");
-
-/***/ }),
-
-/***/ 4957:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/head.js");
-
-/***/ }),
-
 /***/ 4014:
 /***/ ((module) => {
 
@@ -943,14 +922,6 @@ module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 
 /***/ }),
 
-/***/ 3018:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/to-base-64.js");
-
-/***/ }),
-
 /***/ 9232:
 /***/ ((module) => {
 
@@ -990,7 +961,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,675], () => (__webpack_exec__(6675)));
+var __webpack_exports__ = __webpack_require__.X(0, [730,664], () => (__webpack_exec__(6675)));
 module.exports = __webpack_exports__;
 
 })();

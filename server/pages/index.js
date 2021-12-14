@@ -88,7 +88,10 @@ var external_axios_ = __webpack_require__(2167);
 var external_axios_default = /*#__PURE__*/__webpack_require__.n(external_axios_);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
+// EXTERNAL MODULE: ./util/webDevDataMapper.js
+var webDevDataMapper = __webpack_require__(6665);
 ;// CONCATENATED MODULE: ./pages/index.js
+
 
 
 
@@ -98,6 +101,7 @@ var external_react_ = __webpack_require__(6689);
 function HomePage(props) {
     const seavusInfo = props.seavusInfo;
     const academies = props.data.academies;
+    console.log(academies);
     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
@@ -195,10 +199,21 @@ function HomePage(props) {
 async function getStaticProps() {
     const academiesResponse = await external_axios_default().get("https://vlp-data.herokuapp.com/academies");
     const frontPageInfoResponse = await external_axios_default().get("https://dev.sedc.mk/wp-json/wp/v2/pages/649");
+    const webDevResponse = await external_axios_default().get("https://dev.sedc.mk/wp-json/wp/v2/pages/4167");
+    const webDevData = webDevResponse === null || webDevResponse === void 0 ? void 0 : webDevResponse.data;
+    const mappedData = (0,webDevDataMapper/* webDevDataMapper */.a)(webDevData.ACF);
+    console.log("shit is broken");
+    console.log(mappedData);
     return {
         props: {
             seavusInfo: frontPageInfoResponse.data.ACF,
-            data: academiesResponse.data
+            data: {
+                academies: [
+                    {
+                        ...mappedData
+                    }
+                ]
+            }
         }
     };
 }
@@ -349,7 +364,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664], () => (__webpack_exec__(7439)));
+var __webpack_exports__ = __webpack_require__.X(0, [730,664,665], () => (__webpack_exec__(7439)));
 module.exports = __webpack_exports__;
 
 })();
