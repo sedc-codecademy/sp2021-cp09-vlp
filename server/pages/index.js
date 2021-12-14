@@ -9,7 +9,8 @@ exports.modules = {
 
 // Exports
 module.exports = {
-	"academyCard": "AcademyCard_academyCard__BXUfN"
+	"academyCard": "AcademyCard_academyCard__BXUfN",
+	"unfinishedOverlay": "AcademyCard_unfinishedOverlay__2budQ"
 };
 
 
@@ -61,6 +62,28 @@ var AcademyCard_module_default = /*#__PURE__*/__webpack_require__.n(AcademyCard_
 
 const AcademyCard = (props)=>{
     const { academy  } = props;
+    console.log(academy);
+    if (academy.unfinished) {
+        return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            className: (AcademyCard_module_default()).academyCard,
+            children: [
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: (AcademyCard_module_default()).unfinishedOverlay,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                        children: "UNDER CONSTRUCTION"
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                    className: (AcademyCard_module_default()).academyIcon,
+                    alt: academy.id,
+                    src: `/img/cards-icons/color/${academy.id}.png`
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                    children: academy.title.replace("Academy For ", "")
+                })
+            ]
+        }));
+    }
     return(/*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
         href: `/${academy.id}/${academy.study_programs[0].id}`,
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -201,6 +224,33 @@ async function getStaticProps() {
     const webDevResponse = await external_axios_default().get("https://dev.sedc.mk/wp-json/wp/v2/pages/4167");
     const webDevData = webDevResponse === null || webDevResponse === void 0 ? void 0 : webDevResponse.data;
     const mappedData = (0,webDevDataMapper/* webDevDataMapper */.a)(webDevData.ACF);
+    const placeholderAcademiesDataset = [
+        {
+            id: "academy-for-design",
+            title: "Academy For Design",
+            unfinished: true
+        },
+        {
+            id: "academy-for-computer-networks",
+            title: "Academy For Computer Networks",
+            unfinished: true
+        },
+        {
+            id: "academy-for-software-testing",
+            title: "Academy For Software Testing",
+            unfinished: true
+        },
+        {
+            id: "academy-for-data-science",
+            title: "Academy For Data Science",
+            unfinished: true
+        },
+        {
+            id: "academy-for-digital-marketing",
+            title: "Academy For Digital Marketing",
+            unfinished: true
+        }, 
+    ];
     return {
         props: {
             seavusInfo: frontPageInfoResponse.data.ACF,
@@ -208,7 +258,8 @@ async function getStaticProps() {
                 academies: [
                     {
                         ...mappedData
-                    }
+                    },
+                    ...placeholderAcademiesDataset
                 ]
             }
         }

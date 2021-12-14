@@ -5,17 +5,17 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/Qo9VyweuSGnwgxIm8xzoI/_buildManifest.js",
-    "static/Qo9VyweuSGnwgxIm8xzoI/_ssgManifest.js",
-    "static/Qo9VyweuSGnwgxIm8xzoI/_middlewareManifest.js"
+    "static/lAxobfpzZW6jYXsYDuiKF/_buildManifest.js",
+    "static/lAxobfpzZW6jYXsYDuiKF/_ssgManifest.js",
+    "static/lAxobfpzZW6jYXsYDuiKF/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
       "static/chunks/webpack-514908bffb652963.js",
       "static/chunks/framework-91d7f78b5b4003c8.js",
       "static/chunks/main-be90e00a3c0a73d4.js",
-      "static/css/a66b62d333563b7b.css",
-      "static/chunks/pages/index-755b453dc5e07d11.js"
+      "static/css/1b3ca4bdad9ed32a.css",
+      "static/chunks/pages/index-bc36b6a373bcec90.js"
     ],
     "/[academyId]/[studentProgramId]": [
       "static/chunks/webpack-514908bffb652963.js",
