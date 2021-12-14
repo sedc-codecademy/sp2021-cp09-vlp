@@ -796,7 +796,7 @@ function _interopRequireDefault(obj) {
 }
 let detectDomainLocale;
 if (false) {}
-const basePath = "/home/runner/work/sp2021-cp09-vlp/sp2021-cp09-vlp" || 0;
+const basePath =  false || '';
 function buildCancellationError() {
     return Object.assign(new Error('Route Cancelled'), {
         cancelled: true
