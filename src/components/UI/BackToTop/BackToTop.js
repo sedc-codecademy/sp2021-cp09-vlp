@@ -29,7 +29,7 @@ const BackToTop = () => {
       onClick={toTop}
       style={{ display: !isVisible ? "none" : "flex" }}
     >
-      <img src="/img/chevron-up.svg" />
+      <img src="/img/chevron-up.svg"  alt="Chevron up icon"/>
       <p>TOP</p>
     </span>
   );
