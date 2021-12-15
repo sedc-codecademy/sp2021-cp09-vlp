@@ -1,0 +1,357 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.academyContainer {
+  background: white;
+
+  color: $logo-blue-dark;
+  border-top: 1px solid $dark-gray;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  font-family: $font-open-sans;
+  padding: 1rem 2rem;
+  padding-bottom: 4rem;
+
+  @include breakpoint(tablet) {
+    padding: 1rem 3rem;
+  }
+  @include breakpoint(desktop) {
+    padding: 1rem 6rem;
+  }
+
+  // @include breakpoint(mobileonly) {
+  //   border: 0.2rem solid $logo-blue-dark;
+  //   padding: 1rem 2rem;
+  //   padding-bottom: 2rem;
+  // }
+
+  .subjectCardContainer {
+    display: flex;
+    padding-bottom: 5rem;
+
+    padding: 0 2rem;
+    flex-wrap: wrap;
+  }
+
+  .headingContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title {
+    font-weight: 300;
+    font-size: 3.5rem;
+    margin-left: 1rem;
+
+    @include breakpoint(laptop) {
+      flex-direction: row;
+      font-size: 4.5rem;
+    }
+    @include breakpoint(largedesktop) {
+      font-size: 5rem;
+    }
+  }
+
+  .h2Tag {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: $font-open-sans;
+    // @include breakpoint(mobileonly) {
+    //   font-size: 2rem;
+    // }
+  }
+
+  .iconsContainer {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    width: 100%;
+    overflow: hidden;
+
+    @include breakpoint(laptop) {
+      flex-direction: row;
+    }
+  }
+
+  .iconBox {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 10px;
+
+    .icon {
+      height: 20px;
+      margin-left: 1rem;
+
+      @include breakpoint(laptop) {
+        height: 30px;
+        margin-left: 1.5rem;
+      }
+    }
+
+    .iconSpan {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-left: 1rem;
+
+      @include breakpoint(laptop) {
+        flex-direction: row;
+        font-size: 2.3rem;
+      }
+    }
+  }
+
+  .courseInfoDiv {
+    justify-content: space-between;
+    margin: 2rem auto;
+    display: block;
+
+    @include breakpoint(largedesktop) {
+      display: flex;
+      margin: 4rem auto;
+    }
+  }
+
+  .aboutCourseDiv {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+
+    @include breakpoint(largedesktop) {
+      width: 50%;
+    }
+  }
+
+  .timelineContainer {
+    min-width: 100%;
+    max-width: 50%;
+    font-size: 1.6rem;
+
+    background-color: $logo-blue-dark;
+    color: white;
+    padding: 0.5rem 2rem 1rem 2rem;
+
+    @include breakpoint(largedesktop) {
+      min-width: 50%;
+    }
+    // margin-top: 2rem;
+    // margin-left: 2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .competenciesTitle {
+    margin-top: 5rem;
+
+    @include breakpoint(mobileonly) {
+      font-size: 1.7rem;
+    }
+  }
+
+  .competenciesList {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 1rem;
+    padding-left: 0;
+  }
+
+  .competenciesListItem {
+    margin-left: 3rem;
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    // @include breakpoint(mobileonly) {
+    //   font-size: 1.3rem;
+    //   margin-top: 1rem;
+    // }
+  }
+
+  .checkSign {
+    float: left;
+    margin-right: 2rem;
+    height: 2rem;
+    width: 1.2rem;
+    border-bottom: 0.5rem solid $navy-medium;
+    border-right: 0.5rem solid $navy-medium;
+    transform: rotate(45deg);
+
+    @include breakpoint(mobileonly) {
+      height: 1.8rem;
+      width: 1rem;
+      border-bottom: 0.3rem solid $navy-medium;
+      border-right: 0.3rem solid $navy-medium;
+      margin-left: 0.4rem;
+    }
+  }
+
+  .registrationContainer {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    height: auto;
+    font-size: 1.8rem;
+
+    @include breakpoint(desktop) {
+      flex-direction: row;
+      font-size: 1.6rem;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    .tableDiv {
+      overflow: hidden;
+      overflow-x: auto;
+      clear: both;
+      height: 100%;
+      width: 100%;
+      font-size: 1.6rem;
+      // padding: 0rem 4rem;
+      padding: 0rem 2rem;
+      @include scrollbars(10rem, 0.8rem, $logo-blue-dark, $lavender-light);
+
+      @include breakpoint(mobileonly) {
+        @include scrollbars(10rem, 0.6rem, $logo-blue-dark, $lavender-light);
+      }
+    }
+
+    .termsDiv {
+      padding: 1rem 4rem 3rem 4rem;
+      // border-right: 2px solid $primary-dark;
+      // width: 50%;
+      font-size: 1.6rem;
+      width: 100%;
+      height: 100%;
+      background: $light-gray;
+    }
+  }
+
+  .priceTable {
+    border-radius: 1rem;
+    padding: 1rem;
+    border-collapse: collapse;
+    font-weight: 400;
+    width: 100%;
+
+    @include breakpoint(mobileonly) {
+      font-size: 1.3rem;
+    }
+  }
+
+  .tableRow {
+    td:nth-child(5) {
+      border-right: none;
+    }
+
+    th:nth-child(5) {
+      border-right: none;
+    }
+  }
+
+  .tableHeader {
+    background-color: $light-gray;
+    padding: 1rem;
+    border-right: 0.1rem solid $logo-blue-dark;
+  }
+
+  .tableCell {
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border-right: 0.1rem solid $logo-blue-dark;
+  }
+
+  .programContainer {
+    padding: 1.6rem;
+    margin-top: 1rem;
+    list-style: none;
+
+    p {
+      font-weight: bold;
+      margin-left: 3rem;
+      font-size: 1.6rem;
+
+      @include breakpoint(mobileonly) {
+        margin-top: 1rem;
+      }
+    }
+
+    @include breakpoint(mobileonly) {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .scholarshipDiv {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 1.6rem 4rem;
+    background: $navy-light;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    p {
+      font-weight: bold;
+    }
+
+    @include breakpoint(mobileonly) {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .referralProgramDiv {
+    padding: 1.6rem;
+    margin: 3rem auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    @include breakpoint(mobileonly) {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-weight: normal;
+    }
+  }
+
+  .jobDiv {
+    padding: 1.6rem 4rem;
+    padding-bottom: 3rem;
+    border-right: 3px solid $light-gray;
+    width: 50%;
+    font-size: 1.6rem;
+    background: $logo-blue-dark;
+    color: white;
+
+    li {
+      font-size: 1.8rem;
+    }
+
+    @include breakpoint(mobileonly) {
+      font-size: 1.3rem;
+      margin-top: 0.8rem;
+    }
+  }
+}
+
+.jobsContainer {
+  margin-top: 3rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+}
+
+.test {
+  color: #00000021;
+}
+
+.trainersDiv {
+  background: $primary;
+  color: $light-gray;
+  width: 50%;
+  padding: 1rem 3rem;
+
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=academies.css.map */

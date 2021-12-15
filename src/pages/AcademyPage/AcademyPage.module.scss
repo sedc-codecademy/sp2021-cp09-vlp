@@ -1,0 +1,161 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.academiesMain {
+  background: #002a7ebf;
+  color: white;
+  padding-bottom: 6rem;
+
+  @include breakpoint(mobileonly) {
+    padding: 0;
+    padding-top: 13rem;
+  }
+  @include breakpoint(tablet) {
+    padding: 13rem 3rem 6rem 3rem;
+  }
+  @include breakpoint(desktop) {
+    padding: 13rem 10rem 6rem 10rem;
+  }
+  @include breakpoint(largedesktop) {
+    padding: 13rem 12rem 6rem 12rem;
+  }
+  @include breakpoint(tv) {
+    padding: 13rem 15rem 6rem 15rem;
+  }
+}
+
+.wrapperContainer {
+  margin-top: 13rem;
+
+  @include breakpoint(mobileonly) {
+    margin-top: 0;
+  }
+}
+
+.backToHome {
+  margin: 1.3rem;
+  margin-top: 10rem;
+  padding-left: 0.5rem;
+  font-size: 1.8rem;
+  transition: 0.3s ease-in-out;
+
+  svg {
+    margin-right: 1rem;
+    padding-top: 0.2rem;
+  }
+
+  @include breakpoint(tablet) {
+    margin: 1rem;
+    margin-top: 2rem;
+  }
+
+  @include breakpoint(mobileonly) {
+    display: none;
+  }
+}
+
+.backDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 17rem;
+  height: 3rem;
+  cursor: pointer;
+
+  @include breakpoint(mobileonly) {
+    float: left;
+  }
+}
+
+.backDiv:hover {
+  color: $navy-medium;
+}
+
+.academyTitleDiv {
+  display: flex;
+  // align-items: center;
+  width: 100%;
+
+  .title {
+    font-family: $font-open-sans;
+    width: 60%;
+    font-weight: 300;
+    margin-left: 2rem;
+
+    @include breakpoint(mobileonly) {
+      font-size: 2.5rem;
+      width: 70%;
+    }
+
+    @include breakpoint(tablet) {
+      font-size: 4.5rem;
+    }
+
+    @include breakpoint(laptop) {
+      font-size: 5.5rem;
+    }
+
+    @include breakpoint(desktop) {
+      font-size: 6.7rem;
+    }
+  }
+}
+
+.screenIcon {
+  width: auto;
+  margin: 2rem;
+
+  @include breakpoint(mobileonly) {
+    width: 7rem;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.buttonsDiv {
+  display: flex;
+  align-items: center;
+
+  @include breakpoint(tablet) {
+    display: inline;
+  }
+
+  @include breakpoint(mobileonly) {
+    display: inline;
+  }
+}
+
+.academyBtn {
+  background-color: white;
+  color: $logo-blue-dark;
+  border: none;
+  border-bottom: 4px solid white;
+  margin: 0;
+  font-family: $font-poppins;
+  font-size: 1.6rem;
+  padding: 10px;
+  width: auto;
+  height: fit-content;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  @include breakpoint(mobileonly) {
+    font-size: 1.6rem;
+    padding: 6px;
+  }
+}
+
+.academyBtn:hover {
+  background: #a9d1ff;
+  color: $logo-blue-dark;
+  border-bottom: 4px solid $primary-light;
+
+  //   @include breakpoint(mobileonly) {
+  //     border: 2px solid $logo-blue-dark;
+  //   }
+}
+
+.academyBtn:active {
+  transform: scale(0.98);
+}

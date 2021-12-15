@@ -1,0 +1,200 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.navbar {
+  display: block;
+  position: absolute;
+  height: 100vh;
+  width: 0%;
+  background-color: $navy-dark;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  @include breakpoint(desktop) {
+    width: 80rem;
+    height: 5.5rem;
+    position: absolute;
+    right: 0;
+    top: 6.5rem;
+    background-color: $navy-dark;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.openDrawer {
+  width: 100%;
+  z-index: 10;
+  @include breakpoint(desktop) {
+    width: 80rem;
+  }
+}
+
+.navbar__burgerMenu {
+  display: flex;
+  align-items: center;
+  background-color: $navy-dark;
+  color: white;
+  position: absolute;
+  border-radius: 0.4rem;
+  right: 2rem;
+  top: 6.5rem;
+  z-index: 11;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  @include breakpoint(desktop) {
+    display: none;
+  }
+}
+.navbar__burgerMenu:hover {
+  background-color: $primary;
+}
+
+.navbar__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  list-style: none;
+  @include breakpoint(desktop) {
+    height: 5.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .navbar__item {
+    display: flex;
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    .navbar__arrow {
+      margin-left: 1rem;
+      margin-top: 0.2rem;
+      filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(25deg)
+        brightness(103%) contrast(102%);
+      display: flex;
+      align-self: center;
+      width: 2rem;
+    }
+
+    @include breakpoint(desktop) {
+      height: calc(6rem * 0.6);
+      padding: 1rem;
+      font-family: $font-poppins;
+      font-size: 1.4rem;
+      border-radius: 0.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s ease;
+      margin-top: 0;
+
+      &:first-child {
+        margin-left: 0.5rem;
+      }
+
+      .navbar__arrow {
+        @include breakpoint(desktop) {
+          margin-left: 0.4rem;
+          margin-top: 0.2rem;
+          filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(25deg)
+            brightness(103%) contrast(102%);
+          display: flex;
+          align-self: center;
+          width: 1.2rem;
+        }
+      }
+    }
+  }
+  .navbar__item:hover {
+    @include breakpoint(desktop) {
+      background-color: $primary-dark;
+      border-radius: 0.4rem;
+    }
+  }
+}
+
+.listedItemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include breakpoint(desktop) {
+    display: block;
+  }
+}
+
+.dropdown {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  transform-origin: top center;
+  animation: scaleDown 0.3s ease-in forwards;
+
+  ul {
+    list-style: none;
+    padding: 0 2rem;
+    text-align: center;
+    user-select: none;
+  }
+  ul > li {
+    padding-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  @include breakpoint(desktop) {
+    position: absolute;
+    top: 5rem;
+    width: 300px;
+    background-color: $navy-dark;
+    padding: 1rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform-origin: top center;
+    animation: scaleDown 0.3s ease-in forwards;
+  }
+  ul > li:hover {
+    color: $primary-light;
+  }
+}
+
+@keyframes scaleDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.dropdown > ul > li {
+  @include breakpoint(desktop) {
+    text-transform: uppercase;
+    margin: 0.6rem 0;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    user-select: none;
+
+    &:hover {
+      color: $primary-light;
+    }
+  }
+}

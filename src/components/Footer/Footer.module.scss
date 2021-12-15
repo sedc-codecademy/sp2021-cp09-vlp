@@ -1,0 +1,131 @@
+@import "../../styles/variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-color: $navy-dark;
+  padding: 3.45rem 1rem 3.45rem 1rem;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: $font-poppins;
+}
+
+.footer__mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.footer__main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__logo {
+  background-color: $navy-dark;
+  display: flex;
+  justify-content: center;
+  border-top: 0.0625rem solid #373f45;
+  border-bottom: 0.0625rem solid #373f45;
+}
+
+.footer__logo > a > img {
+  vertical-align: middle;
+  border: 0;
+}
+
+.col > ul > li > a {
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 400;
+  &:hover {
+    color: rgb(90, 132, 168);
+  }
+  transition-timing-function: ease-in-out;
+}
+
+.col > ul {
+  padding: 0;
+  margin: 0;
+  padding-left: 2.2rem;
+  list-style: none;
+}
+
+.col {
+  padding-left: 1.5rem;
+}
+
+.col > ul > li > h3 {
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.col > ul > li {
+  display: flex;
+  padding: 0.2rem;
+  margin-bottom: 0.45rem;
+}
+
+.copyrightTextContainer {
+  display: flex;
+  color: #94a2b8;
+  margin-top: 0.9375rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  justify-content: center;
+
+  small {
+    font-weight: 400;
+  }
+}
+
+.col__social > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social__footer__li {
+  display: flex;
+  justify-content: center;
+}
+
+.social__footer__li span {
+  position: absolute;
+  visibility: hidden;
+}
+
+.social__footer__li > a > svg {
+  color: #fcfcfcc7;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__main {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .copyrightTextContainer {
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 0.75rem;
+  }
+}
