@@ -41,8 +41,21 @@
       padding: 0 7rem;
       flex-basis: 40rem;
       display: block;
-      font-size: 25px;
+      font-size: 12px;
       transform: rotate(-45deg);
+
+      @include breakpoint(laptop) {
+        font-size: 20px;
+      }
+      @include breakpoint(largedesktop) {
+        padding: 0 8.5rem;
+      }
+
+      @include breakpoint(tv) {
+        font-size: 25px;
+        padding: 0 9.5rem;
+        left: -26%;
+      }
     }
   }
 
@@ -67,8 +80,8 @@
   }
 
   @include breakpoint(tv) {
-    width: 22rem;
-    height: 24rem;
+    width: 24rem;
+    height: 26rem;
   }
 
   img {

@@ -8,9 +8,11 @@ function Dropdown({ subitem, nextLinks }) {
       <ul>
         {subitem.map(subitem =>
           nextLinks ? (
-            <Link to={subitem.target} key={subitem.target}>
-              <li>{subitem.linkTitle}</li>
-            </Link>
+            <li>
+              <Link to={subitem.target} key={subitem.target}>
+                {subitem.linkTitle}
+              </Link>
+            </li>
           ) : (
             <li>
               <a href={subitem.target}>{subitem.linkTitle}</a>

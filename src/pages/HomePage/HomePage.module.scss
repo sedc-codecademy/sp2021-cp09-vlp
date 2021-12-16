@@ -241,7 +241,7 @@
   }
 
   @include breakpoint(tv) {
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(3, auto);
     justify-items: center;
     gap: 4rem;
     margin-top: 10rem;

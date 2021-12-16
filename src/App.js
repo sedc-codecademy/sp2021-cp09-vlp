@@ -5,6 +5,7 @@ import AcademyPage from "./pages/AcademyPage/AcademyPage";
 import Navbar from "./components/UI/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import CompanyLogo from "./components/UI/CompanyLogo/CompanyLogo";
+import { SUBFOLDER_PATH } from "./components/UI/Navbar/link-data";
 
 function App() {
   return (
@@ -13,8 +14,11 @@ function App() {
         <CompanyLogo />
         <Navbar />
         <Routes>
-          <Route path="appacademy" element={<HomePage />} />
-          <Route path="appacademy/:academyId/:programId" element={<AcademyPage />} />
+          <Route path={SUBFOLDER_PATH} element={<HomePage />} />
+          <Route
+            path={`${SUBFOLDER_PATH}/:academyId/:programI`}
+            element={<AcademyPage />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

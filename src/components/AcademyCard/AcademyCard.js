@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import classes from "./AcademyCard.module.scss";
+import { SUBFOLDER_PATH } from "../UI/Navbar/link-data";
 
 const AcademyCard = props => {
   const { academy } = props;
@@ -22,7 +23,7 @@ const AcademyCard = props => {
 
   return (
     <Link
-      to={`appacademy/${academy.id}/${academy.start_study_program_id}`}
+      to={`${SUBFOLDER_PATH}/${academy.id}/${academy.start_study_program_id}`}
       key={academy.id}
     >
       <div className={classes.academyCard}>

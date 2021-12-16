@@ -1,3 +1,5 @@
+export const SUBFOLDER_PATH = "appacademy";
+
 const linkData = {
   aboutUsItems: [
     { linkTitle: "overview", target: "https://www.sedc.mk/about-us/" },
@@ -31,27 +33,27 @@ const linkData = {
   academyItems: [
     {
       linkTitle: "programming",
-      target: "/academy-for-programming/web-dev",
+      target: `${SUBFOLDER_PATH}/academy-for-programming/web-dev`,
     },
     {
-      linkTitle: "design",
-      target: "/academy-for-design/web-designer",
+      linkTitle: `design`,
+      target: `${SUBFOLDER_PATH}/academy-for-design/web-designer`,
     },
     {
-      linkTitle: "computer networks",
-      target: "/academy-for-computer-networks/cloud-ops",
+      linkTitle: `computer networks`,
+      target: `${SUBFOLDER_PATH}/academy-for-computer-networks/cloud-ops`,
     },
     {
-      linkTitle: "software testing",
-      target: "/academy-for-software-testing/software-tester",
+      linkTitle: `software testing`,
+      target: `${SUBFOLDER_PATH}/academy-for-software-testing/software-tester`,
     },
     {
-      linkTitle: "data science",
-      target: "/academy-for-data-science/data-scientist",
+      linkTitle: `data science`,
+      target: `${SUBFOLDER_PATH}/academy-for-data-science/data-scientist`,
     },
     {
-      linkTitle: "digital marketing",
-      target: "/academy-for-digital-marketing/digital-marketer",
+      linkTitle: `digital marketing`,
+      target: `${SUBFOLDER_PATH}/academy-for-digital-marketing/digital-marketer`,
     },
   ],
   coursesItems: [
