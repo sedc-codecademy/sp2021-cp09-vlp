@@ -1,5 +1,6 @@
 {
   "name": "vlp-react",
+  "homepage": "https://dev.sedc.mk/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
