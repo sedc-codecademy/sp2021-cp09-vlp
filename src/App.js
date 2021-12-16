@@ -13,8 +13,8 @@ function App() {
         <CompanyLogo />
         <Navbar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/:academyId/:programId" element={<AcademyPage />} />
+          <Route path="appacademy" element={<HomePage />} />
+          <Route path="appacademy/:academyId/:programId" element={<AcademyPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
