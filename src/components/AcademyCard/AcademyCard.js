@@ -22,7 +22,7 @@ const AcademyCard = props => {
 
   return (
     <Link
-      to={`/${academy.id}/${academy.start_study_program_id}`}
+      to={`appacademy/${academy.id}/${academy.start_study_program_id}`}
       key={academy.id}
     >
       <div className={classes.academyCard}>
