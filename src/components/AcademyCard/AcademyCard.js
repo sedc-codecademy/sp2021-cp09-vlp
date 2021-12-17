@@ -23,7 +23,7 @@ const AcademyCard = props => {
 
   return (
     <Link
-      to={`${SUBFOLDER_PATH}/${academy.id}/${academy.start_study_program_id}`}
+      to={`${academy.id}/${academy.start_study_program_id}`}
       key={academy.id}
     >
       <div className={classes.academyCard}>
