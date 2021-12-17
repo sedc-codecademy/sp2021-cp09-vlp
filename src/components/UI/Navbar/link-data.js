@@ -1,4 +1,4 @@
-export const SUBFOLDER_PATH = "appacademy";
+export const SUBFOLDER_PATH = "academies";
 
 const linkData = {
   aboutUsItems: [
