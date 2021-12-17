@@ -1,5 +1,6 @@
 import React, { useEffect, useState, Fragment } from "react";
 import { fetchService } from "../../services/academy-fetch.service";
+import { SUBFOLDER_PATH } from "../../components/UI/Navbar/link-data";
 
 import { Link } from "react-router-dom";
 import AcademiesLayout from "../../components/AcademiesLayout/AcademiesLayout";
@@ -30,7 +31,7 @@ const AcademyPage = props => {
     <Fragment>
       {academyData ? (
         <div className={classes.academiesMain}>
-          <Link to={`/`}>
+          <Link to={`/${SUBFOLDER_PATH}`}>
             <div className={classes.backDiv}>
               <p className={classes.backToHome}>
                 <svg
