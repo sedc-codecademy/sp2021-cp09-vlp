@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/appacademy/static/css/main.faadcae6.css",
-    "main.js": "/appacademy/static/js/main.5d645e41.js",
-    "static/media/heroimg.webp": "/appacademy/static/media/heroimg.b85b15651d3f9200d99c.webp",
-    "static/media/background-img.jpg": "/appacademy/static/media/background-img.2801e98404b28f455712.jpg",
-    "static/media/background-img.webp": "/appacademy/static/media/background-img.c4b8e63befbb0326b46d.webp",
-    "static/media/mobileBackground.jpeg": "/appacademy/static/media/mobileBackground.6afdb2e77de3d305cc5b.jpeg",
-    "index.html": "/appacademy/index.html",
-    "main.faadcae6.css.map": "/appacademy/static/css/main.faadcae6.css.map",
-    "main.5d645e41.js.map": "/appacademy/static/js/main.5d645e41.js.map"
+    "main.css": "/academies/static/css/main.b7e23023.css",
+    "main.js": "/academies/static/js/main.7af46588.js",
+    "static/media/heroimg.webp": "/academies/static/media/heroimg.b85b15651d3f9200d99c.webp",
+    "static/media/background-img.jpg": "/academies/static/media/background-img.2801e98404b28f455712.jpg",
+    "static/media/background-img.webp": "/academies/static/media/background-img.c4b8e63befbb0326b46d.webp",
+    "static/media/mobileBackground.jpeg": "/academies/static/media/mobileBackground.6afdb2e77de3d305cc5b.jpeg",
+    "index.html": "/academies/index.html",
+    "main.b7e23023.css.map": "/academies/static/css/main.b7e23023.css.map",
+    "main.7af46588.js.map": "/academies/static/js/main.7af46588.js.map"
   },
   "entrypoints": [
-    "static/css/main.faadcae6.css",
-    "static/js/main.5d645e41.js"
+    "static/css/main.b7e23023.css",
+    "static/js/main.7af46588.js"
   ]
 }
